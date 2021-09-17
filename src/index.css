@@ -13,3 +13,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/* MemberCard */
+.member-card{
+width: 18rem;
+}
+footer{
+  background-color:#34393F;
+  
+}
+/* research */
+.research-card{
+  margin:1.2rem;
+  padding:1rem;
+}
+.contact-us{
+  margin-bottom: 1.5rem;
+}

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Navi.module.css";
+
+
 export default function Navi() {
   return (
     <div className="d-flex justify-content-between p-3">
@@ -18,14 +20,21 @@ export default function Navi() {
             Achievements
           </NavLink>
         </p>
-        <p class={`m-3 fs-5 p-3 ${styles.navlink}`}>
+        {/* <p class={`m-3 fs-5 p-3 ${styles.navlink}`}>
           <NavLink to="/contact-us" activeClassName="active">
             Contact Us
           </NavLink>
-        </p>
+        </p> */}
         <p class={`m-3 fs-5 p-3 ${styles.navlink}`}>
           <NavLink to="/about-us" activeClassName="active">
             About us
+
+          </NavLink>
+        </p>
+        <p class={`m-3 fs-5 p-3 ${styles.navlink}`}>
+          <NavLink to="/research" activeClassName="active">
+            Research
+
           </NavLink>
         </p>
       </div>

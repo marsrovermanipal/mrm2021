@@ -2,15 +2,17 @@ import React from "react";
 import Navi from "../components/navbar/Navi";
 import Particles from "react-particles-js";
 import Card from "../components/card/Card";
+
 export default function Landing() {
   return (
     <>
-      <Navi />
+      {/* <Navi /> */}
       <div className="col-4">
         <Card>
           <div className="p-5">hello world</div>
         </Card>
       </div>
+
     </>
   );
 }
