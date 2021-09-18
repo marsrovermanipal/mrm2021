@@ -1,6 +1,10 @@
 import React from "react";
 import Particles from "react-particles-js";
+<<<<<<< HEAD
+import Card from "../components/card/Card";
+=======
 import { NavigationBar } from "../components/navbar/NavigationBar";
+>>>>>>> main
 
 export default function Landing() {
   return (
