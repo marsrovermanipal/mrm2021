@@ -1,22 +1,25 @@
 a {
   text-decoration: none;
-  color: white;
+  color: white !important;
+  text-transform: uppercase;
+  font-family: "Red Rose", cursive;
 }
 a:hover {
-  color: white;
+  color: cyan !important;
+  border-bottom: 5px cyan !important;
 }
 
-.navlink {
-  display: inline;
-  /* border-bottom: 1px solid black; */
-  transition: border-width 0.5s;
+.nav-item {
+  transition: border-width 0.5s !important;
 }
-.navlink:hover {
-  /* border-bottom: 5px solid black; */
-  border-radius: 30px;
-  background-color: #6faed8;
+.nav-item:hover {
+  border-radius: 30px !important;
+  border-bottom: 8px solid white !important;
 }
-.navlink:hover > a {
+.nav-item:hover > a {
   font-weight: 800;
   color: white;
+}
+.logo {
+  width: 3em;
 }

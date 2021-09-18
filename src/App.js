@@ -1,6 +1,5 @@
 import React from "react";
 import Particles from "react-particles-js";
-import Navi from "./components/navbar/Navi";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Research from "./pages/Research";
