@@ -7,25 +7,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background-color: #f7f4f2; */
   background-color: #34393f;
+  color: #f7f4f2;
 }
-
+h1,
+h2,
+h3 {
+  font-family: "Red Rose", cursive;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 /* MemberCard */
-.member-card{
-width: 18rem;
+.member-card {
+  width: 18rem;
 }
-footer{
-  background-color:#34393F;
-  
+footer {
+  background-color: #34393f;
 }
 /* research */
-.research-card{
-  margin:1.2rem;
-  padding:1rem;
+.research-card {
+  margin: 1.2rem;
+  padding: 1rem;
 }
-.contact-us{
+.contact-us {
   margin-bottom: 1.5rem;
 }

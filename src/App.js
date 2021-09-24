@@ -1,23 +1,16 @@
 import React from "react";
 import Particles from "react-particles-js";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
-import Landing from "./pages/Landing";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Landing from "./pages/Landing/Landing";
 import Research from "./pages/Research";
-import AboutUs from "./pages/AboutUs";
+// import AboutUs from "./pages/AboutUs";
 import Footer from "./components/footer/Footer";
-
-
 
 function App() {
   return (
     <div>
-
       <Router>
-        <Navi />
         <Switch>
-          <Route exact path="/">
-            <Landing />
-          </Route>
           <Route exact path="/about-us">
             {/* <AboutUs /> */}
           </Route>
@@ -30,8 +23,11 @@ function App() {
           <Route exact path="/research">
             <Research />
           </Route>
+          <Route exact path="/">
+            <Landing />
+          </Route>
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
   );

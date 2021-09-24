@@ -7,7 +7,7 @@ export default function Card({ children }) {
   const [animatedProps, setanimatedProps] = useSpring(() => {
     return {
       xys: [0, 0, 1],
-      config: { mass: 10, tension: 400, friction: 40, precision: 0.00001 },
+      config: { mass: 10, tension: 200, friction: 10, precision: 0.00001 },
     };
   });
   return (
