@@ -14,6 +14,16 @@ h2,
 h3 {
   font-family: "Red Rose", cursive;
 }
+.btn-outline-primary {
+  color: #51e8ef !important;
+  border: none !important;
+  border-color: #51e8ef !important;
+}
+.btn-outline-primary:hover {
+  background-color: #51e8ef !important;
+  color: #34393f !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

@@ -2,17 +2,19 @@ import React from "react";
 import Particles from "react-particles-js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Landing from "./pages/Landing/Landing";
+import { NavigationBar } from "./components/navbar/NavigationBar";
 import Research from "./pages/Research";
-// import AboutUs from "./pages/AboutUs";
+import AboutUs from "./pages/AboutUs/AboutUs";
 import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <div>
       <Router>
+        <NavigationBar />
         <Switch>
           <Route exact path="/about-us">
-            {/* <AboutUs /> */}
+            <AboutUs />
           </Route>
           <Route exact path="/achievements">
             {/* achievements */}
@@ -27,7 +29,7 @@ function App() {
             <Landing />
           </Route>
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );

@@ -1,19 +1,19 @@
 import React, { useState, useRef } from "react";
 import { useSpring, animated } from "react-spring";
 
-export default function Card({ children }) {
+export default function Card({ children, classname }) {
   const ref = useRef();
   const [isHovered, setHovered] = useState(false);
   const [animatedProps, setanimatedProps] = useSpring(() => {
     return {
       xys: [0, 0, 1],
-      config: { mass: 10, tension: 200, friction: 10, precision: 0.00001 },
+      config: { mass: 10, tension: 400, friction: 40, precision: 0.00001 },
     };
   });
   return (
     <animated.div
       ref={ref}
-      className="card"
+      className={`card ${classname}`}
       onMouseEnter={() => setHovered(true)}
       onMouseMove={({ clientX, clientY }) => {
         const x =

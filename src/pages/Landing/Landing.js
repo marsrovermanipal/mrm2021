@@ -1,15 +1,11 @@
 import React from "react";
 import Particles from "react-particles-js";
 import TypeWriterEffect from "react-typewriter-effect";
-import Typist from "react-typist";
-import { NavigationBar } from "../../components/navbar/NavigationBar";
-import Card from "../../components/card/Card";
 import SponsorSection from "../../components/sponsorSection/SponsorSection";
 import styles from "./Landing.module.css";
 export default function Landing() {
   return (
     <>
-      <NavigationBar />
       <div className={`col-12 ${styles.landing_anim}`}>
         <Particles
           height="800px"
