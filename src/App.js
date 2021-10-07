@@ -6,6 +6,7 @@ import { NavigationBar } from "./components/navbar/NavigationBar";
 import Research from "./pages/Research";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Footer from "./components/footer/Footer";
+import Comp from "./pages/Competitions/Comp";
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
           <Route exact path="/about-us">
             <AboutUs />
           </Route>
-          <Route exact path="/achievements">
-            {/* achievements */}
+          <Route exact path="/competitions">
+            <Comp />
           </Route>
           <Route exact path="/contact-us">
             {/* contact us */}
