@@ -28,18 +28,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-/* MemberCard */
-.member-card {
-  width: 18rem;
+
+.footer{
+
+  padding: 1rem;
+
 }
-footer {
-  background-color: #34393f;
-}
+
 /* research */
 .research-card {
-  margin: 1.2rem;
-  padding: 1rem;
+  /* margin: 0.2rem; */
+
+}
+.research{
+    padding: 1.8rem;
+  box-shadow: 0px 3px 8px 0px #000000 ;
+}
+.research img{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 .contact-us {
-  margin-bottom: 1.5rem;
+  margin-bottom: 01.2rem;
 }
