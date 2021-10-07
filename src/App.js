@@ -3,10 +3,11 @@ import Particles from "react-particles-js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Landing from "./pages/Landing/Landing";
 import { NavigationBar } from "./components/navbar/NavigationBar";
-import Research from "./pages/Research";
+import Research from "./pages/Research/Research";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Footer from "./components/footer/Footer";
 import Comp from "./pages/Competitions/Comp";
+import Alumni from "./pages/Alumni";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route exact path="/">
             <Landing />
+          </Route>
+          <Route exact path="/alumni">
+            <Alumni />
           </Route>
         </Switch>
         <Footer />

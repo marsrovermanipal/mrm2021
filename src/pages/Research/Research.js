@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from "../../components/card/Card";
 import data from "./Research-data"
 
 export default function Research() {
@@ -24,14 +25,17 @@ export default function Research() {
                     const { title, author, img, event, id } = item
 
                     return (
+                        <div className="research-card col-lg-3 col-md-4 col-sm-6 text-center text-dark" key={id} >
+                            <Card>
+                                <div className="research">
+                                    <h5 className="">{title}</h5>
+                                    {img && <img className="" src={img} alt={title} />}
 
-                        <div className="card research-card col-lg-3 col-md-4 col-sm-6 text-center text-dark" key={id} >
-                            <h5 className="card-title">{title}</h5>
-                            <img className="card-img-top" src={img} alt={title} />
-                            <div className="card-body">
-                                <p className="card-text">{event}</p>
-                                <p className="card-text">{author}</p>
-                            </div>
+                                    <p className="">{event}</p>
+                                    <p className="">{author}</p>
+
+                                </div>
+                            </Card>
                         </div>
                     )
                 })}
