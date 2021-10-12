@@ -1,7 +1,7 @@
 import React from "react";
 import Particles from "react-particles-js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Landing from "./pages/Landing/Landing";
+import Landing from "./pages/Landing/Landing.jsx";
 import { NavigationBar } from "./components/navbar/NavigationBar";
 import Research from "./pages/Research/Research";
 import AboutUs from "./pages/AboutUs/AboutUs";
