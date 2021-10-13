@@ -3,7 +3,7 @@ import { Modal, ModalHeader } from "reactstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Card from "../../components/card/Card";
-import data from "./compData";
+import data from "./urcData";
 import styles from "./Comp.module.css";
 export default function Comp() {
   useEffect(() => {
@@ -28,7 +28,7 @@ export default function Comp() {
                 <div
                   style={{ cursor: "pointer" }}
                   className="d-flex flex-column align-items-center"
-                  onClick={() => openModal("2020")}
+                  onClick={() => openModal(item.comp)}
                 >
                   <div>
                     <img src={item.img} alt={item.comp} className="col-12" />
@@ -40,7 +40,7 @@ export default function Comp() {
                 </div>
               </Card>
               <Modal
-                isOpen={modal === "2020"}
+                isOpen={modal === item.comp}
                 toggle={closeModal}
                 centered
                 size="xl"
