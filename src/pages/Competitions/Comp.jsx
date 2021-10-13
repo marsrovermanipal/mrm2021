@@ -1,9 +1,15 @@
-import React, { useState } from "react";
-import { Modal } from "reactstrap";
+import React, { useState, useEffect } from "react";
+import { Modal, ModalHeader } from "reactstrap";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Card from "../../components/card/Card";
-import data from "./compData"
-
+import data from "./compData";
+import styles from "./Comp.module.css";
 export default function Comp() {
+  useEffect(() => {
+    AOS.init();
+  });
+
   const [modal, setModal] = useState("");
   const openModal = (name) => {
     setModal(name);
@@ -16,26 +22,37 @@ export default function Comp() {
       <h1 className="text-center">Competitions</h1>
       <div className="row justify-content-center ">
         {data.map((item) => {
-
           return (
             <>
-              <Card classname="col-lg-3 col-md-6 mx-auto mx-md-5 m-4 p-3">
-                <div style={{ cursor: "pointer" }} onClick={() => openModal("2020")}>
-                  <img src={item.img} alt={item.comp} className="col-12" />
-                  <div className="text-secondary text-center">
+              <Card classname="col-lg-3 col-md-6 col-8 mx-auto mx-md-5 m-4 p-3">
+                <div
+                  style={{ cursor: "pointer" }}
+                  className="d-flex flex-column align-items-center"
+                  onClick={() => openModal("2020")}
+                >
+                  <div>
+                    <img src={item.img} alt={item.comp} className="col-12" />
+                  </div>
+                  <div className="text-secondary text-center mt-auto">
                     <h3>{item.comp}</h3>
                     <h4>{item.pos}</h4>
                   </div>
                 </div>
               </Card>
-              <Modal isOpen={modal === "2020"} toggle={closeModal} centered size="xl">
+              <Modal
+                isOpen={modal === "2020"}
+                toggle={closeModal}
+                centered
+                size="xl"
+              >
+                <ModalHeader toggle={closeModal} className={`${styles.header}`}>
+                  <h2 className="text-dark text-center col-12">{item.comp}</h2>
+                </ModalHeader>
                 <div className="text-dark text-center col-12">
-                  <h2>{item.comp}</h2>
+                  {/* <h2>{item.comp}</h2> */}
                   <img src={item.img} alt={item.comp} className="col-6 p-3" />
                   <h3>{item.roverName}</h3>
-                  <p className="col-8 mx-auto fs-5">
-                    {item.info}
-                  </p>
+                  <p className="col-8 mx-auto fs-5">{item.info}</p>
                   <div className="col-8 mx-auto">
                     <table className="table table-dark table-striped">
                       <tbody>
@@ -159,7 +176,7 @@ export default function Comp() {
                 </div>
               </Modal>
             </>
-          )
+          );
         })}
       </div>
     </>

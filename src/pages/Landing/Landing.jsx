@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import ParticleImage, { ParticleOptions } from "react-particle-image";
 import Particles from "react-particles-js";
 import TypeWriterEffect from "react-typewriter-effect";
 import SponsorSection from "../../components/sponsorSection/SponsorSection";
 import styles from "./Landing.module.css";
+
 export default function Landing() {
   // const {innerWidth,innerHeight } = useWindowSize();
   const particleOptions: ParticleOptions = {
@@ -15,6 +18,10 @@ export default function Landing() {
     },
     color: ({ x, y, image }) => "#61dafb",
   };
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <>
       <div className={`col-12 ${styles.landing_anim}`}>
@@ -98,7 +105,12 @@ export default function Landing() {
           particleOptions={particleOptions}
         />
       </div>
-      <div className="col-12" style={{ backgroundColor: "" }}>
+      <div
+        className="col-12"
+        data-aos="fade-in"
+        data-aos-delay="200"
+        style={{ backgroundColor: "" }}
+      >
         <div className="text-center mt-5">
           {/* <h1>Mars Rover Manipal</h1> */}
           <p className="fs-4 col-12 col-md-8 p-3 text-start text-md-center mx-auto">
