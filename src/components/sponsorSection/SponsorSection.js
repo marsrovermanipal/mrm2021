@@ -11,47 +11,47 @@ export default function SponsorSection() {
   const data = [
     {
       name: "Mouser Electronics",
-      bgpath: "",
+      bgpath: "sponsors/mouser.jpg",
     },
     {
       name: "Sick",
-      bgpath: "",
+      bgpath: "sponsors/sick.png",
     },
     {
       name: "KelpeTech",
-      bgpath: "",
+      bgpath: "sponsors/kelpeTech.png",
     },
     {
       name: "Aristo",
-      bgpath: "",
+      bgpath: "sponsors/aristo.png",
     },
     {
       name: "Decopad Interiors",
-      bgpath: "",
+      bgpath: "sponsors/decopad-logo.jpg",
     },
     {
       name: "Aeroquol",
-      bgpath: "",
+      bgpath: "sponsors/aeroqual.png",
     },
     {
       name: "LPS Bossard",
-      bgpath: "",
+      bgpath: "sponsors/lpsbossard.jpg",
     },
     {
       name: "Wheeleez",
-      bgpath: "",
+      bgpath: "sponsors/wheeleez.png",
     },
     {
       name: "Nvidia",
-      bgpath: "",
+      bgpath: "sponsors/nvidia.png",
     },
     {
       name: "SolidWorks",
-      bgpath: "",
+      bgpath: "sponsors/solidworks.png",
     },
     {
       name: "Stevens",
-      bgpath: "",
+      bgpath: "sponsors/stevens.png",
     },
   ];
   return (
@@ -78,7 +78,8 @@ export default function SponsorSection() {
           >
             <Card>
               <div className="p-5">
-                <h3 className="text-center text-dark">{d.name}</h3>
+                <img src={d.bgpath} alt={d.name} className="col-12 p-1" />
+                {/* <h3 className="text-center text-dark">{d.name}</h3> */}
               </div>
             </Card>
           </div>

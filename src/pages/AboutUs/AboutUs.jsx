@@ -65,8 +65,8 @@ export default function AboutUs() {
               {AiData.map((item) => {
                 return (
                   <div className="col-lg-4 col-md-4 col-sm-6 ">
-                    <div className="col-12 d-flex  flex-wrap">
-                      <Card classname="bg-light text-dark">
+                    <div className="col-12 d-flex  flex-wrap bg-light text-dark">
+                      <Card classname={`${styles.card}`}>
                         <div className="d-flex flex-column align-items-center p-4 ">
                           <img src={item.img} className="col-12 col-md-5 rounded-circle" alt={item.name} />
                           <h3 className="text-center ">{item.name}</h3>
@@ -154,7 +154,7 @@ export default function AboutUs() {
           <>
             <div className="col-8 d-flex mx-auto">
               <div className="col-5.8">
-                <img className="sub-image" src="https://innovoco.com/wp-content/uploads/2019/04/Illustration_AI_Optimized-380x260.png" alt="Ai Image" />
+                <img className="sub-image" src="management.gif" alt="Ai Image" />
               </div>
               <div className="col-8">
                 <h1>Management & Public Relations</h1>
@@ -166,7 +166,7 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase">Team Members </h3>
               {mgmtData.map((item) => {
                 return (
-                  <div className="col-lg-3 col-md-4 col-sm-6 ">
+                  <div className="col-lg-3 col-md-4 col-sm-6 p-3">
                     <div className="col-12 d-flex  flex-wrap">
                       <Card classname="bg-light text-dark">
                         <div className="d-flex flex-column align-items-center p-4 ">
