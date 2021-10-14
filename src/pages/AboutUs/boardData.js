@@ -30,7 +30,7 @@ const data = [
     {
         id: 5,
         name: 'Apoorv Thapliyal',
-        img: 'team-22/Apoorv_new.JPG',
+        img: 'team-22/Apoorv.jpg',
         pos: "ECS Head",
         linkedin: "https://www.linkedin.com/in/apoorv-thapliyal-280a151a6",
     },
@@ -44,7 +44,7 @@ const data = [
     {
         id: 7,
         name: 'Abhishek Sankar',
-        img: 'team-22/jyotishka.jpeg',
+        img: 'team-22/Abhishek.jpg',
         pos: "Mechanical Head",
         linkedin: "https://www.linkedin.com/in/abhishek-sankar-6664071b2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B7S1447W2QFCQ9v7Ng5k3Nw%3D%3D",
     },

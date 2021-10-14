@@ -24,9 +24,9 @@ export default function App() {
     // );
     return (
         <ParticleImage
-            src={"grip2.png"}
-            scale={0.4}
-            entropy={10}
+            src={"Rover101.png"}
+            scale={0.52}
+            entropy={15}
             maxParticles={4200}
             particleOptions={particleOptions}
         />
