@@ -3,17 +3,16 @@ import Card from "../../components/card/Card";
 import * as GrIcons from "react-icons/gr";
 import styles from "./AboutUs.module.css";
 import { Button } from "reactstrap";
-import boardData from "./boardData"
-import AiData from "./AiData"
-import ecsData from "./ecsData"
-import mgmtData from "./mgmtData"
+import boardData from "./boardData";
+import AiData from "./AiData";
+import ecsData from "./ecsData";
+import mgmtData from "./mgmtData";
 
 export default function AboutUs() {
   const [activeSub, setActiveSub] = useState("board");
   const renderMembers = (sub) => {
     switch (sub) {
       case "board":
-
         // board members data
         return (
           <div className="col-12 d-flex mx-auto">
@@ -25,17 +24,28 @@ export default function AboutUs() {
                     <div className="col-12 d-flex  flex-wrap">
                       <Card classname="bg-dark text-light">
                         <div className="d-flex flex-column align-items-center p-4 ">
-                          <img src={item.img} className="col-12 col-md-5 rounded-circle" alt={item.name} />
-                          <h3 className="text-center text-light">{item.name}</h3>
-                          <h5 className="text-center text-secondary">{item.pos}</h5 >
+                          <img
+                            src={item.img}
+                            className="col-12 col-md-5 rounded-circle"
+                            alt={item.name}
+                          />
+                          <p className="fs-3 text-center text-light">
+                            {item.name}
+                          </p>
+                          <p className="fs-5 text-center text-secondary">
+                            {item.pos}
+                          </p>
                           <div className="col-12 d-flex justify-content-center text-secondary">
-                            <a href={item.linkedin}> <GrIcons.GrLinkedin /></a>
+                            <a href={item.linkedin}>
+                              {" "}
+                              <GrIcons.GrLinkedin />
+                            </a>
                           </div>
                         </div>
                       </Card>
                     </div>
                   </div>
-                )
+                );
               })}
             </div>
           </div>
@@ -44,18 +54,22 @@ export default function AboutUs() {
         return (
           <>
             <div className="col-8 d-flex mx-auto">
-              <div className="col-5.8">
-                <img className="sub-image" src="https://innovoco.com/wp-content/uploads/2019/04/Illustration_AI_Optimized-380x260.png" alt="Ai Image" />
+              <div className="col-4">
+                <img
+                  className="sub-image"
+                  src="https://innovoco.com/wp-content/uploads/2019/04/Illustration_AI_Optimized-380x260.png"
+                  alt="Ai"
+                />
               </div>
               <div className="col-8">
                 <h3>Artificial Intelligence & Automation</h3>
                 <p>
                   The AI & Automation subsystem is an integral part of the
                   project. The subsystem deals with processing and interpreting
-                  data from various sensors like cameras, GPS, LiDARS, IMUs, etc.
-                  This enables the rover to traverse autonomously without human
-                  interference. The subsystem also deals with designing deep
-                  learning architectures to solve various state of the art
+                  data from various sensors like cameras, GPS, LiDARS, IMUs,
+                  etc. This enables the rover to traverse autonomously without
+                  human interference. The subsystem also deals with designing
+                  deep learning architectures to solve various state of the art
                   problems encountered while the development of rover.
                 </p>
               </div>
@@ -68,17 +82,23 @@ export default function AboutUs() {
                     <div className="col-12 d-flex  flex-wrap bg-light text-dark">
                       <Card classname={`${styles.card}`}>
                         <div className="d-flex flex-column align-items-center p-4 ">
-                          <img src={item.img} className="col-12 col-md-5 rounded-circle" alt={item.name} />
+                          <img
+                            src={item.img}
+                            className="col-12 col-md-5 rounded-circle"
+                            alt={item.name}
+                          />
                           <h3 className="text-center ">{item.name}</h3>
                           <div className="col-12 d-flex justify-content-center text-secondary">
-                            <a className="text-dark" href={item.linkedin}> <GrIcons.GrLinkedin /></a>
+                            <a className="text-dark" href={item.linkedin}>
+                              {" "}
+                              <GrIcons.GrLinkedin />
+                            </a>
                           </div>
                         </div>
                       </Card>
                     </div>
                   </div>
-                )
-
+                );
               })}
             </div>
           </>
@@ -88,11 +108,24 @@ export default function AboutUs() {
           <>
             <div className="col-8 d-flex mx-auto">
               <div className="col-5.8">
-                <img className="sub-image" src="https://innovoco.com/wp-content/uploads/2019/04/Illustration_AI_Optimized-380x260.png" alt="Ai Image" />
+                <img
+                  className="sub-image"
+                  src="https://innovoco.com/wp-content/uploads/2019/04/Illustration_AI_Optimized-380x260.png"
+                  alt="Ai "
+                />
               </div>
               <div className="col-8">
                 <h1>Electronics & Control Systems</h1>
-                <p>The rover is brought to life by the Electronics & Controls subsytem which is responsible for powering various segments of the rover, that work together to achieve desired performance of the rover over all the tasks. The team is also responsible for control and communication of the rover and also works towards maximum customization of the products that we use on the rover. Camera feeds from various points on the rover are hauled back to the base station for maximum view of the environment.
+                <p>
+                  The rover is brought to life by the Electronics & Controls
+                  subsytem which is responsible for powering various segments of
+                  the rover, that work together to achieve desired performance
+                  of the rover over all the tasks. The team is also responsible
+                  for control and communication of the rover and also works
+                  towards maximum customization of the products that we use on
+                  the rover. Camera feeds from various points on the rover are
+                  hauled back to the base station for maximum view of the
+                  environment.
                 </p>
               </div>
             </div>
@@ -104,61 +137,119 @@ export default function AboutUs() {
                     <div className="col-12 d-flex  flex-wrap">
                       <Card classname="bg-light text-dark">
                         <div className="d-flex flex-column align-items-center p-4 ">
-                          <img src={item.img} className="col-12 col-md-5 rounded-circle" alt={item.name} />
+                          <img
+                            src={item.img}
+                            className="col-12 col-md-5 rounded-circle"
+                            alt={item.name}
+                          />
                           <h3 className="text-center ">{item.name}</h3>
                           <div className="col-12 d-flex justify-content-center text-secondary">
-                            <a className="text-dark" href={item.linkedin}> <GrIcons.GrLinkedin /></a>
+                            <a className="text-dark" href={item.linkedin}>
+                              {" "}
+                              <GrIcons.GrLinkedin />
+                            </a>
                           </div>
                         </div>
                       </Card>
                     </div>
                   </div>
-                )
-
+                );
               })}
             </div>
           </>
         );
 
       case "mech":
-
         return (
           <div className="col-8 d-flex mx-auto">
             <div className="col-5.8">
-              <img className="sub-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTKhMFM2Qmbrv1RPWbOehp9CMk5jVu0wPOO4WG4E3WlpQ7Y287iAyVhpfq8Q9IJx9Dr3E&usqp=CAU" alt="Ai Image" />
+              <img
+                className="sub-image"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTKhMFM2Qmbrv1RPWbOehp9CMk5jVu0wPOO4WG4E3WlpQ7Y287iAyVhpfq8Q9IJx9Dr3E&usqp=CAU"
+                alt="Ai Image"
+              />
             </div>
             <div className="col-8">
               <h1>Mechanical Design & Manufacturing</h1>
-              <p>The Mechanical Design & Manufacturing subsystem provides the basic skeleton of the rover which includes the wheels, suspension, chassis, robotic manipulator and the soil collection mechanism. The guidelines provided by URC form the basis over which each of our component is designed. Every part that is put on the rover undergoes an extensive development cycle to ensure its reliability. The development cycle includes a thorough study of the problem statement and design and analysis of each component on various CAE softwares.
+              <p>
+                The Mechanical Design & Manufacturing subsystem provides the
+                basic skeleton of the rover which includes the wheels,
+                suspension, chassis, robotic manipulator and the soil collection
+                mechanism. The guidelines provided by URC form the basis over
+                which each of our component is designed. Every part that is put
+                on the rover undergoes an extensive development cycle to ensure
+                its reliability. The development cycle includes a thorough study
+                of the problem statement and design and analysis of each
+                component on various CAE softwares.
               </p>
             </div>
           </div>
         );
       case "research":
-
         return (
-          <div className="col-8 d-flex mx-auto">
-            <div className="col-5.8">
-              <img className="sub-image" src="https://innovoco.com/wp-content/uploads/2019/04/Illustration_AI_Optimized-380x260.png" alt="Ai Image" />
+          <div className="col-8 d-flex mx-auto justify-content-between">
+            <div className="col-4">
+              <img
+                className="sub-image"
+                src="https://innovoco.com/wp-content/uploads/2019/04/Illustration_AI_Optimized-380x260.png"
+                alt="Ai"
+              />
             </div>
-            <div className="col-8">
-              <h1>Research</h1>
-              <p>The Research subsystem of Mars Rover Manipal is responsible for publishing research papers in indexed journals and presenting them in national and international conferences. The research team works on problems which are beyond the scope of University Rover Challenge (URC). They also work on development of proprietary technology and long term projects whose solutions will be used in future rovers.
+            <div className="col-6">
+              <p className="fs-1">Research</p>
+              <p>
+                The Research subsystem of Mars Rover Manipal is responsible for
+                publishing research papers in indexed journals and presenting
+                them in national and international conferences. The research
+                team works on problems which are beyond the scope of University
+                Rover Challenge (URC). They also work on development of
+                proprietary technology and long term projects whose solutions
+                will be used in future rovers.
+              </p>
+            </div>
+          </div>
+        );
+      case "science":
+        return (
+          <div className="col-8 d-flex mx-auto justify-content-between">
+            <div className="col-4">
+              <img
+                src="https://innovoco.com/wp-content/uploads/2019/04/Illustration_AI_Optimized-380x260.png"
+                alt=""
+              />
+            </div>
+            <div className="col-6">
+              <p className="fs-1">Science</p>
+              <p className="fs-6">
+                The Science subsystem is responsible for comprehensive analysis
+                of the biological, geological and chemical aspects of a given
+                area, based on which inferences on the presence of life ,extinct
+                or extant, are drawn. The required observations are formed by
+                techniques including but not limited to - in situ soil analysis,
+                sensor technology and observable geology.
               </p>
             </div>
           </div>
         );
       case "management":
-
         return (
           <>
             <div className="col-8 d-flex mx-auto">
               <div className="col-5.8">
-                <img className="sub-image" src="management.gif" alt="Ai Image" />
+                <img className="sub-image" src="management.gif" alt="Ai" />
               </div>
               <div className="col-8">
                 <h1>Management & Public Relations</h1>
-                <p>The Management and PR subsystem of Mars Rover Manipal is responsible for all the non-technical work of the team. It is involved in the overall progress of the team by handling sponsorship, finance, public relations, publicity, media platforms and human resource management. The team designs posters and brochures, manages the website and provides videos for advertisement and sponsors. It is also responsible for the well-ordered and smooth functioning of the team’s day to day work and managing of all events.
+                <p>
+                  The Management and PR subsystem of Mars Rover Manipal is
+                  responsible for all the non-technical work of the team. It is
+                  involved in the overall progress of the team by handling
+                  sponsorship, finance, public relations, publicity, media
+                  platforms and human resource management. The team designs
+                  posters and brochures, manages the website and provides videos
+                  for advertisement and sponsors. It is also responsible for the
+                  well-ordered and smooth functioning of the team’s day to day
+                  work and managing of all events.
                 </p>
               </div>
             </div>
@@ -170,25 +261,29 @@ export default function AboutUs() {
                     <div className="col-12 d-flex  flex-wrap">
                       <Card classname="bg-light text-dark">
                         <div className="d-flex flex-column align-items-center p-4 ">
-                          <img src={item.img} className="col-12 col-md-5 rounded-circle" alt={item.name} />
-                          <h3 className="text-center ">{item.name}</h3>
+                          <img
+                            src={item.img}
+                            className="col-12 col-md-5 rounded-circle"
+                            alt={item.name}
+                          />
+                          <p className="fs-3 text-center ">{item.name}</p>
                           <div className="col-12 d-flex justify-content-center text-secondary">
-                            <a className="text-dark" href={item.linkedin}> <GrIcons.GrLinkedin /></a>
+                            <a className="text-dark" href={item.linkedin}>
+                              {" "}
+                              <GrIcons.GrLinkedin />
+                            </a>
                           </div>
                         </div>
                       </Card>
                     </div>
                   </div>
-                )
-
+                );
               })}
             </div>
           </>
         );
       default:
         return <h1>Board</h1>;
-
-
     }
   };
   const handleClick = (e) => {
@@ -255,6 +350,16 @@ export default function AboutUs() {
           size="lg"
           color="primary"
           onClick={handleClick}
+          value="science"
+          className="mx-3"
+        >
+          Science
+        </Button>
+        <Button
+          outline
+          size="lg"
+          color="primary"
+          onClick={handleClick}
           value="management"
           className="mx-3"
         >
@@ -262,8 +367,6 @@ export default function AboutUs() {
         </Button>
       </div>
       {renderMembers(activeSub)}
-
-
     </div>
   );
 }

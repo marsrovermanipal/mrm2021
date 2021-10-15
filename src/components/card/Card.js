@@ -7,7 +7,12 @@ export default function Card({ children, classname }) {
   const [animatedProps, setanimatedProps] = useSpring(() => {
     return {
       xys: [0, 0, 1],
-      config: { mass: 10, tension: 400, friction: 40, precision: 0.00001 },
+      config: {
+        mass: 10,
+        tension: 100,
+        friction: 40,
+        precision: 0.00001,
+      },
     };
   });
   return (
@@ -24,7 +29,7 @@ export default function Card({ children, classname }) {
           clientY -
           (ref.current.offsetTop -
             (window.scrollY || window.pageYOffset || document.body.scrollTop));
-        const dampen = 50; // Lower the number the less rotation
+        const dampen = 100; // Lower the number the less rotation
         const xys = [
           -(y - ref.current.clientHeight / 2) / dampen,
           (x - ref.current.clientWidth / 2) / dampen,

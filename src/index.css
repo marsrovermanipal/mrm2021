@@ -11,7 +11,10 @@ body {
 }
 h1,
 h2,
-h3 {
+h3,
+.fs-1,
+.fs-2,
+.fs-3 {
   font-family: "Red Rose", cursive;
 }
 .btn-outline-primary {
@@ -29,23 +32,20 @@ code {
     monospace;
 }
 
-.footer{
-
+.footer {
   padding: 1rem;
-
 }
 
-
-.research{
-    padding: 1.8rem;
-  box-shadow: 0px 3px 8px 0px #000000 ;
+.research {
+  padding: 1.8rem;
+  box-shadow: 0px 3px 8px 0px #000000;
 }
-.research img{
+.research img {
   display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 .contact-us {
   margin-bottom: 01.2rem;
