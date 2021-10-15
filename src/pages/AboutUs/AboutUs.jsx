@@ -91,7 +91,7 @@ export default function AboutUs() {
           <>
             <div className="col-8 d-flex mx-auto">
               <div className="col-5.8">
-                <img className="sub-image" src="https://innovoco.com/wp-content/uploads/2019/04/Illustration_AI_Optimized-380x260.png" alt="Ai Image" />
+                <img className="sub-image" src="ecs.gif" alt="Ecs Image" />
               </div>
               <div className="col-8">
                 <h1>Electronics & Control Systems</h1>
@@ -128,7 +128,7 @@ export default function AboutUs() {
           <>
             <div className="col-8 d-flex mx-auto">
               <div className="col-5.8">
-                <img className="sub-image" src="mechanical.gif" alt="Ai Image" />
+                <img className="sub-image" src="mechanical.gif" alt="Mech Image" />
               </div>
               <div className="col-8">
                 <h3>Mechanical Design & Manufacturing</h3>
@@ -165,7 +165,7 @@ export default function AboutUs() {
           <>
             <div className="col-8 d-flex mx-auto">
               <div className="col-5.8">
-                <img className="sub-image" src="research.gif" alt="Ai Image" />
+                <img className="sub-image" src="research.gif" alt="Research Image" />
               </div>
               <div className="col-8">
                 <h3>Research</h3>
@@ -203,7 +203,7 @@ export default function AboutUs() {
           <>
             <div className="col-8 d-flex mx-auto">
               <div className="col-5.8">
-                <img className="sub-image" src="management.gif" alt="Ai Image" />
+                <img className="sub-image" src="management.gif" alt="Management Image" />
               </div>
               <div className="col-8">
                 <h1>Management & Public Relations</h1>
