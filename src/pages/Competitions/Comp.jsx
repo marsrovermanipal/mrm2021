@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { Modal, ModalHeader } from "reactstrap";
+import {
+  Modal,
+  ModalHeader,
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicatos,
+} from "reactstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Card from "../../components/card/Card";
+import ImageCarousel from "../../components/carousel/ImageCarousel";
 import data from "./urcData";
 import styles from "./Comp.module.css";
 export default function Comp() {
@@ -11,6 +19,7 @@ export default function Comp() {
   });
 
   const [modal, setModal] = useState("");
+
   const openModal = (name) => {
     setModal(name);
   };
@@ -49,7 +58,6 @@ export default function Comp() {
                   <h2 className="text-dark text-center col-12">{item.comp}</h2>
                 </ModalHeader>
                 <div className="text-dark text-center col-12">
-                  {/* <h2>{item.comp}</h2> */}
                   <img src={item.img} alt={item.comp} className="col-6 p-3" />
                   <h3>{item.roverName}</h3>
                   <p className="col-8 mx-auto fs-5">{item.info}</p>
@@ -172,6 +180,9 @@ export default function Comp() {
                         </tr>
                       </tbody>
                     </table>
+                  </div>
+                  <div className="m-5">
+                    <ImageCarousel Items={item.pics} />
                   </div>
                 </div>
               </Modal>
