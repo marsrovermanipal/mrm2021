@@ -71,7 +71,7 @@ export default function SponsorSection() {
       <div className="col-8 mx-auto d-flex justify-content-center flex-wrap">
         {data.map((d) => (
           <div
-            className="col-4 p-3"
+            className="col-12 col-md-6 col-lg-3 p-3"
             data-aos-delay="200"
             data-aos-duration="1000"
             data-aos="flip-left"

@@ -50,3 +50,10 @@ code {
 .contact-us {
   margin-bottom: 01.2rem;
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+.sr-only {
+  display: none !important;
+}
