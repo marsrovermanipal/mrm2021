@@ -3,10 +3,15 @@ import Card from "../../components/card/Card";
 import * as GrIcons from "react-icons/gr";
 import styles from "./AboutUs.module.css";
 import { Button } from "reactstrap";
-import boardData from "./boardData";
-import AiData from "./AiData";
-import ecsData from "./ecsData";
-import mgmtData from "./mgmtData";
+
+import boardData from "./boardData"
+import AiData from "./AiData"
+import ecsData from "./ecsData"
+import mgmtData from "./mgmtData"
+import sciData from "./scienceData"
+import researchData from "./researchData"
+import mechData from "./mechData"
+
 
 export default function AboutUs() {
   const [activeSub, setActiveSub] = useState("board");
@@ -54,12 +59,14 @@ export default function AboutUs() {
         return (
           <>
             <div className="col-8 d-flex mx-auto">
+
               <div className="col-4">
                 <img
                   className="sub-image"
                   src="https://innovoco.com/wp-content/uploads/2019/04/Illustration_AI_Optimized-380x260.png"
                   alt="Ai"
                 />
+
               </div>
               <div className="col-8">
                 <h3>Artificial Intelligence & Automation</h3>
@@ -108,11 +115,9 @@ export default function AboutUs() {
           <>
             <div className="col-8 d-flex mx-auto">
               <div className="col-5.8">
-                <img
-                  className="sub-image"
-                  src="https://innovoco.com/wp-content/uploads/2019/04/Illustration_AI_Optimized-380x260.png"
-                  alt="Ai "
-                />
+
+                <img className="sub-image" src="ecs.gif" alt="Ecs Image" />
+
               </div>
               <div className="col-8">
                 <h1>Electronics & Control Systems</h1>
@@ -161,82 +166,90 @@ export default function AboutUs() {
 
       case "mech":
         return (
-          <div className="col-8 d-flex mx-auto">
-            <div className="col-5.8">
-              <img
-                className="sub-image"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTKhMFM2Qmbrv1RPWbOehp9CMk5jVu0wPOO4WG4E3WlpQ7Y287iAyVhpfq8Q9IJx9Dr3E&usqp=CAU"
-                alt="Ai Image"
-              />
+
+          <>
+            <div className="col-8 d-flex mx-auto">
+              <div className="col-5.8">
+                <img className="sub-image" src="mechanical.gif" alt="Mech Image" />
+              </div>
+              <div className="col-8">
+                <h3>Mechanical Design & Manufacturing</h3>
+                <p>The Mechanical Design & Manufacturing subsystem provides the basic skeleton of the rover which includes the wheels, suspension, chassis, robotic manipulator and the soil collection mechanism. The guidelines provided by URC form the basis over which each of our component is designed. Every part that is put on the rover undergoes an extensive development cycle to ensure its reliability. The development cycle includes a thorough study of the problem statement and design and analysis of each component on various CAE softwares.
+                </p>
+              </div>
             </div>
-            <div className="col-8">
-              <h1>Mechanical Design & Manufacturing</h1>
-              <p>
-                The Mechanical Design & Manufacturing subsystem provides the
-                basic skeleton of the rover which includes the wheels,
-                suspension, chassis, robotic manipulator and the soil collection
-                mechanism. The guidelines provided by URC form the basis over
-                which each of our component is designed. Every part that is put
-                on the rover undergoes an extensive development cycle to ensure
-                its reliability. The development cycle includes a thorough study
-                of the problem statement and design and analysis of each
-                component on various CAE softwares.
-              </p>
+            <div className="row justify-content-center ">
+              <h3 className="text-center text-uppercase">Team Members </h3>
+              {mechData.map((item) => {
+                return (
+                  <div className="col-lg-4 col-md-4 col-sm-6 ">
+                    <div className="col-12 d-flex  flex-wrap bg-light text-dark">
+                      <Card classname={`${styles.card}`}>
+                        <div className="d-flex flex-column align-items-center p-4 ">
+                          <img src={item.img} className="col-12 col-md-5 rounded-circle" alt={item.name} />
+                          <h3 className="text-center ">{item.name}</h3>
+                          <div className="col-12 d-flex justify-content-center text-secondary">
+                            <a className="text-dark" href={item.linkedin}> <GrIcons.GrLinkedin /></a>
+                          </div>
+                        </div>
+                      </Card>
+                    </div>
+                  </div>
+                )
+
+              })}
+
             </div>
-          </div>
+          </>
         );
+
+
       case "research":
         return (
-          <div className="col-8 d-flex mx-auto justify-content-between">
-            <div className="col-4">
-              <img
-                className="sub-image"
-                src="https://innovoco.com/wp-content/uploads/2019/04/Illustration_AI_Optimized-380x260.png"
-                alt="Ai"
-              />
+          <>
+            <div className="col-8 d-flex mx-auto">
+              <div className="col-5.8">
+                <img className="sub-image" src="research.gif" alt="Research Image" />
+              </div>
+              <div className="col-8">
+                <h3>Research</h3>
+                <p>The Research subsystem of Mars Rover Manipal is responsible for publishing research papers in indexed journals and presenting them in national and international conferences. The research team works on problems which are beyond the scope of University Rover Challenge (URC). They also work on development of proprietary technology and long term projects whose solutions will be used in future rovers.
+                </p>
+              </div>
             </div>
-            <div className="col-6">
-              <p className="fs-1">Research</p>
-              <p>
-                The Research subsystem of Mars Rover Manipal is responsible for
-                publishing research papers in indexed journals and presenting
-                them in national and international conferences. The research
-                team works on problems which are beyond the scope of University
-                Rover Challenge (URC). They also work on development of
-                proprietary technology and long term projects whose solutions
-                will be used in future rovers.
-              </p>
+            <div className="row justify-content-center ">
+              <h3 className="text-center text-uppercase">Team Members </h3>
+              {researchData.map((item) => {
+                return (
+                  <div className="col-lg-4 col-md-4 col-sm-6 ">
+                    <div className="col-12 d-flex  flex-wrap bg-light text-dark">
+                      <Card classname={`${styles.card}`}>
+                        <div className="d-flex flex-column align-items-center p-4 ">
+                          <img src={item.img} className="col-12 col-md-5 rounded-circle" alt={item.name} />
+                          <h3 className="text-center ">{item.name}</h3>
+                          <div className="col-12 d-flex justify-content-center text-secondary">
+                            <a className="text-dark" href={item.linkedin}> <GrIcons.GrLinkedin /></a>
+                          </div>
+                        </div>
+                      </Card>
+                    </div>
+                  </div>
+                )
+
+              })}
+
             </div>
-          </div>
+          </>
         );
-      case "science":
-        return (
-          <div className="col-8 d-flex mx-auto justify-content-between">
-            <div className="col-4">
-              <img
-                src="https://innovoco.com/wp-content/uploads/2019/04/Illustration_AI_Optimized-380x260.png"
-                alt=""
-              />
-            </div>
-            <div className="col-6">
-              <p className="fs-1">Science</p>
-              <p className="fs-6">
-                The Science subsystem is responsible for comprehensive analysis
-                of the biological, geological and chemical aspects of a given
-                area, based on which inferences on the presence of life ,extinct
-                or extant, are drawn. The required observations are formed by
-                techniques including but not limited to - in situ soil analysis,
-                sensor technology and observable geology.
-              </p>
-            </div>
-          </div>
-        );
+
       case "management":
         return (
           <>
             <div className="col-8 d-flex mx-auto">
               <div className="col-5.8">
-                <img className="sub-image" src="management.gif" alt="Ai" />
+
+                <img className="sub-image" src="management.gif" alt="Management Image" />
+
               </div>
               <div className="col-8">
                 <h1>Management & Public Relations</h1>
