@@ -181,9 +181,9 @@ export default function Comp() {
                       </tbody>
                     </table>
                   </div>
-                  <div className="m-5">
-                    <ImageCarousel Items={item.pics} />
-                  </div>
+                </div>
+                <div className="col-12 p-5">
+                  <ImageCarousel Items={item.pics} />
                 </div>
               </Modal>
             </>
