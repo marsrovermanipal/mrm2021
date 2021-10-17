@@ -202,8 +202,10 @@ export default function Comp() {
                   </div>
 
 
+
                 </div>
                 <div className="col-12 p-1 p-md-5">
+
                   <ImageCarousel Items={item.pics} />
                 </div>
               </Modal>
