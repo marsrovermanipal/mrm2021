@@ -7,7 +7,7 @@ import Research from "./pages/Research/Research";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Footer from "./components/footer/Footer";
 import Comp from "./pages/Competitions/Comp";
-import Alumni from "./pages/Alumni";
+
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
             <Landing />
           </Route>
           <Route exact path="/alumni">
-            <Alumni />
+            {/* <Alumni /> */}
           </Route>
         </Switch>
         <Footer />

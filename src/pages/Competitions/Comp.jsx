@@ -61,8 +61,8 @@ export default function Comp() {
                   <img src={item.img} alt={item.comp} className="col-6 p-3" />
                   <h3>{item.roverName}</h3>
                   <p className="col-8 mx-auto fs-5">{item.info}</p>
-                  <div className="col-8 mx-auto">
-                    <table className="table table-dark table-striped">
+                  <div className="col-12 col-sm-8 mx-auto">
+                    <table className="table table-dark table-striped ">
                       <tbody>
                         <tr>
                           <td>
@@ -82,6 +82,12 @@ export default function Comp() {
                           </td>
                           <td>{item.TractiveEffort}</td>
                         </tr>
+                        {item.DriveSystemPower && <tr>
+                          <td>
+                            <strong>Drive System Power</strong>
+                          </td>
+                          <td>{item.DriveSystemPower}</td>
+                        </tr>}
                         <tr>
                           <td>
                             <strong>Wheels</strong>
@@ -94,12 +100,24 @@ export default function Comp() {
                           </td>
                           <td>{item.Suspension}</td>
                         </tr>
+                        {item.MaxTraversableHeight && <tr>
+                          <td>
+                            <strong>Max Traversable Height</strong>
+                          </td>
+                          <td>{item.MaxTraversableHeight}</td>
+                        </tr>}
                         <tr>
                           <td>
                             <strong>Chassis</strong>
                           </td>
                           <td>{item.Chassis}</td>
                         </tr>
+                        {item.ChassisWeight && <tr>
+                          <td>
+                            <strong>ChassisWeight</strong>
+                          </td>
+                          <td>{item.ChassisWeight}</td>
+                        </tr>}
                         <tr>
                           <td>
                             <strong>Robotic arm</strong>
@@ -154,24 +172,25 @@ export default function Comp() {
                           </td>
                           <td>{item.WheelMotors}</td>
                         </tr>
-                        <tr>
+                        {item.AutonomousSystem && <tr>
                           <td>
-                            <strong>Batteries</strong>
+                            <strong>Autonomous System</strong>
                           </td>
-                          <td>{item.Batteries}</td>
-                        </tr>
+                          <td>{item.AutonomousSystem}</td>
+                        </tr>}
+
                         <tr>
                           <td>
                             <strong>Communication frequencies</strong>
                           </td>
                           <td>{item.CommunicationFrequencies}</td>
                         </tr>
-                        <tr>
+                        {item.Feedback && <tr>
                           <td>
                             <strong>Feedback</strong>
                           </td>
                           <td>{item.Feedback}</td>
-                        </tr>
+                        </tr>}
                         <tr>
                           <td>
                             <strong>Sensors</strong>
@@ -181,8 +200,10 @@ export default function Comp() {
                       </tbody>
                     </table>
                   </div>
+
+
                 </div>
-                <div className="col-12 p-5">
+                <div className="col-12 p-1 p-md-5">
                   <ImageCarousel Items={item.pics} />
                 </div>
               </Modal>

@@ -15,23 +15,19 @@ export default function SponsorSection() {
     },
     {
       name: "Sick",
-      bgpath: "sponsors/sick.png",
+      bgpath: "sponsors/sick.jpg",
     },
     {
       name: "KelpeTech",
-      bgpath: "sponsors/kelpeTech.png",
+      bgpath: "sponsors/kelpeTech.jpg",
     },
     {
       name: "Aristo",
-      bgpath: "sponsors/aristo.png",
-    },
-    {
-      name: "Decopad Interiors",
-      bgpath: "sponsors/decopad-logo.jpg",
+      bgpath: "sponsors/aristo.jpg",
     },
     {
       name: "Aeroquol",
-      bgpath: "sponsors/aeroqual.png",
+      bgpath: "sponsors/aeroqual.jpg",
     },
     {
       name: "LPS Bossard",
@@ -39,19 +35,23 @@ export default function SponsorSection() {
     },
     {
       name: "Wheeleez",
-      bgpath: "sponsors/wheeleez.png",
+      bgpath: "sponsors/wheeleez.jpg",
     },
     {
       name: "Nvidia",
-      bgpath: "sponsors/nvidia.png",
+      bgpath: "sponsors/nvidia.jpg",
     },
     {
       name: "SolidWorks",
-      bgpath: "sponsors/solidworks.png",
+      bgpath: "sponsors/solidworks.jpg",
+    },
+    {
+      name: "Decopad Interiors",
+      bgpath: "sponsors/decopad-logo.jpeg",
     },
     {
       name: "Stevens",
-      bgpath: "sponsors/stevens.png",
+      bgpath: "sponsors/stevens.jpg",
     },
   ];
   return (
@@ -77,7 +77,7 @@ export default function SponsorSection() {
             data-aos="flip-left"
           >
             <Card>
-              <div className="p-5">
+              <div className="p-2">
                 <img src={d.bgpath} alt={d.name} className="col-12 p-1" />
                 {/* <h3 className="text-center text-dark">{d.name}</h3> */}
               </div>

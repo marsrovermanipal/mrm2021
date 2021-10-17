@@ -34,11 +34,11 @@ const data = [
       "MRS1000 SICK Lidar, Garmin(18x USB GPS navigator), Magnetometer(BNO080), VOC, Ozone, Hydraprobe(Temp, moisture, salinity, EC),Intel Realsense Depth Camera",
 
     pics: [
-      { src: "photos-urc2021/board.jpg" },
-      { src: "photos-urc2021/grp.JPG" },
-      { src: "photos-urc2021/mem.jpg" },
-      { src: "photos-urc2021/rover.jpg" },
-      { src: "photos-urc2021/rover1.jpg" },
+      { src: "photos20/PCB Power.jpg" },
+      { src: "photos20/robo.png" },
+      { src: "photos20/Rover 2020.jpg" },
+      { src: "photos20/Rover autonomous.jpeg" },
+      { src: "photos20/team.jpg" },
     ],
   },
   {
@@ -75,11 +75,15 @@ const data = [
       "Garmin(18x USB GPS navigator), Magnetometer(LSM9DS1), VOC, Ozone, Hydraprobe(Temp, moisture, salinity, EC),Intel Realsense Depth Camera",
 
     pics: [
-      { src: "photos20/PCB Power.jpg" },
-      { src: "photos20/robo.png" },
-      { src: "photos20/Rover 2020.jpg" },
-      { src: "photos20/Rover autonomous.jpeg" },
-      { src: "photos20/team.jpg" },
+      { src: "Photos19/1.jpg" },
+      { src: "Photos19/2.jpg" },
+      { src: "Photos19/3.jpg" },
+      { src: "Photos19/4.jpg" },
+      { src: "Photos19/5.jpg" },
+      { src: "Photos19/6.jpg" },
+      { src: "Photos19/7.jpg" },
+      { src: "Photos19/8.jpg" },
+      { src: "Photos19/9.jpg" },
     ],
   },
   {
@@ -118,15 +122,11 @@ const data = [
       "Lidar, Magnetometer, Garmin(18x USB Gps navigator), Ultrasonic, moisture <br>Methane sensor, Hydrogen sulfide sensor",
 
     pics: [
-      { src: "Photos19/1.jpg" },
-      { src: "Photos19/2.jpg" },
-      { src: "Photos19/3.jpg" },
-      { src: "Photos19/4.jpg" },
-      { src: "Photos19/5.jpg" },
-      { src: "Photos19/6.jpg" },
-      { src: "Photos19/7.jpg" },
-      { src: "Photos19/8.jpg" },
-      { src: "Photos19/9.jpg" },
+      { src: "urc2017/rover18a.jpg" },
+      { src: "urc2017/rover18b.jpg" },
+      { src: "urc2017/rover18c.jpg" },
+      { src: "urc2017/rover18d.jpg" },
+      { src: "urc2017/rover18e.jpg" },
     ],
   },
   {
@@ -170,11 +170,7 @@ const data = [
       { src: "urc2017/image3.jpg" },
       { src: "urc2017/image4.jpg" },
       { src: "urc2017/image5.jpg" },
-      { src: "urc2017/rover18a.jpg" },
-      { src: "urc2017/rover18b.jpg" },
-      { src: "urc2017/rover18c.jpg" },
-      { src: "urc2017/rover18d.jpg" },
-      { src: "urc2017/rover18e.jpg" },
+
     ],
   },
   {
@@ -209,7 +205,7 @@ const data = [
       { src: "urc2016/image2.jpg" },
       { src: "urc2016/image3.jpg" },
       { src: "urc2016/image4.jpg" },
-      { src: "urc2016/image5.jpg" },
+      { src: "urc2016/image5.jpeg" },
     ],
   },
 ];

@@ -32,28 +32,16 @@ code {
     monospace;
 }
 
-.footer {
-  padding: 1rem;
-}
-
-.research {
-  padding: 1.8rem;
-  box-shadow: 0px 3px 8px 0px #000000;
-}
-.research img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-.contact-us {
-  margin-bottom: 01.2rem;
-}
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: invert(1);
 }
 .sr-only {
   display: none !important;
+}
+@media screen and (max-width:480px) {
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(0);
+}
 }
