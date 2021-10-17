@@ -1,5 +1,4 @@
 import React from "react";
-import { DiGithubBadge } from "react-icons/di";
 import { TiSocialFacebook } from "react-icons/ti";
 import { TiSocialInstagram } from "react-icons/ti";
 import { TiSocialYoutube } from "react-icons/ti";
@@ -8,14 +7,15 @@ import { HiMail } from "react-icons/hi";
 import { HiPhone } from "react-icons/hi";
 import { SiGooglemaps } from "react-icons/si";
 
-
 export default function Footer() {
   return (
     <div className="footer text-light text-center text-lg-start ">
       {/* <div className="container  p-1"> */}
       <div className="row">
         <div className="footer-1 col-lg-4 col-md-6 mb-4 mb-md-0  ">
-          <h5 className="text-uppercase text-light text-center contact-us">CONTACT US</h5>
+          <h5 className="text-uppercase text-light text-center contact-us">
+            CONTACT US
+          </h5>
 
           <div className="">
             <div className="footer-contact text-center ">
@@ -29,14 +29,12 @@ export default function Footer() {
                 {" "}
                 <HiPhone /> Jyotishka Duttagupta : +91 99302 25063
               </p>
-
             </div>
             <div className="footer-contact text-center p-2">
               <p>
                 {" "}
                 <HiPhone /> Piyush Raj : +91 93072 88911
               </p>
-
             </div>
           </div>
         </div>
@@ -49,12 +47,16 @@ export default function Footer() {
               <SiGooglemaps /> Mars Rover Manipal, MAHE Automobile Workshop,
               MIT, Manipal, India - 576104
             </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.0440507888843!2d74.78978331482607!3d13.34753599060999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbca4af633139eb%3A0x456976d3d4c75562!2sMars%20Rover%20Manipal!5e0!3m2!1sen!2sin!4v1633473539913!5m2!1sen!2sin" width="280vw" height="100vh" allowFullScreen="" loading="lazy"></iframe>
-
+            <iframe
+              title="address"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.0440507888843!2d74.78978331482607!3d13.34753599060999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbca4af633139eb%3A0x456976d3d4c75562!2sMars%20Rover%20Manipal!5e0!3m2!1sen!2sin!4v1633473539913!5m2!1sen!2sin"
+              width="280vw"
+              height="100vh"
+              allowFullScreen=""
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
-
-
 
         <div className="col-lg-4 col-md-12 mb-4 mb-md-0 text-center">
           <h5 className="text-uppercase text-light text-center">Follow us</h5>

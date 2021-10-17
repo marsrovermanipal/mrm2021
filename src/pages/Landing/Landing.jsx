@@ -1,11 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Suspense } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { OrbitControls, useGLTF } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 import ParticleImage, { ParticleOptions } from "react-particle-image";
 import Particles from "react-particles-js";
 import TypeWriterEffect from "react-typewriter-effect";
 import SponsorSection from "../../components/sponsorSection/SponsorSection";
 import styles from "./Landing.module.css";
+function Model() {
+  const { scene } = useGLTF("/ROVER_20.glb");
+  return <primitive object={scene} />;
+}
 
 export default function Landing() {
   // const {innerWidth,innerHeight } = useWindowSize();
@@ -79,6 +85,19 @@ export default function Landing() {
             },
           }}
         />
+      </div>
+      <div className="col-12" style={{ height: "100vh" }}>
+        <Canvas camera={{ position: [10, 18, 23], fov: 0.5 }}>
+          <OrbitControls
+            enableZoom={false}
+            minPolarAngle={Math.PI / 3}
+            maxPolarAngle={Math.PI / 2}
+          />
+          <pointLight position={[10, 10, 10]} intensity={1.3} />
+          <Suspense fallback={null}>
+            <Model />
+          </Suspense>
+        </Canvas>
       </div>
       <div
         className="col-12 p-5 d-block d-lg-flex align-items-center justify-content-between"
