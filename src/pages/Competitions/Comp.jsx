@@ -1,12 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  Modal,
-  ModalHeader,
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicatos,
-} from "reactstrap";
+import { Modal, ModalHeader } from "reactstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Card from "../../components/card/Card";
