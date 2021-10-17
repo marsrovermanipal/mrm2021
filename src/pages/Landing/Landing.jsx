@@ -9,7 +9,7 @@ import TypeWriterEffect from "react-typewriter-effect";
 import SponsorSection from "../../components/sponsorSection/SponsorSection";
 import styles from "./Landing.module.css";
 function Model() {
-  const { scene } = useGLTF("/ROVER_20.glb");
+  const { scene } = useGLTF("/donut48.glb");
   return <primitive object={scene} />;
 }
 
@@ -31,7 +31,7 @@ export default function Landing() {
   return (
     <>
       <div className={`col-12 ${styles.landing_anim}`}>
-        <Particles
+        {/* <Particles
           height="800px"
           params={{
             particles: {
@@ -84,45 +84,84 @@ export default function Landing() {
               },
             },
           }}
-        />
-      </div>
-      <div className="col-12" style={{ height: "100vh" }}>
-        <Canvas camera={{ position: [10, 18, 23], fov: 0.5 }}>
-          <OrbitControls
-            enableZoom={false}
-            minPolarAngle={Math.PI / 3}
-            maxPolarAngle={Math.PI / 2}
-          />
-          <pointLight position={[10, 10, 10]} intensity={1.3} />
-          <Suspense fallback={null}>
-            <Model />
-          </Suspense>
-        </Canvas>
-      </div>
-      <div
-        className="col-12 p-5 d-block d-lg-flex align-items-center justify-content-between"
-        style={{ height: "800px" }}
-      >
-        <TypeWriterEffect
-          textStyle={{
-            fontFamily: "",
-            color: "#f7f4f2",
-            fontWeight: 500,
-            fontSize: "4.5em",
+        /> */}
+        <Particles
+          params={{
+            particles: {
+              number: {
+                value: 600,
+                density: {
+                  enable: true,
+                  value_area: 1500,
+                },
+              },
+              line_linked: {
+                enable: true,
+                opacity: 0.02,
+              },
+              move: {
+                direction: "right",
+                speed: 0.05,
+              },
+              size: {
+                value: 1,
+              },
+              opacity: {
+                anim: {
+                  enable: true,
+                  speed: 1,
+                  opacity_min: 0.05,
+                },
+              },
+            },
+            interactivity: {
+              events: {
+                onclick: {
+                  enable: true,
+                  mode: "push",
+                },
+              },
+              modes: {
+                push: {
+                  particles_nb: 1,
+                },
+              },
+            },
+            retina_detect: true,
           }}
-          startDelay={1000}
-          cursorColor="#f7f4f2"
-          text="Design to Discover."
-          typeSpeed={150}
         />
-        <ParticleImage
-          src={"/temp2.png"}
-          scale={2}
-          entropy={20}
-          maxParticles={4200}
-          backgroundColor={"#34393f"}
-          particleOptions={particleOptions}
-        />
+      </div>
+      <div className="d-flex">
+        <div
+          className="col-6 p-5 d-block d-lg-flex align-items-center justify-content-between"
+          style={{ height: "800px" }}
+        >
+          <TypeWriterEffect
+            textStyle={{
+              fontFamily: "",
+              color: "#f7f4f2",
+              fontWeight: 500,
+              fontSize: "4.5em",
+            }}
+            startDelay={1000}
+            cursorColor="#f7f4f2"
+            text="Design to Discover."
+            typeSpeed={150}
+          />
+        </div>
+        <div className="col-6 text-end" style={{ height: "100vh" }}>
+          <Canvas camera={{ position: [10, 18, 23], fov: 0.5 }}>
+            <OrbitControls
+              enableZoom={false}
+              minPolarAngle={Math.PI / 3}
+              maxPolarAngle={Math.PI / 2}
+            />
+            <pointLight position={[10, 10, 10]} intensity={1.3} />
+            <Suspense fallback={null}>
+              <Model />
+            </Suspense>
+          </Canvas>
+        </div>
       </div>
       <div
         className="col-12"
