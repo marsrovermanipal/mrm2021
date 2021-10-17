@@ -9,7 +9,7 @@ import { SiGooglemaps } from "react-icons/si";
 
 export default function Footer() {
   return (
-    <div className="footer text-light text-center text-lg-start ">
+    <div className="p-4 text-dark bg-light text-center text-lg-start mt-4 ">
       {/* <div className="container  p-1"> */}
       <div className="row">
         <div className="footer-1 col-lg-4 col-md-6 mb-4 mb-md-0  ">
@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
 
         <div className="col-lg-4 col-md-6 mb-4 mb-md-0 text-center">
-          <h5 className="text-uppercase text-light contact-us">Address</h5>
+          <h5 className="text-uppercase text-dark mb-4">Address</h5>
           <div>
             <p>
               {" "}
@@ -61,7 +61,7 @@ export default function Footer() {
         <div className="col-lg-4 col-md-12 mb-4 mb-md-0 text-center">
           <h5 className="text-uppercase text-light text-center">Follow us</h5>
           <a
-            className="btn btn-link btn-floating btn-md text-light m-1"
+            className="btn btn-link btn-floating btn-md text-dark m-1"
             href="https://www.facebook.com/MarsRoverManipal/"
             role="button"
             data-mdb-ripple-color="light"
@@ -71,7 +71,7 @@ export default function Footer() {
 
           {/* <!-- Instagram --> */}
           <a
-            className="btn btn-link btn-floating btn-lg text-light m-1"
+            className="btn btn-link btn-floating btn-lg text-dark m-1"
             href="https://www.instagram.com/marsrovermanipal/?hl=en"
             role="button"
             data-mdb-ripple-color="dark"
@@ -81,7 +81,7 @@ export default function Footer() {
 
           {/* <!-- Linkedin --> */}
           <a
-            className="btn btn-link btn-floating btn-lg text-light m-1"
+            className="btn btn-link btn-floating btn-lg text-dark m-1"
             href="https://in.linkedin.com/company/marsrovermanipal"
             role="button"
             data-mdb-ripple-color="light"
@@ -90,7 +90,7 @@ export default function Footer() {
           </a>
 
           <a
-            className="btn btn-link btn-floating btn-lg text-light m-1"
+            className="btn btn-link btn-floating btn-lg text-dark m-1"
             href="https://www.youtube.com/results?search_query=mars+rover+manipal"
             role="button"
             data-mdb-ripple-color="dark"
@@ -104,7 +104,7 @@ export default function Footer() {
       <div className="text-center p-3">
         {/* style="background-color: rgba(0, 0, 0, 0.2);" */}© 2021 Copyright:
         <a
-          className="text-light"
+          className="text-dark"
           href="http://www.marsrovermanipal.com/index.html"
         >
           MRM

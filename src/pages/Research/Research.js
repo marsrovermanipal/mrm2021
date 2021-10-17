@@ -25,26 +25,18 @@ export default function Research() {
         boundaries every day. At the same time, we publish papers and present
         them at some of the world's top conferences and research journals.
       </p>
-      <h5>PUBLICATIONS</h5>
-      <div className="row justify-content-center">
+      <p className="fs-2">PUBLICATIONS</p>
+      <div className="row justify-content-center ">
         {data.map((item) => {
-          const { title, author, img, event, id } = item;
-
           return (
-            <div
-              className="research-card m-3 col-lg-3 col-md-6 col-sm-8 text-center text-dark"
-              key={id}
-            >
-              <Card>
-                <div className="research">
-                  <h5 className="">{title}</h5>
-                  {img && <img className="" src={img} alt={title} />}
-
-                  <p className="">{event}</p>
-                  <p className="">{author}</p>
-                </div>
-              </Card>
-            </div>
+            <Card classname="bg-light text-dark col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-4">
+              <div >
+                <h5 className="">{item.title}</h5>
+                {item.img && <img className="col-12" src={item.img} alt={item.title} />}
+                <p className="">{item.event}</p>
+                <p className="">{item.author}</p>
+              </div>
+            </Card>
           );
         })}
       </div>

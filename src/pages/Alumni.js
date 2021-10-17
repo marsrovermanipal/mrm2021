@@ -17,24 +17,6 @@ function Model() {
   return <primitive object={scene} />;
 }
 export default function App() {
-  // return (
-  //     <ParticleImage
-  //         src={"Rover.png"}
-  //         scale={0.3}
-  //         entropy={10}
-  //         maxParticles={4200}
-  //         particleOptions={particleOptions}
-  //     />
-  // );
-  // return (
-  //     <ParticleImage
-  //         src={"Rover101.png"}
-  //         scale={0.52}
-  //         entropy={15}
-  //         maxParticles={4200}
-  //         particleOptions={particleOptions}
-  //     />
-  // );
   return (
     <div className="col-12" style={{ height: "100vh" }}>
       <Canvas camera={{ position: [10, 18, 23], fov: 0.5 }}>
@@ -47,3 +29,22 @@ export default function App() {
     </div>
   );
 }
+
+// return (
+//     <ParticleImage
+//         src={"Rover.png"}
+//         scale={0.3}
+//         entropy={10}
+//         maxParticles={4200}
+//         particleOptions={particleOptions}
+//     />
+// );
+// return (
+//     <ParticleImage
+//         src={"Rover101.png"}
+//         scale={0.52}
+//         entropy={15}
+//         maxParticles={4200}
+//         particleOptions={particleOptions}
+//     />
+// );

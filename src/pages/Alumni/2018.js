@@ -1,0 +1,160 @@
+const data = [
+    {
+        name: 'SHANTAM SHOREWALA',
+        img: 'team-18/shantam.jpg',
+        pos: "Team Leader",
+        linkedin: "https://www.linkedin.com/in/shantam-shorewala-2a902611b",
+    },
+    {
+
+        name: 'KULPREET SINGH DHANKAR',
+        img: 'team-18/kulpreet.jpg',
+        pos: "Technical and Research Head",
+        linkedin: "https://www.linkedin.com/in/kulpreet-singh-dhankhar/",
+    },
+    {
+
+        name: 'DIXIT OJHA',
+        img: 'team-18/dixit.jpeg',
+        pos: "Mechanical Head",
+        linkedin: "https://www.linkedin.com/in/dixit-ojha-34193713a/",
+    },
+    {
+
+        name: 'SURIYA ELANGO',
+        img: 'team-18/suriya.jpg',
+        pos: "Electronics Head",
+        linkedin: "https://www.linkedin.com/in/e-suriya-viswanath-20ab95147",
+    },
+    {
+
+        name: 'JOEL JOHN',
+        img: 'team-18/joel.jpg',
+        pos: "Science Cache Head",
+        linkedin: "https://www.linkedin.com/in/joel-john-a05451112",
+    },
+    {
+
+        name: 'ABHINAV GOYAL',
+        img: 'team-18/abhinav.jpg',
+        pos: "Mechanical",
+        linkedin: "https://www.linkedin.com/in/abhinav-goyal-38b6b390/",
+    },
+    {
+
+        name: 'ANUSH KUMAR',
+        img: 'team-18/anush.jpeg',
+        pos: "Electronics and AI",
+        linkedin: "https://www.linkedin.com/in/anush-kumar-52321a145",
+    },
+    {
+
+        name: 'ATHARV MUDUR',
+        img: 'team-19/atharv.jpg',
+        pos: "Science",
+        linkedin: "https://www.linkedin.com/in/atharv-mudur-437692167/",
+    },
+    {
+
+        name: 'AYUSH GARG',
+        img: 'team-18/ayush.jpg',
+        pos: "Electronics and AI",
+        linkedin: "https://www.linkedin.com/in/ayush-garg-a6a151129",
+    },
+    {
+
+        name: 'HARDIK KOTHARI',
+        img: 'team-18/hardik.jpg',
+        pos: "Electronics and AI",
+        linkedin: "https://www.linkedin.com/in/hardik-kothari-43b957121",
+    },
+    {
+
+        name: 'I. SRIHARSHA REDDY',
+        img: 'team-18/sriharsha.jpg',
+        pos: "Mechanical",
+        linkedin: "https://www.linkedin.com/in/indupru-sriharshareddy-70335a125/",
+    },
+    {
+
+        name: 'KAVYA BANARJEE',
+        img: 'team-18/nopic.png',
+        pos: "Science",
+        linkedin: "",
+    },
+    {
+
+        name: 'PAVITRA C NAIR',
+        img: 'team-18/pavitra.jpeg',
+        pos: "Science Cache",
+        linkedin: "",
+    },
+    {
+
+        name: 'PRAKHAR KUMAR DEBATA',
+        img: 'team-18/prakhar.jpg',
+        pos: "Science Cache",
+        linkedin: "",
+    },
+    {
+
+        name: 'PRATISHTA GUPTA',
+        img: 'team-18/prathishta.jpeg',
+        pos: "Mechanical",
+        linkedin: "https://www.linkedin.com/in/pratishtha-gupta-738286149/",
+    },
+    {
+
+        name: 'MOHAMMAD ABDUL SALMAN',
+        img: 'team-18/salman.jpg',
+        pos: "Mechanical",
+        linkedin: "",
+    },
+    {
+
+        name: 'SAFAL AJMERA',
+        img: 'team-18/safal.jpeg',
+        pos: "Mechanical",
+        linkedin: "",
+    },
+    {
+
+        name: 'SAGAR DHAKA',
+        img: 'team-18/sagar.jpeg',
+        pos: "Management",
+        linkedin: "",
+    },
+    {
+
+        name: 'SAI SHYAM',
+        img: 'team-18/saishyam.jpg',
+        pos: "Management",
+        linkedin: "",
+    },
+    {
+
+        name: 'SIRIL TEJA D',
+        img: 'team-18/siril.jpg',
+        pos: "Mechanical",
+        linkedin: "",
+    },
+    {
+
+        name: 'TANISHQ SINGLA',
+        img: 'team-18/tanishq.jpg',
+        pos: "Electronics and AI",
+        linkedin: "",
+    },
+    {
+
+        name: 'TUSHAR SHAHI',
+        img: 'team-18/tushar.jpg',
+        pos: "Management",
+        linkedin: "https://www.linkedin.com/in/tushar-shahi-82217025/",
+    },
+]
+
+export default data
+
+
+

@@ -19,7 +19,7 @@ const data = [
         id: 3,
         comp: "IRDC 2020",
         info: "Mars Rover Manipal bagged the 1st position in IRDC 2020. 28 teams from 7 countries had taken part in IRDC 2020. The result was announced on 15th August 2020 by Dr Robert Zubrin, the Founder and President of The Mars Society, USA. MRM scored 816.5 points for the submission, securing the first position by a margin of 15 points.",
-        img: 'comp/2020Rover.JPG',
+        img: 'IRDCrover.jpg',
         pos: "1st position",
         website: "https://southasia.marssociety.org/irdc/",
     },
@@ -30,6 +30,12 @@ const data = [
         img: 'comp/2020Rover.JPG',
         pos: "1st position",
         website: "https://southasia.marssociety.org/indianroverchallenge/irc-2019/",
+        pics: [
+            { src: "irc/image1.jpg" },
+            { src: "irc/image3.jpg" },
+            { src: "irc/image4.jpg" },
+            { src: "irc/image5.jpg" },
+        ],
     },
     {
         id: 5,

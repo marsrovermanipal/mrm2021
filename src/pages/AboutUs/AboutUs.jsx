@@ -4,18 +4,21 @@ import * as GrIcons from "react-icons/gr";
 import styles from "./AboutUs.module.css";
 import { Button } from "reactstrap";
 
-import boardData from "./boardData";
-import AiData from "./AiData";
-import ecsData from "./ecsData";
-import mgmtData from "./mgmtData";
-import sciData from "./scienceData";
-import researchData from "./researchData";
-import mechData from "./mechData";
+import boardData from "./boardData"
+import AiData from "./AiData"
+import ecsData from "./ecsData"
+import mgmtData from "./mgmtData"
+import sciData from "./scienceData"
+import researchData from "./researchData"
+import mechData from "./mechData"
+
 
 export default function AboutUs() {
   const [activeSub, setActiveSub] = useState("board");
   const renderMembers = (sub) => {
     switch (sub) {
+
+
       case "board":
         // board members data
         return (
@@ -24,31 +27,29 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase ">Board</h3>
               {boardData.map((item) => {
                 return (
-                  <div className="col-lg-3 col-md-4 col-sm-6 ">
-                    <div className="col-12 d-flex  flex-wrap">
-                      <Card classname="bg-dark text-light">
-                        <div className="d-flex flex-column align-items-center p-4 ">
-                          <img
-                            src={item.img}
-                            className="col-12 col-md-5 rounded-circle"
-                            alt={item.name}
-                          />
-                          <p className="fs-3 text-center text-light">
-                            {item.name}
-                          </p>
-                          <p className="fs-5 text-center text-secondary">
-                            {item.pos}
-                          </p>
-                          <div className="col-12 d-flex justify-content-center text-secondary">
-                            <a href={item.linkedin}>
-                              {" "}
-                              <GrIcons.GrLinkedin />
-                            </a>
-                          </div>
-                        </div>
-                      </Card>
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                    <div className="d-flex flex-column align-items-center p-4 ">
+                      <img
+                        src={item.img}
+                        className="col-12 col-md-5 rounded-circle"
+                        alt={item.name}
+                      />
+                      <p className="fs-3 text-center text-light">
+                        {item.name}
+                      </p>
+                      <p className="fs-5 text-center text-secondary">
+                        {item.pos}
+                      </p>
+                      <div className="col-12 d-flex justify-content-center text-secondary">
+                        <a href={item.linkedin}>
+                          {" "}
+                          <GrIcons.GrLinkedin />
+                        </a>
+                      </div>
+
                     </div>
-                  </div>
+                  </Card>
+
                 );
               })}
             </div>
@@ -57,6 +58,7 @@ export default function AboutUs() {
       case "ai":
         return (
           <>
+
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
                 className="col-6 col-lg-4 img-fluid"
@@ -74,6 +76,7 @@ export default function AboutUs() {
                   deep learning architectures to solve various state of the art
                   problems encountered while the development of rover.
                 </p>
+
               </div>
             </div>
             <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
@@ -99,26 +102,23 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase">Team Members </h3>
               {AiData.map((item) => {
                 return (
-                  <div className="col-lg-4 col-md-4 col-sm-6 ">
-                    <div className="col-12 d-flex  flex-wrap bg-light text-dark">
-                      <Card classname={`${styles.card}`}>
-                        <div className="d-flex flex-column align-items-center p-4 ">
-                          <img
-                            src={item.img}
-                            className="col-12 col-md-5 rounded-circle"
-                            alt={item.name}
-                          />
-                          <h3 className="text-center ">{item.name}</h3>
-                          <div className="col-12 d-flex justify-content-center text-secondary">
-                            <a className="text-dark" href={item.linkedin}>
-                              {" "}
-                              <GrIcons.GrLinkedin />
-                            </a>
-                          </div>
-                        </div>
-                      </Card>
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                    <div className="d-flex flex-column align-items-center p-4 ">
+                      <img
+                        src={item.img}
+                        className="col-12 col-md-5 rounded-circle"
+                        alt={item.name}
+                      />
+                      <h3 className="text-center ">{item.name}</h3>
+                      <div className="col-12 d-flex justify-content-center text-secondary">
+                        <a className="text-light" href={item.linkedin}>
+                          {" "}
+                          <GrIcons.GrLinkedin />
+                        </a>
+                      </div>
                     </div>
-                  </div>
+                  </Card>
+
                 );
               })}
             </div>
@@ -127,6 +127,7 @@ export default function AboutUs() {
       case "ecs":
         return (
           <>
+
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
                 className="col-6 col-lg-4 img-fluid"
@@ -157,6 +158,7 @@ export default function AboutUs() {
               <div className="col-10 mx-auto">
                 <p className="fs-3">Electronics & Control Systems</p>
                 <p className="fs-6">
+
                   The rover is brought to life by the Electronics & Controls
                   subsytem which is responsible for powering various segments of
                   the rover, that work together to achieve desired performance
@@ -168,31 +170,29 @@ export default function AboutUs() {
                   environment.
                 </p>
               </div>
-            </div>
+            </div >
             <div className="row justify-content-center ">
               <h3 className="text-center text-uppercase">Team Members </h3>
               {ecsData.map((item) => {
                 return (
-                  <div className="col-lg-3 col-md-4 col-sm-6 ">
-                    <div className="col-12 d-flex  flex-wrap">
-                      <Card classname="bg-light text-dark">
-                        <div className="d-flex flex-column align-items-center p-4 ">
-                          <img
-                            src={item.img}
-                            className="col-12 col-md-5 rounded-circle"
-                            alt={item.name}
-                          />
-                          <h3 className="text-center ">{item.name}</h3>
-                          <div className="col-12 d-flex justify-content-center text-secondary">
-                            <a className="text-dark" href={item.linkedin}>
-                              {" "}
-                              <GrIcons.GrLinkedin />
-                            </a>
-                          </div>
-                        </div>
-                      </Card>
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                    <div className="d-flex flex-column align-items-center p-4 ">
+                      <img
+                        src={item.img}
+                        className="col-12 col-md-5 rounded-circle"
+                        alt={item.name}
+                      />
+                      <h3 className="text-center ">{item.name}</h3>
+                      <div className="col-12 d-flex justify-content-center text-secondary">
+                        <a className="text-light" href={item.linkedin}>
+                          {" "}
+                          <GrIcons.GrLinkedin />
+                        </a>
+                      </div>
+                      {item.name.length < 16 && <br className="2"></br>}
                     </div>
-                  </div>
+                  </Card>
+
                 );
               })}
             </div>
@@ -248,27 +248,20 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase">Team Members </h3>
               {mechData.map((item) => {
                 return (
-                  <div className="col-lg-4 col-md-4 col-sm-6 ">
-                    <div className="col-12 d-flex  flex-wrap bg-light text-dark">
-                      <Card classname={`${styles.card}`}>
-                        <div className="d-flex flex-column align-items-center p-4 ">
-                          <img
-                            src={item.img}
-                            className="col-12 col-md-5 rounded-circle"
-                            alt={item.name}
-                          />
-                          <h3 className="text-center ">{item.name}</h3>
-                          <div className="col-12 d-flex justify-content-center text-secondary">
-                            <a className="text-dark" href={item.linkedin}>
-                              {" "}
-                              <GrIcons.GrLinkedin />
-                            </a>
-                          </div>
-                        </div>
-                      </Card>
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                    <div className="d-flex flex-column align-items-center p-4 ">
+                      <img src={item.img} className="col-12 col-md-5 rounded-circle" alt={item.name} />
+                      <h3 className="text-center ">{item.name}</h3>
+                      <div className="col-12 d-flex justify-content-center text-secondary">
+                        <a className="text-light" href={item.linkedin}> <GrIcons.GrLinkedin /></a>
+                      </div>
+                      {item.name.length < 17 && <br className="2"></br>}
                     </div>
-                  </div>
-                );
+                  </Card>
+
+                )
+
+
               })}
             </div>
           </>
@@ -319,6 +312,7 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase">Team Members </h3>
               {researchData.map((item) => {
                 return (
+
                   <div className="col-lg-4 col-md-4 col-sm-6 ">
                     <div className="col-12 d-flex  flex-wrap bg-light text-dark">
                       <Card classname={`${styles.card}`}>
@@ -408,6 +402,7 @@ export default function AboutUs() {
                     </div>
                   </div>
                 );
+
               })}
             </div>
           </>
@@ -415,6 +410,7 @@ export default function AboutUs() {
       case "management":
         return (
           <>
+
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
                 className="img-fluid col-6 col-lg-4"
@@ -443,6 +439,7 @@ export default function AboutUs() {
                 alt="Management"
               />
               <div className="col-10 mx-auto">
+
                 <h1>Management & Public Relations</h1>
                 <p>
                   The Management and PR subsystem of Mars Rover Manipal is
@@ -456,31 +453,29 @@ export default function AboutUs() {
                   work and managing of all events.
                 </p>
               </div>
-            </div>
+            </div >
             <div className="row justify-content-center ">
               <h3 className="text-center text-uppercase">Team Members </h3>
               {mgmtData.map((item) => {
                 return (
-                  <div className="col-lg-3 col-md-4 col-sm-6 p-3">
-                    <div className="col-12 d-flex  flex-wrap">
-                      <Card classname="bg-light text-dark">
-                        <div className="d-flex flex-column align-items-center p-4 ">
-                          <img
-                            src={item.img}
-                            className="col-12 col-md-5 rounded-circle"
-                            alt={item.name}
-                          />
-                          <p className="fs-3 text-center ">{item.name}</p>
-                          <div className="col-12 d-flex justify-content-center text-secondary">
-                            <a className="text-dark" href={item.linkedin}>
-                              {" "}
-                              <GrIcons.GrLinkedin />
-                            </a>
-                          </div>
-                        </div>
-                      </Card>
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                    <div className="d-flex flex-column align-items-center p-4 ">
+                      <img
+                        src={item.img}
+                        className="col-12 col-md-5 rounded-circle"
+                        alt={item.name}
+                      />
+                      <p className="fs-3 text-center ">{item.name}</p>
+                      <div className="col-12 d-flex justify-content-center text-secondary">
+                        <a className="text-light" href={item.linkedin}>
+                          {" "}
+                          <GrIcons.GrLinkedin />
+                        </a>
+                      </div>
+                      {item.name.length < 16 && <br></br>}
                     </div>
-                  </div>
+                  </Card>
+
                 );
               })}
             </div>
