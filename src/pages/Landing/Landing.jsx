@@ -9,7 +9,7 @@ import TypeWriterEffect from "react-typewriter-effect";
 import SponsorSection from "../../components/sponsorSection/SponsorSection";
 import styles from "./Landing.module.css";
 function Model() {
-  const { scene } = useGLTF("/ROVER_20.glb");
+  const { scene } = useGLTF("/donut48.glb");
   return <primitive object={scene} />;
 }
 
