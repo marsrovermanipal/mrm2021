@@ -1,7 +1,7 @@
 const data = [
     {
         name: 'TUSHAAR NEB',
-        img: 'team-20/DSC00629__01.jpeg',
+        img: 'team-20/tushaar.jfif',
         pos: "Team Leader",
         linkedin: "https://www.linkedin.com/in/tushaar-neb-a89a7116a/",
     },

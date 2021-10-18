@@ -99,7 +99,7 @@ const data = [
     {
 
         name: 'DAVULURI SAI RAGHU TEJA',
-        img: 'team-19/teja.jpeg',
+        img: 'team-19/teja.jfif',
         pos: "Research",
         linkedin: "https://www.linkedin.com/in/sai-raghu-teja-davuluri-93170a163",
     },
@@ -127,7 +127,7 @@ const data = [
     {
 
         name: 'KAVYA BANARJEE',
-        img: 'team-18/nopic.png',
+        img: 'team-19/kavya.jfif',
         pos: "SCIENCE",
         linkedin: "",
     },
@@ -162,7 +162,7 @@ const data = [
     {
 
         name: 'MOHAMMED MOHSIN H',
-        img: 'team-19/Mohammad Sulaiman.jpg',
+        img: 'team-19/mohsin.jpeg',
         pos: "Mechanical",
         linkedin: "https://www.linkedin.com/in/mohammed-mohsin-h-87023816a/",
     },

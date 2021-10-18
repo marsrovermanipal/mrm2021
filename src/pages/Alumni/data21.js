@@ -1,0 +1,199 @@
+const data = [
+    {
+        name: 'Udit Sharma',
+        img: 'team-21/Udit.JPG',
+        pos: "Team Leader",
+        linkedin: "https://www.linkedin.com/in/udit-s-tidu/",
+    },
+    {
+        name: 'Parthivi Choubey',
+        img: 'team-21/Parthivi.JPG',
+        pos: "Team Manager",
+        linkedin: "https://www.linkedin.com/in/parthivi-choubey/",
+    },
+    {
+        name: 'Saisha Kashyap',
+        img: 'team-21/Saishaaaa.jpg',
+        pos: "Technical Head",
+        linkedin: "https://www.linkedin.com/in/saishakashyap/",
+    },
+    {
+        name: 'Abhiraj Tiwari',
+        img: 'team-21/Abhi_new.jpeg',
+        pos: "AI Head",
+        linkedin: "https://www.linkedin.com/in/abhirajtiwari/",
+    },
+    {
+        name: 'R Sidharth',
+        img: 'team-21/R Sidharth 06122017.jpg',
+        pos: "Research Head",
+        linkedin: "https://www.linkedin.com/in/sidharth-r-181097190/",
+    },
+    {
+        name: 'Sahil Karumanchi',
+        img: 'team-20/Picture1-1 - Sahil Karumanchi.jpeg',
+        pos: "Science Senior",
+        linkedin: "https://www.linkedin.com/in/sahil-karumanchi/",
+    },
+    {
+        name: 'Pranesh',
+        img: 'team-20/IMG_20180927_171511 - Pranesh G.jpg',
+        pos: "Research Senior",
+        linkedin: "https://www.linkedin.com/in/pranesh-g-529876176",
+    },
+    {
+        name: 'Apoorv Thapliyal',
+        img: 'team-21/Apoorv_new.JPG',
+        pos: "Electronics",
+        linkedin: "https://www.linkedin.com/in/apoorv-thapliyal-280a151a6",
+    },
+    {
+        name: 'Atirav Seth',
+        img: 'team-21/ATIRAV.jpeg',
+        pos: "Mechanical",
+        linkedin: "https://www.linkedin.com/in/atirav-seth-0434801a9",
+    },
+    {
+        name: 'Jordan Kuruvilla',
+        img: 'team-22/jordan.jpeg',
+        pos: "Mechanical",
+        linkedin: "https://www.linkedin.com/in/jordan-kuruvilla-5b093ab8/",
+    },
+    {
+        name: 'Jyotishka Duttagupta',
+        img: 'team-21/Jyotishka_new.jpg',
+        pos: "Mechanical",
+        linkedin: "https://www.linkedin.com/in/jyotishka-duttagupta-20581a1a9",
+    },
+    {
+        name: 'Piyush Raj',
+        img: 'team-21/Piyush_Raj - piyush raj.jpeg',
+        pos: "Mechanical",
+        linkedin: "https://www.linkedin.com/in/piyush-raj-046507188/",
+    },
+    {
+        name: 'Shashwat Sharma',
+        img: 'team-21/Shashwat_new.jpg',
+        pos: "Mechanical",
+        linkedin: "https://www.linkedin.com/in/shashwat-sharma-0729121a9/",
+    },
+    {
+        name: 'Aditi Rao',
+        img: 'team-21/Aditi - Aditi Rao.jpg',
+        pos: "Artificial Intelligence",
+        linkedin: "https://www.linkedin.com/in/aditi-rao-6ba8621a9",
+    },
+    {
+        name: 'Anmol Agarwal',
+        img: 'team-21/WhatsApp Image 2020-08-07 at 11.33.50 PM - Anmol Agarwal.jpeg',
+        pos: "Research",
+        linkedin: "https://www.linkedin.com/in/anmol-agarwal-086a14a8/",
+    },
+    {
+        name: 'Keshav Kapur',
+        img: 'team-21/MRM_img - Keshav Kapur.jpeg',
+        pos: "Artificial Intelligence",
+        linkedin: "https://www.linkedin.com/in/keshav-kapur-80572b17a",
+    },
+    {
+        name: 'Akshat Taneja',
+        img: 'team-21/Akshat_new.jpg',
+        pos: "Electronics",
+        linkedin: "https://www.linkedin.com/in/akshat-taneja-6332a9131",
+    },
+    {
+        name: 'Devansh Mehra',
+        img: 'team-21/AttachmentPhoto  - devansh mehra.jpg',
+        pos: "Electronics",
+        linkedin: "https://www.linkedin.com/in/devansh-mehra-877753189",
+    },
+    {
+        name: 'Jugal Jesing',
+        img: 'team-21/IMG_20200808_165425 - jugal.jpg',
+        pos: "Electronics",
+        linkedin: "https://www.linkedin.com/in/jugal-jesing-1256841a9",
+    },
+    {
+        name: 'Shashank KM',
+        img: 'team-21/Shanks - Shashank KM.jpg',
+        pos: "Electronics",
+        linkedin: "https://www.linkedin.com/in/shashank-km-0073091b4/",
+    },
+    {
+        name: 'Soham Ghosh',
+        img: 'team-21/IMG_20190904_233748_030 - Sghosh xperia.jpg',
+        pos: "Electronics",
+        linkedin: "http://www.linkedin.com/in/the-soham-ghosh",
+    },
+    {
+        name: 'Sreevatsan Rangaprasad',
+        img: 'team-21/tmp_1589534815411 - Sreevatsan Rangaprasad.jpg',
+        pos: "Electronics",
+        linkedin: "https://www.linkedin.com/in/sreevatsan-rangaprasad-43a190179",
+    },
+    {
+        name: 'Aritro Santra',
+        img: 'team-21/IMG-20191221-WA0004__01 - Aritro Santra.jpg',
+        pos: "Science",
+        linkedin: "https://www.linkedin.com/in/aritro-santra-9127951b4",
+    },
+    {
+        name: 'Runay Rane',
+        img: 'team-21/Runay_new.jpg',
+        pos: "Science",
+        linkedin: "https://www.linkedin.com/in/runay-rane-bb0a84108",
+    },
+    {
+        name: 'Ayush Pradhan',
+        img: 'team-21/Ayush.jpg',
+        pos: "Management",
+        linkedin: "https://www.linkedin.com/in/ayush-pradhan-310a26191",
+    },
+    {
+        name: 'Aayush R Shah',
+        img: 'team-22/aayush.jpeg',
+        pos: "Research",
+        linkedin: "https://www.linkedin.com/in/aayush-shah-35591319a",
+    },
+    {
+        name: 'Abhinandan Agarwal',
+        img: 'team-22/abhinandan.jpeg',
+        pos: "Research",
+        linkedin: "https://www.linkedin.com/in/abhinandan-agarwal-93470a1b4",
+    },
+    {
+        name: 'Ghanashyam R K P',
+        img: 'team-21/Ghanshm_new.jpg',
+        pos: "Research",
+        linkedin: "https://www.linkedin.com/in/gsrkp15",
+    },
+    {
+        name: 'Harshil Bhatt',
+        img: 'team-21/202008082600021010477353415 - Harshil Bhatt.jpg',
+        pos: "Research",
+        linkedin: "https://www.linkedin.com/in/harshilbhatt2001",
+    },
+    {
+        name: 'Kumud Lakara',
+        img: 'team-22/Kumud.jpg',
+        pos: "Research",
+        linkedin: "http://linkedin.com/in/kumud-lakara-8705641a5",
+    },
+    {
+        name: 'Samarth Shankar',
+        img: 'team-21/Samarth_new.jpg',
+        pos: "Research",
+        linkedin: "https://www.linkedin.com/in/samarth-shankar-2403751a5",
+    },
+    {
+        name: 'Shriyash',
+        img: 'team-21/Shriyash.jpg',
+        pos: "Research",
+        linkedin: "https://www.linkedin.com/in/shriyash-harlikar-bb1794195",
+    },
+
+]
+
+export default data
+
+

@@ -12,8 +12,8 @@ export default function Footer() {
     <div className="p-4 text-dark bg-light text-center text-lg-start mt-4 ">
       {/* <div className="container  p-1"> */}
       <div className="row">
-        <div className="footer-1 col-lg-4 col-md-6 mb-4 mb-md-0  ">
-          <h5 className="text-uppercase text-light text-center contact-us">
+        <div className="footer-1 col-lg-4 col-md-6  mb-md-0  ">
+          <h5 className="text-uppercase text-dark text-center mb-4">
             CONTACT US
           </h5>
 
@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
 
         <div className="col-lg-4 col-md-12 mb-4 mb-md-0 text-center">
-          <h5 className="text-uppercase text-light text-center">Follow us</h5>
+          <h5 className="text-uppercase text-dark text-center">Follow us</h5>
           <a
             className="btn btn-link btn-floating btn-md text-dark m-1"
             href="https://www.facebook.com/MarsRoverManipal/"

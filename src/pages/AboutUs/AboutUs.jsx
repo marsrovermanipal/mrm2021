@@ -62,7 +62,7 @@ export default function AboutUs() {
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
                 className="col-6 col-lg-4 img-fluid"
-                src="/ai.gif"
+                src="SubsystemLogo/ai.gif"
                 alt="Ai"
               />
               <div className="col-6 col-lg-4 my-auto">
@@ -82,7 +82,7 @@ export default function AboutUs() {
             <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
               <img
                 className="col-10 mx-auto img-fluid"
-                src="/ai.gif"
+                src="SubsystemLogo/ai.gif"
                 alt="Ai"
               />
               <div className="col-10 mx-auto">
@@ -131,7 +131,7 @@ export default function AboutUs() {
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
                 className="col-6 col-lg-4 img-fluid"
-                src="ecs.gif"
+                src="SubsystemLogo/ecs.gif"
                 alt="Ecs"
               />
               <div className="col-6 col-lg-4 my-auto">
@@ -152,7 +152,7 @@ export default function AboutUs() {
             <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
               <img
                 className="col-10 mx-auto img-fluid"
-                src="ecs.gif"
+                src="SubsystemLogo/ecs.gif"
                 alt="Ecs"
               />
               <div className="col-10 mx-auto">
@@ -189,7 +189,7 @@ export default function AboutUs() {
                           <GrIcons.GrLinkedin />
                         </a>
                       </div>
-                      {item.name.length < 16 && <br className="2"></br>}
+
                     </div>
                   </Card>
 
@@ -205,7 +205,7 @@ export default function AboutUs() {
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
                 className="img-fluid col-6 col-lg-4"
-                src="mechanical.gif"
+                src="SubsystemLogo/mechanical.gif"
                 alt="Mech"
               />
               <div className="col-6 col-lg-4 my-auto">
@@ -226,7 +226,7 @@ export default function AboutUs() {
             <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
               <img
                 className="col-10 mx-auto img-fluid"
-                src="mechanical.gif"
+                src="SubsystemLogo/mechanical.gif"
                 alt="Mech"
               />
               <div className="col-10 mx-auto">
@@ -255,7 +255,7 @@ export default function AboutUs() {
                       <div className="col-12 d-flex justify-content-center text-secondary">
                         <a className="text-light" href={item.linkedin}> <GrIcons.GrLinkedin /></a>
                       </div>
-                      {item.name.length < 17 && <br className="2"></br>}
+
                     </div>
                   </Card>
 
@@ -273,7 +273,7 @@ export default function AboutUs() {
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
                 className="img-fluid col-6 col-lg-4"
-                src="research.gif"
+                src="SubsystemLogo/research.gif"
                 alt="Research"
               />
               <div className="col-6 col-lg-4 my-auto">
@@ -292,7 +292,7 @@ export default function AboutUs() {
             <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
               <img
                 className="img-fluid col-10 mx-auto"
-                src="research.gif"
+                src="SubsystemLogo/research.gif"
                 alt="Research"
               />
               <div className="col-10 mx-auto">
@@ -312,27 +312,23 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase">Team Members </h3>
               {researchData.map((item) => {
                 return (
-
-                  <div className="col-lg-4 col-md-4 col-sm-6 ">
-                    <div className="col-12 d-flex  flex-wrap bg-light text-dark">
-                      <Card classname={`${styles.card}`}>
-                        <div className="d-flex flex-column align-items-center p-4 ">
-                          <img
-                            src={item.img}
-                            className="col-12 col-md-5 rounded-circle"
-                            alt={item.name}
-                          />
-                          <h3 className="text-center ">{item.name}</h3>
-                          <div className="col-12 d-flex justify-content-center text-secondary">
-                            <a className="text-dark" href={item.linkedin}>
-                              {" "}
-                              <GrIcons.GrLinkedin />
-                            </a>
-                          </div>
-                        </div>
-                      </Card>
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                    <div className="d-flex flex-column align-items-center p-4 ">
+                      <img
+                        src={item.img}
+                        className="col-12 col-md-5 rounded-circle"
+                        alt={item.name}
+                      />
+                      <h3 className="text-center ">{item.name}</h3>
+                      <div className="col-12 d-flex justify-content-center text-secondary">
+                        <a className="text-light" href={item.linkedin}>
+                          {" "}
+                          <GrIcons.GrLinkedin />
+                        </a>
+                      </div>
                     </div>
-                  </div>
+                  </Card>
+
                 );
               })}
             </div>
@@ -344,7 +340,7 @@ export default function AboutUs() {
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
                 className="img-fluid col-6 col-lg-4"
-                src="science.gif"
+                src="SubsystemLogo/science.gif"
                 alt="Science"
               />
               <div className="col-6 col-lg-4 my-auto">
@@ -362,7 +358,7 @@ export default function AboutUs() {
             <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
               <img
                 className="img-fluid col-10 mx-auto"
-                src="science.gif"
+                src="SubsystemLogo/science.gif"
                 alt="Science"
               />
               <div className="col-10 mx-auto">
@@ -381,26 +377,24 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase">Team Members </h3>
               {sciData.map((item) => {
                 return (
-                  <div className="col-lg-4 col-md-4 col-sm-6 ">
-                    <div className="col-12 d-flex  flex-wrap bg-light text-dark">
-                      <Card classname={`${styles.card}`}>
-                        <div className="d-flex flex-column align-items-center p-4 ">
-                          <img
-                            src={item.img}
-                            className="col-12 col-md-5 rounded-circle"
-                            alt={item.name}
-                          />
-                          <h3 className="text-center ">{item.name}</h3>
-                          <div className="col-12 d-flex justify-content-center text-secondary">
-                            <a className="text-dark" href={item.linkedin}>
-                              {" "}
-                              <GrIcons.GrLinkedin />
-                            </a>
-                          </div>
-                        </div>
-                      </Card>
+
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                    <div className="d-flex flex-column align-items-center p-4 ">
+                      <img
+                        src={item.img}
+                        className="col-12 col-md-5 rounded-circle"
+                        alt={item.name}
+                      />
+                      <h3 className="text-center ">{item.name}</h3>
+                      <div className="col-12 d-flex justify-content-center text-secondary">
+                        <a className="text-light" href={item.linkedin}>
+                          {" "}
+                          <GrIcons.GrLinkedin />
+                        </a>
+                      </div>
                     </div>
-                  </div>
+                  </Card>
+
                 );
 
               })}
@@ -414,7 +408,7 @@ export default function AboutUs() {
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
                 className="img-fluid col-6 col-lg-4"
-                src="management.gif"
+                src="SubsystemLogo/management.gif"
                 alt="Management"
               />
               <div className="col-6 col-lg-4 my-auto">
@@ -435,7 +429,7 @@ export default function AboutUs() {
             <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
               <img
                 className="img-fluid col-10 mx-auto"
-                src="management.gif"
+                src="SubsystemLogo/management.gif"
                 alt="Management"
               />
               <div className="col-10 mx-auto">
@@ -472,7 +466,7 @@ export default function AboutUs() {
                           <GrIcons.GrLinkedin />
                         </a>
                       </div>
-                      {item.name.length < 16 && <br></br>}
+
                     </div>
                   </Card>
 
