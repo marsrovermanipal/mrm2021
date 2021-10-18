@@ -12,46 +12,57 @@ export default function SponsorSection() {
     {
       name: "Mouser Electronics",
       bgpath: "sponsors/mouser.jpg",
+      link: "https://www.mouser.in/",
     },
     {
       name: "Sick",
       bgpath: "sponsors/sick.jpg",
+      link: "https://www.sick.com/in/en/",
     },
     {
       name: "KelpeTech",
       bgpath: "sponsors/kelpeTech.jpg",
+      link: "https://www.kelpecnc.com/",
     },
     {
       name: "Aristo",
       bgpath: "sponsors/aristo.jpg",
+      link: "https://www.aristo-pharma.de/en",
     },
     {
-      name: "Aeroquol",
+      name: "Aeroqual",
       bgpath: "sponsors/aeroqual.jpg",
+      link: "https://www.aeroqual.com",
     },
     {
       name: "LPS Bossard",
       bgpath: "sponsors/lpsbossard.jpg",
+      link: "https://www.bossard.com/in-en/",
     },
     {
       name: "Wheeleez",
       bgpath: "sponsors/wheeleez.jpg",
+      link: "",
     },
     {
       name: "Nvidia",
       bgpath: "sponsors/nvidia.jpg",
+      link: "https://nvidia.com",
     },
     {
       name: "SolidWorks",
       bgpath: "sponsors/solidworks.jpg",
+      link: "https://solidworks.com",
     },
     {
       name: "Decopad Interiors",
       bgpath: "sponsors/decopad-logo.jpeg",
+      link: "",
     },
     {
       name: "Stevens",
       bgpath: "sponsors/stevens.jpg",
+      link: "https://stevenswater.com",
     },
   ];
   return (
@@ -76,12 +87,14 @@ export default function SponsorSection() {
             data-aos-duration="1000"
             data-aos="flip-left"
           >
-            <Card>
-              <div className="p-2">
-                <img src={d.bgpath} alt={d.name} className="col-12 p-1" />
-                {/* <h3 className="text-center text-dark">{d.name}</h3> */}
-              </div>
-            </Card>
+            <a href={d.link}>
+              <Card>
+                <div className="p-2">
+                  <img src={d.bgpath} alt={d.name} className="col-12 p-1" />
+                  {/* <h3 className="text-center text-dark">{d.name}</h3> */}
+                </div>
+              </Card>
+            </a>
           </div>
         ))}
       </div>

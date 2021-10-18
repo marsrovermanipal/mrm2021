@@ -20,7 +20,7 @@ export const NavigationBar = () => {
         <NavbarBrand href="/">
           <img src="/logo.png" alt="" className={`${styles.logo} img-fluid`} />
         </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler onClick={toggle} className="navbar-dark" />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="col-12 justify-content-end" navbar>
             <NavItem>
