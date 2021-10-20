@@ -40,7 +40,7 @@ export default function AboutUs() {
                       <p className="fs-5 text-center text-secondary">
                         {item.pos}
                       </p>
-                      <div className="col-12 d-flex justify-content-center text-secondary">
+                      <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
                         <a href={item.linkedin}>
                           {" "}
                           <GrIcons.GrLinkedin />
@@ -110,7 +110,7 @@ export default function AboutUs() {
                         alt={item.name}
                       />
                       <h3 className="text-center ">{item.name}</h3>
-                      <div className="col-12 d-flex justify-content-center text-secondary">
+                      <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
                         <a className="text-light" href={item.linkedin}>
                           {" "}
                           <GrIcons.GrLinkedin />
@@ -183,7 +183,7 @@ export default function AboutUs() {
                         alt={item.name}
                       />
                       <h3 className="text-center ">{item.name}</h3>
-                      <div className="col-12 d-flex justify-content-center text-secondary">
+                      <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
                         <a className="text-light" href={item.linkedin}>
                           {" "}
                           <GrIcons.GrLinkedin />
@@ -252,7 +252,7 @@ export default function AboutUs() {
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img src={item.img} className="col-12 col-md-5 rounded-circle" alt={item.name} />
                       <h3 className="text-center ">{item.name}</h3>
-                      <div className="col-12 d-flex justify-content-center text-secondary">
+                      <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
                         <a className="text-light" href={item.linkedin}> <GrIcons.GrLinkedin /></a>
                       </div>
 
@@ -320,7 +320,7 @@ export default function AboutUs() {
                         alt={item.name}
                       />
                       <h3 className="text-center ">{item.name}</h3>
-                      <div className="col-12 d-flex justify-content-center text-secondary">
+                      <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
                         <a className="text-light" href={item.linkedin}>
                           {" "}
                           <GrIcons.GrLinkedin />
@@ -386,7 +386,7 @@ export default function AboutUs() {
                         alt={item.name}
                       />
                       <h3 className="text-center ">{item.name}</h3>
-                      <div className="col-12 d-flex justify-content-center text-secondary">
+                      <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
                         <a className="text-light" href={item.linkedin}>
                           {" "}
                           <GrIcons.GrLinkedin />
@@ -460,7 +460,7 @@ export default function AboutUs() {
                         alt={item.name}
                       />
                       <p className="fs-3 text-center ">{item.name}</p>
-                      <div className="col-12 d-flex justify-content-center text-secondary">
+                      <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
                         <a className="text-light" href={item.linkedin}>
                           {" "}
                           <GrIcons.GrLinkedin />
@@ -487,7 +487,7 @@ export default function AboutUs() {
   return (
     <div className="container">
       <h1 className="text-center">The Team</h1>
-      <div className="d-flex col-12 text-center justify-content-center p-3 flex-wrap">
+      <div className="d-flex col-12 text-center justify-content-center p-3 flex-wrap d-none d-sm-flex">
         <Button
           outline
           size="lg"
@@ -551,6 +551,78 @@ export default function AboutUs() {
         <Button
           outline
           size="lg"
+          color="primary"
+          onClick={handleClick}
+          value="management"
+          className="mx-3"
+        >
+          Management
+        </Button>
+      </div>
+      <div className="d-flex col-12 text-center justify-content-center p-3 flex-wrap d-flex d-sm-none">
+        <Button
+          outline
+          size="sm"
+          color="primary"
+          className="mx-3"
+          value="board"
+          onClick={handleClick}
+        >
+          The Board
+        </Button>
+        <Button
+          outline
+          size="sm"
+          value="ai"
+          color="primary"
+          className="mx-3"
+          onClick={handleClick}
+        >
+          AI & Automation
+        </Button>
+        <Button
+          outline
+          value="ecs"
+          onClick={handleClick}
+          size="sm"
+          color="primary"
+          className="mx-3"
+        >
+          ECS
+        </Button>
+        <Button
+          outline
+          size="sm"
+          color="primary"
+          onClick={handleClick}
+          value="mech"
+          className="mx-3"
+        >
+          Mechanical
+        </Button>
+        <Button
+          outline
+          size="sm"
+          color="primary"
+          onClick={handleClick}
+          value="research"
+          className="mx-3"
+        >
+          Research
+        </Button>
+        <Button
+          outline
+          size="md"
+          color="primary"
+          onClick={handleClick}
+          value="science"
+          className="mx-3"
+        >
+          Science
+        </Button>
+        <Button
+          outline
+          size="md"
           color="primary"
           onClick={handleClick}
           value="management"

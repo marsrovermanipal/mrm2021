@@ -78,9 +78,9 @@ const data = [
     {
 
         name: 'KAVYA BANARJEE',
-        img: 'team-19/kavya.jfif',
+        img: 'team-18/nopic.png',
         pos: "Science",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/kavya-banerjee-a97071189/",
     },
     {
 
@@ -94,7 +94,7 @@ const data = [
         name: 'PRAKHAR KUMAR DEBATA',
         img: 'team-18/prakhar.jpg',
         pos: "Science Cache",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/prakhardebata/",
     },
     {
 
@@ -108,35 +108,35 @@ const data = [
         name: 'MOHAMMAD ABDUL SALMAN',
         img: 'team-18/salman.jpg',
         pos: "Mechanical",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/mohammed-abdul-salman-a49064132/",
     },
     {
 
         name: 'SAFAL AJMERA',
         img: 'team-18/safal.jpeg',
         pos: "Mechanical",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/safal-ajmera-194551129/",
     },
     {
 
         name: 'SAGAR DHAKA',
-        img: 'team-18/sagar.jfif',
+        img: 'team-18/sagar.jpeg',
         pos: "Management",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/sagardhaka/",
     },
     {
 
         name: 'SAI SHYAM',
         img: 'team-18/saishyam.jpg',
         pos: "Management",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/vinnakotasaishyam/",
     },
     {
 
         name: 'SIRIL TEJA D',
         img: 'team-18/siril.jpg',
         pos: "Mechanical",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/siril-td/",
     },
     {
 

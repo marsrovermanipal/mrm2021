@@ -37,10 +37,18 @@ const data = [
   },
   {
     id: 6,
+    title: 'Comparative Analysis of Industrial Grade Parallel Gripper and Linear Gripper',
+    event: "International Society of Automation, Bangalore chapter",
+    author: "K.S. Dhankhar and D.K. Rajamani",
+    img: "/research/image1.jpeg",
+  },
+  {
+    id: 9,
     title: "Design and Analysis of Underactuated gripper using Chebyshev's lambda mechanism with slip preventive strategy for fragile object",
     event: "ICAARS 2018",
     author: "Siril D Teja, Md Suliaman and Kulpreet Singh Dhankar",
   },
+
   {
     id: 7,
     title: "Design and Analysis of Mars rover suspension based on Chebyshev's Lambda Mechanism",
@@ -51,12 +59,6 @@ const data = [
     title: 'The Response of Prokaryotic Lifeforms to Environmental Stimuli',
     event: "Manipal Research Colloquium 2018, Manipal Academy of Higher Education, April 2018 ",
     author: "V.H. Dhongade, P.K. Debata, J. John and S. Kapoor",
-  }, {
-    id: 9,
-    title: 'Comparative Analysis of Industrial Grade Parallel Gripper and Linear Gripper',
-    event: "International Society of Automation, Bangalore chapter",
-    author: "K.S. Dhankhar and D.K. Rajamani",
-    img: "/research/image1.jpeg",
   }, {
     id: 10,
     title: "Design of Linear Gripper for Unstructured Environment",
@@ -72,7 +74,7 @@ const data = [
   {
     id: 12,
     title: 'Search for life in 20 minutes',
-    img: '/research/image2.jpg',
+    // img: '/research/image2.jpg',
     event: "Symbiot 2017 by the biotechnology department, Manipal Institute of Technology, Manipal Academy of Higher Education",
     author: "J. Samal, J. Joel, P.C. Nair, P.K. Debata, V. Kuchimanchi, R. Jaiswal and A.M. Rao",
   }, {

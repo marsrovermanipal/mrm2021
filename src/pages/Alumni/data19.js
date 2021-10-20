@@ -10,7 +10,7 @@ const data = [
         name: 'SAI SHYAM',
         img: 'team-18/saishyam.jpg',
         pos: "Team Manager",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/vinnakotasaishyam/",
     },
     {
 
@@ -129,7 +129,7 @@ const data = [
         name: 'KAVYA BANARJEE',
         img: 'team-19/kavya.jfif',
         pos: "SCIENCE",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/kavya-banerjee-a97071189/",
     },
     {
 
@@ -255,7 +255,7 @@ const data = [
         name: 'AKSHAT TULSANI',
         img: 'team-18/Akshat-Tulsani.jpeg',
         pos: "Management",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/akshat-tulsani/",
     },
 
 

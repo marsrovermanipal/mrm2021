@@ -24,7 +24,7 @@ const Alumni2016 = () => {
                                 <p className="fs-5 text-center text-secondary">
                                     {item.pos}
                                 </p>
-                                <div className="col-12 d-flex justify-content-center text-secondary">
+                                <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
                                     <a href={item.linkedin}>
                                         {" "}
                                         <GrIcons.GrLinkedin />
