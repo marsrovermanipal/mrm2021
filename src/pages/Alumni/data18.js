@@ -78,7 +78,7 @@ const data = [
     {
 
         name: 'KAVYA BANARJEE',
-        img: 'team-18/nopic.png',
+        img: 'team-19/kavya.jfif',
         pos: "Science",
         linkedin: "https://www.linkedin.com/in/kavya-banerjee-a97071189/",
     },
@@ -120,7 +120,7 @@ const data = [
     {
 
         name: 'SAGAR DHAKA',
-        img: 'team-18/sagar.jpeg',
+        img: 'team-18/sagar.jfif',
         pos: "Management",
         linkedin: "https://www.linkedin.com/in/sagardhaka/",
     },
