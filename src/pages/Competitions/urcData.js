@@ -1,5 +1,46 @@
 const data = [
   {
+    id: 0,
+    comp: "URC 2021",
+    info: "The 14th edition of University Rover Challenge was cancelled due to the Corona virus Pandemic. URC had released the System Acceptance Review (SAR) result in July and MRM stood 1st in India, 2nd in Asia and 7th wordwide. We also continued our run of being the best Indian Rover Team for the fourth consecutive year.",
+    img: "photos-urc2021/rover.jpg",
+    roverName: "ROVER 2021",
+    pos: "91.17 (SAR Score)",
+    MaximumSpeed: "1.8m/s",
+    Tires: "Low Pressure Polyurethane Balloon Tires",
+    TractiveEffort: "600N",
+    Wheels: "Full Floating Axle",
+    Suspension:
+      "6 Wheel, Novel 5 Bar Multilink Suspension System Constrained via Torsion Springs",
+    Chassis: "All Aluminium Chassis.",
+
+    MaxTraversableHeight: "0.8m",
+    ChassisWeight: "3 kg",
+    AutonomousSystem: "Traversal and navigation capability, Image Processing",
+
+    RoboticArm: "6 DOF Articulated Robotic Arm using Linear Actuators",
+    HorizontalReach: "850 mm",
+    VerticalReach: "1200 mm",
+    SoilCollector: "Lead Screw Actuated Auger with Collection Tray Mechanism",
+    CentreOfGravity: "300",
+    Microcontroller: "ARM Cortex based STM32",
+    SingleBoardComputer: "Jetson TX2 and Raspberry Pi 3B+",
+    MotorDrivers: "13A continuous motor driver",
+    WheelMotors: "24V DC geared Motors",
+    Batteries: "16500mAh LiPo",
+    CommunicationFrequencies: "	2.4GHz, 5GHz",
+    Sensors:
+      "MRS1000 SICK Lidar, Garmin(18x USB GPS navigator), Magnetometer(BNO080), VOC, Ozone, Hydraprobe(Temp, moisture, salinity, EC),Intel Realsense Depth Camera",
+
+    pics: [
+      { src: "photos-urc2021/grp.JPG" },
+      { src: "photos-urc2021/board.jpg" },
+      { src: "photos-urc2021/rover1.jpg" },
+      { src: "photos-urc2021/mem.jpg" },
+
+    ],
+  },
+  {
     id: 1,
     comp: "URC 2020",
     info: "The 14th edition of University Rover Challenge was cancelled due to the Corona virus Pandemic. URC had released the System Acceptance Review (SAR) result in July and MRM stood 1st in India, 2nd in Asia and 7th wordwide. We also continued our run of being the best Indian Rover Team for the fourth consecutive year.",
@@ -34,11 +75,12 @@ const data = [
       "MRS1000 SICK Lidar, Garmin(18x USB GPS navigator), Magnetometer(BNO080), VOC, Ozone, Hydraprobe(Temp, moisture, salinity, EC),Intel Realsense Depth Camera",
 
     pics: [
+      { src: "photos20/team.jpg" },
       { src: "photos20/PCB Power.jpg" },
       { src: "photos20/robo.png" },
       { src: "photos20/Rover 2020.jpg" },
       { src: "photos20/Rover autonomous.jpeg" },
-      { src: "photos20/team.jpg" },
+
     ],
   },
   {

@@ -3,7 +3,10 @@ const data = [
         id: 1,
         comp: "IRDC 2021",
         info: "Mars Rover Manipal bagged the 3rd position out of 32 teams from four countries in the second edition of the International Rover Design Challenge (IRDC), which was hosted by Mars Society South Asia (MSSA).",
-        img: 'comp/2020Rover.JPG',
+        img: [
+            { src: "comp/IRDC_2021.png" },
+            { src: "comp/IRDC_TEAM.png" },
+        ],
         pos: "1st position",
         website: "https://southasia.marssociety.org/irdc/",
     },
@@ -11,16 +14,26 @@ const data = [
         id: 2,
         comp: "ERC 2021",
         info: "Mars Rover Manipal finished 4th out of 34 teams from around the world in the remote edition of the European Rover Challenge (ERC).In addition, we received an honourable mention as the best performing team in the presentation task.",
-        img: 'comp/2020Rover.JPG',
+        img: 'comp/ERC_TEAM.png',
         pos: "1st position",
         website: "https://roverchallenge.eu/en/main-page/",
     },
+
     {
         id: 3,
         comp: "IRDC 2020",
         info: "Mars Rover Manipal bagged the 1st position in IRDC 2020. 28 teams from 7 countries had taken part in IRDC 2020. The result was announced on 15th August 2020 by Dr Robert Zubrin, the Founder and President of The Mars Society, USA. MRM scored 816.5 points for the submission, securing the first position by a margin of 15 points.",
-        img: 'IRDCrover.jpg',
+        img: 'comp/IRDCrover.jpg',
         pos: "1st position",
+        website: "https://southasia.marssociety.org/irdc/",
+    },
+
+    {
+        id: 7,
+        comp: "IMH 2020",
+        info: "Mars Rover Manipal bagged the 3rd position worldwide in IMH 2020.",
+        img: 'comp/IRDCrover.jpg',
+        pos: "3rd Worldwide",
         website: "https://southasia.marssociety.org/irdc/",
     },
     {
@@ -30,7 +43,7 @@ const data = [
         img: 'comp/2020Rover.JPG',
         pos: "1st position",
         website: "https://southasia.marssociety.org/indianroverchallenge/irc-2019/",
-        pics: [
+        img: [
             { src: "irc/image1.jpg" },
             { src: "irc/image3.jpg" },
             { src: "irc/image4.jpg" },
