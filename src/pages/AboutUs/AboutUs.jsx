@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from "../../components/card/Card";
 import * as GrIcons from "react-icons/gr";
-import styles from "./AboutUs.module.css";
+// import styles from "./AboutUs.module.css";
 import { Button } from "reactstrap";
 
 import boardData from "./boardData"
