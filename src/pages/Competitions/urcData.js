@@ -2,7 +2,7 @@ const data = [
   {
     id: 0,
     comp: "URC 2021",
-    info: "The 14th edition of University Rover Challenge was cancelled due to the Corona virus Pandemic. URC had released the System Acceptance Review (SAR) result in July and MRM stood 1st in India, 2nd in Asia and 7th wordwide. We also continued our run of being the best Indian Rover Team for the fourth consecutive year.",
+    info: "The 14th edition of University Rover Challenge was cancelled due to the Corona virus Pandemic. URC had released the System Acceptance Review (SAR) result in July and MRM scored 91.17.",
     img: "photos-urc2021/rover.jpg",
     roverName: "ROVER 2021",
     pos: "91.17 (SAR Score)",

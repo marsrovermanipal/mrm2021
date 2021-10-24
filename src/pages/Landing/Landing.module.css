@@ -1,3 +1,14 @@
 .landing_anim {
   position: absolute;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-attachment:fixed;
+  background-position:bottom;
+
+  /* background-image: url("https://erepublic.brightspotcdn.com/dims4/default/6eefba8/2147483647/strip/true/crop/1080x563+0+33/resize/840x438!/quality/90/?url=http%3A%2F%2Ferepublic-brightspot.s3.amazonaws.com%2F40%2Fdc%2F37b51308130ad8ef01d762ae7730%2Fsurface-of-mars.jpg"); */
+  /* background-image: url('../../../public/MARS1.png'); */
+  /* background-image: url('MARS1.png'); */
+}
+.landing_img{
+  z-index: 99;
 }
