@@ -27,7 +27,7 @@ export default function SponsorSection() {
     {
       name: "Aristo",
       bgpath: "sponsors/aristo.jpg",
-      link: "https://www.aristo-pharma.de/en",
+      link: "https://www.aristo-india.com/#",
     },
     {
       name: "Aeroqual",

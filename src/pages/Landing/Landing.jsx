@@ -34,7 +34,7 @@ export default function Landing() {
       <div className={`col-12 ${styles.landing_anim}`}>
 
 
-        {/* 
+
         <Particles
           height="550px"
           params={{
@@ -88,7 +88,7 @@ export default function Landing() {
               },
             },
           }}
-        /> */}
+        />
       </div>
       <div
         className="col-12 p-5 d-block d-lg-flex align-items-center justify-content-between"

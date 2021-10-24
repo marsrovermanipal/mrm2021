@@ -11,6 +11,7 @@ import mgmtData from "./mgmtData"
 import sciData from "./scienceData"
 import researchData from "./researchData"
 import mechData from "./mechData"
+import FAdata from "./FAdata"
 
 
 export default function AboutUs() {
@@ -475,6 +476,38 @@ export default function AboutUs() {
             </div>
           </>
         );
+      case "fa":
+        // board members data
+        return (
+          <div className="col-12 d-flex mx-auto">
+            <div className="row justify-content-center ">
+              <h3 className="text-center text-uppercase ">Faculty Advisors </h3>
+              {FAdata.map((item) => {
+                return (
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                    <div className="d-flex flex-column align-items-center p-4 ">
+                      <img
+                        src={item.img}
+                        className="col-12 col-md-5 rounded-circle"
+                        alt={item.name}
+                      />
+                      <p className="fs-3 text-center text-light">
+                        {item.name}
+                      </p>
+                      <p className="fs-5 text-center text-secondary">
+                        {item.pos}
+                      </p>
+                      <p className="fs-5 text-center text-secondary">
+                        {item.dept}
+                      </p>
+                    </div>
+                  </Card>
+
+                );
+              })}
+            </div>
+          </div>
+        );
       default:
         return <h1>Board</h1>;
     }
@@ -629,6 +662,16 @@ export default function AboutUs() {
           className="mx-3"
         >
           Management
+        </Button>
+        <Button
+          outline
+          size="md"
+          color="primary"
+          onClick={handleClick}
+          value="fa"
+          className="mx-3"
+        >
+          Faculty Advisors
         </Button>
       </div>
       {renderMembers(activeSub)}

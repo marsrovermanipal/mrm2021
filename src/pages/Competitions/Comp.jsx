@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Button } from "reactstrap";
 
-import data from "./urcData";
+
 import Urc from "../../components/Comp/Urc1"
 import Erc from "../../components/Comp/Erc"
 import Irdc from "../../components/Comp/Irdc"
@@ -11,9 +11,9 @@ import Imh from "../../components/Comp/Imh"
 export default function Comp() {
 
 
-  const [activeYear, setActiveYear] = useState("ERC");
-  const renderMembers = (year) => {
-    switch (year) {
+  const [activeComp, setActiveComp] = useState("ERC");
+  const renderComp = (comp) => {
+    switch (comp) {
 
       case "URC":
         return (
@@ -41,7 +41,7 @@ export default function Comp() {
     }
   };
   const handleClick = (e) => {
-    setActiveYear(e.target.value);
+    setActiveComp(e.target.value);
 
     console.log(e.target.value);
   };
@@ -104,7 +104,7 @@ export default function Comp() {
 
 
       </div>
-      {renderMembers(activeYear)}
+      {renderComp(activeComp)}
     </div>
   );
 }
