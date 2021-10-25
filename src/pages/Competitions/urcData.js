@@ -37,8 +37,8 @@ const data = [
       { src: "photos-urc2021/board.jpg" },
       { src: "photos-urc2021/rover1.jpg" },
       { src: "photos-urc2021/mem.jpg" },
-
     ],
+    video: "https://www.youtube.com/embed/rbkrRSdEiOA?controls=0",
   },
   {
     id: 1,
@@ -80,8 +80,8 @@ const data = [
       { src: "photos20/robo.png" },
       { src: "photos20/Rover 2020.jpg" },
       { src: "photos20/Rover autonomous.jpeg" },
-
     ],
+    video: "https://www.youtube.com/embed/V22SHOJQx4I?controls=0",
   },
   {
     id: 2,
@@ -127,6 +127,7 @@ const data = [
       { src: "Photos19/8.jpg" },
       { src: "Photos19/9.jpg" },
     ],
+    video: "https://www.youtube.com/embed/vY86gCyUFQ8?controls=0",
   },
   {
     id: 3,
@@ -170,6 +171,7 @@ const data = [
       { src: "urc2017/rover18d.jpg" },
       { src: "urc2017/rover18e.jpg" },
     ],
+    video: "https://www.youtube.com/embed/8QmRq4NSOIg?controls=0",
   },
   {
     id: 4,
@@ -212,8 +214,8 @@ const data = [
       { src: "urc2017/image3.jpg" },
       { src: "urc2017/image4.jpg" },
       { src: "urc2017/image5.jpg" },
-
     ],
+    video: "https://www.youtube.com/embed/6Mr8owXfWoc?controls=0",
   },
   {
     id: 5,
@@ -249,6 +251,7 @@ const data = [
       { src: "urc2016/image4.jpg" },
       { src: "urc2016/image5.jpeg" },
     ],
+    video: "https://www.youtube.com/embed/cG70pC12jTU?controls=0",
   },
 ];
 

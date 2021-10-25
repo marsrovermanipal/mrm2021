@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 /public/ROVER_20.glb
+/public/Rover_2019.glb
+/public/Rover_2019.gltf
 # testing
 /coverage
 
