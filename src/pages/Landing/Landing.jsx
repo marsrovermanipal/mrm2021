@@ -10,7 +10,7 @@ import TypeWriterEffect from "react-typewriter-effect";
 import SponsorSection from "../../components/sponsorSection/SponsorSection";
 import styles from "./Landing.module.css";
 function Model() {
-  const { scene } = useGLTF("/donut48.glb");
+  const { scene } = useGLTF("/MarsRotating.glb");
   return <primitive object={scene} />;
 }
 
@@ -32,8 +32,11 @@ export default function Landing() {
   return (
     <>
       <div className={`col-12 ${styles.landing_anim}`}>
+
+
+
         <Particles
-          height="800px"
+          height="550px"
           params={{
             particles: {
               number: {
@@ -87,24 +90,30 @@ export default function Landing() {
           }}
         />
       </div>
+      <div
+        className="col-12 p-5 d-block d-lg-flex align-items-center justify-content-between"
+      // style={{ height: "800px" }}
+      >
+        <TypeWriterEffect
+          textStyle={{
+            fontFamily: "",
+            color: "#f7f4f2",
+            fontWeight: 500,
+            fontSize: "4.5em",
+
+          }}
+          startDelay={1000}
+          cursorColor="#f7f4f2"
+          text="Design to Discover."
+          typeSpeed={150}
+        />
+      </div>
+
+      {/* <img className={`col-12 img-fluid d-none d-sm-flex  ${styles.landing_img}`} src="/MARS1.png" />
+      <img className={`col-12 img-fluid d-flex d-sm-none  ${styles.landing_img}`} src="/MARSphone.png" /> */}
       <div className="d-flex">
-        <div
-          className="col-6 p-5 d-block d-lg-flex align-items-center justify-content-between"
-          style={{ height: "800px" }}
-        >
-          <TypeWriterEffect
-            textStyle={{
-              fontFamily: "",
-              color: "#f7f4f2",
-              fontWeight: 500,
-              fontSize: "4.5em",
-            }}
-            startDelay={1000}
-            cursorColor="#f7f4f2"
-            text="Design to Discover."
-            typeSpeed={150}
-          />
-        </div>
+
+
         <div className="col-6 text-end" style={{ height: "100vh" }}>
           <Canvas camera={{ position: [10, 18, 23], fov: 0.5 }}>
             <OrbitControls
@@ -117,7 +126,9 @@ export default function Landing() {
               <Model />
             </Suspense>
           </Canvas>
+
         </div>
+
       </div>
       <div
         className="col-12"

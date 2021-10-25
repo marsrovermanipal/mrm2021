@@ -86,7 +86,7 @@ const data = [
     {
         name: 'Anmol Agarwal',
         img: 'team-21/WhatsApp Image 2020-08-07 at 11.33.50 PM - Anmol Agarwal.jpeg',
-        pos: "Research",
+        pos: "Artificial Intelligence",
         linkedin: "https://www.linkedin.com/in/anmol-agarwal-086a14a8/",
     },
     {
