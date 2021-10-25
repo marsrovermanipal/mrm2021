@@ -9,7 +9,7 @@
 /public/Rover_2019.gltf
 # testing
 /coverage
-
+.env
 # production
 /build
 

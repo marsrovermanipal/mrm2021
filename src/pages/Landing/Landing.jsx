@@ -1,13 +1,14 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, Suspense } from "react";
+import React, { useEffect, Suspense, useState } from "react";
 import AOS from "aos";
+import axios from "axios";
 import "aos/dist/aos.css";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import ParticleImage, { ParticleOptions } from "react-particle-image";
 import Particles from "react-particles-js";
 import TypeWriterEffect from "react-typewriter-effect";
 import SponsorSection from "../../components/sponsorSection/SponsorSection";
+import Card from "../../components/card/Card";
 import styles from "./Landing.module.css";
 function Model() {
   const { scene } = useGLTF("/MarsRotating.glb");
@@ -15,26 +16,23 @@ function Model() {
 }
 
 export default function Landing() {
-  // const {innerWidth,innerHeight } = useWindowSize();
-  const particleOptions: ParticleOptions = {
-    filter: ({ x, y, image }) => {
-      // Get pixel
-      const pixel = image.get(x, y);
-      // Make a particle for this pixel if blue > 50 (range 0-255)
-      return pixel.b > 50;
-    },
-    color: ({ x, y, image }) => "#61dafb",
-  };
+  const [instaData, setInstaData] = useState([]);
   useEffect(() => {
     AOS.init();
   });
-
+  useEffect(() => {
+    async function getInstaData() {
+      const data = await axios.get(
+        `https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=${process.env.REACT_APP_INSTA_TOKEN}`
+      );
+      data.data.data.splice(3, data.data.data.length - 3);
+      setInstaData(data.data.data);
+    }
+    getInstaData();
+  }, []);
   return (
     <>
       <div className={`col-12 ${styles.landing_anim}`}>
-
-
-
         <Particles
           height="550px"
           params={{
@@ -92,7 +90,7 @@ export default function Landing() {
       </div>
       <div
         className="col-12 p-5 d-block d-lg-flex align-items-center justify-content-between"
-      // style={{ height: "800px" }}
+        // style={{ height: "800px" }}
       >
         <TypeWriterEffect
           textStyle={{
@@ -100,7 +98,6 @@ export default function Landing() {
             color: "#f7f4f2",
             fontWeight: 500,
             fontSize: "4.5em",
-
           }}
           startDelay={1000}
           cursorColor="#f7f4f2"
@@ -112,8 +109,6 @@ export default function Landing() {
       {/* <img className={`col-12 img-fluid d-none d-sm-flex  ${styles.landing_img}`} src="/MARS1.png" />
       <img className={`col-12 img-fluid d-flex d-sm-none  ${styles.landing_img}`} src="/MARSphone.png" /> */}
       <div className="d-flex">
-
-
         <div className="col-6 text-end" style={{ height: "100vh" }}>
           <Canvas camera={{ position: [10, 18, 23], fov: 0.5 }}>
             <OrbitControls
@@ -126,9 +121,7 @@ export default function Landing() {
               <Model />
             </Suspense>
           </Canvas>
-
         </div>
-
       </div>
       <div
         className="col-12"
@@ -157,6 +150,17 @@ export default function Landing() {
         </div>
       </div>
       <SponsorSection />
+
+      <div className="col-12 d-flex flex-wrap">
+        {instaData.map((post) => (
+          <div className="col-3 m-3">
+            <Card>
+              <img src={post.media_url} alt={post.caption} />
+              <h6 className="text-dark">{post.caption}</h6>
+            </Card>
+          </div>
+        ))}
+      </div>
     </>
   );
 }
