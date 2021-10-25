@@ -13,7 +13,7 @@ const Imh = () => {
                 <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
                     <img
                         className="img-fluid col-6 col-lg-4"
-                        src="MSSA_Logo.png"
+                        src="/MSSA_LOGO.png"
                         alt="MSSA"
                     />
                     <div className="col-6 col-lg-6 my-auto">
