@@ -5,7 +5,7 @@ const data = [
         img: 'Faculty Advisors/gururaj.jpg',
         pos: 'Assistant Professor',
         dept: 'Department of Mechanical & Manufacturing Engineering',
-        year: "2021",
+        year: "2021-2022",
 
     },
     {
@@ -14,7 +14,7 @@ const data = [
         img: 'Faculty Advisors/ujjwal.jpg',
         pos: 'Associate Professor',
         dept: 'Department of Electronics & Communication Engineering',
-        year: "2021",
+        year: "2021-2022",
 
     },
     {
@@ -23,7 +23,7 @@ const data = [
         img: 'Faculty Advisors/navaneeth.jpg',
         pos: 'Assistant Professor-Senior scale',
         dept: 'Department of Mechanical & Manufacturing Engineering',
-        year: "2018-2020",
+        year: "2018-2021",
     },
     {
         id: 4,
@@ -31,7 +31,7 @@ const data = [
         img: 'Faculty Advisors/ramakrishna.jpg',
         pos: 'Assistant Professor (Senior Scale)',
         dept: 'Department of Mechanical & Manufacturing Engineering',
-        year: "2018-2020",
+        year: "2020-2021",
 
     },
     {
