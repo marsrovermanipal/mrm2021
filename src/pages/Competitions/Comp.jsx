@@ -11,7 +11,7 @@ import Imh from "../../components/Comp/Imh"
 export default function Comp() {
 
 
-  const [activeComp, setActiveComp] = useState("ERC");
+  const [activeComp, setActiveComp] = useState("URC");
   const renderComp = (comp) => {
     switch (comp) {
 
