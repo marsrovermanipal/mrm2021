@@ -500,6 +500,9 @@ export default function AboutUs() {
                       <p className="fs-5 text-center text-secondary">
                         {item.dept}
                       </p>
+                      <p className="fs-5 text-center text-secondary">
+                        Year: {item.year}
+                      </p>
                     </div>
                   </Card>
 
@@ -525,7 +528,7 @@ export default function AboutUs() {
           outline
           size="lg"
           color="primary"
-          className="mx-3"
+          className="mx-2"
           value="board"
           onClick={handleClick}
         >
@@ -536,7 +539,7 @@ export default function AboutUs() {
           size="lg"
           value="ai"
           color="primary"
-          className="mx-3"
+          className="mx-2"
           onClick={handleClick}
         >
           AI & Automation
@@ -547,7 +550,7 @@ export default function AboutUs() {
           onClick={handleClick}
           size="lg"
           color="primary"
-          className="mx-3"
+          className="mx-2"
         >
           ECS
         </Button>
@@ -557,7 +560,7 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="mech"
-          className="mx-3"
+          className="mx-2"
         >
           Mechanical
         </Button>
@@ -567,7 +570,7 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="research"
-          className="mx-3"
+          className="mx-2"
         >
           Research
         </Button>
@@ -577,7 +580,7 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="science"
-          className="mx-3"
+          className="mx-2"
         >
           Science
         </Button>
@@ -587,9 +590,19 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="management"
-          className="mx-3"
+          className="mx-2"
         >
           Management
+        </Button>
+        <Button
+          outline
+          size="lg"
+          color="primary"
+          onClick={handleClick}
+          value="fa"
+          className="mx-2"
+        >
+          Faculty Advisors
         </Button>
       </div>
       <div className="d-flex col-12 text-center justify-content-center p-3 flex-wrap d-flex d-sm-none">
@@ -597,7 +610,7 @@ export default function AboutUs() {
           outline
           size="sm"
           color="primary"
-          className="mx-3"
+          className="mx-2"
           value="board"
           onClick={handleClick}
         >
@@ -608,7 +621,7 @@ export default function AboutUs() {
           size="sm"
           value="ai"
           color="primary"
-          className="mx-3"
+          className="mx-2"
           onClick={handleClick}
         >
           AI & Automation
@@ -619,7 +632,7 @@ export default function AboutUs() {
           onClick={handleClick}
           size="sm"
           color="primary"
-          className="mx-3"
+          className="mx-2"
         >
           ECS
         </Button>
@@ -629,7 +642,7 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="mech"
-          className="mx-3"
+          className="mx-2"
         >
           Mechanical
         </Button>
@@ -639,7 +652,7 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="research"
-          className="mx-3"
+          className="mx-2"
         >
           Research
         </Button>
@@ -649,7 +662,7 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="science"
-          className="mx-3"
+          className="mx-2"
         >
           Science
         </Button>
@@ -659,7 +672,7 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="management"
-          className="mx-3"
+          className="mx-2"
         >
           Management
         </Button>
@@ -669,7 +682,7 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="fa"
-          className="mx-3"
+          className="mx-2"
         >
           Faculty Advisors
         </Button>
