@@ -86,9 +86,9 @@ export default function AboutUs() {
                 src="SubsystemLogo/ai.gif"
                 alt="Ai"
               />
-              <div className="col-10 mx-auto">
+              <div className="col-10 mx-auto text-center">
                 <p className="fs-3">Artificial Intelligence & Automation</p>
-                <p className="fs-6">
+                <p className="fs-6 ">
                   The AI & Automation subsystem is an integral part of the
                   project. The subsystem deals with processing and interpreting
                   data from various sensors like cameras, GPS, LiDARS, IMUs,
@@ -156,7 +156,7 @@ export default function AboutUs() {
                 src="SubsystemLogo/ecs.gif"
                 alt="Ecs"
               />
-              <div className="col-10 mx-auto">
+              <div className="col-10 mx-auto text-center">
                 <p className="fs-3">Electronics & Control Systems</p>
                 <p className="fs-6">
 
@@ -230,7 +230,7 @@ export default function AboutUs() {
                 src="SubsystemLogo/mechanical.gif"
                 alt="Mech"
               />
-              <div className="col-10 mx-auto">
+              <div className="col-10 mx-auto text-center">
                 <p className="fs-3">Mechanical Design & Manufacturing</p>
                 <p className="fs-6">
                   The Mechanical Design & Manufacturing subsystem provides the
@@ -296,7 +296,7 @@ export default function AboutUs() {
                 src="SubsystemLogo/research.gif"
                 alt="Research"
               />
-              <div className="col-10 mx-auto">
+              <div className="col-10 mx-auto text-center">
                 <p className="fs-3">Research</p>
                 <p className="fs-6">
                   The Research subsystem of Mars Rover Manipal is responsible
@@ -362,7 +362,7 @@ export default function AboutUs() {
                 src="SubsystemLogo/science.gif"
                 alt="Science"
               />
-              <div className="col-10 mx-auto">
+              <div className="col-10 mx-auto text-center">
                 <p className="fs-3">Science</p>
                 <p className="fs-6">
                   The Science subsystem is responsible for comprehensive
@@ -429,11 +429,11 @@ export default function AboutUs() {
             </div>
             <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
               <img
-                className="img-fluid col-10 mx-auto"
+                className="img-fluid col-10 mx-auto text-center"
                 src="SubsystemLogo/management.gif"
                 alt="Management"
               />
-              <div className="col-10 mx-auto">
+              <div className="col-10 mx-auto text-center">
 
                 <h1>Management & Public Relations</h1>
                 <p>
@@ -482,32 +482,69 @@ export default function AboutUs() {
           <div className="col-12 d-flex mx-auto">
             <div className="row justify-content-center ">
               <h3 className="text-center text-uppercase ">Faculty Advisors </h3>
-              {FAdata.map((item) => {
-                return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
-                    <div className="d-flex flex-column align-items-center p-4 ">
-                      <img
-                        src={item.img}
-                        className="col-12 col-md-5 rounded-circle"
-                        alt={item.name}
-                      />
-                      <p className="fs-3 text-center text-light">
-                        {item.name}
-                      </p>
-                      <p className="fs-5 text-center text-secondary">
-                        {item.pos}
-                      </p>
-                      <p className="fs-5 text-center text-secondary">
-                        {item.dept}
-                      </p>
-                      <p className="fs-5 text-center text-secondary">
-                        Year: {item.year}
-                      </p>
-                    </div>
-                  </Card>
 
-                );
-              })}
+
+              <div className=" justify-content-center d-none d-sm-flex ">
+                {FAdata.map((item) => {
+                  return (
+                    <Card classname=" col-lg-6 col-md-6 col-11 mx-auto mx-md-5 m-4 p-3">
+                      <div className="d-flex flex-column align-items-center p-4 ">
+                        <img
+                          src={item.img}
+                          className="col-12 col-md-5 rounded-circle"
+                          alt={item.name}
+                        />
+                        <p className="fs-3 text-center text-light">
+                          {item.name}
+                        </p>
+                        <p className="fs-5 text-center text-secondary">
+                          {item.pos}
+                        </p>
+                        <p className="fs-5 text-center text-secondary">
+                          {item.dept}
+                        </p>
+                        <p className="fs-5 text-center text-secondary">
+                          Year: {item.year}
+                        </p>
+                      </div>
+                    </Card>
+
+                  );
+                })}
+              </div>
+
+
+              <div className="d-flex justify-content-center d-sm-none ">
+                {FAdata.map((item) => {
+                  return (
+                    <Card classname="bg-dark text-light col-11 mx-auto p-2">
+                      <div className="d-flex flex-column align-items-center p-4 ">
+                        <img
+                          src={item.img}
+                          className="col-4 col-md-2 rounded-circle"
+                          alt={item.name}
+                        />
+                        <p className="fs-3 text-center text-light">
+                          {item.name}
+                        </p>
+                        <p className="fs-5 text-center text-secondary">
+                          {item.pos}
+                        </p>
+                        <p className="fs-5 text-center text-secondary">
+                          {item.dept}
+                        </p>
+                        <p className="fs-5 text-center text-secondary">
+                          Year: {item.year}
+                        </p>
+                      </div>
+                    </Card>
+
+                  );
+                })}
+              </div>
+
+
+
             </div>
           </div>
         );

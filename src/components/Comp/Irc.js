@@ -31,7 +31,7 @@ const Irc = () => {
                     />
                     <div className="col-10 mx-auto">
 
-                        <p>
+                        <p className="text-center">
                             The International Rover Challenge (formerly Indian Rover Challenge) is an annual robotics competition which features an engineering challenge to engage students worldwide in the next phase of space exploration. IRC is the only robotics and space exploration competition of its kind in Asia-Pacific which aims to ignite and encourage the spirit of innovation amongst budding engineers as they set on a quest to build a space exploration rovers, using their skills and ideas. The competition challenges college students to design and build next-generation Mars Rovers and compete in Mars Simulated conditions. IRC is part of the Rover Challenge Series (RCS) of The Mars Society.
                         </p>
                     </div>

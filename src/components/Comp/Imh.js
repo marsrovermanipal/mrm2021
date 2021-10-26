@@ -22,6 +22,25 @@ const Imh = () => {
                             International Mars Hackathon challenges teams from diverse disciplines to come up with insightful solutions to mind-boggling Space Exploration problems! The 48hr competition requires students to think on their feet and devise creative approaches in several thematic areas.
                         </p>
                     </div>
+
+                    {data.map((item) => {
+                        return (
+                            <Card classname="col-lg-6 col-md-6 col-5 mx-auto mx-md-5 m-4 p-3">
+                                <div
+                                    className="d-flex flex-column align-items-center"
+                                >
+                                    <div>
+                                        <img src={item.img} alt={item.comp} className="col-12" />
+                                    </div>
+                                    <div className="text-secondary text-center mt-auto">
+                                        <h3>{item.comp}</h3>
+                                        <h4>{item.pos}</h4>
+                                    </div>
+                                    <p className="fs-5 text-dark text-center">{item.info}</p>
+                                </div>
+                            </Card>
+                        );
+                    })}
                 </div>
                 <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
                     <img
@@ -31,32 +50,34 @@ const Imh = () => {
                     />
                     <div className="col-10 mx-auto">
 
-                        <p>
+                        <p className="text-center">
                             International Mars Hackathon challenges teams from diverse disciplines to come up with insightful solutions to mind-boggling Space Exploration problems! The 48hr competition requires students to think on their feet and devise creative approaches in several thematic areas.
                         </p>
+                        {data.map((item) => {
+                            return (
+                                <Card classname="col-lg-6 col-md-6 col-11 mx-auto mx-md-5 m-4 p-3">
+                                    <div
+                                        className="d-flex flex-column align-items-center"
+                                    >
+                                        <div>
+                                            <img src={item.img} alt={item.comp} className="col-12" />
+                                        </div>
+                                        <div className="text-secondary text-center mt-auto">
+                                            <h3>{item.comp}</h3>
+                                            <h4>{item.pos}</h4>
+                                        </div>
+                                        <p className="fs-5 text-dark text-center">{item.info}</p>
+                                    </div>
+                                </Card>
+                            );
+                        })}
                     </div>
+
+
                 </div >
 
 
 
-                {data.map((item) => {
-                    return (
-                        <Card classname="col-lg-6 col-md-6 col-8 mx-auto mx-md-5 m-4 p-3">
-                            <div
-                                className="d-flex flex-column align-items-center"
-                            >
-                                <div>
-                                    <img src={item.img} alt={item.comp} className="col-12" />
-                                </div>
-                                <div className="text-secondary text-center mt-auto">
-                                    <h3>{item.comp}</h3>
-                                    <h4>{item.pos}</h4>
-                                </div>
-                                <p className="fs-5 text-dark text-center">{item.info}</p>
-                            </div>
-                        </Card>
-                    );
-                })}
             </div>
         </div>
     )
