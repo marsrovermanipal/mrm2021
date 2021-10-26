@@ -28,7 +28,7 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase ">Board</h3>
               {boardData.map((item) => {
                 return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
                         src={item.img}
@@ -103,7 +103,7 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase">Team Members </h3>
               {AiData.map((item) => {
                 return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
                         src={item.img}
@@ -176,7 +176,7 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase">Team Members </h3>
               {ecsData.map((item) => {
                 return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
                         src={item.img}
@@ -249,7 +249,7 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase">Team Members </h3>
               {mechData.map((item) => {
                 return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img src={item.img} className="col-12 col-md-5 rounded-circle" alt={item.name} />
                       <h3 className="text-center ">{item.name}</h3>
@@ -313,7 +313,7 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase">Team Members </h3>
               {researchData.map((item) => {
                 return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
                         src={item.img}
@@ -379,7 +379,7 @@ export default function AboutUs() {
               {sciData.map((item) => {
                 return (
 
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
                         src={item.img}
@@ -436,7 +436,7 @@ export default function AboutUs() {
               <div className="col-10 mx-auto text-center">
 
                 <h1>Management & Public Relations</h1>
-                <p>
+                <p >
                   The Management and PR subsystem of Mars Rover Manipal is
                   responsible for all the non-technical work of the team. It is
                   involved in the overall progress of the team by handling
@@ -453,7 +453,7 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase">Team Members </h3>
               {mgmtData.map((item) => {
                 return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
                         src={item.img}
@@ -484,10 +484,10 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase ">Faculty Advisors </h3>
 
 
-              <div className=" justify-content-center d-none d-sm-flex ">
+              <div className="row justify-content-center d-none d-sm-flex ">
                 {FAdata.map((item) => {
                   return (
-                    <Card classname=" col-lg-6 col-md-6 col-11 mx-auto mx-md-5 m-4 p-3">
+                    <Card classname="bg-dark text-light col-lg-4 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
                       <div className="d-flex flex-column align-items-center p-4 ">
                         <img
                           src={item.img}
@@ -514,26 +514,26 @@ export default function AboutUs() {
               </div>
 
 
-              <div className="d-flex justify-content-center d-sm-none ">
+              <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
                 {FAdata.map((item) => {
                   return (
-                    <Card classname="bg-dark text-light col-11 mx-auto p-2">
+                    <Card classname="bg-dark text-light col-11 mx-auto m-3 p-2">
                       <div className="d-flex flex-column align-items-center p-4 ">
                         <img
                           src={item.img}
                           className="col-4 col-md-2 rounded-circle"
                           alt={item.name}
                         />
-                        <p className="fs-3 text-center text-light">
+                        <p className="fs-4 text-center text-light">
                           {item.name}
                         </p>
-                        <p className="fs-5 text-center text-secondary">
+                        <p className="fs-6 text-center text-secondary">
                           {item.pos}
                         </p>
-                        <p className="fs-5 text-center text-secondary">
+                        <p className="fs-6 text-center text-secondary">
                           {item.dept}
                         </p>
-                        <p className="fs-5 text-center text-secondary">
+                        <p className="fs-6 text-center text-secondary">
                           Year: {item.year}
                         </p>
                       </div>

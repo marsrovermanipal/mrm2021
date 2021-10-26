@@ -55,7 +55,7 @@ export default function Comp() {
           outline
           size="lg"
           color="primary"
-          className="mx-3"
+          className="mx-3 "
           value="URC"
           onClick={handleClick}
         >
@@ -66,7 +66,7 @@ export default function Comp() {
           size="lg"
           value="IRDC"
           color="primary"
-          className="mx-3"
+          className="mx-3 "
           onClick={handleClick}
         >
           IRDC
@@ -87,7 +87,7 @@ export default function Comp() {
           color="primary"
           onClick={handleClick}
           value="IRC"
-          className="mx-3"
+          className="mx-3 "
         >
           IRC
         </Button>

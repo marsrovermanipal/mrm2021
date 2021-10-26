@@ -90,7 +90,7 @@ export default function Landing() {
       </div>
       <div
         className="col-12 p-5 d-block d-lg-flex align-items-center justify-content-between"
-        // style={{ height: "800px" }}
+      // style={{ height: "800px" }}
       >
         <TypeWriterEffect
           textStyle={{
@@ -131,7 +131,7 @@ export default function Landing() {
       >
         <div className="text-center mt-5">
           {/* <h1>Mars Rover Manipal</h1> */}
-          <p className="fs-4 col-12 col-md-8 p-3 text-start text-md-center mx-auto">
+          <p className="fs-4 col-12 col-md-8 p-3 text-start text-md-center mx-auto text-center">
             Mars Rover Manipal is a multi-disciplinary student team from Manipal
             Academy of Higher Education (MAHE) striving to design and build next
             generation rovers for exploration of extraterrestrial environments
@@ -149,16 +149,18 @@ export default function Landing() {
           </p>
         </div>
       </div>
-      <SponsorSection />
+      {/* <SponsorSection /> */}
 
-      <div className="col-12 d-flex flex-wrap">
+      <div className=" d-flex flex-wrap">
         {instaData.map((post) => (
-          <div className="col-3 m-3">
-            <Card>
-              <img src={post.media_url} alt={post.caption} />
-              <h6 className="text-dark">{post.caption}</h6>
-            </Card>
-          </div>
+          <Card classname=" col-lg-3 col-md-6 col-10 mx-auto m-3 p-2">
+            <div className="d-flex flex-column align-items-center p-3 ">
+              <img className="col-12 col-md-10 " src={post.media_url} alt={post.caption} />
+            </div>
+            <h6 className="text-dark text-center">{post.caption}</h6>
+
+          </Card>
+
         ))}
       </div>
     </>

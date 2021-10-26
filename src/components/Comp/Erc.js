@@ -74,7 +74,7 @@ const Erc = () => {
                                         <h3>{item.comp}</h3>
                                         <h4>{item.pos}</h4>
                                     </div>
-                                    <p className="fs-5 text-dark text-center">{item.info}</p>
+                                    <p className="fs-6 text-dark text-center">{item.info}</p>
                                 </div>
                             </Card>
                         );

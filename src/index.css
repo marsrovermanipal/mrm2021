@@ -26,6 +26,10 @@ h3,
   background-color: #51e8ef !important;
   color: #34393f !important;
 }
+.btn-outline-primary:active {
+  background-color: #51e8ef !important;
+  color: #000000 !important;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
