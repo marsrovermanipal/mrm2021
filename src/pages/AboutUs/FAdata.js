@@ -6,7 +6,6 @@ const data = [
         pos: 'Assistant Professor',
         dept: 'Department of Mechanical & Manufacturing Engineering',
         year: "2021-2022",
-
     },
     {
         id: 2,
@@ -15,7 +14,6 @@ const data = [
         pos: 'Associate Professor',
         dept: 'Department of Electronics & Communication Engineering',
         year: "2021-2022",
-
     },
     {
         id: 3,
