@@ -28,7 +28,7 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase ">Board</h3>
               {boardData.map((item) => {
                 return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
                         src={item.img}
@@ -86,9 +86,9 @@ export default function AboutUs() {
                 src="SubsystemLogo/ai.gif"
                 alt="Ai"
               />
-              <div className="col-10 mx-auto">
+              <div className="col-10 mx-auto text-center">
                 <p className="fs-3">Artificial Intelligence & Automation</p>
-                <p className="fs-6">
+                <p className="fs-6 ">
                   The AI & Automation subsystem is an integral part of the
                   project. The subsystem deals with processing and interpreting
                   data from various sensors like cameras, GPS, LiDARS, IMUs,
@@ -103,7 +103,7 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase">Team Members </h3>
               {AiData.map((item) => {
                 return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
                         src={item.img}
@@ -156,7 +156,7 @@ export default function AboutUs() {
                 src="SubsystemLogo/ecs.gif"
                 alt="Ecs"
               />
-              <div className="col-10 mx-auto">
+              <div className="col-10 mx-auto text-center">
                 <p className="fs-3">Electronics & Control Systems</p>
                 <p className="fs-6">
 
@@ -176,7 +176,7 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase">Team Members </h3>
               {ecsData.map((item) => {
                 return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
                         src={item.img}
@@ -230,7 +230,7 @@ export default function AboutUs() {
                 src="SubsystemLogo/mechanical.gif"
                 alt="Mech"
               />
-              <div className="col-10 mx-auto">
+              <div className="col-10 mx-auto text-center">
                 <p className="fs-3">Mechanical Design & Manufacturing</p>
                 <p className="fs-6">
                   The Mechanical Design & Manufacturing subsystem provides the
@@ -249,7 +249,7 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase">Team Members </h3>
               {mechData.map((item) => {
                 return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img src={item.img} className="col-12 col-md-5 rounded-circle" alt={item.name} />
                       <h3 className="text-center ">{item.name}</h3>
@@ -296,7 +296,7 @@ export default function AboutUs() {
                 src="SubsystemLogo/research.gif"
                 alt="Research"
               />
-              <div className="col-10 mx-auto">
+              <div className="col-10 mx-auto text-center">
                 <p className="fs-3">Research</p>
                 <p className="fs-6">
                   The Research subsystem of Mars Rover Manipal is responsible
@@ -313,7 +313,7 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase">Team Members </h3>
               {researchData.map((item) => {
                 return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
                         src={item.img}
@@ -362,7 +362,7 @@ export default function AboutUs() {
                 src="SubsystemLogo/science.gif"
                 alt="Science"
               />
-              <div className="col-10 mx-auto">
+              <div className="col-10 mx-auto text-center">
                 <p className="fs-3">Science</p>
                 <p className="fs-6">
                   The Science subsystem is responsible for comprehensive
@@ -379,7 +379,7 @@ export default function AboutUs() {
               {sciData.map((item) => {
                 return (
 
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
                         src={item.img}
@@ -429,14 +429,14 @@ export default function AboutUs() {
             </div>
             <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
               <img
-                className="img-fluid col-10 mx-auto"
+                className="img-fluid col-10 mx-auto text-center"
                 src="SubsystemLogo/management.gif"
                 alt="Management"
               />
-              <div className="col-10 mx-auto">
+              <div className="col-10 mx-auto text-center">
 
                 <h1>Management & Public Relations</h1>
-                <p>
+                <p >
                   The Management and PR subsystem of Mars Rover Manipal is
                   responsible for all the non-technical work of the team. It is
                   involved in the overall progress of the team by handling
@@ -453,7 +453,7 @@ export default function AboutUs() {
               <h3 className="text-center text-uppercase">Team Members </h3>
               {mgmtData.map((item) => {
                 return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
                         src={item.img}
@@ -482,29 +482,69 @@ export default function AboutUs() {
           <div className="col-12 d-flex mx-auto">
             <div className="row justify-content-center ">
               <h3 className="text-center text-uppercase ">Faculty Advisors </h3>
-              {FAdata.map((item) => {
-                return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
-                    <div className="d-flex flex-column align-items-center p-4 ">
-                      <img
-                        src={item.img}
-                        className="col-12 col-md-5 rounded-circle"
-                        alt={item.name}
-                      />
-                      <p className="fs-3 text-center text-light">
-                        {item.name}
-                      </p>
-                      <p className="fs-5 text-center text-secondary">
-                        {item.pos}
-                      </p>
-                      <p className="fs-5 text-center text-secondary">
-                        {item.dept}
-                      </p>
-                    </div>
-                  </Card>
 
-                );
-              })}
+
+              <div className="row justify-content-center d-none d-sm-flex ">
+                {FAdata.map((item) => {
+                  return (
+                    <Card classname="bg-dark text-light col-lg-4 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                      <div className="d-flex flex-column align-items-center p-4 ">
+                        <img
+                          src={item.img}
+                          className="col-12 col-md-5 rounded-circle"
+                          alt={item.name}
+                        />
+                        <p className="fs-3 text-center text-light">
+                          {item.name}
+                        </p>
+                        <p className="fs-5 text-center text-secondary">
+                          {item.pos}
+                        </p>
+                        <p className="fs-5 text-center text-secondary">
+                          {item.dept}
+                        </p>
+                        <p className="fs-5 text-center text-secondary">
+                          Year: {item.year}
+                        </p>
+                      </div>
+                    </Card>
+
+                  );
+                })}
+              </div>
+
+
+              <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
+                {FAdata.map((item) => {
+                  return (
+                    <Card classname="bg-dark text-light col-11 mx-auto m-3 p-2">
+                      <div className="d-flex flex-column align-items-center p-4 ">
+                        <img
+                          src={item.img}
+                          className="col-4 col-md-2 rounded-circle"
+                          alt={item.name}
+                        />
+                        <p className="fs-4 text-center text-light">
+                          {item.name}
+                        </p>
+                        <p className="fs-6 text-center text-secondary">
+                          {item.pos}
+                        </p>
+                        <p className="fs-6 text-center text-secondary">
+                          {item.dept}
+                        </p>
+                        <p className="fs-6 text-center text-secondary">
+                          Year: {item.year}
+                        </p>
+                      </div>
+                    </Card>
+
+                  );
+                })}
+              </div>
+
+
+
             </div>
           </div>
         );
@@ -525,7 +565,7 @@ export default function AboutUs() {
           outline
           size="lg"
           color="primary"
-          className="mx-3"
+          className="mx-2"
           value="board"
           onClick={handleClick}
         >
@@ -536,7 +576,7 @@ export default function AboutUs() {
           size="lg"
           value="ai"
           color="primary"
-          className="mx-3"
+          className="mx-2"
           onClick={handleClick}
         >
           AI & Automation
@@ -547,7 +587,7 @@ export default function AboutUs() {
           onClick={handleClick}
           size="lg"
           color="primary"
-          className="mx-3"
+          className="mx-2"
         >
           ECS
         </Button>
@@ -557,7 +597,7 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="mech"
-          className="mx-3"
+          className="mx-2"
         >
           Mechanical
         </Button>
@@ -567,7 +607,7 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="research"
-          className="mx-3"
+          className="mx-2"
         >
           Research
         </Button>
@@ -577,7 +617,7 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="science"
-          className="mx-3"
+          className="mx-2"
         >
           Science
         </Button>
@@ -587,9 +627,19 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="management"
-          className="mx-3"
+          className="mx-2"
         >
           Management
+        </Button>
+        <Button
+          outline
+          size="lg"
+          color="primary"
+          onClick={handleClick}
+          value="fa"
+          className="mx-2"
+        >
+          Faculty Advisors
         </Button>
       </div>
       <div className="d-flex col-12 text-center justify-content-center p-3 flex-wrap d-flex d-sm-none">
@@ -597,7 +647,7 @@ export default function AboutUs() {
           outline
           size="sm"
           color="primary"
-          className="mx-3"
+          className="mx-2"
           value="board"
           onClick={handleClick}
         >
@@ -608,7 +658,7 @@ export default function AboutUs() {
           size="sm"
           value="ai"
           color="primary"
-          className="mx-3"
+          className="mx-2"
           onClick={handleClick}
         >
           AI & Automation
@@ -619,7 +669,7 @@ export default function AboutUs() {
           onClick={handleClick}
           size="sm"
           color="primary"
-          className="mx-3"
+          className="mx-2"
         >
           ECS
         </Button>
@@ -629,7 +679,7 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="mech"
-          className="mx-3"
+          className="mx-2"
         >
           Mechanical
         </Button>
@@ -639,7 +689,7 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="research"
-          className="mx-3"
+          className="mx-2"
         >
           Research
         </Button>
@@ -649,7 +699,7 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="science"
-          className="mx-3"
+          className="mx-2"
         >
           Science
         </Button>
@@ -659,7 +709,7 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="management"
-          className="mx-3"
+          className="mx-2"
         >
           Management
         </Button>
@@ -669,7 +719,7 @@ export default function AboutUs() {
           color="primary"
           onClick={handleClick}
           value="fa"
-          className="mx-3"
+          className="mx-2"
         >
           Faculty Advisors
         </Button>

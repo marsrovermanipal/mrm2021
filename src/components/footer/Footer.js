@@ -99,17 +99,8 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      {/* </div> */}
 
-      <div className="text-center p-3">
-        {/* style="background-color: rgba(0, 0, 0, 0.2);" */}© 2021 Copyright:
-        <a
-          className="text-dark"
-          href="http://www.marsrovermanipal.com/index.html"
-        >
-          MRM
-        </a>
-      </div>
+
     </div>
   );
 }
