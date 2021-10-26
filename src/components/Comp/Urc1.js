@@ -54,8 +54,9 @@ function Urc1() {
                     {data.map((item) => {
                         return (
 
-                            <Card classname="col-lg-4 col-md-6 col-8 mx-auto mx-md-5 m-4 p-3">
+                            <Card classname="col-lg-4 col-md-6 col-8 mx-auto mx-md-5 m-4 p-3" >
                                 <div
+                                    key={item.id}
                                     style={{ cursor: "pointer" }}
                                     className="d-flex flex-column align-items-center"
                                     onClick={() => openModal(item.comp)}
@@ -123,6 +124,7 @@ function Urc1() {
                 {data.map((item) => {
                     return (
                         <Modal
+
                             isOpen={modal === item.comp}
                             toggle={closeModal}
                             centered
