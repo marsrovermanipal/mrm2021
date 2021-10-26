@@ -7,13 +7,13 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Particles from "react-particles-js";
 import TypeWriterEffect from "react-typewriter-effect";
-import SponsorSection from "../../components/sponsorSection/SponsorSection";
 import Card from "../../components/card/Card";
 import styles from "./Landing.module.css";
-function Model() {
-  const { scene } = useGLTF("/MarsRotating.glb");
-  return <primitive object={scene} />;
-}
+import Model from "../../components/roverModel/Curiosity_static";
+// function Model() {
+//   const { scene } = useGLTF("/Curiosity_static.glb");
+//   return <primitive object={scene} />;
+// }
 
 export default function Landing() {
   const [instaData, setInstaData] = useState([]);
@@ -90,7 +90,7 @@ export default function Landing() {
       </div>
       <div
         className="col-12 p-5 d-block d-lg-flex align-items-center justify-content-between"
-      // style={{ height: "800px" }}
+        // style={{ height: "800px" }}
       >
         <TypeWriterEffect
           textStyle={{
@@ -118,7 +118,7 @@ export default function Landing() {
             />
             <pointLight position={[10, 10, 10]} intensity={1.3} />
             <Suspense fallback={null}>
-              <Model />
+              <Model scale={(0.05, 0.05, 0.05)} />
             </Suspense>
           </Canvas>
         </div>
@@ -155,12 +155,14 @@ export default function Landing() {
         {instaData.map((post) => (
           <Card classname=" col-lg-3 col-md-6 col-10 mx-auto m-3 p-2">
             <div className="d-flex flex-column align-items-center p-3 ">
-              <img className="col-12 col-md-10 " src={post.media_url} alt={post.caption} />
+              <img
+                className="col-12 col-md-10 "
+                src={post.media_url}
+                alt={post.caption}
+              />
             </div>
             <h6 className="text-dark text-center">{post.caption}</h6>
-
           </Card>
-
         ))}
       </div>
     </>
