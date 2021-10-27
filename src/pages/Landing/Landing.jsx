@@ -15,10 +15,10 @@ import { FaRegComment } from "react-icons/fa"
 import { IoPaperPlaneOutline } from "react-icons/io5"
 import { IoEllipsisVertical } from "react-icons/io5"
 
-function Model() {
-  const { scene } = useGLTF("/MarsRotating.glb");
-  return <primitive object={scene} />;
-}
+// function Model() {
+//   const { scene } = useGLTF("/MarsRotating.glb");
+//   return <primitive object={scene} />;
+// }
 import Model from "../../components/roverModel/Curiosity_static";
 // function Model() {
 //   const { scene } = useGLTF("/Curiosity_static.glb");
