@@ -38,6 +38,9 @@ export const NavigationBar = () => {
             <NavItem className={`${styles.navlink} `}>
               <NavLink href="/alumni">Our Alumni</NavLink>
             </NavItem>
+            <NavItem className={`${styles.navlink} `}>
+              <NavLink href="/sponsorship">Sponsorship</NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
