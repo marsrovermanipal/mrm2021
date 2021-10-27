@@ -7,6 +7,7 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import Footer from "./components/footer/Footer";
 import Comp from "./pages/Competitions/Comp";
 import Alumni from "./pages/Alumni/Alumni"
+import Sponsorship from "./pages/Sponsorship/Sponsorship"
 
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route exact path="/alumni">
             <Alumni />
+          </Route>
+          <Route exact path="/sponsorship">
+            <Sponsorship />
           </Route>
         </Switch>
         <Footer />

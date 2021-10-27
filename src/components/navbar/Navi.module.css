@@ -16,6 +16,7 @@ a:hover {
   border-radius: 30px !important;
   border-bottom: 8px solid white !important;
 }
+
 .nav-item:hover > a {
   font-weight: 800;
   color: white;

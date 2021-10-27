@@ -23,20 +23,23 @@ export const NavigationBar = () => {
         <NavbarToggler onClick={toggle} className="navbar-dark" />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="col-12 justify-content-end" navbar>
-            <NavItem>
+            <NavItem className={`${styles.navlink} `}>
               <NavLink href="/">Home</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className={`${styles.navlink} `}>
               <NavLink href="/about-us">About Us</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className={`${styles.navlink} `}>
               <NavLink href="/competitions">Competitions</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className={`${styles.navlink} `}>
               <NavLink href="/research">Research</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className={`${styles.navlink} `}>
               <NavLink href="/alumni">Our Alumni</NavLink>
+            </NavItem>
+            <NavItem className={`${styles.navlink} `}>
+              <NavLink href="/sponsorship">Sponsorship</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
