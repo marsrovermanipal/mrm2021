@@ -124,7 +124,6 @@ function Urc1() {
                 {data.map((item) => {
                     return (
                         <Modal
-
                             isOpen={modal === item.comp}
                             toggle={closeModal}
                             centered

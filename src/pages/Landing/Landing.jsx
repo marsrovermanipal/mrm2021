@@ -10,6 +10,12 @@ import TypeWriterEffect from "react-typewriter-effect";
 import SponsorSection from "../../components/sponsorSection/SponsorSection";
 import Card from "../../components/card/Card";
 import styles from "./Landing.module.css";
+import { FcLike } from "react-icons/fc"
+import { FaRegBookmark } from "react-icons/fa"
+import { FaRegComment } from "react-icons/fa"
+import { IoPaperPlaneOutline } from "react-icons/io5"
+import { IoEllipsisVertical } from "react-icons/io5"
+
 function Model() {
   const { scene } = useGLTF("/MarsRotating.glb");
   return <primitive object={scene} />;
@@ -152,16 +158,31 @@ export default function Landing() {
       {/* <SponsorSection /> */}
 
       <div className=" d-flex flex-wrap">
+
         {instaData.map((post) => (
-          <Card classname=" col-lg-3 col-md-6 col-10 mx-auto m-3 p-2">
-            <div className="d-flex flex-column align-items-center p-3 ">
-              <img className="col-12 col-md-10 " src={post.media_url} alt={post.caption} />
-            </div>
-            <h6 className="text-dark text-center">{post.caption}</h6>
+          <Card classname=" col-lg-3 col-md-5 col-10 mx-auto m-3 p-2" style={{ fontFamily: "Ubuntu" }}>
+            <a href="https://www.instagram.com/marsrovermanipal/?hl=en">
+              <div className="d-flex text-dark">
+                <img className="col-1  m-1" src="logo.png" />
+                <span className="my-1">marsrovermanipal</span>
+                <IoEllipsisVertical className="ms-auto" />
+              </div>
+              <div className="d-flex flex-column align-items-center p-2 ">
+                <img className="col-lg-8 col-md-6 col-8 " src={post.media_url} alt={post.caption} />
 
+              </div>
+              <div className="d-flex text-dark my-2">
+                <FcLike className="mx-2" />
+                <FaRegComment className="mx-2" />
+                <IoPaperPlaneOutline className="mx-2" />
+                < FaRegBookmark className="ms-auto" />
+
+              </div>
+              {/* <h6 className="text-dark text-center">{post.caption}</h6> */}
+            </a>
           </Card>
-
         ))}
+
       </div>
     </>
   );
