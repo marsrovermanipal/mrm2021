@@ -9,11 +9,12 @@ import Particles from "react-particles-js";
 import TypeWriterEffect from "react-typewriter-effect";
 import Card from "../../components/card/Card";
 import styles from "./Landing.module.css";
-import { FcLike } from "react-icons/fc"
-import { FaRegBookmark } from "react-icons/fa"
-import { FaRegComment } from "react-icons/fa"
-import { IoPaperPlaneOutline } from "react-icons/io5"
-import { IoEllipsisVertical } from "react-icons/io5"
+import { FcLike } from "react-icons/fc";
+import { FaRegBookmark } from "react-icons/fa";
+import { FaRegComment } from "react-icons/fa";
+import { IoPaperPlaneOutline } from "react-icons/io5";
+import { IoEllipsisVertical } from "react-icons/io5";
+import NewsData from "./NewsData"
 
 // function Model() {
 //   const { scene } = useGLTF("/MarsRotating.glb");
@@ -139,9 +140,16 @@ export default function Landing() {
         data-aos-delay="200"
         style={{ backgroundColor: "" }}
       >
-        <div className="text-center mt-5">
-          {/* <h1>Mars Rover Manipal</h1> */}
-          <p className="fs-4 col-12 col-md-8 p-3 text-start text-md-center mx-auto text-center">
+      </div>
+      <div className="col-12 ">
+        <video autoplay muted loop controls className={` ${styles.myVideo}`}>
+          <source src="Mrm_Video.mp4" type="video/mp4" />
+        </video>
+        <div className={`text-center ${styles.content}`}>
+          <h1>Mars Rover Manipal</h1>
+          <p className="fs-5 col-12  text-center p-2"
+          //  col-md-8  text-start text-md-center  mt-5  mx-auto
+          >
             Mars Rover Manipal is a multi-disciplinary student team from Manipal
             Academy of Higher Education (MAHE) striving to design and build next
             generation rovers for exploration of extraterrestrial environments
@@ -159,34 +167,80 @@ export default function Landing() {
           </p>
         </div>
       </div>
+      {/* <h1>Mars Rover Manipal</h1> */}
+      {/* <p className="fs-4 col-12 col-md-8 p-3 text-start text-md-center mx-auto text-center mt-5">
+            Mars Rover Manipal is a multi-disciplinary student team from Manipal
+            Academy of Higher Education (MAHE) striving to design and build next
+            generation rovers for exploration of extraterrestrial environments
+            and focus on applications of robotics in interplanetary missions.
+            <br />
+            We participate in the annual University Rover Challenge (URC)
+            organized by the Mars Society, USA. In URC 2019, our team finished
+            8th out of 84 teams across the globe and stood 1st among the Asian
+            teams. Since our inception, the team has provided a platform to
+            aspiring engineering students by pushing them beyond the theoretical
+            knowledge they gain in classrooms to inculcate technical and
+            practical skills. The team is also working on research related to
+            the role of a rover in the field of space exploration and future
+            Mars missions.
+          </p> */}
+
+
       {/* <SponsorSection /> */}
 
       <div className=" d-flex flex-wrap">
-
         {instaData.map((post) => (
-          <Card classname=" col-lg-3 col-md-5 col-10 mx-auto m-3 p-2" style={{ fontFamily: "Ubuntu" }}>
+          <Card
+            classname=" col-lg-3 col-md-5 col-10 mx-auto m-3 p-2"
+            style={{ fontFamily: "Ubuntu" }}
+          >
             <a href="https://www.instagram.com/marsrovermanipal/?hl=en">
               <div className="d-flex text-dark">
-                <img className="col-1  m-1" src="logo.png" />
+                <img className="col-1  m-1" src="logo.png" alt="mrm logo" />
                 <span className="my-1">marsrovermanipal</span>
                 <IoEllipsisVertical className="ms-auto" />
               </div>
               <div className="d-flex flex-column align-items-center p-2 ">
-                <img className="col-lg-8 col-md-6 col-8 " src={post.media_url} alt={post.caption} />
-
+                <img
+                  className="col-lg-8 col-md-6 col-8 "
+                  src={post.media_url}
+                  alt={post.caption}
+                />
               </div>
               <div className="d-flex text-dark my-2">
                 <FcLike className="mx-2" />
                 <FaRegComment className="mx-2" />
                 <IoPaperPlaneOutline className="mx-2" />
-                < FaRegBookmark className="ms-auto" />
-
+                <FaRegBookmark className="ms-auto" />
               </div>
               {/* <h6 className="text-dark text-center">{post.caption}</h6> */}
             </a>
           </Card>
         ))}
+      </div>
 
+
+      <div className=" d-flex flex-wrap">
+        {NewsData.map((news) => (
+          <Card classname="col-lg-3 col-md-5 col-10 mx-auto m-3 p-2">
+            <div className="d-flex flex-column align-items-center p-4 ">
+              <img
+                src={news.img}
+                className="col-12  text-dark "
+                alt={news.heading}
+              />
+              <p className="fs-5 text-center text-dark ">
+                {news.heading}
+              </p>
+              <div className="col-12 d-flex justify-content-center fixed-bottom mb-3">
+                <a className="text-dark " href={news.link}>
+                  Read More
+                </a>
+              </div>
+
+            </div>
+          </Card>
+        ))}
       </div>
     </>
   );
