@@ -11,57 +11,57 @@ export default function SponsorSection() {
   const data = [
     {
       name: "Mouser Electronics",
-      bgpath: "sponsors/mouser.jpg",
+      bgpath: "/sponsors/mouser.jpg",
       link: "https://www.mouser.in/",
     },
     {
       name: "Sick",
-      bgpath: "sponsors/sick.jpg",
+      bgpath: "/sponsors/sick.jpg",
       link: "https://www.sick.com/in/en/",
     },
     {
       name: "KelpeTech",
-      bgpath: "sponsors/kelpeTech.jpg",
+      bgpath: "/sponsors/kelpeTech.jpg",
       link: "https://www.kelpecnc.com/",
     },
     {
       name: "Aristo",
-      bgpath: "sponsors/aristo.jpg",
+      bgpath: "/sponsors/aristo.jpg",
       link: "https://www.aristo-india.com/#",
     },
     {
       name: "Aeroqual",
-      bgpath: "sponsors/aeroqual.jpg",
+      bgpath: "/sponsors/aeroqual.jpg",
       link: "https://www.aeroqual.com",
     },
     {
       name: "LPS Bossard",
-      bgpath: "sponsors/lpsbossard.jpg",
+      bgpath: "/sponsors/lpsbossard.jpg",
       link: "https://www.bossard.com/in-en/",
     },
     {
       name: "Wheeleez",
-      bgpath: "sponsors/wheeleez.jpg",
+      bgpath: "/sponsors/wheeleez.jpg",
       link: "",
     },
     {
       name: "Nvidia",
-      bgpath: "sponsors/nvidia.jpg",
+      bgpath: "/sponsors/nvidia.jpg",
       link: "https://nvidia.com",
     },
     {
       name: "SolidWorks",
-      bgpath: "sponsors/solidworks.jpg",
+      bgpath: "/sponsors/solidworks.jpg",
       link: "https://solidworks.com",
     },
     {
       name: "Decopad Interiors",
-      bgpath: "sponsors/decopad-logo.jpeg",
+      bgpath: "/sponsors/decopad-logo.jpeg",
       link: "",
     },
     {
       name: "Stevens",
-      bgpath: "sponsors/stevens.jpg",
+      bgpath: "/sponsors/stevens.jpg",
       link: "https://stevenswater.com",
     },
   ];
