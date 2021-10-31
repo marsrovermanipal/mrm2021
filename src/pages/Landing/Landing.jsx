@@ -224,6 +224,12 @@ export default function Landing() {
         {NewsData.map((news) => (
           <Card classname="col-lg-3 col-md-5 col-10 mx-auto m-3 p-2">
             <div className="d-flex flex-column align-items-center p-4 ">
+
+              <img
+                src={news.logo}
+                className="col-6 mb-3  text-dark "
+                alt={news.heading} />
+
               <img
                 src={news.img}
                 className="col-12  text-dark "
