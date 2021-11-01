@@ -16,6 +16,7 @@ import { IoPaperPlaneOutline } from "react-icons/io5";
 import { IoEllipsisVertical } from "react-icons/io5";
 import NewsData from "./NewsData"
 
+import ReactPlayer from 'react-player'
 // function Model() {
 //   const { scene } = useGLTF("/MarsRotating.glb");
 //   return <primitive object={scene} />;
@@ -141,13 +142,14 @@ export default function Landing() {
         style={{ backgroundColor: "" }}
       >
       </div>
-      <div className="col-12 ">
-        <video autoplay muted loop controls className={` ${styles.myVideo}`}>
-          <source src="Mrm_Video.mp4" type="video/mp4" />
-        </video>
-        <div className={`text-center ${styles.content}`}>
+      <div className={`col-12 d-block my-5 ${styles.rover}`}>
+        <img src="/photos20/Rover autonomous.jpeg" alt="rover"
+          width='100%'
+          height='100%'
+        />
+        <div className={` ${styles.roverText}`}>
           <h1>Mars Rover Manipal</h1>
-          <p className="fs-5 col-12  text-center p-2"
+          <p className="fs-4 col-12  text-center p-2"
           //  col-md-8  text-start text-md-center  mt-5  mx-auto
           >
             Mars Rover Manipal is a multi-disciplinary student team from Manipal
@@ -167,26 +169,7 @@ export default function Landing() {
           </p>
         </div>
       </div>
-      {/* <h1>Mars Rover Manipal</h1> */}
-      {/* <p className="fs-4 col-12 col-md-8 p-3 text-start text-md-center mx-auto text-center mt-5">
-            Mars Rover Manipal is a multi-disciplinary student team from Manipal
-            Academy of Higher Education (MAHE) striving to design and build next
-            generation rovers for exploration of extraterrestrial environments
-            and focus on applications of robotics in interplanetary missions.
-            <br />
-            We participate in the annual University Rover Challenge (URC)
-            organized by the Mars Society, USA. In URC 2019, our team finished
-            8th out of 84 teams across the globe and stood 1st among the Asian
-            teams. Since our inception, the team has provided a platform to
-            aspiring engineering students by pushing them beyond the theoretical
-            knowledge they gain in classrooms to inculcate technical and
-            practical skills. The team is also working on research related to
-            the role of a rover in the field of space exploration and future
-            Mars missions.
-          </p> */}
 
-
-      {/* <SponsorSection /> */}
 
       <div className=" d-flex flex-wrap">
         {instaData.map((post) => (
@@ -213,14 +196,16 @@ export default function Landing() {
                 <IoPaperPlaneOutline className="mx-2" />
                 <FaRegBookmark className="ms-auto" />
               </div>
-              {/* <h6 className="text-dark text-center">{post.caption}</h6> */}
+
             </a>
           </Card>
         ))}
       </div>
 
-
-      <div className=" d-flex flex-wrap">
+      <div className="bg-dark my-3 p-4 mb-0">
+        <p className="fs-3 text-center ">We have been featured in leading newspapers, technical blogs and international magazines from time to time. Our achievements have been highlighted by all forms of media. </p>
+      </div>
+      <div className=" d-flex flex-wrap bg-dark">
         {NewsData.map((news) => (
           <Card classname="col-lg-3 col-md-5 col-10 mx-auto m-3 p-2">
             <div className="d-flex flex-column align-items-center p-4 ">

@@ -7,15 +7,16 @@ import data from "./BrochureData"
 function Sponsorship() {
     return (
         <>
-            <div className="col-12 m-3 p-2 d-flex justify-content-center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/RTfdjtEwPGQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div className="col-11 mx-auto m-3  d-flex justify-content-center">
+                {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/RTfdjtEwPGQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                <img src="/grp.JPG" className="col-12" alt="team" />
             </div>
-            <div classname="text-dark  p-2 col-10 ">
-                <p className="fs-4 m-5 text-center">
+            <div classname="p-2 col-10 ">
+                <p className="fs-5 m-3 p-4 text-center text-dark bg-light">
                     Mars Rover Manipal is a leading student project team of Manipal Academy of Higher Education. With each subsequent year, the team has built a better, more capable design with a better performance than the previous one. The team has been a consistent performer in University Rover Challenge, organized by Mars Society. Mars Society is the body concerned with the establishment of humans on Mars in future. The event is judged and attended by leading scientists of the world. Tech heads from all over the world, who will one day be leading technocrats, take part in the event. Our partner sponsors are featured in our merchandise which we wear in all our events. Our logo also has stickers of our sponsor companies. We sponsors from time to time on our social platforms like Facebook, Instagram and Youtube. Besides the competition, we put our work on display at TechTatva, MIT's national level technical festival. A fest with a reach like such can be a great platform for your company for advertisement. We regularly take part in tech competitions, where our rover has constantly performed well.
                 </p>
             </div>
-            <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
+            <div className="col-12 d-none d-sm-flex justify-content-around mx-auto m-5">
                 <img
                     className="col-6 col-lg-3 img-fluid"
                     src="/photos20/PCB Power.jpg"
@@ -40,8 +41,8 @@ function Sponsorship() {
                     </p>
                 </div>
             </div>
-            <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
-                <div className="col-6  my-auto p-4">
+            <div className="col-12 d-none d-sm-flex justify-content-around mx-auto bg-light text-dark m-5 p-4">
+                <div className="col-6  my-auto ">
                     <p className="fs-5 ">
                         Home to about 20,000 students from all parts of the world, very few colleges provide diversity, as Manipal Academy of Higher Education does. Joining our family of sponsors provides your company exposure to all of these students. Your company will come in direct contact with innovative and dedicated students, who are experienced and more than able to handle situations. As one of our sponsors, your company is invited to all our events and can visit our workshop any time. Our workshop is a place where you can have access to bright engineering students, who can be an asset to any company they join.
                     </p>
@@ -66,15 +67,12 @@ function Sponsorship() {
             </div>
 
             <SponsorSection />
-            <div className="bg-dark m-3 p-2">
+            <div className="bg-dark m-3">
                 <p className="fs-1 text-center ">Brochure </p>
+                <div className="col-12 p-1 ">
+                    <ImageCarousel Items={data} />
+                </div>
 
-
-                {data.map((item) => {
-                    <div className="col-12 p-1 p-md-5">
-                        <ImageCarousel Items={item.img} />
-                    </div>
-                })}
             </div>
         </>
     )
