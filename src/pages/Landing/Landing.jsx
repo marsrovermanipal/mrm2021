@@ -150,7 +150,7 @@ export default function Landing() {
         style={{ backgroundColor: "" }}
       >
       </div>
-      {/* <div className={`col-12 d-block my-5 ${styles.rover}`}>
+      <div className={`col-12 d-block my-5 ${styles.rover}`}>
         <img src="/photos20/Rover autonomous.jpeg" alt="rover"
           width='100%'
           height='100%'
@@ -176,7 +176,7 @@ export default function Landing() {
             Mars missions.
           </p>
         </div>
-      </div> */}
+      </div>
 
 
       <div className=" d-flex flex-wrap">
