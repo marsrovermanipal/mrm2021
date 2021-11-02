@@ -17,7 +17,6 @@ import { IoEllipsisVertical } from "react-icons/io5";
 
 import NewsData from "./NewsData"
 
-import ReactPlayer from 'react-player'
 // function Model() {
 //   const { scene } = useGLTF("/MarsRotating.glb");
 //   return <primitive object={scene} />;
