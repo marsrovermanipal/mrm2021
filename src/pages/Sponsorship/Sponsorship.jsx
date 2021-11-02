@@ -1,8 +1,7 @@
 import React from 'react'
-import Card from "../../components/card/Card"
 import SponsorSection from "../../components/sponsorSection/SponsorSection"
-import ImageCarousel from "../../components/carousel/ImageCarousel"
-import data from "./BrochureData"
+// import ImageCarousel from "../../components/carousel/ImageCarousel"
+// import data from "./BrochureData"
 
 import HTMLFlipBook from 'react-pageflip';
 
