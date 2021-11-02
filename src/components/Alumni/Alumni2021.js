@@ -11,7 +11,7 @@ const Alumni2016 = () => {
                 <h3 className="text-center text-uppercase ">2021</h3>
                 {data.map((item) => {
                     return (
-                        <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                        <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                             <div className="d-flex flex-column align-items-center p-4 ">
                                 <img
                                     src={item.img}
