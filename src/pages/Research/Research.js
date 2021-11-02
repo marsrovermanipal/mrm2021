@@ -25,11 +25,11 @@ export default function Research() {
         boundaries every day. At the same time, we publish papers and present
         them at some of the world's top conferences and research journals.
       </p>
-      <p className="fs-2">PUBLICATIONS</p>
+      <p className="fs-2 text-decoration-underline">PUBLICATIONS</p>
       <div className="row justify-content-center ">
         {data.map((item) => {
           return (
-            <Card classname="bg-light text-dark col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-4">
+            <Card classname="bg-light text-dark col-lg-3 col-md-5 col-10 mx-auto mx-md-3 m-3 p-4">
               <div >
                 <h5 className="">{item.title}</h5>
                 {item.img && <img className="col-12" src={item.img} alt={item.title} />}

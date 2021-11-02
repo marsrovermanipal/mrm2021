@@ -69,7 +69,7 @@ export default function SponsorSection() {
     <>
       <h1 className="text-center">Our Sponsors</h1>
       <p
-        className="col-8 mx-auto text-center fs-5"
+        className="col-10 mx-auto text-center fs-5"
         data-aos="fade-in"
         data-aos-delay="200"
       >
@@ -79,7 +79,7 @@ export default function SponsorSection() {
         us going to pursue our goals. We are grateful to all our sponsors for
         their support and hope to augment our relationship.
       </p>
-      <div className="col-8 mx-auto d-flex justify-content-center flex-wrap">
+      <div className="col-9 mx-auto d-flex justify-content-center flex-wrap">
         {data.map((d) => (
           <div
             className="col-12 col-md-6 col-lg-3 p-3"
