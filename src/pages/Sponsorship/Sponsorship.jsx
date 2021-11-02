@@ -4,6 +4,8 @@ import SponsorSection from "../../components/sponsorSection/SponsorSection"
 import ImageCarousel from "../../components/carousel/ImageCarousel"
 import data from "./BrochureData"
 
+import HTMLFlipBook from 'react-pageflip';
+
 function Sponsorship() {
     return (
         <>
@@ -69,11 +71,45 @@ function Sponsorship() {
             <SponsorSection />
             <div className="bg-dark m-3">
                 <p className="fs-1 text-center ">Brochure </p>
-                <div className="col-12 p-1 ">
-                    <ImageCarousel Items={data} />
-                </div>
 
+                {/* <ImageCarousel Items={data} /> */}
+
+                <div className=" d-flex justify-content-center ">
+                    <HTMLFlipBook width={670} height={520}>
+                        <div className="demoPage  ">
+                            <img src="/brochure/1.jpg" className="col-12 " alt="brochure" />
+                        </div>
+                        <div className="demoPage ">
+                            <img src="/brochure/2.jpg" className="col-12" alt="brochure" />
+                        </div>
+                        <div className="demoPage">
+                            <img src="/brochure/3.jpg" className="col-12" alt="brochure" />
+                        </div>
+                        <div className="demoPage">
+                            <img src="/brochure/4.jpg" className="col-12" alt="brochure" />
+                        </div>
+                        <div className="demoPage">
+                            <img src="/brochure/5.jpg" className="col-12" alt="brochure" />
+                        </div>
+                        <div className="demoPage">
+                            <img src="/brochure/6.jpg" className="col-12" alt="brochure" />
+                        </div>
+                        <div className="demoPage">
+                            <img src="/brochure/7.jpg" className="col-12" alt="brochure" />
+                        </div>
+                        <div className="demoPage">
+                            <img src="/brochure/8.jpg" className="col-12" alt="brochure" />
+                        </div>
+                        <div className="demoPage">
+                            <img src="/brochure/9.jpg" className="col-12" alt="brochure" />
+                        </div>
+                        <div className="demoPage">
+                            <img src="/brochure/10.jpg" className="col-12" alt="brochure" />
+                        </div>
+                    </HTMLFlipBook>
+                </div>
             </div>
+
         </>
     )
 }
