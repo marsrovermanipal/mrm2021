@@ -15,6 +15,8 @@ import { FaRegComment } from "react-icons/fa";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import { IoEllipsisVertical } from "react-icons/io5";
 
+import NewsData from "./NewsData"
+
 // function Model() {
 //   const { scene } = useGLTF("/MarsRotating.glb");
 //   return <primitive object={scene} />;
@@ -44,7 +46,7 @@ export default function Landing() {
     <>
       <div className={`col-12 ${styles.landing_anim}`}>
         <Particles
-          height="550px"
+          height="650px"
           params={{
             particles: {
               number: {
@@ -98,28 +100,32 @@ export default function Landing() {
           }}
         />
       </div>
-      <div
-        className="col-12 p-5 d-block d-lg-flex align-items-center justify-content-between"
-        // style={{ height: "800px" }}
-      >
-        <TypeWriterEffect
-          textStyle={{
-            fontFamily: "",
-            color: "#f7f4f2",
-            fontWeight: 500,
-            fontSize: "4.5em",
-          }}
-          startDelay={1000}
-          cursorColor="#f7f4f2"
-          text="Design to Discover."
-          typeSpeed={150}
-        />
-      </div>
 
-      {/* <img className={`col-12 img-fluid d-none d-sm-flex  ${styles.landing_img}`} src="/MARS1.png" />
+      {/* <div
+        className="col-12 p-5 d-block d-lg-flex " */}
+      {/* // style={{ height: "800px" }}
+      > */}
+
+      <div className="col-12  justify-content-around mx-auto">
+        <div className="col-lg-5 col-12 m-auto">
+          <TypeWriterEffect
+            textStyle={{
+              fontFamily: "",
+              color: "#f7f4f2",
+              fontWeight: 600,
+              fontSize: "4.5em",
+            }}
+            startDelay={1000}
+            cursorColor="#f7f4f2"
+            text="Design to Discover."
+            typeSpeed={150}
+          />
+        </div>
+
+        {/* <img className={`col-12 img-fluid d-none d-sm-flex  ${styles.landing_img}`} src="/MARS1.png" />
       <img className={`col-12 img-fluid d-flex d-sm-none  ${styles.landing_img}`} src="/MARSphone.png" /> */}
-      <div className="d-flex">
-        <div className="col-6 text-end" style={{ height: "100vh" }}>
+
+        <div className="d-flex mx-auto col-lg-6 col-10 img-fluid " style={{ height: "100vh" }}>
           <Canvas camera={{ position: [10, 18, 23], fov: 0.5 }}>
             <OrbitControls
               enableZoom={false}
@@ -133,15 +139,26 @@ export default function Landing() {
           </Canvas>
         </div>
       </div>
+      {/* </div> */}
+
+
       <div
         className="col-12"
         data-aos="fade-in"
         data-aos-delay="200"
         style={{ backgroundColor: "" }}
       >
-        <div className="text-center mt-5">
-          {/* <h1>Mars Rover Manipal</h1> */}
-          <p className="fs-4 col-12 col-md-8 p-3 text-start text-md-center mx-auto text-center">
+      </div>
+      <div className={`col-12 d-block my-5 ${styles.rover}`}>
+        <img src="/photos20/Rover autonomous.jpeg" alt="rover"
+          width='100%'
+          height='100%'
+        />
+        <div className={` ${styles.roverText}`}>
+          <h1>Mars Rover Manipal</h1>
+          <p className="fs-4 col-12  text-center p-2"
+          //  col-md-8  text-start text-md-center  mt-5  mx-auto
+          >
             Mars Rover Manipal is a multi-disciplinary student team from Manipal
             Academy of Higher Education (MAHE) striving to design and build next
             generation rovers for exploration of extraterrestrial environments
@@ -159,7 +176,7 @@ export default function Landing() {
           </p>
         </div>
       </div>
-      {/* <SponsorSection /> */}
+
 
       <div className=" d-flex flex-wrap">
         {instaData.map((post) => (
@@ -186,8 +203,40 @@ export default function Landing() {
                 <IoPaperPlaneOutline className="mx-2" />
                 <FaRegBookmark className="ms-auto" />
               </div>
-              {/* <h6 className="text-dark text-center">{post.caption}</h6> */}
+
             </a>
+          </Card>
+        ))}
+      </div>
+
+      <div className="bg-dark my-3 p-4 mb-0">
+        <p className="fs-3 text-center ">We have been featured in leading newspapers, technical blogs and international magazines from time to time. Our achievements have been highlighted by all forms of media. </p>
+      </div>
+      <div className=" d-flex flex-wrap bg-dark">
+        {NewsData.map((news) => (
+          <Card classname="col-lg-3 col-md-5 col-10 mx-auto m-3 p-2">
+            <div className="d-flex flex-column align-items-center p-4 ">
+
+              <img
+                src={news.logo}
+                className="col-6 mb-3  text-dark "
+                alt={news.heading} />
+
+              <img
+                src={news.img}
+                className="col-12  text-dark "
+                alt={news.heading}
+              />
+              <p className="fs-5 text-center text-dark ">
+                {news.heading}
+              </p>
+              <div className="col-12 d-flex justify-content-center fixed-bottom mb-3">
+                <a className="text-dark " href={news.link}>
+                  Read More
+                </a>
+              </div>
+
+            </div>
           </Card>
         ))}
       </div>
