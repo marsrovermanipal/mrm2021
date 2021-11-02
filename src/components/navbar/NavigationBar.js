@@ -15,7 +15,7 @@ export const NavigationBar = () => {
     setIsOpen(!isOpen);
   }
   return (
-    <div className="col-12">
+    <div className="col-12 bg-dark mb-4 sticky-top">
       <Navbar expand="md">
         <NavbarBrand href="/">
           <img src="/logo.png" alt="" className={`${styles.logo} img-fluid`} />
