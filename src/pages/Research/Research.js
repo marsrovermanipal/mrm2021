@@ -37,7 +37,9 @@ export default function Research() {
                 <p className="">{item.author}</p>
               </div>
             </Card>
+
           );
+
         })}
       </div>
     </div>

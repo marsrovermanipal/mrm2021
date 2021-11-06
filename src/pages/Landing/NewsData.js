@@ -1,21 +1,21 @@
 const data = [
     {
         id: 2,
-        logo: "navjeevan.png",
+        logo: "/Articles_Logo/navjeevan.png",
         heading: 'MIT-MAHE team comes 3rd in 2nd edition of International Rover Design Challenge',
         img: 'comp/2020Rover.JPG',
         link: "https://navjeevanexpress.com/mit-mahe-team-comes-3rd-in-2nd-edition-of-international-rover-design-challenge/",
     },
     {
         id: 1,
-        logo: "hindu.png",
+        logo: "/Articles_Logo/hindu.png",
         heading: 'MIT students bag third place in rover design challenge',
         img: 'comp/IRDC_2021.png',
         link: "https://www.thehindu.com/news/cities/Mangalore/mit-students-bag-third-place-in-rover-design-challenge/article36453386.ece",
     },
     {
         id: 3,
-        logo: "toi.jpg",
+        logo: "/Articles_Logo/toi.jpg",
         heading: 'Mars Rover Manipal secures first place in Indian Rover Challenge 2018',
         img: 'irc/image3.jpg',
         link: "https://timesofindia.indiatimes.com/city/mangaluru/mars-rover-manipal-secures-first-place-in-indian-rover-challenge-2018/articleshow/62495964.cms",

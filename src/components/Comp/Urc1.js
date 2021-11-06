@@ -29,7 +29,7 @@ function Urc1() {
                 <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
                     <img
                         className="img-fluid col-6 col-lg-4"
-                        src="URC_Logo.png"
+                        src="/comp_logo/URC_Logo.png"
                         alt="ERC"
                     />
                     <div className="col-6 col-lg-6 my-auto">
@@ -80,7 +80,7 @@ function Urc1() {
                 <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
                     <img
                         className="img-fluid col-10 mx-auto"
-                        src="URC_Logo.png"
+                        src="/comp_logo/URC_Logo.png"
                         alt="Urc"
                     />
                     <div className="col-11 mx-auto">

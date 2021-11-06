@@ -34,6 +34,7 @@ export default function AboutUs() {
                         src={item.img}
                         className="col-12 col-md-5 rounded-circle"
                         alt={item.name}
+                        loading="lazy"
                       />
                       <p className="fs-3 text-center text-light">
                         {item.name}
@@ -109,6 +110,7 @@ export default function AboutUs() {
                         src={item.img}
                         className="col-12 col-md-5 rounded-circle"
                         alt={item.name}
+
                       />
                       <h3 className="text-center ">{item.name}</h3>
                       <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
