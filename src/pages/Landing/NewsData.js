@@ -4,7 +4,7 @@ const data = [
     logo: "/Articles_Logo/navjeevan.png",
     heading:
       "MIT-MAHE team comes 3rd in 2nd edition of International Rover Design Challenge",
-    img: "comp/2020Rover.JPG",
+    img: "comp/2020Rover.webp",
     link: "https://navjeevanexpress.com/mit-mahe-team-comes-3rd-in-2nd-edition-of-international-rover-design-challenge/",
   },
   {
