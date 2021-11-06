@@ -20,16 +20,6 @@ const data = [
         name: "Kirti Kedia",
         linkedin: "https://www.linkedin.com/in/kirti-kedia-440714204",
     },
-    {
-        img: "team-22/Pranav.jpg",
-        name: " Pranav Chaudhari",
-        linkedin: "https://www.linkedin.com/in/pranav-chaudhari-1a7019211",
-    },
-    {
-        img: "team-22/Raghav Khandurie.jpg",
-        name: "Raghav Khandurie",
-        linkedin: "https://www.linkedin.com/in/raghav-khandurie-9708b718b",
-    },
 
 ]
 

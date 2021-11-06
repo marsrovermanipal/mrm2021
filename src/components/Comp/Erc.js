@@ -13,7 +13,7 @@ const Erc = () => {
                 <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
                     <img
                         className="img-fluid col-6 col-lg-4"
-                        src="ERC_Logo.png"
+                        src="/comp_logo/ERC_Logo.png"
                         alt="ERC"
                     />
                     <div className="col-6 col-lg-6 my-auto">
@@ -26,7 +26,7 @@ const Erc = () => {
                 <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
                     <img
                         className="img-fluid col-11 mx-auto"
-                        src="ERC_Logo.png"
+                        src="/comp_logo/ERC_Logo.png"
                         alt="ERC"
                     />
                     <div className="col-11 mx-auto">

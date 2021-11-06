@@ -12,7 +12,7 @@ const Irdc = () => {
                 <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
                     <img
                         className="img-fluid col-6 col-lg-4"
-                        src="MSSA_Logo.png"
+                        src="/comp_logo/MSSA_Logo.png"
                         alt="MSSA"
                     />
                     <div className="col-6 col-lg-6 my-auto">
@@ -25,7 +25,7 @@ const Irdc = () => {
                 <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
                     <img
                         className="img-fluid col-10 mx-auto"
-                        src="MSSA_Logo.png"
+                        src="/comp_logo/MSSA_Logo.png"
                         alt="MSSA"
                     />
                     <div className="col-11 mx-auto">
