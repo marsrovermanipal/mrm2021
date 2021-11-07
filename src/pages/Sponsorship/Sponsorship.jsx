@@ -127,34 +127,34 @@ function Sponsorship() {
         <div className=" d-flex d-sm-none justify-content-center ">
           <HTMLFlipBook width={"10vw"} height={"8vh"}>
             <div className="demoPage  ">
-              <img src="/brochure/1.jpg" className="col-12 " alt="brochure" />
+              <img src="/brochure/1.webp" className="col-12 " alt="brochure" />
             </div>
             <div className="demoPage ">
-              <img src="/brochure/2.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/2.webp" className="col-12" alt="brochure" />
             </div>
             <div className="demoPage">
-              <img src="/brochure/3.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/3.webp" className="col-12" alt="brochure" />
             </div>
             <div className="demoPage">
-              <img src="/brochure/4.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/4.webp" className="col-12" alt="brochure" />
             </div>
             <div className="demoPage">
-              <img src="/brochure/5.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/5.webp" className="col-12" alt="brochure" />
             </div>
             <div className="demoPage">
-              <img src="/brochure/6.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/6.webp" className="col-12" alt="brochure" />
             </div>
             <div className="demoPage">
-              <img src="/brochure/7.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/7.webp" className="col-12" alt="brochure" />
             </div>
             <div className="demoPage">
-              <img src="/brochure/8.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/8.webp" className="col-12" alt="brochure" />
             </div>
             <div className="demoPage">
-              <img src="/brochure/9.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/9.webp" className="col-12" alt="brochure" />
             </div>
             <div className="demoPage">
-              <img src="/brochure/10.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/10.webp" className="col-12" alt="brochure" />
             </div>
           </HTMLFlipBook>
         </div>
@@ -162,34 +162,34 @@ function Sponsorship() {
         <div className=" d-none d-sm-flex justify-content-center ">
           <HTMLFlipBook width={670} height={520}>
             <div className="demoPage  ">
-              <img src="/brochure/1.jpg" className="col-12 " alt="brochure" />
+              <img src="/brochure/1.webp" className="col-12 " alt="brochure" />
             </div>
             <div className="demoPage ">
-              <img src="/brochure/2.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/2.webp" className="col-12" alt="brochure" />
             </div>
             <div className="demoPage">
-              <img src="/brochure/3.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/3.webp" className="col-12" alt="brochure" />
             </div>
             <div className="demoPage">
-              <img src="/brochure/4.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/4.webp" className="col-12" alt="brochure" />
             </div>
             <div className="demoPage">
-              <img src="/brochure/5.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/5.webp" className="col-12" alt="brochure" />
             </div>
             <div className="demoPage">
-              <img src="/brochure/6.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/6.webp" className="col-12" alt="brochure" />
             </div>
             <div className="demoPage">
-              <img src="/brochure/7.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/7.webp" className="col-12" alt="brochure" />
             </div>
             <div className="demoPage">
-              <img src="/brochure/8.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/8.webp" className="col-12" alt="brochure" />
             </div>
             <div className="demoPage">
-              <img src="/brochure/9.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/9.webp" className="col-12" alt="brochure" />
             </div>
             <div className="demoPage">
-              <img src="/brochure/10.jpg" className="col-12" alt="brochure" />
+              <img src="/brochure/10.webp" className="col-12" alt="brochure" />
             </div>
           </HTMLFlipBook>
         </div>
