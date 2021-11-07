@@ -45,7 +45,8 @@ export default function Landing() {
   return (
     <>
       <div className={`col-12 ${styles.landing_anim}`}>
-        <Particles className="d-none d-sm-flex"
+        <Particles
+          className="d-none d-sm-flex"
           height="120vh"
           params={{
             particles: {
@@ -100,7 +101,8 @@ export default function Landing() {
           }}
         />
 
-        <Particles className="d-flex d-sm-none"
+        <Particles
+          className="d-flex d-sm-none"
           height="60vh"
           params={{
             particles: {
@@ -195,8 +197,10 @@ export default function Landing() {
         </div>
       </div>
 
-
-      <div className="d-flex d-lg-none mx-auto col-lg-6 col-12 img-fluid " style={{ height: "60vh" }}>
+      <div
+        className="d-flex d-lg-none mx-auto col-lg-6 col-12 img-fluid "
+        style={{ height: "60vh" }}
+      >
         <Canvas camera={{ position: [10, 18, 23], fov: 0.5 }}>
           <OrbitControls
             enableZoom={false}
@@ -210,7 +214,9 @@ export default function Landing() {
         </Canvas>
       </div>
 
-      <div className={`d-flex d-lg-none col-lg-6 col-12 justify-content-center p-3 text-center mt-n5  ${styles.designtodiscover}`}>
+      <div
+        className={`d-flex d-lg-none col-lg-6 col-12 justify-content-center p-3 text-center mt-n5  ${styles.designtodiscover}`}
+      >
         <TypeWriterEffect
           textStyle={{
             fontFamily: "",
@@ -225,13 +231,9 @@ export default function Landing() {
         />
       </div>
 
-
-
-
       {/* 
         <img className={`col-12 img-fluid d-none d-sm-flex  ${styles.landing_img}`} alt="mars" src="/MARS1.png" />
         <img className={`col-12 img-fluid d-flex d-sm-none  ${styles.landing_img}`} alt="mars" src="/MARSphone.png" /> */}
-
 
       {/* </div> */}
 
@@ -246,7 +248,7 @@ export default function Landing() {
         className={`d-flex flex-column d-lg-none text-center ${styles.roverPhone}`}
       >
         <h3 className="mt-5">Mars Rover Manipal</h3>
-        <p className="fs-8 col-12  p-2" >
+        <p className="fs-8 col-12  p-2">
           Mars Rover Manipal is a multi-disciplinary student team from Manipal
           Academy of Higher Education (MAHE) striving to design and build next
           generation rovers for exploration of extraterrestrial environments and
@@ -277,7 +279,7 @@ export default function Landing() {
           <h1>Mars Rover Manipal</h1>
           <p
             className="fs-4 col-12  text-center p-2"
-          //  col-md-8  text-start text-md-center  mt-5  mx-auto
+            //  col-md-8  text-start text-md-center  mt-5  mx-auto
           >
             Mars Rover Manipal is a multi-disciplinary student team from Manipal
             Academy of Higher Education (MAHE) striving to design and build next
@@ -297,11 +299,12 @@ export default function Landing() {
         </div>
       </div>
       <div className="d-flex justify-content-center">
-        <img
+        <video
           loading="lazy"
-          src="/searchBar.gif"
+          src="/searchBar.webm"
           alt="Search bar"
           className="col-lg-5 col-10"
+          autoPlay
         />
       </div>
       <div className=" d-flex flex-wrap">
@@ -312,7 +315,12 @@ export default function Landing() {
           >
             <a href="https://www.instagram.com/marsrovermanipal/?hl=en">
               <div className="d-flex text-dark">
-                <img className="col-1  m-1" src="logo.png" loading="lazy" alt="mrm logo" />
+                <img
+                  className="col-1  m-1"
+                  src="logo.png"
+                  loading="lazy"
+                  alt="mrm logo"
+                />
                 <span className="my-1">marsrovermanipal</span>
                 <IoEllipsisVertical className="ms-auto" />
               </div>
