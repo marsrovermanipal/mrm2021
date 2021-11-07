@@ -175,7 +175,7 @@ const data = [
   },
   {
     name: "Kumud Lakara",
-    img: "team-22/Kumud.jpg",
+    img: "team-22/Kumud.webp",
     pos: "Research",
     linkedin: "http://linkedin.com/in/kumud-lakara-8705641a5",
   },

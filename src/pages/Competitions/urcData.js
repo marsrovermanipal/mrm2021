@@ -117,7 +117,7 @@ const data = [
       "Garmin(18x USB GPS navigator), Magnetometer(LSM9DS1), VOC, Ozone, Hydraprobe(Temp, moisture, salinity, EC),Intel Realsense Depth Camera",
 
     pics: [
-      { src: "Photos19/1.webp" },
+      { src: "Photos19/1.jpg" },
       { src: "Photos19/2.webp" },
       { src: "Photos19/3.jpg" },
       { src: "Photos19/4.jpg" },
@@ -165,11 +165,11 @@ const data = [
       "Lidar, Magnetometer, Garmin(18x USB Gps navigator), Ultrasonic, moisture <br>Methane sensor, Hydrogen sulfide sensor",
 
     pics: [
-      { src: "urc2017/rover18a.jpg" },
-      { src: "urc2017/rover18b.jpg" },
-      { src: "urc2017/rover18c.jpg" },
-      { src: "urc2017/rover18d.jpg" },
-      { src: "urc2017/rover18e.jpg" },
+      { src: "urc2017/rover18a.webp" },
+      { src: "urc2017/rover18b.webp" },
+      { src: "urc2017/rover18c.webp" },
+      { src: "urc2017/rover18d.webp" },
+      { src: "urc2017/rover18e.webp" },
     ],
     video: "https://www.youtube.com/embed/8QmRq4NSOIg?controls=0",
   },
@@ -209,10 +209,10 @@ const data = [
       "GPS, Magnetometer, Soil moisture sensor, Temperature sensor,Methane sensor, Hydrogen sulfide sensor",
 
     pics: [
-      { src: "urc2017/image1.jpg" },
-      { src: "urc2017/image2.jpg" },
-      { src: "urc2017/image3.jpg" },
-      { src: "urc2017/image4.jpg" },
+      { src: "urc2017/image1.webp" },
+      { src: "urc2017/image2.webp" },
+      { src: "urc2017/image3.webp" },
+      { src: "urc2017/image4.webp" },
       { src: "urc2017/image5.jpg" },
     ],
     video: "https://www.youtube.com/embed/6Mr8owXfWoc?controls=0",
@@ -245,11 +245,11 @@ const data = [
     Sensors: "GPS, Temperature, Soil Moisture",
 
     pics: [
-      { src: "urc2016/image1.jpg" },
-      { src: "urc2016/image2.jpg" },
+      { src: "urc2016/image1.webp" },
+      { src: "urc2016/image2.webp" },
       { src: "urc2016/image3.jpg" },
-      { src: "urc2016/image4.jpg" },
-      { src: "urc2016/image5.jpeg" },
+      { src: "urc2016/image4.webp" },
+      { src: "urc2016/image5.webp" },
     ],
     video: "https://www.youtube.com/embed/cG70pC12jTU?controls=0",
   },
