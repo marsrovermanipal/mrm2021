@@ -39,7 +39,12 @@ export default function ImageCarousel(Items) {
   });
 
   return (
-    <Carousel activeIndex={activeIndex} next={next} previous={previous} interval={2000}>
+    <Carousel
+      activeIndex={activeIndex}
+      next={next}
+      previous={previous}
+      interval={false}
+    >
       <CarouselIndicators
         items={items}
         activeIndex={activeIndex}
