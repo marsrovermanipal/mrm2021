@@ -101,7 +101,7 @@ export default function Landing() {
         />
 
         <Particles className="d-flex d-sm-none"
-          height="50vh"
+          height="60vh"
           params={{
             particles: {
               number: {
@@ -161,7 +161,7 @@ export default function Landing() {
       {/* // style={{ height: "800px" }}
       > */}
 
-      <div className="d-none d-sm-flex flex-column  mx-auto">
+      <div className="d-none d-lg-flex flex-column  mx-auto">
         <div className="col-lg-6 col-12 m-auto p-3 ">
           <TypeWriterEffect
             textStyle={{
@@ -178,7 +178,7 @@ export default function Landing() {
         </div>
 
         <div
-          className="d-flex d-sm-none mx-auto col-lg-6 col-12 img-fluid "
+          className="d-none d-lg-flex mx-auto col-lg-6 col-12 img-fluid "
           style={{ height: "100vh" }}
         >
           <Canvas camera={{ position: [10, 18, 23], fov: 0.5 }}>
@@ -196,7 +196,7 @@ export default function Landing() {
       </div>
 
 
-      <div className="d-flex d-sm-none mx-auto col-lg-6 col-12 img-fluid " style={{ height: "60vh" }}>
+      <div className="d-flex d-lg-none mx-auto col-lg-6 col-12 img-fluid " style={{ height: "60vh" }}>
         <Canvas camera={{ position: [10, 18, 23], fov: 0.5 }}>
           <OrbitControls
             enableZoom={false}
@@ -210,7 +210,7 @@ export default function Landing() {
         </Canvas>
       </div>
 
-      <div className={`d-flex d-sm-none col-lg-6 col-12 justify-content-center p-3 text-center mt-n5  ${styles.designtodiscover}`}>
+      <div className={`d-flex d-lg-none col-lg-6 col-12 justify-content-center p-3 text-center mt-n5  ${styles.designtodiscover}`}>
         <TypeWriterEffect
           textStyle={{
             fontFamily: "",
@@ -243,17 +243,10 @@ export default function Landing() {
       ></div>
 
       <div
-        className={`d-flex flex-column d-sm-none text-center ${styles.roverPhone}`}
+        className={`d-flex flex-column d-lg-none text-center ${styles.roverPhone}`}
       >
-        {/* <img src="/photos20/Rover autonomous.jpeg" alt="rover"
-          width='100%'
-          height='100%'
-        /> */}
         <h3 className="mt-5">Mars Rover Manipal</h3>
-        <p
-          className="fs-8 col-12  p-2"
-        //  col-md-8  text-start text-md-center  mt-5  mx-auto
-        >
+        <p className="fs-8 col-12  p-2" >
           Mars Rover Manipal is a multi-disciplinary student team from Manipal
           Academy of Higher Education (MAHE) striving to design and build next
           generation rovers for exploration of extraterrestrial environments and
@@ -271,7 +264,7 @@ export default function Landing() {
       </div>
 
       <div
-        className={`col-12 d-block d-none flex-column  d-sm-flex ${styles.rover}`}
+        className={`col-12 d-block d-none flex-column  d-lg-flex ${styles.rover}`}
       >
         <img
           src="/photos20/Rover autonomous.webp"
