@@ -45,8 +45,63 @@ export default function Landing() {
   return (
     <>
       <div className={`col-12 ${styles.landing_anim}`}>
-        <Particles
-          height="650px"
+        <Particles className="d-none d-sm-flex"
+          height="120vh"
+          params={{
+            particles: {
+              number: {
+                value: 500,
+                density: {
+                  enable: false,
+                },
+              },
+              size: {
+                value: 3,
+                random: true,
+                anim: {
+                  speed: 4,
+                  size_min: 0.3,
+                },
+              },
+              line_linked: {
+                enable: false,
+              },
+              move: {
+                random: true,
+                speed: 1,
+                direction: "top",
+                out_mode: "out",
+              },
+            },
+            interactivity: {
+              events: {
+                onhover: {
+                  enable: true,
+                  mode: "bubble",
+                },
+                onclick: {
+                  enable: true,
+                  mode: "repulse",
+                },
+              },
+              modes: {
+                bubble: {
+                  distance: 250,
+                  duration: 2,
+                  size: 0,
+                  opacity: 0,
+                },
+                repulse: {
+                  distance: 400,
+                  duration: 4,
+                },
+              },
+            },
+          }}
+        />
+
+        <Particles className="d-flex d-sm-none"
+          height="50vh"
           params={{
             particles: {
               number: {
@@ -106,8 +161,8 @@ export default function Landing() {
       {/* // style={{ height: "800px" }}
       > */}
 
-      <div className=" justify-content-center mx-auto">
-        <div className="col-lg-6 col-12 m-auto p-3">
+      <div className="d-none d-sm-flex flex-column  mx-auto">
+        <div className="col-lg-6 col-12 m-auto p-3 ">
           <TypeWriterEffect
             textStyle={{
               fontFamily: "",
@@ -134,31 +189,50 @@ export default function Landing() {
             />
             <pointLight position={[10, 10, 10]} intensity={1.3} />
             <Suspense fallback={null}>
-              <Model scale={(0.04, 0.04, 0.03)} />
-            </Suspense>
-          </Canvas>
-        </div>
-
-        <div
-          className="d-none d-sm-flex mx-auto col-lg-6 col-12 img-fluid "
-          style={{ height: "100vh" }}
-        >
-          <Canvas camera={{ position: [10, 18, 23], fov: 0.5 }}>
-            <OrbitControls
-              enableZoom={false}
-              minPolarAngle={Math.PI / 3}
-              maxPolarAngle={Math.PI / 2}
-            />
-            <pointLight position={[10, 10, 10]} intensity={1.3} />
-            <Suspense fallback={null}>
               <Model scale={(0.05, 0.05, 0.05)} />
             </Suspense>
           </Canvas>
         </div>
-        {/* 
+      </div>
+
+
+      <div className="d-flex d-sm-none mx-auto col-lg-6 col-12 img-fluid " style={{ height: "60vh" }}>
+        <Canvas camera={{ position: [10, 18, 23], fov: 0.5 }}>
+          <OrbitControls
+            enableZoom={false}
+            minPolarAngle={Math.PI / 3}
+            maxPolarAngle={Math.PI / 2}
+          />
+          <pointLight position={[10, 10, 10]} intensity={1.3} />
+          <Suspense fallback={null}>
+            <Model scale={(0.05, 0.05, 0.05)} />
+          </Suspense>
+        </Canvas>
+      </div>
+
+      <div className={`d-flex d-sm-none col-lg-6 col-12 justify-content-center p-3 text-center mt-n5  ${styles.designtodiscover}`}>
+        <TypeWriterEffect
+          textStyle={{
+            fontFamily: "",
+            color: "#f7f4f2",
+            fontWeight: 200,
+            fontSize: "2em",
+          }}
+          startDelay={1000}
+          cursorColor="#f7f4f2"
+          text="Design to Discover."
+          typeSpeed={150}
+        />
+      </div>
+
+
+
+
+      {/* 
         <img className={`col-12 img-fluid d-none d-sm-flex  ${styles.landing_img}`} alt="mars" src="/MARS1.png" />
         <img className={`col-12 img-fluid d-flex d-sm-none  ${styles.landing_img}`} alt="mars" src="/MARSphone.png" /> */}
-      </div>
+
+
       {/* </div> */}
 
       <div
@@ -178,7 +252,7 @@ export default function Landing() {
         <h3 className="mt-5">Mars Rover Manipal</h3>
         <p
           className="fs-8 col-12  p-2"
-          //  col-md-8  text-start text-md-center  mt-5  mx-auto
+        //  col-md-8  text-start text-md-center  mt-5  mx-auto
         >
           Mars Rover Manipal is a multi-disciplinary student team from Manipal
           Academy of Higher Education (MAHE) striving to design and build next
@@ -209,7 +283,7 @@ export default function Landing() {
           <h1>Mars Rover Manipal</h1>
           <p
             className="fs-4 col-12  text-center p-2"
-            //  col-md-8  text-start text-md-center  mt-5  mx-auto
+          //  col-md-8  text-start text-md-center  mt-5  mx-auto
           >
             Mars Rover Manipal is a multi-disciplinary student team from Manipal
             Academy of Higher Education (MAHE) striving to design and build next

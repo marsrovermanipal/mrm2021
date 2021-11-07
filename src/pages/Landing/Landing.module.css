@@ -12,16 +12,18 @@
 .landing_img{
   z-index: 99;
 }
-
+.designtodiscover{
+margin-top:-10em;
+}
 .rover {
   position: relative;
   text-align: center;
-   margin-top: -160px;
+   /* margin-top: -160px; */
    }
 
-.roverPhone{
+/* .roverPhone{
   margin-top: -250px;
-}
+} */
 
  .roverText{
  position: absolute;

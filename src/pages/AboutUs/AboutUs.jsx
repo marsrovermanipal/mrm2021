@@ -31,10 +31,10 @@ export default function AboutUs() {
                   <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
+                        loading="lazy"
                         src={item.img}
                         className="col-12 col-md-5 rounded-circle"
                         alt={item.name}
-                        loading="lazy"
                       />
                       <p className="fs-3 text-center text-light">
                         {item.name}
@@ -60,7 +60,6 @@ export default function AboutUs() {
       case "ai":
         return (
           <>
-
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
                 className="col-6 col-lg-4 img-fluid"
@@ -107,6 +106,7 @@ export default function AboutUs() {
                   <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
+                        loading="lazy"
                         src={item.img}
                         className="col-12 col-md-5 rounded-circle"
                         alt={item.name}
@@ -181,6 +181,7 @@ export default function AboutUs() {
                   <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
+                        loading="lazy"
                         src={item.img}
                         className="col-12 col-md-5 rounded-circle"
                         alt={item.name}
