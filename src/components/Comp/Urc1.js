@@ -28,6 +28,7 @@ function Urc1() {
 
         <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
           <img
+            loading="lazy"
             className="img-fluid col-6 col-lg-4"
             src="/comp_logo/URC_Logo.webp"
             alt="ERC"
@@ -60,7 +61,7 @@ function Urc1() {
                   onClick={() => openModal(item.comp)}
                 >
                   <div>
-                    <img src={item.img} alt={item.comp} className="col-12" />
+                    <img src={item.img} alt={item.comp} loading="lazy" className="col-12" />
                   </div>
                   <div className="text-secondary text-center mt-auto">
                     <h3>{item.comp}</h3>
@@ -74,6 +75,7 @@ function Urc1() {
 
         <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
           <img
+            loading="lazy"
             className="img-fluid col-10 mx-auto"
             src="/comp_logo/URC_Logo.webp"
             alt="Urc"
@@ -103,7 +105,7 @@ function Urc1() {
                     onClick={() => openModal(item.comp)}
                   >
                     <div>
-                      <img src={item.img} alt={item.comp} className="col-12" />
+                      <img src={item.img} alt={item.comp} loading="lazy" className="col-12" />
                     </div>
                     <div className="text-secondary text-center mt-auto">
                       <h3>{item.comp}</h3>

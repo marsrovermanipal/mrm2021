@@ -32,7 +32,7 @@ export default function Research() {
             <Card classname="bg-light text-dark col-lg-3 col-md-5 col-10 mx-auto mx-md-3 m-3 p-4">
               <div >
                 <h5 className="">{item.title}</h5>
-                {item.img && <img className="col-12" src={item.img} alt={item.title} />}
+                {item.img && <img className="col-12" src={item.img} loading="lazy" alt={item.title} />}
                 <p className="">{item.event}</p>
                 <p className="">{item.author}</p>
               </div>

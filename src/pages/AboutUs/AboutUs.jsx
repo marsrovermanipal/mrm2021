@@ -62,6 +62,7 @@ export default function AboutUs() {
           <>
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
+                loading="lazy"
                 className="col-6 col-lg-4 img-fluid"
                 src="SubsystemLogo/ai.gif"
                 alt="Ai"
@@ -82,6 +83,7 @@ export default function AboutUs() {
             </div>
             <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
               <img
+                loading="lazy"
                 className="col-10 mx-auto img-fluid"
                 src="SubsystemLogo/ai.gif"
                 alt="Ai"
@@ -133,6 +135,7 @@ export default function AboutUs() {
 
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
+                loading="lazy"
                 className="col-6 col-lg-4 img-fluid"
                 src="SubsystemLogo/ecs.gif"
                 alt="Ecs"
@@ -154,6 +157,7 @@ export default function AboutUs() {
             </div>
             <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
               <img
+                loading="lazy"
                 className="col-10 mx-auto img-fluid"
                 src="SubsystemLogo/ecs.gif"
                 alt="Ecs"
@@ -182,6 +186,7 @@ export default function AboutUs() {
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
                         loading="lazy"
+                        loading="lazy"
                         src={item.img}
                         className="col-12 col-md-5 rounded-circle"
                         alt={item.name}
@@ -208,6 +213,7 @@ export default function AboutUs() {
           <>
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
+                loading="lazy"
                 className="img-fluid col-6 col-lg-4"
                 src="SubsystemLogo/mechanical.gif"
                 alt="Mech"
@@ -229,6 +235,7 @@ export default function AboutUs() {
             </div>
             <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
               <img
+                loading="lazy"
                 className="col-10 mx-auto img-fluid"
                 src="SubsystemLogo/mechanical.gif"
                 alt="Mech"
@@ -254,7 +261,7 @@ export default function AboutUs() {
                 return (
                   <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
-                      <img src={item.img} className="col-12 col-md-5 rounded-circle" alt={item.name} />
+                      <img src={item.img} className="col-12 col-md-5 rounded-circle" loading="lazy" alt={item.name} />
                       <h3 className="text-center ">{item.name}</h3>
                       <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
                         <a className="text-light" href={item.linkedin}> <GrIcons.GrLinkedin /></a>
@@ -276,6 +283,7 @@ export default function AboutUs() {
           <>
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
+                loading="lazy"
                 className="img-fluid col-6 col-lg-4"
                 src="SubsystemLogo/research.gif"
                 alt="Research"
@@ -295,6 +303,7 @@ export default function AboutUs() {
             </div>
             <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
               <img
+                loading="lazy"
                 className="img-fluid col-10 mx-auto"
                 src="SubsystemLogo/research.gif"
                 alt="Research"
@@ -319,6 +328,7 @@ export default function AboutUs() {
                   <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
+                        loading="lazy"
                         src={item.img}
                         className="col-12 col-md-5 rounded-circle"
                         alt={item.name}
@@ -343,6 +353,7 @@ export default function AboutUs() {
           <>
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
+                loading="lazy"
                 className="img-fluid col-6 col-lg-4"
                 src="SubsystemLogo/science.gif"
                 alt="Science"
@@ -361,6 +372,7 @@ export default function AboutUs() {
             </div>
             <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
               <img
+                loading="lazy"
                 className="img-fluid col-10 mx-auto"
                 src="SubsystemLogo/science.gif"
                 alt="Science"
@@ -385,6 +397,7 @@ export default function AboutUs() {
                   <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
+                        loading="lazy"
                         src={item.img}
                         className="col-12 col-md-5 rounded-circle"
                         alt={item.name}
@@ -411,6 +424,7 @@ export default function AboutUs() {
 
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
+                loading="lazy"
                 className="img-fluid col-6 col-lg-4"
                 src="SubsystemLogo/management.gif"
                 alt="Management"
@@ -432,6 +446,7 @@ export default function AboutUs() {
             </div>
             <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
               <img
+                loading="lazy"
                 className="img-fluid col-10 mx-auto text-center"
                 src="SubsystemLogo/management.gif"
                 alt="Management"
@@ -459,6 +474,7 @@ export default function AboutUs() {
                   <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
+                        loading="lazy"
                         src={item.img}
                         className="col-12 col-md-5 rounded-circle"
                         alt={item.name}
@@ -493,6 +509,7 @@ export default function AboutUs() {
                     <Card classname="bg-dark text-light col-lg-4 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
                       <div className="d-flex flex-column align-items-center p-4 ">
                         <img
+                          loading="lazy"
                           src={item.img}
                           className="col-12 col-md-5 rounded-circle"
                           alt={item.name}
@@ -523,6 +540,7 @@ export default function AboutUs() {
                     <Card classname="bg-dark text-light col-11 mx-auto m-3 p-2">
                       <div className="d-flex flex-column align-items-center p-4 ">
                         <img
+                          loading="lazy"
                           src={item.img}
                           className="col-4 col-md-2 rounded-circle"
                           alt={item.name}
