@@ -12,7 +12,7 @@ function Sponsorship() {
             <div className="col-11 mx-auto m-3  d-flex justify-content-center">
 
                 {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/RTfdjtEwPGQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
-                <img src="/Sponsorship/SponsorshipPic.webp" className="col-12" alt="team" />
+                <img src="/Sponsorship/SponsorshipPic.webp" loading="lazy" className="col-12" alt="team" />
             </div>
             <div classname="p-2 col-10">
                 <p className="fs-5 m-4 p-4 text-center text-dark bg-light ">
@@ -21,6 +21,7 @@ function Sponsorship() {
             </div>
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto m-5">
                 <img
+                    loading="lazy"
                     className="col-6 col-lg-3 img-fluid"
                     src="/photos20/PCB Power.webp"
                     alt="team"
@@ -34,6 +35,7 @@ function Sponsorship() {
             </div>
             <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
                 <img
+                    loading="lazy"
                     className="col-10 mx-auto img-fluid"
                     src="/photos20/PCB Power.webp"
                     alt="team"
@@ -51,6 +53,7 @@ function Sponsorship() {
                     </p>
                 </div>
                 <img
+                    loading="lazy"
                     className="col-6 col-lg-3 img-fluid"
                     src="/Sponsorship/tushaar_wsu.webp"
                     alt="team"
@@ -63,6 +66,7 @@ function Sponsorship() {
                     </p>
                 </div>
                 <img
+                    loading="lazy"
                     className="col-10 mx-auto img-fluid"
                     src="/Sponsorship/tushaar_wsu.webp"
                     alt="team"
@@ -79,34 +83,34 @@ function Sponsorship() {
                 <div className=" d-none d-sm-flex justify-content-center ">
                     <HTMLFlipBook width={670} height={480}>
                         <div className="demoPage  ">
-                            <img src="/brochure/1.webp" className="col-12 " alt="brochure" />
+                            <img src="/brochure/1.webp" loading="lazy" className="col-12 " alt="brochure" />
                         </div>
                         <div className="demoPage ">
-                            <img src="/brochure/2.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/2.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/3.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/3.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/4.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/4.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/5.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/5.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/6.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/6.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/7.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/7.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/8.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/8.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/9.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/9.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/10.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/10.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                     </HTMLFlipBook>
                 </div>
@@ -115,34 +119,34 @@ function Sponsorship() {
                 <div className=" d-flex d-sm-none justify-content-center ">
                     <HTMLFlipBook width={300} height={220}>
                         <div className="demoPage  ">
-                            <img src="/brochure/1.webp" className="col-12 " alt="brochure" />
+                            <img src="/brochure/1.webp" loading="lazy" className="col-12 " alt="brochure" />
                         </div>
                         <div className="demoPage ">
-                            <img src="/brochure/2.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/2.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/3.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/3.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/4.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/4.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/5.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/5.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/6.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/6.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/7.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/7.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/8.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/8.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/9.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/9.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/10.webp" className="col-12" alt="brochure" />
+                            <img src="/brochure/10.webp" loading="lazy" className="col-12" alt="brochure" />
                         </div>
                     </HTMLFlipBook>
                 </div>

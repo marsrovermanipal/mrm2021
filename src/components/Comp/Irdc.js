@@ -11,6 +11,7 @@ const Irdc = () => {
 
                 <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
                     <img
+                        loading="lazy"
                         className="img-fluid col-6 col-lg-4"
                         src="/comp_logo/MSSA_Logo.png"
                         alt="MSSA"
@@ -24,6 +25,7 @@ const Irdc = () => {
                 </div>
                 <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
                     <img
+                        loading="lazy"
                         className="img-fluid col-10 mx-auto"
                         src="/comp_logo/MSSA_Logo.png"
                         alt="MSSA"
@@ -41,7 +43,7 @@ const Irdc = () => {
                                     className="d-flex flex-column align-items-center"
                                 >
                                     <div>
-                                        <img src={item.img} alt={item.comp} className="col-12" />
+                                        <img src={item.img} alt={item.comp} loading="lazy" className="col-12" />
                                     </div>
                                     <div className="text-secondary text-center mt-auto">
                                         <h3>{item.comp}</h3>
@@ -63,7 +65,7 @@ const Irdc = () => {
                                 >
                                     <div>
                                         {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/pOXV26B_EI0" title="YouTube video player" frameborder="0" allow=" autoplay; " allowfullscreen></iframe> */}
-                                        <img src={item.img} alt={item.comp} className="col-12" />
+                                        <img src={item.img} alt={item.comp} loading="lazy" className="col-12" />
                                     </div>
                                     <div className="text-secondary text-center mt-auto">
                                         <h3>{item.comp}</h3>

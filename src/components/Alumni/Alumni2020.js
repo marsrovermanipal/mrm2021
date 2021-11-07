@@ -14,6 +14,7 @@ const Alumni2016 = () => {
                         <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
                             <div className="d-flex flex-column align-items-center p-4 ">
                                 <img
+                                    loading="lazy"
                                     src={item.img}
                                     className="col-12 col-md-5 rounded-circle"
                                     alt={item.name}
