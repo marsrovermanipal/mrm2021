@@ -186,7 +186,6 @@ export default function AboutUs() {
                     <div className="d-flex flex-column align-items-center p-4 ">
                       <img
                         loading="lazy"
-                        loading="lazy"
                         src={item.img}
                         className="col-12 col-md-5 rounded-circle"
                         alt={item.name}
