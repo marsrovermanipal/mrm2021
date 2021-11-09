@@ -61,7 +61,7 @@ export default function Footer() {
         <div className="col-lg-4 col-md-12 mb-4 mb-md-0 text-center">
           <h5 className="text-uppercase text-dark text-center">Follow us</h5>
           <a
-            className="btn btn-link btn-floating btn-md text-dark m-1"
+            className="btn btn-link btn-floating btn-lg text-dark m-1"
             href="https://www.facebook.com/MarsRoverManipal/"
             role="button"
             data-mdb-ripple-color="light"
@@ -69,7 +69,6 @@ export default function Footer() {
             <TiSocialFacebook />
           </a>
 
-          {/* <!-- Instagram --> */}
           <a
             className="btn btn-link btn-floating btn-lg text-dark m-1"
             href="https://www.instagram.com/marsrovermanipal/?hl=en"
@@ -79,7 +78,6 @@ export default function Footer() {
             <TiSocialInstagram />
           </a>
 
-          {/* <!-- Linkedin --> */}
           <a
             className="btn btn-link btn-floating btn-lg text-dark m-1"
             href="https://in.linkedin.com/company/marsrovermanipal"
@@ -91,7 +89,7 @@ export default function Footer() {
 
           <a
             className="btn btn-link btn-floating btn-lg text-dark m-1"
-            href="https://www.youtube.com/results?search_query=mars+rover+manipal"
+            href="https://www.youtube.com/marsrovermanipal"
             role="button"
             data-mdb-ripple-color="dark"
           >
@@ -99,8 +97,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-
-
     </div>
   );
 }

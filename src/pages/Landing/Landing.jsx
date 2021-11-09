@@ -3,7 +3,7 @@ import React, { useEffect, Suspense, useState } from "react";
 import AOS from "aos";
 import axios from "axios";
 import "aos/dist/aos.css";
-import { OrbitControls, useGLTF } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Particles from "react-particles-js";
 import TypeWriterEffect from "react-typewriter-effect";
@@ -14,18 +14,8 @@ import { FaRegBookmark } from "react-icons/fa";
 import { FaRegComment } from "react-icons/fa";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import { IoEllipsisVertical } from "react-icons/io5";
-
 import NewsData from "./NewsData";
-
-// function Model() {
-//   const { scene } = useGLTF("/MarsRotating.glb");
-//   return <primitive object={scene} />;
-// }
 import Model from "../../components/roverModel/Curiosity_static";
-// function Model() {
-//   const { scene } = useGLTF("/Curiosity_static.glb");
-//   return <primitive object={scene} />;
-// }
 
 export default function Landing() {
   const [instaData, setInstaData] = useState([]);
@@ -47,19 +37,22 @@ export default function Landing() {
 
   useEffect(() => {
     async function getYoutubeData() {
-      fetch('https://www.googleapis.com/youtube/v3/channels?key="AIzaSyBWRM_R23XEMkLXiIM2DtgVFzWyeDGTlrQ"&channelId="Nb6nzqQDC2_-5Uhg32ASEQ"&part=snippet,id&order=date&maxResults=2')
-        .then(results => {
-          const videosObj = results.json();
-          this.setState({
+      fetch(
+        'https://www.googleapis.com/youtube/v3/channels?key="AIzaSyBWRM_R23XEMkLXiIM2DtgVFzWyeDGTlrQ"&channelId="Nb6nzqQDC2_-5Uhg32ASEQ"&part=snippet,id&order=date&maxResults=2'
+      ).then((results) => {
+        const videosObj = results.json();
+        this.setState(
+          {
             videos: videosObj,
-            playingVideoId: videosObj[this.index]
-          }, (updatedState) => {
+            playingVideoId: videosObj[this.index],
+          },
+          (updatedState) => {
             console.log("videos", updatedState.videos);
             console.log("videos", updatedState.playingVideoId);
-          });
-        })
+          }
+        );
+      });
     }
-
   }, []);
 
   return (
@@ -120,68 +113,7 @@ export default function Landing() {
             },
           }}
         />
-
-        {/* <Particles
-          className="d-flex d-sm-none"
-          height="60vh"
-          params={{
-            particles: {
-              number: {
-                value: 500,
-                density: {
-                  enable: false,
-                },
-              },
-              size: {
-                value: 3,
-                random: true,
-                anim: {
-                  speed: 4,
-                  size_min: 0.3,
-                },
-              },
-              line_linked: {
-                enable: false,
-              },
-              move: {
-                random: true,
-                speed: 1,
-                direction: "top",
-                out_mode: "out",
-              },
-            },
-            interactivity: {
-              events: {
-                onhover: {
-                  enable: true,
-                  mode: "bubble",
-                },
-                onclick: {
-                  enable: true,
-                  mode: "repulse",
-                },
-              },
-              modes: {
-                bubble: {
-                  distance: 250,
-                  duration: 2,
-                  size: 0,
-                  opacity: 0,
-                },
-                repulse: {
-                  distance: 400,
-                  duration: 4,
-                },
-              },
-            },
-          }}
-        /> */}
       </div>
-
-      {/* <div
-        className="col-12 p-5 d-block d-lg-flex " */}
-      {/* // style={{ height: "800px" }}
-      > */}
 
       <div className="d-none d-lg-flex flex-column  mx-auto">
         <div className="col-lg-6 col-12 m-auto p-3 ">
@@ -218,7 +150,8 @@ export default function Landing() {
       </div>
 
       <div
-        className={`d-flex d-lg-none col-lg-6 col-12 flex-column  text-center  ${styles.designtodiscover}`} style={{ height: "85vh" }}
+        className={`d-flex d-lg-none col-lg-6 col-12 flex-column  text-center  ${styles.designtodiscover}`}
+        style={{ height: "85vh" }}
       >
         <div classname="m-5 p-5 justify-content-center">
           <TypeWriterEffect
@@ -227,7 +160,7 @@ export default function Landing() {
               color: "#f7f4f2",
               fontWeight: 200,
               fontSize: "2em",
-              textAlign: "center"
+              textAlign: "center",
             }}
             startDelay={1000}
             cursorColor="#f7f4f2"
@@ -235,34 +168,12 @@ export default function Landing() {
             typeSpeed={150}
           />
         </div>
-        <img className={`col-12 img-fluid ${styles.landing_img}`} alt="mars" src="/mars.png" />
+        <img
+          className={`col-12 img-fluid ${styles.landing_img}`}
+          alt="mars"
+          src="/mars.png"
+        />
       </div>
-
-      {/* <div
-        className="d-flex d-lg-none mx-auto col-lg-6 col-12  "
-      style={{ height: "60vh" }}
-      >
-        <img className={`col-12 img-fluid ${styles.landing_img}`} alt="mars" src="/mars.png" />
-        <Canvas camera={{ position: [10, 18, 23], fov: 0.5 }}>
-          <OrbitControls
-            enableZoom={false}
-            minPolarAngle={Math.PI / 3}
-            maxPolarAngle={Math.PI / 2}
-          />
-          <pointLight position={[10, 10, 10]} intensity={1.3} />
-          <Suspense fallback={null}>
-            <Model scale={(0.05, 0.05, 0.05)} />
-          </Suspense>
-        </Canvas>
-      </div> */}
-
-
-
-
-      {/* <img className={`col-12 img-fluid d-none d-sm-flex  ${styles.landing_img}`} alt="mars" src="/MARS1.png" /> */}
-
-
-      {/* </div> */}
 
       <div
         className="col-12"
@@ -304,10 +215,7 @@ export default function Landing() {
         />
         <div className={` ${styles.roverText}`}>
           <h1>Mars Rover Manipal</h1>
-          <p
-            className="fs-4 col-12  text-center p-2"
-          //  col-md-8  text-start text-md-center  mt-5  mx-auto
-          >
+          <p className="fs-4 col-12  text-center p-2">
             Mars Rover Manipal is a multi-disciplinary student team from Manipal
             Academy of Higher Education (MAHE) striving to design and build next
             generation rovers for exploration of extraterrestrial environments
@@ -340,7 +248,10 @@ export default function Landing() {
             classname=" col-lg-3 col-md-5 col-10 mx-auto m-3 p-2"
             style={{ fontFamily: "Ubuntu" }}
           >
-            <a href="https://www.instagram.com/marsrovermanipal/?hl=en">
+            <a
+              href="https://www.instagram.com/marsrovermanipal/?hl=en"
+              className={styles.instaLink}
+            >
               <div className="d-flex text-dark">
                 <img
                   className="col-1  m-1"
@@ -348,7 +259,9 @@ export default function Landing() {
                   loading="lazy"
                   alt="mrm logo"
                 />
-                <span className="mt-1 mt-lg-1 pt-0 pt-lg-1">marsrovermanipal</span>
+                <span className="mt-1 mt-lg-1 pt-0 pt-lg-1 fs-6">
+                  marsrovermanipal
+                </span>
                 <IoEllipsisVertical className="ms-auto" />
               </div>
               <div className="d-flex flex-column align-items-center p-2 ">
@@ -369,11 +282,6 @@ export default function Landing() {
           </Card>
         ))}
       </div>
-
-
-
-
-
 
       <div className="bg-dark my-3 p-4 mb-0">
         <p className="fs-3 text-center ">

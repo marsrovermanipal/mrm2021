@@ -1,36 +1,28 @@
 .landing_anim {
   position: absolute;
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  background-attachment:fixed;
-  background-position:bottom;
-
-  /* background-image: url("https://erepublic.brightspotcdn.com/dims4/default/6eefba8/2147483647/strip/true/crop/1080x563+0+33/resize/840x438!/quality/90/?url=http%3A%2F%2Ferepublic-brightspot.s3.amazonaws.com%2F40%2Fdc%2F37b51308130ad8ef01d762ae7730%2Fsurface-of-mars.jpg"); */
-  /* background-image: url('../../../public/MARS1.png'); */
-  /* background-image: url('MARS1.png'); */
+  background-attachment: fixed;
+  background-position: bottom;
 }
-.landing_img{
+.landing_img {
   z-index: 99;
   height: 20vh;
   position: absolute;
   bottom: 0;
- }
+}
 
-/* .designtodiscover{
-
-} */
 .rover {
   position: relative;
   text-align: center;
-   /* margin-top: -160px; */
-   }
+}
 
-/* .roverPhone{
-  margin-top: -250px;
-} */
-
- .roverText{
- position: absolute;
+.roverText {
+  position: absolute;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
+}
+
+.instaLink {
+  text-decoration: none;
+  font-weight: bolder;
 }
