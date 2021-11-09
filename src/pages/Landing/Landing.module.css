@@ -11,10 +11,14 @@
 }
 .landing_img{
   z-index: 99;
-}
-.designtodiscover{
-margin-top:-6em;
-}
+  height: 20vh;
+  position: absolute;
+  bottom: 0;
+ }
+
+/* .designtodiscover{
+
+} */
 .rover {
   position: relative;
   text-align: center;

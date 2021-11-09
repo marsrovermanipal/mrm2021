@@ -29,6 +29,8 @@ import Model from "../../components/roverModel/Curiosity_static";
 
 export default function Landing() {
   const [instaData, setInstaData] = useState([]);
+  const [youtubeData, setYoutubeData] = useState([]);
+
   useEffect(() => {
     AOS.init();
   });
@@ -42,6 +44,24 @@ export default function Landing() {
     }
     getInstaData();
   }, []);
+
+  useEffect(() => {
+    async function getYoutubeData() {
+      fetch('https://www.googleapis.com/youtube/v3/channels?key="AIzaSyBWRM_R23XEMkLXiIM2DtgVFzWyeDGTlrQ"&channelId="Nb6nzqQDC2_-5Uhg32ASEQ"&part=snippet,id&order=date&maxResults=2')
+        .then(results => {
+          const videosObj = results.json();
+          this.setState({
+            videos: videosObj,
+            playingVideoId: videosObj[this.index]
+          }, (updatedState) => {
+            console.log("videos", updatedState.videos);
+            console.log("videos", updatedState.playingVideoId);
+          });
+        })
+    }
+
+  }, []);
+
   return (
     <>
       <div className={`col-12 ${styles.landing_anim}`}>
@@ -101,7 +121,7 @@ export default function Landing() {
           }}
         />
 
-        <Particles
+        {/* <Particles
           className="d-flex d-sm-none"
           height="60vh"
           params={{
@@ -155,7 +175,7 @@ export default function Landing() {
               },
             },
           }}
-        />
+        /> */}
       </div>
 
       {/* <div
@@ -198,9 +218,31 @@ export default function Landing() {
       </div>
 
       <div
-        className="d-flex d-lg-none mx-auto col-lg-6 col-12 img-fluid "
-        style={{ height: "60vh" }}
+        className={`d-flex d-lg-none col-lg-6 col-12 flex-column  text-center  ${styles.designtodiscover}`} style={{ height: "85vh" }}
       >
+        <div classname="m-5 p-5 justify-content-center">
+          <TypeWriterEffect
+            textStyle={{
+              fontFamily: "",
+              color: "#f7f4f2",
+              fontWeight: 200,
+              fontSize: "2em",
+              textAlign: "center"
+            }}
+            startDelay={1000}
+            cursorColor="#f7f4f2"
+            text="Design to Discover."
+            typeSpeed={150}
+          />
+        </div>
+        <img className={`col-12 img-fluid ${styles.landing_img}`} alt="mars" src="/mars.png" />
+      </div>
+
+      {/* <div
+        className="d-flex d-lg-none mx-auto col-lg-6 col-12  "
+      style={{ height: "60vh" }}
+      >
+        <img className={`col-12 img-fluid ${styles.landing_img}`} alt="mars" src="/mars.png" />
         <Canvas camera={{ position: [10, 18, 23], fov: 0.5 }}>
           <OrbitControls
             enableZoom={false}
@@ -212,28 +254,13 @@ export default function Landing() {
             <Model scale={(0.05, 0.05, 0.05)} />
           </Suspense>
         </Canvas>
-      </div>
+      </div> */}
 
-      <div
-        className={`d-flex d-lg-none col-lg-6 col-12 justify-content-center p-3 text-center mt-n5  ${styles.designtodiscover}`}
-      >
-        <TypeWriterEffect
-          textStyle={{
-            fontFamily: "",
-            color: "#f7f4f2",
-            fontWeight: 200,
-            fontSize: "2em",
-          }}
-          startDelay={1000}
-          cursorColor="#f7f4f2"
-          text="Design to Discover."
-          typeSpeed={150}
-        />
-      </div>
 
-      {/* 
-        <img className={`col-12 img-fluid d-none d-sm-flex  ${styles.landing_img}`} alt="mars" src="/MARS1.png" />
-        <img className={`col-12 img-fluid d-flex d-sm-none  ${styles.landing_img}`} alt="mars" src="/MARSphone.png" /> */}
+
+
+      {/* <img className={`col-12 img-fluid d-none d-sm-flex  ${styles.landing_img}`} alt="mars" src="/MARS1.png" /> */}
+
 
       {/* </div> */}
 
@@ -279,7 +306,7 @@ export default function Landing() {
           <h1>Mars Rover Manipal</h1>
           <p
             className="fs-4 col-12  text-center p-2"
-            //  col-md-8  text-start text-md-center  mt-5  mx-auto
+          //  col-md-8  text-start text-md-center  mt-5  mx-auto
           >
             Mars Rover Manipal is a multi-disciplinary student team from Manipal
             Academy of Higher Education (MAHE) striving to design and build next
@@ -321,7 +348,7 @@ export default function Landing() {
                   loading="lazy"
                   alt="mrm logo"
                 />
-                <span className="my-1">marsrovermanipal</span>
+                <span className="mt-1 mt-lg-1 pt-0 pt-lg-1">marsrovermanipal</span>
                 <IoEllipsisVertical className="ms-auto" />
               </div>
               <div className="d-flex flex-column align-items-center p-2 ">
@@ -342,6 +369,11 @@ export default function Landing() {
           </Card>
         ))}
       </div>
+
+
+
+
+
 
       <div className="bg-dark my-3 p-4 mb-0">
         <p className="fs-3 text-center ">

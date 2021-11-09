@@ -33,10 +33,10 @@ const data = [
       "MRS1000 SICK Lidar, Garmin(18x USB GPS navigator), Magnetometer(BNO080), VOC, Ozone, Hydraprobe(Temp, moisture, salinity, EC),Intel Realsense Depth Camera",
 
     pics: [
-      { src: "photos-urc2021/grp.JPG" },
-      { src: "photos-urc2021/board.jpg" },
-      { src: "photos-urc2021/rover1.jpg" },
-      { src: "photos-urc2021/mem.jpg" },
+      { src: "photos-urc2021/grp_1.JPG" },
+      { src: "photos-urc2021/board_1.jpg" },
+      { src: "photos-urc2021/rover1_1.jpg" },
+      { src: "photos-urc2021/mem_1.jpg" },
     ],
     video: "https://www.youtube.com/embed/rbkrRSdEiOA?controls=0",
   },
