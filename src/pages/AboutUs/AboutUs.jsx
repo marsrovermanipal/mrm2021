@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import Card from "../../components/card/Card";
+import React, { useState, lazy, Suspense } from "react";
+// import Card from "../../components/card/Card";
 import * as GrIcons from "react-icons/gr";
 // import styles from "./AboutUs.module.css";
 import { Button } from "reactstrap";
-
+import Loading from "../../components/Loading/loading"
 import boardData from "./boardData"
 import AiData from "./AiData"
 import ecsData from "./ecsData"
@@ -12,7 +12,7 @@ import sciData from "./scienceData"
 import researchData from "./researchData"
 import mechData from "./mechData"
 import FAdata from "./FAdata"
-
+const Card = lazy(() => import("../../components/card/Card"));
 
 export default function AboutUs() {
   const [activeSub, setActiveSub] = useState("board");
@@ -26,34 +26,36 @@ export default function AboutUs() {
           <div className="col-12 d-flex mx-auto">
             <div className="row justify-content-center ">
               <h3 className="text-center text-uppercase ">Board</h3>
-              {boardData.map((item) => {
-                return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
-                    <div className="d-flex flex-column align-items-center p-4 ">
-                      <img
-                        loading="lazy"
-                        src={item.img}
-                        className="col-12 col-md-5 rounded-circle"
-                        alt={item.name}
-                      />
-                      <p className="fs-3 text-center text-light">
-                        {item.name}
-                      </p>
-                      <p className="fs-5 text-center text-secondary">
-                        {item.pos}
-                      </p>
-                      <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
-                        <a href={item.linkedin}>
-                          {" "}
-                          <GrIcons.GrLinkedin />
-                        </a>
+              <Suspense fallback={<Loading />}>
+                {boardData.map((item) => {
+                  return (
+                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
+                      <div className="d-flex flex-column align-items-center p-4 ">
+                        <img
+                          loading="lazy"
+                          src={item.img}
+                          className="col-12 col-md-5 rounded-circle"
+                          alt={item.name}
+                        />
+                        <p className="fs-3 text-center text-light">
+                          {item.name}
+                        </p>
+                        <p className="fs-5 text-center text-secondary">
+                          {item.pos}
+                        </p>
+                        <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
+                          <a className="text-light" href={item.linkedin}>
+                            {" "}
+                            <GrIcons.GrLinkedin />
+                          </a>
+                        </div>
+
                       </div>
+                    </Card>
 
-                    </div>
-                  </Card>
-
-                );
-              })}
+                  );
+                })}
+              </Suspense >
             </div>
           </div>
         );
@@ -103,29 +105,30 @@ export default function AboutUs() {
             </div>
             <div className="row justify-content-center ">
               <h3 className="text-center text-uppercase">Team Members </h3>
-              {AiData.map((item) => {
-                return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
-                    <div className="d-flex flex-column align-items-center p-4 ">
-                      <img
-                        loading="lazy"
-                        src={item.img}
-                        className="col-12 col-md-5 rounded-circle"
-                        alt={item.name}
+              <Suspense fallback={<Loading />}>
+                {AiData.map((item) => {
+                  return (
+                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
+                      <div className="d-flex flex-column align-items-center p-4 ">
+                        <img
+                          loading="lazy"
+                          src={item.img}
+                          className="col-12 col-md-5 rounded-circle"
+                          alt={item.name}
 
-                      />
-                      <h3 className="text-center ">{item.name}</h3>
-                      <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
-                        <a className="text-light" href={item.linkedin}>
-                          {" "}
-                          <GrIcons.GrLinkedin />
-                        </a>
+                        />
+                        <h3 className="text-center ">{item.name}</h3>
+                        <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
+                          <a className="text-light" href={item.linkedin}>
+                            {" "}
+                            <GrIcons.GrLinkedin />
+                          </a>
+                        </div>
                       </div>
-                    </div>
-                  </Card>
-
-                );
-              })}
+                    </Card>
+                  );
+                })}
+              </Suspense>
             </div>
           </>
         );
@@ -180,29 +183,31 @@ export default function AboutUs() {
             </div >
             <div className="row justify-content-center ">
               <h3 className="text-center text-uppercase">Team Members </h3>
-              {ecsData.map((item) => {
-                return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
-                    <div className="d-flex flex-column align-items-center p-4 ">
-                      <img
-                        loading="lazy"
-                        src={item.img}
-                        className="col-12 col-md-5 rounded-circle"
-                        alt={item.name}
-                      />
-                      <h3 className="text-center ">{item.name}</h3>
-                      <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
-                        <a className="text-light" href={item.linkedin}>
-                          {" "}
-                          <GrIcons.GrLinkedin />
-                        </a>
+              <Suspense fallback={<Loading />}>
+                {ecsData.map((item) => {
+                  return (
+                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
+                      <div className="d-flex flex-column align-items-center p-4 ">
+                        <img
+                          loading="lazy"
+                          src={item.img}
+                          className="col-12 col-md-5 rounded-circle"
+                          alt={item.name}
+                        />
+                        <h3 className="text-center ">{item.name}</h3>
+                        <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
+                          <a className="text-light" href={item.linkedin}>
+                            {" "}
+                            <GrIcons.GrLinkedin />
+                          </a>
+                        </div>
+
                       </div>
+                    </Card>
 
-                    </div>
-                  </Card>
-
-                );
-              })}
+                  );
+                })}
+              </Suspense>
             </div>
           </>
         );
@@ -256,23 +261,22 @@ export default function AboutUs() {
             </div>
             <div className="row justify-content-center ">
               <h3 className="text-center text-uppercase">Team Members </h3>
-              {mechData.map((item) => {
-                return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
-                    <div className="d-flex flex-column align-items-center p-4 ">
-                      <img src={item.img} className="col-12 col-md-5 rounded-circle" loading="lazy" alt={item.name} />
-                      <h3 className="text-center ">{item.name}</h3>
-                      <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
-                        <a className="text-light" href={item.linkedin}> <GrIcons.GrLinkedin /></a>
+              <Suspense fallback={<Loading />}>
+                {mechData.map((item) => {
+                  return (
+                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
+                      <div className="d-flex flex-column align-items-center p-4 ">
+                        <img src={item.img} className="col-12 col-md-5 rounded-circle" loading="lazy" alt={item.name} />
+                        <h3 className="text-center ">{item.name}</h3>
+                        <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
+                          <a className="text-light" href={item.linkedin}> <GrIcons.GrLinkedin /></a>
+                        </div>
+
                       </div>
-
-                    </div>
-                  </Card>
-
-                )
-
-
-              })}
+                    </Card>
+                  )
+                })}
+              </Suspense>
             </div>
           </>
         );
@@ -322,28 +326,29 @@ export default function AboutUs() {
             </div>
             <div className="row justify-content-center ">
               <h3 className="text-center text-uppercase">Team Members </h3>
-              {researchData.map((item) => {
-                return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
-                    <div className="d-flex flex-column align-items-center p-4 ">
-                      <img
-                        loading="lazy"
-                        src={item.img}
-                        className="col-12 col-md-5 rounded-circle"
-                        alt={item.name}
-                      />
-                      <h3 className="text-center ">{item.name}</h3>
-                      <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
-                        <a className="text-light" href={item.linkedin}>
-                          {" "}
-                          <GrIcons.GrLinkedin />
-                        </a>
+              <Suspense fallback={<Loading />}>
+                {researchData.map((item) => {
+                  return (
+                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
+                      <div className="d-flex flex-column align-items-center p-4 ">
+                        <img
+                          loading="lazy"
+                          src={item.img}
+                          className="col-12 col-md-5 rounded-circle"
+                          alt={item.name}
+                        />
+                        <h3 className="text-center ">{item.name}</h3>
+                        <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
+                          <a className="text-light" href={item.linkedin}>
+                            {" "}
+                            <GrIcons.GrLinkedin />
+                          </a>
+                        </div>
                       </div>
-                    </div>
-                  </Card>
-
-                );
-              })}
+                    </Card>
+                  );
+                })}
+              </Suspense>
             </div>
           </>
         );
@@ -390,37 +395,35 @@ export default function AboutUs() {
             </div>
             <div className="row justify-content-center ">
               <h3 className="text-center text-uppercase">Team Members </h3>
-              {sciData.map((item) => {
-                return (
-
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
-                    <div className="d-flex flex-column align-items-center p-4 ">
-                      <img
-                        loading="lazy"
-                        src={item.img}
-                        className="col-12 col-md-5 rounded-circle"
-                        alt={item.name}
-                      />
-                      <h3 className="text-center ">{item.name}</h3>
-                      <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
-                        <a className="text-light" href={item.linkedin}>
-                          {" "}
-                          <GrIcons.GrLinkedin />
-                        </a>
+              <Suspense fallback={<Loading />}>
+                {sciData.map((item) => {
+                  return (
+                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
+                      <div className="d-flex flex-column align-items-center p-4 ">
+                        <img
+                          loading="lazy"
+                          src={item.img}
+                          className="col-12 col-md-5 rounded-circle"
+                          alt={item.name}
+                        />
+                        <h3 className="text-center ">{item.name}</h3>
+                        <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
+                          <a className="text-light" href={item.linkedin}>
+                            {" "}
+                            <GrIcons.GrLinkedin />
+                          </a>
+                        </div>
                       </div>
-                    </div>
-                  </Card>
-
-                );
-
-              })}
+                    </Card>
+                  );
+                })}
+              </Suspense>
             </div>
           </>
         );
       case "management":
         return (
           <>
-
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
                 loading="lazy"
@@ -451,7 +454,6 @@ export default function AboutUs() {
                 alt="Management"
               />
               <div className="col-10 mx-auto text-center">
-
                 <h1>Management & Public Relations</h1>
                 <p >
                   The Management and PR subsystem of Mars Rover Manipal is
@@ -468,29 +470,29 @@ export default function AboutUs() {
             </div >
             <div className="row justify-content-center ">
               <h3 className="text-center text-uppercase">Team Members </h3>
-              {mgmtData.map((item) => {
-                return (
-                  <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
-                    <div className="d-flex flex-column align-items-center p-4 ">
-                      <img
-                        loading="lazy"
-                        src={item.img}
-                        className="col-12 col-md-5 rounded-circle"
-                        alt={item.name}
-                      />
-                      <p className="fs-3 text-center ">{item.name}</p>
-                      <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
-                        <a className="text-light" href={item.linkedin}>
-                          {" "}
-                          <GrIcons.GrLinkedin />
-                        </a>
+              <Suspense fallback={<Loading />}>
+                {mgmtData.map((item) => {
+                  return (
+                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
+                      <div className="d-flex flex-column align-items-center p-4 ">
+                        <img
+                          loading="lazy"
+                          src={item.img}
+                          className="col-12 col-md-5 rounded-circle"
+                          alt={item.name}
+                        />
+                        <p className="fs-3 text-center ">{item.name}</p>
+                        <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
+                          <a className="text-light" href={item.linkedin}>
+                            {" "}
+                            <GrIcons.GrLinkedin />
+                          </a>
+                        </div>
                       </div>
-
-                    </div>
-                  </Card>
-
-                );
-              })}
+                    </Card>
+                  );
+                })}
+              </Suspense>
             </div>
           </>
         );
@@ -500,71 +502,67 @@ export default function AboutUs() {
           <div className="col-12 d-flex mx-auto">
             <div className="row justify-content-center ">
               <h3 className="text-center text-uppercase ">Faculty Advisors </h3>
-
-
               <div className="row justify-content-center d-none d-sm-flex ">
-                {FAdata.map((item) => {
-                  return (
-                    <Card classname="bg-dark text-light col-lg-4 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
-                      <div className="d-flex flex-column align-items-center p-4 ">
-                        <img
-                          loading="lazy"
-                          src={item.img}
-                          className="col-12 col-md-5 rounded-circle"
-                          alt={item.name}
-                        />
-                        <p className="fs-3 text-center text-light">
-                          {item.name}
-                        </p>
-                        <p className="fs-5 text-center text-secondary">
-                          {item.pos}
-                        </p>
-                        <p className="fs-5 text-center text-secondary">
-                          {item.dept}
-                        </p>
-                        <p className="fs-5 text-center text-secondary">
-                          Year: {item.year}
-                        </p>
-                      </div>
-                    </Card>
-
-                  );
-                })}
+                <Suspense fallback={<Loading />}>
+                  {FAdata.map((item) => {
+                    return (
+                      <Card classname="bg-dark text-light col-lg-4 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+                        <div className="d-flex flex-column align-items-center p-4 ">
+                          <img
+                            loading="lazy"
+                            src={item.img}
+                            className="col-12 col-md-5 rounded-circle"
+                            alt={item.name}
+                          />
+                          <p className="fs-3 text-center text-light">
+                            {item.name}
+                          </p>
+                          <p className="fs-5 text-center text-secondary">
+                            {item.pos}
+                          </p>
+                          <p className="fs-5 text-center text-secondary">
+                            {item.dept}
+                          </p>
+                          <p className="fs-5 text-center text-secondary">
+                            Year: {item.year}
+                          </p>
+                        </div>
+                      </Card>
+                    );
+                  })}
+                </Suspense>
               </div>
-
 
               <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
-                {FAdata.map((item) => {
-                  return (
-                    <Card classname="bg-dark text-light col-11 mx-auto m-3 p-2">
-                      <div className="d-flex flex-column align-items-center p-4 ">
-                        <img
-                          loading="lazy"
-                          src={item.img}
-                          className="col-4 col-md-2 rounded-circle"
-                          alt={item.name}
-                        />
-                        <p className="fs-4 text-center text-light">
-                          {item.name}
-                        </p>
-                        <p className="fs-6 text-center text-secondary">
-                          {item.pos}
-                        </p>
-                        <p className="fs-6 text-center text-secondary">
-                          {item.dept}
-                        </p>
-                        <p className="fs-6 text-center text-secondary">
-                          Year: {item.year}
-                        </p>
-                      </div>
-                    </Card>
-
-                  );
-                })}
+                <Suspense fallback={<Loading />}>
+                  {FAdata.map((item) => {
+                    return (
+                      <Card classname="bg-dark text-light col-11 mx-auto m-3 p-2">
+                        <div className="d-flex flex-column align-items-center p-4 ">
+                          <img
+                            loading="lazy"
+                            src={item.img}
+                            className="col-4 col-md-2 rounded-circle"
+                            alt={item.name}
+                          />
+                          <p className="fs-4 text-center text-light">
+                            {item.name}
+                          </p>
+                          <p className="fs-6 text-center text-secondary">
+                            {item.pos}
+                          </p>
+                          <p className="fs-6 text-center text-secondary">
+                            {item.dept}
+                          </p>
+                          <p className="fs-6 text-center text-secondary">
+                            Year: {item.year}
+                          </p>
+                        </div>
+                      </Card>
+                    );
+                  })}
+                </Suspense>
               </div>
-
-
-
             </div>
           </div>
         );
