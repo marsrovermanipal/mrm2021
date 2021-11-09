@@ -59,7 +59,7 @@ export default function Landing() {
     <>
       <div className={`col-12 ${styles.landing_anim}`}>
         <Particles
-          className="d-none d-sm-flex"
+          className="d-none d-md-flex"
           height="120vh"
           params={{
             particles: {
@@ -111,6 +111,53 @@ export default function Landing() {
                 },
               },
             },
+          }}
+        />
+        <Particles
+          className="d-flex d-md-none"
+          height="80vh"
+          params={{
+            particles: {
+              number: {
+                value: 600,
+                density: {
+                  enable: true,
+                  value_area: 1500,
+                },
+              },
+              line_linked: {
+                enable: true,
+                opacity: 0.02,
+              },
+              move: {
+                direction: "right",
+                speed: 0.05,
+              },
+              size: {
+                value: 1,
+              },
+              opacity: {
+                anim: {
+                  enable: true,
+                  speed: 1,
+                  opacity_min: 0.05,
+                },
+              },
+            },
+            interactivity: {
+              events: {
+                onclick: {
+                  enable: true,
+                  mode: "push",
+                },
+              },
+              modes: {
+                push: {
+                  particles_nb: 1,
+                },
+              },
+            },
+            retina_detect: true,
           }}
         />
       </div>
