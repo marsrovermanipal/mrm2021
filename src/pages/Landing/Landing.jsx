@@ -218,7 +218,7 @@ export default function Landing() {
         <img
           className={`col-12 img-fluid ${styles.landing_img}`}
           alt="mars"
-          src="/mars.png"
+          src="/rover.png"
         />
       </div>
 
