@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, lazy, Suspense } from "react";
 import { Button } from "reactstrap";
-
-import Alumni2016 from '../../components/Alumni/Alumni2016'
-import Alumni2017 from '../../components/Alumni/Alumni2017'
-import Alumni2018 from '../../components/Alumni/Alumni2018'
-import Alumni2019 from '../../components/Alumni/Alumni2019'
-import Alumni2020 from '../../components/Alumni/Alumni2020'
-import Alumni2021 from '../../components/Alumni/Alumni2021'
-
+import Loading from "../../components/Loading/loading"
+const Alumni2016 = lazy(() => import('../../components/Alumni/Alumni2016'));
+const Alumni2017 = lazy(() => import('../../components/Alumni/Alumni2017'));
+const Alumni2018 = lazy(() => import('../../components/Alumni/Alumni2018'));
+const Alumni2019 = lazy(() => import('../../components/Alumni/Alumni2019'));
+const Alumni2020 = lazy(() => import('../../components/Alumni/Alumni2020'));
+const Alumni2021 = lazy(() => import('../../components/Alumni/Alumni2021'));
 
 
 export default function Alumni() {
@@ -17,30 +16,44 @@ export default function Alumni() {
 
       case "2021":
         return (
-          <Alumni2021 />
+          <Suspense fallback={<Loading />}>
+            <Alumni2021 />
+          </Suspense>
         )
       case "2020":
         return (
-          <Alumni2020 />
+          <Suspense fallback={<Loading />}>
+            <Alumni2020 />
+          </Suspense>
         );
       case "2019":
         return (
-          <Alumni2019 />
+          <Suspense fallback={<Loading />}>
+            <Alumni2019 />
+          </Suspense>
         );
       case "2018":
         return (
-          <Alumni2018 />
+          <Suspense fallback={<Loading />}>
+            <Alumni2018 />
+          </Suspense>
         );
       case "2017":
         return (
-          <Alumni2017 />
+          <Suspense fallback={<Loading />}>
+            <Alumni2017 />
+          </Suspense>
         );
       case "2016":
         return (
-          <Alumni2016 />
+          <Suspense fallback={<Loading />}>
+            <Alumni2016 />
+          </Suspense>
         );
       default:
-        <Alumni2021 />
+        <Suspense fallback={<Loading />}>
+          <Alumni2021 />
+        </Suspense>
     }
   };
   const handleClick = (e) => {
