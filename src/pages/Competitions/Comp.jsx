@@ -2,11 +2,11 @@ import React, { useState, Suspense, lazy } from "react";
 import { Button } from "reactstrap";
 
 import Loading from "../../components/Loading/loading"
-import Urc from "../../components/Comp/Urc1"
-import Erc from "../../components/Comp/Erc"
-import Irdc from "../../components/Comp/Irdc"
-import Irc from "../../components/Comp/Irc"
-import Imh from "../../components/Comp/Imh"
+const Erc = lazy(() => import("../../components/Comp/Erc"));
+const Urc = lazy(() => import("../../components/Comp/Urc1"));
+const Irdc = lazy(() => import("../../components/Comp/Irdc"));
+const Irc = lazy(() => import("../../components/Comp/Irc"));
+const Imh = lazy(() => import("../../components/Comp/Imh"));
 
 export default function Comp() {
 
