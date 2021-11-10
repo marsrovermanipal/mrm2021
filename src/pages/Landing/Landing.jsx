@@ -1,21 +1,21 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, Suspense, useState } from "react";
-import AOS from "aos";
-import axios from "axios";
+import React, { useEffect, Suspense, useState, lazy } from "react";
 import "aos/dist/aos.css";
+import styles from "./Landing.module.css";
+import NewsData from "./NewsData";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import AOS from "aos";
+import axios from "axios";
+import Model from "../../components/roverModel/Curiosity_static";
 import Particles from "react-particles-js";
 import TypeWriterEffect from "react-typewriter-effect";
-import Card from "../../components/card/Card";
-import styles from "./Landing.module.css";
 import { FcLike } from "react-icons/fc";
 import { FaRegBookmark } from "react-icons/fa";
 import { FaRegComment } from "react-icons/fa";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import { IoEllipsisVertical } from "react-icons/io5";
-import NewsData from "./NewsData";
-import Model from "../../components/roverModel/Curiosity_static";
+const Card = lazy(() => import("../../components/card/Card"));
 
 export default function Landing() {
   const [instaData, setInstaData] = useState([]);
@@ -290,44 +290,46 @@ export default function Landing() {
         />
       </div>
       <div className=" d-flex flex-wrap">
-        {instaData.map((post) => (
-          <Card
-            classname=" col-lg-3 col-md-5 col-10 mx-auto m-3 p-2"
-            style={{ fontFamily: "Ubuntu" }}
-          >
-            <a
-              href="https://www.instagram.com/marsrovermanipal/?hl=en"
-              className={styles.instaLink}
+        <Suspense fallback={<loading />}>
+          {instaData.map((post) => (
+            <Card
+              classname=" col-lg-3 col-md-5 col-10 mx-auto m-3 p-2"
+              style={{ fontFamily: "Ubuntu" }}
             >
-              <div className="d-flex text-dark">
-                <img
-                  className="col-1  m-1"
-                  src="logo.png"
-                  loading="lazy"
-                  alt="mrm logo"
-                />
-                <span className="mt-1 mt-lg-1 pt-0 pt-lg-1 fs-6">
-                  marsrovermanipal
-                </span>
-                <IoEllipsisVertical className="ms-auto" />
-              </div>
-              <div className="d-flex flex-column align-items-center p-2 ">
-                <img
-                  loading="lazy"
-                  className="col-lg-8 col-md-6 col-8 "
-                  src={post.media_url}
-                  alt={post.caption}
-                />
-              </div>
-              <div className="d-flex text-dark my-2">
-                <FcLike className="mx-2" />
-                <FaRegComment className="mx-2" />
-                <IoPaperPlaneOutline className="mx-2" />
-                <FaRegBookmark className="ms-auto" />
-              </div>
-            </a>
-          </Card>
-        ))}
+              <a
+                href="https://www.instagram.com/marsrovermanipal/?hl=en"
+                className={styles.instaLink}
+              >
+                <div className="d-flex text-dark">
+                  <img
+                    className="col-1  m-1"
+                    src="logo.png"
+                    loading="lazy"
+                    alt="mrm logo"
+                  />
+                  <span className="mt-1 mt-lg-1 pt-0 pt-lg-1 fs-6">
+                    marsrovermanipal
+                  </span>
+                  <IoEllipsisVertical className="ms-auto" />
+                </div>
+                <div className="d-flex flex-column align-items-center p-2 ">
+                  <img
+                    loading="lazy"
+                    className="col-lg-8 col-md-6 col-8 "
+                    src={post.media_url}
+                    alt={post.caption}
+                  />
+                </div>
+                <div className="d-flex text-dark my-2">
+                  <FcLike className="mx-2" />
+                  <FaRegComment className="mx-2" />
+                  <IoPaperPlaneOutline className="mx-2" />
+                  <FaRegBookmark className="ms-auto" />
+                </div>
+              </a>
+            </Card>
+          ))}
+        </Suspense>
       </div>
 
       <div className="bg-dark my-3 p-4 mb-0">
@@ -338,31 +340,33 @@ export default function Landing() {
         </p>
       </div>
       <div className=" d-flex flex-wrap bg-dark">
-        {NewsData.map((news) => (
-          <Card classname="col-lg-3 col-md-5 col-10 mx-auto m-3 p-2">
-            <div className="d-flex flex-column align-items-center p-4 ">
-              <img
-                loading="lazy"
-                src={news.logo}
-                className="col-6 mb-3  text-dark "
-                alt={news.heading}
-              />
+        <Suspense fallback={<loading />}>
+          {NewsData.map((news) => (
+            <Card classname="col-lg-3 col-md-5 col-10 mx-auto m-3 p-2">
+              <div className="d-flex flex-column align-items-center p-4 ">
+                <img
+                  loading="lazy"
+                  src={news.logo}
+                  className="col-6 mb-3  text-dark "
+                  alt={news.heading}
+                />
 
-              <img
-                loading="lazy"
-                src={news.img}
-                className="col-12  text-dark "
-                alt={news.heading}
-              />
-              <p className="fs-5 text-center text-dark ">{news.heading}</p>
-              <div className="col-12 d-flex justify-content-center fixed-bottom mb-3">
-                <a className="text-dark " href={news.link}>
-                  Read More
-                </a>
+                <img
+                  loading="lazy"
+                  src={news.img}
+                  className="col-12  text-dark "
+                  alt={news.heading}
+                />
+                <p className="fs-5 text-center text-dark ">{news.heading}</p>
+                <div className="col-12 d-flex justify-content-center fixed-bottom mb-3">
+                  <a className="text-dark " href={news.link}>
+                    Read More
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
-        ))}
+            </Card>
+          ))}
+        </Suspense>
       </div>
     </>
   );

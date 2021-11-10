@@ -3,7 +3,7 @@ const data = [
     id: 0,
     comp: "URC 2021",
     info: "The 14th edition of University Rover Challenge was cancelled due to the Corona virus Pandemic. URC had released the System Acceptance Review (SAR) result in July and MRM scored 91.17.",
-    img: "photos-urc2021/rover.jpg",
+    img: "photos-urc2021/rover_1.jpg",
     roverName: "ROVER 2021",
     pos: "91.17 (SAR Score)",
     MaximumSpeed: "1.8m/s",
