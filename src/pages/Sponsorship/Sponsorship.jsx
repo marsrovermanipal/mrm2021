@@ -1,9 +1,7 @@
-import React from 'react'
-import SponsorSection from "../../components/sponsorSection/SponsorSection"
-// import ImageCarousel from "../../components/carousel/ImageCarousel"
-// import data from "./BrochureData"
-
+import React, { lazy, Suspense } from 'react'
 import HTMLFlipBook from 'react-pageflip';
+import Loading from "../../components/Loading/loading"
+const SponsorSection = lazy(() => import("../../components/sponsorSection/SponsorSection"));
 
 function Sponsorship() {
     return (
@@ -73,12 +71,12 @@ function Sponsorship() {
                 />
             </div>
 
-            <SponsorSection />
+            <Suspense fallback={<Loading />}>
+                <SponsorSection />
+            </Suspense>
+
             <div className="bg-dark m-3">
                 <p className="fs-1 text-center ">Brochure </p>
-
-                {/* <ImageCarousel Items={data} /> */}
-
 
                 <div className=" d-none d-sm-flex justify-content-center ">
                     <HTMLFlipBook width={670} height={480}>

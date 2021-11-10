@@ -1,6 +1,8 @@
-import React from "react";
-import Card from "../../components/card/Card";
+import React, { Suspense, lazy } from "react";
+
 import data from "./Research-data";
+import Loading from "../../components/Loading/loading"
+const Card = lazy(() => import("../../components/card/Card"));
 
 export default function Research() {
   return (
@@ -27,20 +29,20 @@ export default function Research() {
       </p>
       <p className="fs-2 text-decoration-underline">PUBLICATIONS</p>
       <div className="row justify-content-center ">
-        {data.map((item) => {
-          return (
-            <Card classname="bg-light text-dark col-lg-3 col-md-5 col-10 mx-auto mx-md-3 m-3 p-4">
-              <div >
-                <h5 className="">{item.title}</h5>
-                {item.img && <img className="col-12" src={item.img} loading="lazy" alt={item.title} />}
-                <p className="">{item.event}</p>
-                <p className="">{item.author}</p>
-              </div>
-            </Card>
-
-          );
-
-        })}
+        <Suspense fallback={<Loading />}>
+          {data.map((item) => {
+            return (
+              <Card classname="bg-light text-dark col-lg-3 col-md-5 col-10 mx-auto mx-md-3 m-3 p-4">
+                <div >
+                  <h5 className="">{item.title}</h5>
+                  {item.img && <img className="col-12" src={item.img} loading="lazy" alt={item.title} />}
+                  <p className="">{item.event}</p>
+                  <p className="">{item.author}</p>
+                </div>
+              </Card>
+            );
+          })}
+        </Suspense>
       </div>
     </div>
   );

@@ -1,43 +1,57 @@
-import React, { useState } from "react";
+import React, { useState, Suspense, lazy } from "react";
 import { Button } from "reactstrap";
 
-
-import Urc from "../../components/Comp/Urc1"
-import Erc from "../../components/Comp/Erc"
-import Irdc from "../../components/Comp/Irdc"
-import Irc from "../../components/Comp/Irc"
-import Imh from "../../components/Comp/Imh"
+import Loading from "../../components/Loading/loading"
+const Erc = lazy(() => import("../../components/Comp/Erc"));
+const Urc = lazy(() => import("../../components/Comp/Urc1"));
+const Irdc = lazy(() => import("../../components/Comp/Irdc"));
+const Irc = lazy(() => import("../../components/Comp/Irc"));
+const Imh = lazy(() => import("../../components/Comp/Imh"));
 
 export default function Comp() {
 
 
   const [activeComp, setActiveComp] = useState("URC");
+
   const renderComp = (comp) => {
+
     switch (comp) {
 
       case "URC":
         return (
-          <Urc />
+          <Suspense fallback={<Loading />}>
+            <Urc />
+          </Suspense>
         )
       case "IRDC":
         return (
-          <Irdc />
+          <Suspense fallback={<Loading />}>
+            <Irdc />
+          </Suspense>
         );
       case "ERC":
         return (
-          <Erc />
+          <Suspense fallback={<Loading />}>
+            <Erc />
+          </Suspense>
         );
       case "IRC":
         return (
-          <Irc />
+          <Suspense fallback={<Loading />}>
+            <Irc />
+          </Suspense>
         );
       case "IMH":
         return (
-          <Imh />
+          <Suspense fallback={<Loading />}>
+            <Imh />
+          </Suspense>
         );
 
       default:
-        <Urc />
+        <Suspense fallback={<Loading />}>
+          <Urc />
+        </Suspense>
     }
   };
   const handleClick = (e) => {
