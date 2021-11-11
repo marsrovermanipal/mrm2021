@@ -170,6 +170,7 @@ export default function Landing() {
               color: "#f7f4f2",
               fontWeight: 600,
               fontSize: "4.5em",
+              textAlign: "center",
             }}
             startDelay={1000}
             cursorColor="#f7f4f2"
