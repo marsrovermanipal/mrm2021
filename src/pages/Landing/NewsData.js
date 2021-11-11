@@ -11,12 +11,12 @@ const data = [
     id: 1,
     logo: "/Articles_Logo/hindu.webp",
     heading: "MIT students bag third place in rover design challenge",
-    img: "comp/IRDC_2021.webp",
+    img: "comp/IRDC_20211.webp",
     link: "https://www.thehindu.com/news/cities/Mangalore/mit-students-bag-third-place-in-rover-design-challenge/article36453386.ece",
   },
   {
     id: 3,
-    logo: "/Articles_Logo/toi.webp",
+    logo: "/Articles_Logo/toi1.webp",
     heading:
       "Mars Rover Manipal secures first place in Indian Rover Challenge 2018",
     img: "irc/image3.webp",
