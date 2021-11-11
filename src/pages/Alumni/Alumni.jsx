@@ -64,7 +64,7 @@ export default function Alumni() {
 
   return (
     <div className="container">
-      <h1 className="text-center">Our Alumni</h1>
+      <h1 className="text-center">OUR ALUMNI</h1>
       <div className="d-flex col-12 text-center justify-content-center p-3 flex-wrap">
         <Button
           outline
