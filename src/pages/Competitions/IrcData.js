@@ -18,7 +18,7 @@ const data = [
         id: 5,
         comp: "IRC 2018",
         info: "Mars Rover Manipal participated in IRC 2018 along with teams from all over Asia. The event was organized by ISTE VIT and Creative Labs at Vellore Insitute of Technology, Vellore from 6th January to 8th January. Mars Rover Manipal perfromed very well and were declared winners with a final score of 616 points out of 760. The team beat the second closest opponent by a margin of 129 points.",
-        img: "irc/image3.jpg",
+        img: "irc/image3.webp",
         pos: "1st position",
         website: "https://southasia.marssociety.org/irdc/",
     },

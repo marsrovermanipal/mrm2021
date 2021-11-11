@@ -4,11 +4,7 @@ const data = [
     comp: "IRDC 2021",
     info: "Mars Rover Manipal bagged the 3rd position out of 32 teams from four countries in the second edition of the International Rover Design Challenge (IRDC), which was hosted by Mars Society South Asia (MSSA).",
     img: "comp/IRDC_2021.webp",
-    // [
-    //     { src: "comp/IRDC_2021.png" },
-    //     { src: "comp/IRDC_TEAM.png" },
-    // ],
-    pos: "1st position",
+    pos: "3rd position",
     website: "https://southasia.marssociety.org/irdc/",
   },
   {
