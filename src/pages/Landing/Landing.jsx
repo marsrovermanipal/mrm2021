@@ -113,7 +113,7 @@ export default function Landing() {
             },
           }}
         />
-        <Particles
+        {/* <Particles
           className="d-flex d-md-none"
           height="80vh"
           params={{
@@ -159,7 +159,7 @@ export default function Landing() {
             },
             retina_detect: true,
           }}
-        />
+        /> */}
       </div>
 
       <div className="d-none d-lg-flex flex-column  mx-auto">
@@ -303,7 +303,7 @@ export default function Landing() {
                 <div className="d-flex text-dark">
                   <img
                     className="col-1  m-1"
-                    src="logo.png"
+                    src="logo.webp"
                     loading="lazy"
                     alt="mrm logo"
                   />

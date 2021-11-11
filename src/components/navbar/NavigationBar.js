@@ -18,7 +18,7 @@ export const NavigationBar = () => {
     <div className="col-12 bg-dark mb-4 sticky-top px-2">
       <Navbar expand="md">
         <NavbarBrand href="/">
-          <img src="/logo.png" alt="" className={`${styles.logo} img-fluid`} />
+          <img src="/logo.webp" alt="" className={`${styles.logo} img-fluid`} />
         </NavbarBrand>
         <NavbarToggler onClick={toggle} className="navbar-dark" />
         <Collapse isOpen={isOpen} navbar>
