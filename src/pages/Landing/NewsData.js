@@ -19,7 +19,7 @@ const data = [
     logo: "/Articles_Logo/toi.webp",
     heading:
       "Mars Rover Manipal secures first place in Indian Rover Challenge 2018",
-    img: "irc/image3.jpg",
+    img: "irc/image3.webp",
     link: "https://timesofindia.indiatimes.com/city/mangaluru/mars-rover-manipal-secures-first-place-in-indian-rover-challenge-2018/articleshow/62495964.cms",
   },
 ];

@@ -26,7 +26,7 @@ const Alumni2016 = () => {
                                     {item.pos}
                                 </p>
                                 <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
-                                    <a href={item.linkedin}>
+                                    <a className="text-light" href={item.linkedin}>
                                         {" "}
                                         <GrIcons.GrLinkedin />
                                     </a>
