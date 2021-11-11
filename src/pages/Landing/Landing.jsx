@@ -289,7 +289,7 @@ export default function Landing() {
           autoPlay
         />
       </div>
-      <div className=" d-flex flex-wrap">
+      <div className=" d-flex flex-wrap bg-dark">
         <Suspense fallback={<loading />}>
           {instaData.map((post) => (
             <Card
@@ -332,14 +332,14 @@ export default function Landing() {
         </Suspense>
       </div>
 
-      <div className="bg-dark my-3 p-4 mb-0">
+      <div className="my-3 p-4 mb-0">
         <p className="fs-3 text-center ">
           We have been featured in leading newspapers, technical blogs and
           international magazines from time to time. Our achievements have been
           highlighted by all forms of media.{" "}
         </p>
       </div>
-      <div className=" d-flex flex-wrap bg-dark">
+      <div className=" d-flex flex-wrap bg-dark mb-5">
         <Suspense fallback={<loading />}>
           {NewsData.map((news) => (
             <Card classname="col-lg-3 col-md-5 col-10 mx-auto m-3 p-2">
@@ -350,7 +350,6 @@ export default function Landing() {
                   className="col-6 mb-3  text-dark "
                   alt={news.heading}
                 />
-
                 <img
                   loading="lazy"
                   src={news.img}
