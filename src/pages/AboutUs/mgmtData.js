@@ -5,11 +5,6 @@ const data = [
     linkedin: "https://www.linkedin.com/in/aayush-shah-35591319a",
   },
   {
-    img: "team-22/Bhavya Thakur.webp",
-    name: "Bhavya Kumar Thakur",
-    linkedin: "http://linkedin.com/in/bhavya-thakur-676537206",
-  },
-  {
     img: "team-22/Diya Sharma.webp",
     name: "Diya Sharma",
     linkedin: "https://www.linkedin.com/in/diya-sharma-849705203",
