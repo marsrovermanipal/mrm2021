@@ -17,6 +17,22 @@ import { IoPaperPlaneOutline } from "react-icons/io5";
 import { IoEllipsisVertical } from "react-icons/io5";
 const Card = lazy(() => import("../../components/card/Card"));
 
+function Loading() {
+  return (
+    <mesh rotation={[0, 0, 0]}>
+      <sphereGeometry attach="geometry" args={[1, 16, 16]} />
+      <meshStandardMaterial
+        attach="material"
+        color="white"
+        transparent
+        opacity={0.6}
+        roughness={1}
+        metalness={0}
+      />
+    </mesh>
+  );
+}
+
 export default function Landing() {
   const [instaData, setInstaData] = useState([]);
   const [youtubeData, setYoutubeData] = useState([]);
@@ -113,53 +129,6 @@ export default function Landing() {
             },
           }}
         />
-        {/* <Particles
-          className="d-flex d-md-none"
-          height="80vh"
-          params={{
-            particles: {
-              number: {
-                value: 600,
-                density: {
-                  enable: true,
-                  value_area: 1500,
-                },
-              },
-              line_linked: {
-                enable: true,
-                opacity: 0.02,
-              },
-              move: {
-                direction: "right",
-                speed: 0.05,
-              },
-              size: {
-                value: 1,
-              },
-              opacity: {
-                anim: {
-                  enable: true,
-                  speed: 1,
-                  opacity_min: 0.05,
-                },
-              },
-            },
-            interactivity: {
-              events: {
-                onclick: {
-                  enable: true,
-                  mode: "push",
-                },
-              },
-              modes: {
-                push: {
-                  particles_nb: 1,
-                },
-              },
-            },
-            retina_detect: true,
-          }}
-        /> */}
       </div>
 
       <div className="d-none d-lg-flex flex-column  mx-auto">
@@ -189,7 +158,7 @@ export default function Landing() {
               maxPolarAngle={Math.PI / 2}
             />
             <pointLight position={[10, 10, 10]} intensity={1.3} />
-            <Suspense fallback={null}>
+            <Suspense fallback={<Loading />}>
               <Model scale={(0.05, 0.05, 0.05)} />
             </Suspense>
           </Canvas>
