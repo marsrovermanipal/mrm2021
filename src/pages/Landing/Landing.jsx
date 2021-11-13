@@ -35,8 +35,6 @@ function Loading() {
 
 export default function Landing() {
   const [instaData, setInstaData] = useState([]);
-  const [youtubeData, setYoutubeData] = useState([]);
-
   useEffect(() => {
     AOS.init();
   });
@@ -49,26 +47,6 @@ export default function Landing() {
       setInstaData(data.data.data);
     }
     getInstaData();
-  }, []);
-
-  useEffect(() => {
-    async function getYoutubeData() {
-      fetch(
-        'https://www.googleapis.com/youtube/v3/channels?key="AIzaSyBWRM_R23XEMkLXiIM2DtgVFzWyeDGTlrQ"&channelId="Nb6nzqQDC2_-5Uhg32ASEQ"&part=snippet,id&order=date&maxResults=2'
-      ).then((results) => {
-        const videosObj = results.json();
-        this.setState(
-          {
-            videos: videosObj,
-            playingVideoId: videosObj[this.index],
-          },
-          (updatedState) => {
-            console.log("videos", updatedState.videos);
-            console.log("videos", updatedState.playingVideoId);
-          }
-        );
-      });
-    }
   }, []);
   return (
     <>
