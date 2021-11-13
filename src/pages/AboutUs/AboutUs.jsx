@@ -29,7 +29,7 @@ export default function AboutUs() {
               <Suspense fallback={<Loading />}>
                 {boardData.map((item) => {
                   return (
-                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
+                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
                       <div className="d-flex flex-column align-items-center p-4 ">
                         <img
                           loading="lazy"
@@ -108,7 +108,7 @@ export default function AboutUs() {
               <Suspense fallback={<Loading />}>
                 {AiData.map((item) => {
                   return (
-                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
+                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
                       <div className="d-flex flex-column align-items-center p-4 ">
                         <img
                           loading="lazy"
@@ -186,7 +186,7 @@ export default function AboutUs() {
               <Suspense fallback={<Loading />}>
                 {ecsData.map((item) => {
                   return (
-                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
+                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
                       <div className="d-flex flex-column align-items-center p-4 ">
                         <img
                           loading="lazy"
@@ -264,7 +264,7 @@ export default function AboutUs() {
               <Suspense fallback={<Loading />}>
                 {mechData.map((item) => {
                   return (
-                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
+                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
                       <div className="d-flex flex-column align-items-center p-4 ">
                         <img src={item.img} className="col-12 col-md-5 rounded-circle" loading="lazy" alt={item.name} />
                         <h3 className="text-center ">{item.name}</h3>
@@ -329,7 +329,7 @@ export default function AboutUs() {
               <Suspense fallback={<Loading />}>
                 {researchData.map((item) => {
                   return (
-                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
+                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
                       <div className="d-flex flex-column align-items-center p-4 ">
                         <img
                           loading="lazy"
@@ -398,7 +398,7 @@ export default function AboutUs() {
               <Suspense fallback={<Loading />}>
                 {sciData.map((item) => {
                   return (
-                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
+                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
                       <div className="d-flex flex-column align-items-center p-4 ">
                         <img
                           loading="lazy"
@@ -473,7 +473,7 @@ export default function AboutUs() {
               <Suspense fallback={<Loading />}>
                 {mgmtData.map((item) => {
                   return (
-                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-10 mx-auto mx-md-3 m-3 p-2">
+                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
                       <div className="d-flex flex-column align-items-center p-4 ">
                         <img
                           loading="lazy"

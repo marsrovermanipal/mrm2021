@@ -170,6 +170,7 @@ export default function Landing() {
               color: "#f7f4f2",
               fontWeight: 600,
               fontSize: "4.5em",
+              textAlign: "center",
             }}
             startDelay={1000}
             cursorColor="#f7f4f2"
@@ -281,13 +282,16 @@ export default function Landing() {
         </div>
       </div>
       <div className="d-flex justify-content-center">
-        <video
+        {/* <video
           loading="lazy"
           src="/searchBar.webm"
           alt="Search bar"
           className="col-lg-5 col-10"
           autoPlay
-        />
+          muted 
+        />*/}
+
+        <img className="col-4 d-flex justify-content-center" src="/searchBarr.gif" alt="search" />
       </div>
       <div className=" d-flex flex-wrap bg-dark">
         <Suspense fallback={<loading />}>
