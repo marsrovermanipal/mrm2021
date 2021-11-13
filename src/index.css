@@ -31,6 +31,12 @@ h3,
   background-color: #51e8ef !important;
   color: #000000 !important;
 }
+.btn-xl{
+  font-size:2em;
+}
+.btn-xl:hover{
+  color: #51e8ef !important;
+ }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

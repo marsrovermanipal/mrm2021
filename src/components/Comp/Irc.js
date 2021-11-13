@@ -58,7 +58,7 @@ const Irc = () => {
                 </div >
 
 
-                <div className=" justify-content-center d-none d-sm-flex ">
+                <div className="justify-content-center d-none d-sm-flex ">
                     {data.map((item) => {
                         return (
                             <Card classname=" col-lg-6 col-md-6 col-8 mx-auto mx-md-5 m-4 p-3">

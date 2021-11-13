@@ -61,37 +61,34 @@ export default function Footer() {
         <div className="col-lg-4 col-md-12 mb-4 mb-md-0 text-center">
           <h5 className="text-uppercase text-dark text-center">Follow us</h5>
           <a
-            className="btn btn-link btn-floating btn-lg text-dark m-1"
+            className="btn btn-link btn-floating btn-xl text-dark m-1"
             href="https://www.facebook.com/MarsRoverManipal/"
-            role="button"
+
             data-mdb-ripple-color="light"
           >
             <TiSocialFacebook />
           </a>
 
           <a
-            className="btn btn-link btn-floating btn-lg text-dark m-1"
+            className="btn btn-link btn-floating btn-xl text-dark m-1"
             href="https://www.instagram.com/marsrovermanipal/?hl=en"
-            role="button"
             data-mdb-ripple-color="dark"
           >
             <TiSocialInstagram />
           </a>
 
           <a
-            className="btn btn-link btn-floating btn-lg text-dark m-1"
+            className="btn btn-link btn-floating btn-xl text-dark m-1"
             href="https://in.linkedin.com/company/marsrovermanipal"
-            role="button"
             data-mdb-ripple-color="light"
           >
             <TiSocialLinkedin />
           </a>
 
           <a
-            className="btn btn-link btn-floating btn-lg text-dark m-1"
+            className="btn btn-link btn-floating btn-xl text-dark m-1"
             href="https://www.youtube.com/marsrovermanipal"
-            role="button"
-            data-mdb-ripple-color="dark"
+          // data-mdb-ripple-color="dark"
           >
             <TiSocialYoutube />
           </a>
