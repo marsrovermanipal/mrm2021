@@ -10,11 +10,16 @@ const Comp = lazy(() => import("./pages/Competitions/Comp"));
 const Alumni = lazy(() => import("./pages/Alumni/Alumni"));
 const Sponsorship = lazy(() => import("./pages/Sponsorship/Sponsorship"));
 
-
 function App() {
   return (
     <>
-      <Suspense fallback={<div><Loading /></div>}>
+      <Suspense
+        fallback={
+          <div>
+            <Loading />
+          </div>
+        }
+      >
         <div>
           <Router>
             <NavigationBar />
@@ -40,8 +45,7 @@ function App() {
             </Switch>
             <Footer />
           </Router>
-
-        </div >
+        </div>
       </Suspense>
     </>
   );
@@ -59,7 +63,6 @@ export default App;
 // import Comp from "./pages/Competitions/Comp";
 // import Alumni from "./pages/Alumni/Alumni"
 // import Sponsorship from "./pages/Sponsorship/Sponsorship"
-
 
 // function App() {
 //   return (

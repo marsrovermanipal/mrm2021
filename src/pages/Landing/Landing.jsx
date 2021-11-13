@@ -70,7 +70,6 @@ export default function Landing() {
       });
     }
   }, []);
-
   return (
     <>
       <div className={`col-12 ${styles.landing_anim}`}>
@@ -251,16 +250,11 @@ export default function Landing() {
         </div>
       </div>
       <div className="d-flex justify-content-center">
-        {/* <video
-          loading="lazy"
-          src="/searchBar.webm"
-          alt="Search bar"
-          className="col-lg-5 col-10"
-          autoPlay
-          muted 
-        />*/}
-
-        <img className="col-4 d-flex justify-content-center" src="/searchBarr.gif" alt="search" />
+        <img
+          className="col-4 d-flex justify-content-center"
+          src="/searchBarr.gif"
+          alt="search"
+        />
       </div>
       <div className=" d-flex flex-wrap bg-dark">
         <Suspense fallback={<loading />}>

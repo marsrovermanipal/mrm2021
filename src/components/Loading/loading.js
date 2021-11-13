@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
 
 const loading = () => {
-    return (
-        <div className="d-flex justify-content-center col-6 m-auto">
-            <img src="/logo.png" alt="loading logo" className="col-12"></img>
-        </div>
-    )
-}
+  return (
+    <div className="d-flex justify-content-center col-4 m-auto">
+      <video
+        src="/loadingGif.mp4"
+        autoPlay
+        loop
+        alt="loading logo"
+        className="col-12"
+      />
+    </div>
+  );
+};
 
-export default loading
+export default loading;
