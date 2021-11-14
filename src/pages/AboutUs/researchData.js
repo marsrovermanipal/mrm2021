@@ -6,12 +6,6 @@ const data = [
     linkedin: "https://linkedin.com/in/harshilbhatt2001",
   },
   {
-    id: 4,
-    name: 'Shriyash Haralikar',
-    img: 'team-22/Shriyash.webp',
-    linkedin: "https://www.linkedin.com/in/shriyash-haralikar-bb1794195",
-  },
-  {
     id: 5,
     name: 'Akshat Bhandari',
     img: 'team-22/AkshatBhandari.webp',

@@ -144,7 +144,7 @@ export default function Landing() {
       </div>
 
       <div
-        className={`d-flex d-lg-none col-lg-6 col-12 flex-column  text-center  ${styles.designtodiscover}`}
+        className="d-flex d-lg-none col-lg-6 col-12 flex-column text-center"
         style={{ height: "85vh" }}
       >
         <div classname="m-5 p-5 justify-content-center">
@@ -209,7 +209,7 @@ export default function Landing() {
         />
         <div className={` ${styles.roverText}`}>
           <h1>Mars Rover Manipal</h1>
-          <p className="fs-4 col-12  text-center p-2">
+          <p className="fs-4 col-12  text-center px-5">
             Mars Rover Manipal is a multi-disciplinary student team from Manipal
             Academy of Higher Education (MAHE) striving to design and build next
             generation rovers for exploration of extraterrestrial environments
