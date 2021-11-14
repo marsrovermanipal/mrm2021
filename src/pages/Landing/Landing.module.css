@@ -6,7 +6,6 @@
 }
 .landing_img {
   z-index: 99;
-
   position: absolute;
   bottom: 0;
 }
@@ -20,6 +19,7 @@
   position: absolute;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
+  
 }
 
 .instaLink {
