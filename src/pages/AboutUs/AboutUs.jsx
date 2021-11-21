@@ -363,7 +363,7 @@ export default function AboutUs() {
                 alt="Science"
               />
               <div className="col-6 col-lg-4 my-auto">
-                <p className="fs-3">Science</p>
+                <p className="fs-3">Life Science</p>
                 <p className="fs-6">
                   The Science subsystem is responsible for comprehensive
                   analysis of the biological, geological and chemical aspects of
@@ -382,7 +382,7 @@ export default function AboutUs() {
                 alt="Science"
               />
               <div className="col-10 mx-auto text-center">
-                <p className="fs-3">Science</p>
+                <p className="fs-3">Life Science</p>
                 <p className="fs-6">
                   The Science subsystem is responsible for comprehensive
                   analysis of the biological, geological and chemical aspects of
