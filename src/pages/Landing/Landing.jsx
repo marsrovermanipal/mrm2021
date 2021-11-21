@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import styles from "./Landing.module.css";
 import NewsData from "./NewsData";
 import { OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import AOS from "aos";
 import axios from "axios";
 import Model from "../../components/roverModel/Curiosity_static";
@@ -16,17 +16,19 @@ import { FaRegComment } from "react-icons/fa";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import { IoEllipsisVertical } from "react-icons/io5";
 const Card = lazy(() => import("../../components/card/Card"));
-
 function Loading() {
+  const myMesh = React.useRef();
+  useFrame(({ clock }) => {
+    myMesh.current.rotation.x = clock.getElapsedTime();
+  });
   return (
-    <mesh rotation={[0, 0, 0]}>
+    <mesh rotation={[0, 0, 0]} scale={(0.04, 0.04, 0.04)} ref={myMesh}>
       <sphereGeometry attach="geometry" args={[1, 16, 16]} />
       <meshStandardMaterial
         attach="material"
-        color="white"
-        transparent
-        opacity={0.6}
-        roughness={1}
+        color="#8c4808"
+        opacity={1}
+        roughness={0.1}
         metalness={0}
       />
     </mesh>
@@ -130,6 +132,7 @@ export default function Landing() {
           style={{ height: "100vh" }}
         >
           <Canvas camera={{ position: [10, 18, 23], fov: 0.5 }}>
+            <ambientLight />
             <OrbitControls
               enableZoom={false}
               minPolarAngle={Math.PI / 3}
