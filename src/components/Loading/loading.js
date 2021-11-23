@@ -9,6 +9,7 @@ const loading = () => {
         loop
         alt="loading logo"
         className="col-12"
+        style={{ height: "100vh" }}
       />
     </div>
   );

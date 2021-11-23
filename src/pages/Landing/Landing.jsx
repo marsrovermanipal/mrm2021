@@ -54,7 +54,7 @@ export default function Landing() {
     <>
       <div className={`col-12 ${styles.landing_anim}`}>
         <Particles
-          className="d-none d-md-flex"
+          className="d-none d-lg-flex"
           height="120vh"
           params={{
             particles: {
@@ -166,7 +166,7 @@ export default function Landing() {
           />
         </div>
         <img
-          className={`col-12 img-fluid ${styles.landing_img}`}
+          className={`col-sm-12 col-md- img-fluid ${styles.landing_img}`}
           alt="mars"
           src="/mars.png"
         />
@@ -232,8 +232,8 @@ export default function Landing() {
       </div>
       <div className="d-flex justify-content-center">
         <img
-          className="col-12 col-md-6 col-lg-4 d-flex justify-content-center"
-          src="/searchBarr.gif"
+          className="col-4 d-flex justify-content-center"
+          src="/BarSearch1.gif"
           alt="search"
         />
       </div>

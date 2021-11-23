@@ -2,7 +2,7 @@ const data = [
   {
     id: 1,
     title: 'BERT based Transformers lead the way in Extraction of Health Information from Social Media',
-    img: "/research/bert.png",
+    img: "/research/bert1.png",
     event: "NAACL,2021",
     author: "Kumud Lakara, Siddarth R, Abhiraj Tiwari, Saisha Kashyap, Parthivi Choubay,Nishesh Singh, Sahil Khose",
   },
@@ -24,7 +24,7 @@ const data = [
     id: 4,
     title: 'Autonomous Control of Closed Chain Five Bar Active Suspension via Deep Reinforcement Learning',
     img:
-      '/research/fivebar.png',
+      '/research/fivebar1.png',
     event: "Under Review",
     author: "Nishesh Singh, Siddarth R, Jyotishka Duttagupta, Abhishek Sankar,Leander Stephen D'souza, Sanjay Singh",
   }, {
@@ -40,7 +40,7 @@ const data = [
     title: 'Comparative Analysis of Industrial Grade Parallel Gripper and Linear Gripper',
     event: "International Society of Automation, Bangalore chapter",
     author: "K.S. Dhankhar and D.K. Rajamani",
-    img: "/research/image1.jpeg",
+    img: "/research/imag11.png",
   },
   {
     id: 9,
@@ -48,7 +48,6 @@ const data = [
     event: "ICAARS 2018",
     author: "Siril D Teja, Md Suliaman and Kulpreet Singh Dhankar",
   },
-
   {
     id: 7,
     title: "Design and Analysis of Mars rover suspension based on Chebyshev's Lambda Mechanism",

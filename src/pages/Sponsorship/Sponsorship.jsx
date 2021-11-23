@@ -75,8 +75,8 @@ function Sponsorship() {
                 <SponsorSection />
             </Suspense>
 
-            <div className="bg-dark m-3">
-                <p className="fs-1 text-center ">Brochure </p>
+            <div className="bg-dark my-3">
+                <p className="fs-1 text-center my-0">Brochure </p>
 
                 <div className=" d-none d-sm-flex justify-content-center ">
                     <HTMLFlipBook width={670} height={480}>
@@ -115,7 +115,7 @@ function Sponsorship() {
 
 
                 <div className=" d-flex d-sm-none justify-content-center ">
-                    <HTMLFlipBook width={300} height={220}>
+                    <HTMLFlipBook width={340} height={240}>
                         <div className="demoPage  ">
                             <img src="/brochure/1.webp" loading="lazy" className="col-12 " alt="brochure" />
                         </div>
