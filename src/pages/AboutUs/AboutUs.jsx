@@ -1,7 +1,5 @@
 import React, { useState, lazy, Suspense } from "react";
-// import Card from "../../components/card/Card";
 import * as GrIcons from "react-icons/gr";
-// import styles from "./AboutUs.module.css";
 import { Button } from "reactstrap";
 import Loading from "../../components/Loading/loading"
 import boardData from "./boardData"
@@ -577,7 +575,7 @@ export default function AboutUs() {
   };
   return (
     <div className="container">
-      <h1 className="text-center">The Team</h1>
+      <h1 className="text-center mt-4">The Team</h1>
       <div className="d-flex col-12 text-center justify-content-center p-3 flex-wrap d-none d-sm-flex">
         <Button
           outline

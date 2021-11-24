@@ -73,7 +73,6 @@ const data = [
   {
     id: 12,
     title: 'Search for life in 20 minutes',
-    // img: '/research/image2.jpg',
     event: "Symbiot 2017 by the biotechnology department, Manipal Institute of Technology, Manipal Academy of Higher Education",
     author: "J. Samal, J. Joel, P.C. Nair, P.K. Debata, V. Kuchimanchi, R. Jaiswal and A.M. Rao",
   }, {

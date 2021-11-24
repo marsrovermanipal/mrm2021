@@ -4,11 +4,9 @@
   background-attachment: fixed;
   background-position: bottom;
 }
-.landing_img {
-  z-index: 99;
-  position: absolute;
-  bottom: 0;
-}
+.landing_container{
+  position: relative;
+  }
 
 .rover {
   position: relative;

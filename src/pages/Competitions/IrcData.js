@@ -4,15 +4,9 @@ const data = [
         id: 4,
         comp: "IRC 2019",
         info: "Indian Rover Challenge (IRC) 2019, the second edition, featured design challenges and technicalities, encouraging students from all over the world to provide solutions and move closer towards the next phases of space exploration. It was organized by the students of Mars Rover Manipal in association with Manipal Academy of Higher Education and the Mars Society, featuring a wide range of challenges and terrains which imitate the terrain of Mars.",
-        // pos: "1st position",
+        pos: "Host",
         website: "https://southasia.marssociety.org/indianroverchallenge/irc-2019/",
         img: "irc/image1.jpg",
-        // [
-        //     { src: "irc/image1.jpg" },
-        //     { src: "irc/image3.jpg" },
-        //     { src: "irc/image4.jpg" },
-        //     { src: "irc/image5.jpg" },
-        // ],
     },
     {
         id: 5,
