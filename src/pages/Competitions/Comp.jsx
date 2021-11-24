@@ -63,7 +63,7 @@ export default function Comp() {
 
   return (
     <div className="container">
-      <h1 className="text-center">COMPETITIONS</h1>
+      <h1 className="text-center mt-4">COMPETITIONS</h1>
       <div className="d-flex col-12 text-center justify-content-center p-3 flex-wrap">
         <Button
           outline

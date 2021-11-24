@@ -147,16 +147,18 @@ export default function Landing() {
       </div>
 
       <div
-        className="d-flex d-lg-none col-lg-6 col-12 flex-column text-center"
-        style={{ height: "85vh" }}
+        className={`d-flex d-lg-none col-lg-6 col-12 flex-column ${styles.landing_container}`}
+      // style={{ height: "85vh" }}
       >
-        <div classname="m-5 p-5 justify-content-center">
+        <div className="col-12 ">
           <TypeWriterEffect
             textStyle={{
               fontFamily: "",
               color: "#f7f4f2",
-              fontWeight: 200,
+              fontWeight: 600,
               fontSize: "2em",
+              position: "absolute",
+              top: "10px",
               textAlign: "center",
             }}
             startDelay={1000}
@@ -166,10 +168,11 @@ export default function Landing() {
           />
         </div>
         <img
-          className={`col-sm-12 col-md- img-fluid ${styles.landing_img}`}
+          className="col-12 img-fluid "
           alt="mars"
-          src="/mars.png"
+          src="/stars.png"
         />
+
       </div>
 
       <div
@@ -232,7 +235,7 @@ export default function Landing() {
       </div>
       <div className="d-flex justify-content-center">
         <img
-          className="col-4 d-flex justify-content-center"
+          className="col-lg-4  col-10 d-flex justify-content-center"
           src="/BarSearch1.gif"
           alt="search"
         />
