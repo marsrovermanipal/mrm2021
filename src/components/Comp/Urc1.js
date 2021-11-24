@@ -24,8 +24,6 @@ function Urc1() {
   return (
     <div className="col-12 d-flex mx-auto">
       <div className="row justify-content-center ">
-        {/* <h3 className="text-center text-uppercase ">URC</h3> */}
-
         <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
           <img
             loading="lazy"
@@ -53,22 +51,33 @@ function Urc1() {
         <div className="row justify-content-center d-none d-sm-flex ">
           {data.map((item) => {
             return (
-              <Card classname="col-lg-4 col-md-6 col-8 mx-auto mx-md-5 m-4 p-3">
-                <div
-                  key={item.id}
-                  style={{ cursor: "pointer" }}
-                  className="d-flex flex-column align-items-center"
-                  onClick={() => openModal(item.comp)}
-                >
-                  <div>
-                    <img src={item.img} alt={item.comp} loading="lazy" className="col-12" />
+              <>
+                <Card classname="col-lg-4 col-md-6 col-8 mx-auto mx-md-5 m-4 p-3">
+                  <div
+                    key={item.id}
+                    id={`item${item.id}`}
+                    style={{ cursor: "pointer" }}
+                    className="d-flex flex-column align-items-center"
+                    onClick={() => openModal(item.comp)}
+                    dataToggle="tooltip"
+                    dataPlacement="right"
+                    title="Click here"
+                  >
+                    <div>
+                      <img
+                        src={item.img}
+                        alt={item.comp}
+                        loading="lazy"
+                        className="col-12"
+                      />
+                    </div>
+                    <div className="text-secondary text-center mt-auto">
+                      <h3>{item.comp}</h3>
+                      <h4>{item.pos}</h4>
+                    </div>
                   </div>
-                  <div className="text-secondary text-center mt-auto">
-                    <h3>{item.comp}</h3>
-                    <h4>{item.pos}</h4>
-                  </div>
-                </div>
-              </Card>
+                </Card>
+              </>
             );
           })}
         </div>
@@ -105,7 +114,12 @@ function Urc1() {
                     onClick={() => openModal(item.comp)}
                   >
                     <div>
-                      <img src={item.img} alt={item.comp} loading="lazy" className="col-12" />
+                      <img
+                        src={item.img}
+                        alt={item.comp}
+                        loading="lazy"
+                        className="col-12"
+                      />
                     </div>
                     <div className="text-secondary text-center mt-auto">
                       <h3>{item.comp}</h3>
