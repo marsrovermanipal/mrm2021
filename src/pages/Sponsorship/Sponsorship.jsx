@@ -6,10 +6,8 @@ const SponsorSection = lazy(() => import("../../components/sponsorSection/Sponso
 function Sponsorship() {
     return (
         <>
-            <p className="fs-1 text-center">SPONSORSHIP</p>
+            <p className="fs-1 text-center mt-4">SPONSORSHIP</p>
             <div className="col-11 mx-auto m-3  d-flex justify-content-center">
-
-                {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/RTfdjtEwPGQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                 <img src="/Sponsorship/SponsorshipPic.webp" loading="lazy" className="col-12" alt="team" />
             </div>
             <div classname="p-2 col-10">

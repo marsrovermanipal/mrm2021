@@ -7,7 +7,7 @@ const Card = lazy(() => import("../../components/card/Card"));
 export default function Research() {
   return (
     <div className="text-center col-10 mx-auto text-light">
-      <h1>RESEARCH </h1>
+      <h1 className="mt-4">RESEARCH </h1>
       <p className="mx-auto fs-6">
         Our work at MRM Research is inter-disciplinary, and we blend theory with
         practice. We work not only on great ideas, but also implement, deploy,

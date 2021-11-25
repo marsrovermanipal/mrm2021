@@ -3,7 +3,7 @@ import React, { useEffect, Suspense, useState, lazy } from "react";
 import "aos/dist/aos.css";
 import styles from "./Landing.module.css";
 import NewsData from "./NewsData";
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, Text } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 import AOS from "aos";
 import axios from "axios";
@@ -19,18 +19,19 @@ const Card = lazy(() => import("../../components/card/Card"));
 function Loading() {
   const myMesh = React.useRef();
   useFrame(({ clock }) => {
-    myMesh.current.rotation.x = clock.getElapsedTime();
+    myMesh.current.rotation.y = clock.getElapsedTime();
   });
   return (
     <mesh rotation={[0, 0, 0]} scale={(0.04, 0.04, 0.04)} ref={myMesh}>
-      <sphereGeometry attach="geometry" args={[1, 16, 16]} />
+      {/* <sphereGeometry attach="geometry" args={[1, 16, 16]} />
       <meshStandardMaterial
         attach="material"
         color="#8c4808"
         opacity={1}
         roughness={0.1}
         metalness={0}
-      />
+      /> */}
+      <Text scale={(6, 6, 6)}>Loading</Text>
     </mesh>
   );
 }
@@ -52,73 +53,19 @@ export default function Landing() {
   }, []);
   return (
     <>
-      <div className={`col-12 ${styles.landing_anim}`}>
-        <Particles
-          className="d-none d-lg-flex"
-          height="120vh"
-          params={{
-            particles: {
-              number: {
-                value: 500,
-                density: {
-                  enable: false,
-                },
-              },
-              size: {
-                value: 3,
-                random: true,
-                anim: {
-                  speed: 4,
-                  size_min: 0.3,
-                },
-              },
-              line_linked: {
-                enable: false,
-              },
-              move: {
-                random: true,
-                speed: 1,
-                direction: "top",
-                out_mode: "out",
-              },
-            },
-            interactivity: {
-              events: {
-                onhover: {
-                  enable: true,
-                  mode: "bubble",
-                },
-                onclick: {
-                  enable: true,
-                  mode: "repulse",
-                },
-              },
-              modes: {
-                bubble: {
-                  distance: 250,
-                  duration: 2,
-                  size: 0,
-                  opacity: 0,
-                },
-                repulse: {
-                  distance: 400,
-                  duration: 4,
-                },
-              },
-            },
-          }}
-        />
-      </div>
 
-      <div className="d-none d-lg-flex flex-column  mx-auto">
-        <div className="col-lg-6 col-12 m-auto p-3 ">
+
+      <div className={`d-none d-md-flex flex-column  mx-auto ${styles.landing_container}`}>
+        <div className="col-12 m-auto justify-content-between mx-5" >
           <TypeWriterEffect
             textStyle={{
               fontFamily: "",
               color: "#f7f4f2",
               fontWeight: 600,
-              fontSize: "4.5em",
-              textAlign: "center",
+              fontSize: "6em",
+              position: "absolute",
+              top: "30vh",
+              textAlign: "left",
             }}
             startDelay={1000}
             cursorColor="#f7f4f2"
@@ -127,11 +74,193 @@ export default function Landing() {
           />
         </div>
 
-        <div
-          className="d-none d-lg-flex mx-auto col-lg-6 col-12 img-fluid "
-          style={{ height: "100vh" }}
+        <img src="landing.png" alt="landing" className="col-12 img-fluid" style={{ height: "90vh" }} />
+
+      </div>
+
+      <div
+        className={`d-flex d-md-none col-lg-6 col-12 flex-column ${styles.landing_container}`}
+      // style={{ height: "85vh" }}
+      >
+        <div className="col-12 mx-auto">
+          <TypeWriterEffect
+            textStyle={{
+              fontFamily: "",
+              color: "#f7f4f2",
+              fontWeight: 600,
+              fontSize: "3em",
+              position: "absolute",
+              top: "10px",
+              left: 0,
+              right: 0,
+              marginLeft: "auto",
+              marginRight: "auto",
+              width: "100vw",
+              textAlign: "center",
+            }}
+            startDelay={1000}
+            cursorColor="#f7f4f2"
+            text="Design to Discover."
+            typeSpeed={150}
+          />
+        </div>
+        <img
+          className="col-12 img-fluid "
+          alt="mars"
+          src="/stars.png"
+        />
+
+      </div>
+
+      <div
+        className="col-12"
+        data-aos="fade-in"
+        data-aos-delay="200"
+        style={{ backgroundColor: "" }}
+      ></div>
+
+      <div className="d-none d-md-flex mx-auto col-12 p-3">
+        <div className={`col-6 ${styles.landing_anim}`}>
+          <Particles
+            className="d-none d-lg-flex"
+            height="85vh"
+            params={{
+              particles: {
+                number: {
+                  value: 200,
+                  density: {
+                    enable: false,
+                  },
+                },
+                size: {
+                  value: 3,
+                  random: true,
+                  anim: {
+                    speed: 4,
+                    size_min: 0.3,
+                  },
+                },
+                line_linked: {
+                  enable: false,
+                },
+                move: {
+                  random: true,
+                  speed: 1,
+                  direction: "top",
+                  out_mode: "out",
+                },
+              },
+              interactivity: {
+                events: {
+                  onhover: {
+                    enable: true,
+                    mode: "bubble",
+                  },
+                  onclick: {
+                    enable: true,
+                    mode: "repulse",
+                  },
+                },
+                modes: {
+                  bubble: {
+                    distance: 250,
+                    duration: 2,
+                    size: 0,
+                    opacity: 0,
+                  },
+                  repulse: {
+                    distance: 400,
+                    duration: 4,
+                  },
+                },
+              },
+            }}
+          />
+        </div>
+        <div className="text-center align-middle"
         >
-          <Canvas camera={{ position: [10, 18, 23], fov: 0.5 }}>
+          <h3 className="m-3">Mars Rover Manipal</h3>
+          <p className="fs-4 col-12  p-2">
+            Mars Rover Manipal is a multi-disciplinary student team from Manipal
+            Academy of Higher Education (MAHE) striving to design and build next
+            generation rovers for exploration of extraterrestrial environments and
+            focus on applications of robotics in interplanetary missions.
+            <br />
+            We participate in the annual University Rover Challenge (URC)
+            organized by the Mars Society, USA. In URC 2019, our team finished 8th
+            out of 84 teams across the globe and stood 1st among the Asian teams.
+            Since our inception, the team has provided a platform to aspiring
+            engineering students by pushing them beyond the theoretical knowledge
+            they gain in classrooms to inculcate technical and practical skills.
+            The team is also working on research related to the role of a rover in
+            the field of space exploration and future Mars missions.
+          </p>
+        </div>
+
+        <div
+          className="d-none d-md-flex mx-auto col-lg-6 col-12 img-fluid align-items-center"
+          style={{ height: "85vh" }}
+        >
+          <div className={`col-6 ${styles.landing_anim}`}>
+            <Particles
+              className="d-none d-lg-flex"
+              height="85vh"
+              params={{
+                particles: {
+                  number: {
+                    value: 300,
+                    density: {
+                      enable: false,
+                    },
+                  },
+                  size: {
+                    value: 3,
+                    random: true,
+                    anim: {
+                      speed: 4,
+                      size_min: 0.3,
+                    },
+                  },
+                  line_linked: {
+                    enable: false,
+                  },
+                  move: {
+                    random: true,
+                    speed: 1,
+                    direction: "top",
+                    out_mode: "out",
+                  },
+                },
+                interactivity: {
+                  events: {
+                    onhover: {
+                      enable: true,
+                      mode: "bubble",
+                    },
+                    onclick: {
+                      enable: true,
+                      mode: "repulse",
+                    },
+                  },
+                  modes: {
+                    bubble: {
+                      distance: 250,
+                      duration: 2,
+                      size: 0,
+                      opacity: 0,
+                    },
+                    repulse: {
+                      distance: 400,
+                      duration: 4,
+                    },
+                  },
+                },
+              }}
+            />
+          </div>
+
+
+          <Canvas style={{ marginTop: "15vh" }} camera={{ position: [10, 18, 23], fov: 0.5 }}>
             <ambientLight />
             <OrbitControls
               enableZoom={false}
@@ -143,76 +272,28 @@ export default function Landing() {
               <Model scale={(0.05, 0.05, 0.05)} />
             </Suspense>
           </Canvas>
+
         </div>
       </div>
 
-      <div
-        className="d-flex d-lg-none col-lg-6 col-12 flex-column text-center"
-        style={{ height: "85vh" }}
-      >
-        <div classname="m-5 p-5 justify-content-center">
-          <TypeWriterEffect
-            textStyle={{
-              fontFamily: "",
-              color: "#f7f4f2",
-              fontWeight: 200,
-              fontSize: "2em",
-              textAlign: "center",
-            }}
-            startDelay={1000}
-            cursorColor="#f7f4f2"
-            text="Design to Discover."
-            typeSpeed={150}
-          />
-        </div>
-        <img
-          className={`col-sm-12 col-md- img-fluid ${styles.landing_img}`}
-          alt="mars"
-          src="/mars.png"
-        />
-      </div>
+
 
       <div
-        className="col-12"
-        data-aos="fade-in"
-        data-aos-delay="200"
-        style={{ backgroundColor: "" }}
-      ></div>
-
-      <div
-        className={`d-flex flex-column d-lg-none text-center ${styles.roverPhone}`}
+        // className={`col-12 d-block d-none flex-column  d-lg-flex ${styles.rover}`}
+        className="col-12 d-block d-flex flex-column d-md-none"
       >
-        <h3 className="mt-5">Mars Rover Manipal</h3>
-        <p className="fs-8 col-12  p-2">
-          Mars Rover Manipal is a multi-disciplinary student team from Manipal
-          Academy of Higher Education (MAHE) striving to design and build next
-          generation rovers for exploration of extraterrestrial environments and
-          focus on applications of robotics in interplanetary missions.
-          <br />
-          We participate in the annual University Rover Challenge (URC)
-          organized by the Mars Society, USA. In URC 2019, our team finished 8th
-          out of 84 teams across the globe and stood 1st among the Asian teams.
-          Since our inception, the team has provided a platform to aspiring
-          engineering students by pushing them beyond the theoretical knowledge
-          they gain in classrooms to inculcate technical and practical skills.
-          The team is also working on research related to the role of a rover in
-          the field of space exploration and future Mars missions.
-        </p>
-      </div>
-
-      <div
-        className={`col-12 d-block d-none flex-column  d-lg-flex ${styles.rover}`}
-      >
-        <img
+        {/* <img
           loading="lazy"
           src="/photos20/Rover autonomous.webp"
           alt="rover"
           width="100%"
           height="100%"
-        />
-        <div className={` ${styles.roverText}`}>
-          <h1>Mars Rover Manipal</h1>
-          <p className="fs-4 col-12  text-center px-5">
+        /> */}
+        <div
+        // className={` ${styles.roverText}`}
+        >
+          <h1 className="text-center m-4">Mars Rover Manipal</h1>
+          <p className="fs-4 col-12  text-center px-3">
             Mars Rover Manipal is a multi-disciplinary student team from Manipal
             Academy of Higher Education (MAHE) striving to design and build next
             generation rovers for exploration of extraterrestrial environments
@@ -232,7 +313,7 @@ export default function Landing() {
       </div>
       <div className="d-flex justify-content-center">
         <img
-          className="col-4 d-flex justify-content-center"
+          className="col-lg-4  col-10 d-flex justify-content-center"
           src="/BarSearch1.gif"
           alt="search"
         />
@@ -315,6 +396,7 @@ export default function Landing() {
           ))}
         </Suspense>
       </div>
+
     </>
   );
 }
