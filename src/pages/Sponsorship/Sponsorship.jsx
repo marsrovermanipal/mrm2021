@@ -79,34 +79,34 @@ function Sponsorship() {
                 <div className=" d-none d-sm-flex justify-content-center ">
                     <HTMLFlipBook width={670} height={480}>
                         <div className="demoPage  ">
-                            <img src="/brochure/1.webp" loading="lazy" className="col-12 " alt="brochure" />
+                            <img src="/brochure/1.webp" loading="lazy" className="col-lg-12 col-10 " alt="brochure" />
                         </div>
                         <div className="demoPage ">
-                            <img src="/brochure/2.webp" loading="lazy" className="col-12" alt="brochure" />
+                            <img src="/brochure/2.webp" loading="lazy" className="col-lg-12 col-10 " alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/3.webp" loading="lazy" className="col-12" alt="brochure" />
+                            <img src="/brochure/3.webp" loading="lazy" className="col-lg-12 col-10 " alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/4.webp" loading="lazy" className="col-12" alt="brochure" />
+                            <img src="/brochure/4.webp" loading="lazy" className="col-lg-12 col-10 " alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/5.webp" loading="lazy" className="col-12" alt="brochure" />
+                            <img src="/brochure/5.webp" loading="lazy" className="col-lg-12 col-10 " alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/6.webp" loading="lazy" className="col-12" alt="brochure" />
+                            <img src="/brochure/6.webp" loading="lazy" className="col-lg-12 col-10 " alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/7.webp" loading="lazy" className="col-12" alt="brochure" />
+                            <img src="/brochure/7.webp" loading="lazy" className="col-lg-12 col-10 " alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/8.webp" loading="lazy" className="col-12" alt="brochure" />
+                            <img src="/brochure/8.webp" loading="lazy" className="col-lg-12 col-10 " alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/9.webp" loading="lazy" className="col-12" alt="brochure" />
+                            <img src="/brochure/9.webp" loading="lazy" className="col-lg-12 col-10 " alt="brochure" />
                         </div>
                         <div className="demoPage">
-                            <img src="/brochure/10.webp" loading="lazy" className="col-12" alt="brochure" />
+                            <img src="/brochure/10.webp" loading="lazy" className="col-lg-12 col-10 " alt="brochure" />
                         </div>
                     </HTMLFlipBook>
                 </div>

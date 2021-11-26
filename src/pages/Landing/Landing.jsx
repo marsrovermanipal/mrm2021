@@ -74,7 +74,7 @@ export default function Landing() {
           />
         </div>
 
-        <img src="starfinal.png" alt="landing" className="col-12 img-fluid" style={{ height: "90vh" }} />
+        <img src="starfinal.webp" alt="landing" className="col-12 img-fluid" style={{ height: "90vh" }} />
 
       </div>
 
@@ -107,7 +107,7 @@ export default function Landing() {
         <img
           className="col-12 img-fluid "
           alt="mars"
-          src="/stars.png"
+          src="/stars.webp"
         />
 
       </div>
