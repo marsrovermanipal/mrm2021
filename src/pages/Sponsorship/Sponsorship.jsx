@@ -55,7 +55,7 @@ function Sponsorship() {
                     alt="team"
                 />
             </div>
-            <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
+            <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto m-3">
                 <div className="col-10 mx-auto text-center">
                     <p className="fs-6 ">
                         Home to about 20,000 students from all parts of the world, very few colleges provide diversity, as Manipal Academy of Higher Education does. Joining our family of sponsors provides your company exposure to all of these students. Your company will come in direct contact with innovative and dedicated students, who are experienced and more than able to handle situations. As one of our sponsors, your company is invited to all our events and can visit our workshop any time. Our workshop is a place where you can have access to bright engineering students, who can be an asset to any company they join.
