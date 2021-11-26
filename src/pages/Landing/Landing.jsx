@@ -74,7 +74,7 @@ export default function Landing() {
           />
         </div>
 
-        <img src="starfinal.webp" alt="landing" className="col-12 img-fluid" style={{ height: "90vh" }} />
+        <img src="starsfinal.webp" alt="landing" className="col-12 img-fluid" style={{ height: "90vh" }} />
 
       </div>
 
@@ -177,11 +177,14 @@ export default function Landing() {
             }}
           />
         </div>
-        <div className="text-center align-items-center"
+        {/* <h3 className="m-3">Mars Rover Manipal</h3> */}
+        <div className="text-center d-flex align-items-center"
         // style={{ alignItems: "center" }}
         >
-          <h3 className="m-3">Mars Rover Manipal</h3>
           <p className="fs-4 col-12  p-2">
+            MARS ROVER MANIPAL
+            <br />
+            <br />
             Mars Rover Manipal is a multi-disciplinary student team from Manipal
             Academy of Higher Education (MAHE) striving to design and build next
             generation rovers for exploration of extraterrestrial environments and
