@@ -8,7 +8,7 @@ export default function Research() {
   return (
     <div className="text-center col-10 mx-auto text-light">
       <h1 className="mt-4">RESEARCH </h1>
-      <p className="mx-auto fs-6">
+      <p className="mx-auto fs-5">
         Our work at MRM Research is inter-disciplinary, and we blend theory with
         practice. We work not only on great ideas, but also implement, deploy,
         experiment, contribute to and learn from the world around us. We

@@ -177,8 +177,7 @@ export default function Landing() {
             }}
           />
         </div>
-        <div className="text-center align-middle"
-        >
+        <div className="text-center" style={{ verticalAlign: "middle" }}>
           <h3 className="m-3">Mars Rover Manipal</h3>
           <p className="fs-4 col-12  p-2">
             Mars Rover Manipal is a multi-disciplinary student team from Manipal

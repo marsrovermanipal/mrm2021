@@ -17,7 +17,7 @@ const Erc = () => {
                     />
                     <div className="col-6 col-lg-6 my-auto">
 
-                        <p>
+                        <p className="fs-5">
                             The European Rover Challenge is an international robotics competition, where academic teams from around the world present their mobile robot designs, competing in competitions based on real ESA and NASA missions. The competition takes place on the world’s largest artificial Martian track, that is directly derived from the surface of the Red Planet. Since 2021, the competition is held in both formulas: ON-SITE (teams compete with self-constructed robots on MarsYard in Poland) and REMOTE (competitors from several continents will remotely control the robot, physically moving along a track located in Poland, on the campus of the Kielce University of Technology).
                         </p>
                     </div>

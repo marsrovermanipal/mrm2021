@@ -6,7 +6,7 @@ const SponsorSection = lazy(() => import("../../components/sponsorSection/Sponso
 function Sponsorship() {
     return (
         <>
-            <p className="fs-1 text-center mt-4">SPONSORSHIP</p>
+            <h1 className="text-center mt-4">SPONSORSHIP</h1>
             <div className="col-11 mx-auto m-3  d-flex justify-content-center">
                 <img src="/Sponsorship/SponsorshipPic.webp" loading="lazy" className="col-12" alt="team" />
             </div>
