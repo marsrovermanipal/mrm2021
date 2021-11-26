@@ -19,7 +19,7 @@ const Imh = () => {
                     />
                     <div className="col-6 col-lg-6 my-auto">
 
-                        <p>
+                        <p className="fs-5">
                             International Mars Hackathon challenges teams from diverse disciplines to come up with insightful solutions to mind-boggling Space Exploration problems! The 48hr competition requires students to think on their feet and devise creative approaches in several thematic areas.
                         </p>
                     </div>

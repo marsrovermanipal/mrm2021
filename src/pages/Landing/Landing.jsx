@@ -74,7 +74,7 @@ export default function Landing() {
           />
         </div>
 
-        <img src="starfinal.png" alt="landing" className="col-12 img-fluid" style={{ height: "90vh" }} />
+        <img src="starfinal.webp" alt="landing" className="col-12 img-fluid" style={{ height: "90vh" }} />
 
       </div>
 
@@ -107,7 +107,7 @@ export default function Landing() {
         <img
           className="col-12 img-fluid "
           alt="mars"
-          src="/stars.png"
+          src="/stars.webp"
         />
 
       </div>
@@ -177,8 +177,7 @@ export default function Landing() {
             }}
           />
         </div>
-        <div className="text-center align-middle"
-        >
+        <div className="text-center" style={{ verticalAlign: "middle" }}>
           <h3 className="m-3">Mars Rover Manipal</h3>
           <p className="fs-4 col-12  p-2">
             Mars Rover Manipal is a multi-disciplinary student team from Manipal

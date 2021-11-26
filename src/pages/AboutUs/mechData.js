@@ -44,7 +44,7 @@ const data = [
   {
     id: 8,
     name: "Saurabh Chaughule",
-    img: "team-22/Saurabh.jpg",
+    img: "team-22/Saurabh.png",
     linkedin: "http://www.linkedin.com/in/saurabh-chaughule-740627200",
   },
   {

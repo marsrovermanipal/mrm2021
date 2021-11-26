@@ -32,7 +32,7 @@ function Urc1() {
             alt="ERC"
           />
           <div className="col-6 col-lg-6 my-auto">
-            <p>
+            <p className="fs-5">
               The University Rover Challenge is a premier robotics competition
               organized annually by the Mars Society USA during summer at Mars
               Desert Research Station (MDRS) in Utah, USA.The challenge is to
