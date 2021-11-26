@@ -67,7 +67,7 @@ export default function SponsorSection() {
   ];
   return (
     <>
-      <h1 className="text-center">Our Sponsors</h1>
+      <h1 className="text-center ">Our Sponsors</h1>
       <p
         className="col-10 mx-auto text-center fs-5"
         data-aos="fade-in"

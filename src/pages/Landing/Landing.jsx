@@ -67,14 +67,14 @@ export default function Landing() {
               top: "30vh",
               textAlign: "left",
             }}
-            startDelay={1000}
+            startDelay={100}
             cursorColor="#f7f4f2"
             text="Design to Discover."
             typeSpeed={150}
           />
         </div>
 
-        <img src="landing.png" alt="landing" className="col-12 img-fluid" style={{ height: "90vh" }} />
+        <img src="starfinal.png" alt="landing" className="col-12 img-fluid" style={{ height: "90vh" }} />
 
       </div>
 
