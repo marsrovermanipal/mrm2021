@@ -54,7 +54,7 @@ export default function Landing() {
   return (
     <>
       <div
-        className={`d-none d-md-flex flex-column mx-auto ${styles.landing_container}`}
+        className={`d-none d-lg-flex flex-column mx-auto ${styles.landing_container}`}
       >
         <div className="col-12 m-auto justify-content-between mx-5">
           <TypeWriterEffect
@@ -64,7 +64,7 @@ export default function Landing() {
               fontWeight: 600,
               fontSize: "5em",
               position: "absolute",
-              top: "30vh",
+              top: "35vh",
               textAlign: "left",
             }}
             startDelay={100}
@@ -83,7 +83,7 @@ export default function Landing() {
       </div>
 
       <div
-        className={`d-flex d-md-none col-lg-6 col-12 flex-column ${styles.landing_container}`}
+        className={`d-flex d-lg-none col-lg-6 col-12 flex-column ${styles.landing_container}`}
       >
         <div className="col-12 mx-auto">
           <TypeWriterEffect
@@ -91,14 +91,14 @@ export default function Landing() {
               fontFamily: "",
               color: "#f7f4f2",
               fontWeight: 600,
-              fontSize: "3em",
+              fontSize: "2.5em",
               position: "absolute",
-              top: "10px",
+              top: "5vh",
               left: 0,
               right: 0,
-              marginLeft: "auto",
-              marginRight: "auto",
-              width: "100vw",
+              // marginLeft: "auto",
+              // marginRight: "auto",
+              // width: "100vw",
               textAlign: "center",
             }}
             startDelay={1000}
