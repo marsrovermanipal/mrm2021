@@ -10,7 +10,6 @@ export default function ImageCarousel(Items) {
   const [activeIndex, setActiveIndex] = useState(0);
   const temp = Object.values(Items);
   const items = temp[0];
-  console.log(items);
 
   const next = () => {
     const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;

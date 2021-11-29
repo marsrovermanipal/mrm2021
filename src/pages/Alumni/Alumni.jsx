@@ -1,25 +1,23 @@
 import React, { useState, lazy, Suspense } from "react";
 import { Button } from "reactstrap";
-import Loading from "../../components/Loading/loading"
-const Alumni2016 = lazy(() => import('../../components/Alumni/Alumni2016'));
-const Alumni2017 = lazy(() => import('../../components/Alumni/Alumni2017'));
-const Alumni2018 = lazy(() => import('../../components/Alumni/Alumni2018'));
-const Alumni2019 = lazy(() => import('../../components/Alumni/Alumni2019'));
-const Alumni2020 = lazy(() => import('../../components/Alumni/Alumni2020'));
-const Alumni2021 = lazy(() => import('../../components/Alumni/Alumni2021'));
-
+import Loading from "../../components/Loading/loading";
+const Alumni2016 = lazy(() => import("../../components/Alumni/Alumni2016"));
+const Alumni2017 = lazy(() => import("../../components/Alumni/Alumni2017"));
+const Alumni2018 = lazy(() => import("../../components/Alumni/Alumni2018"));
+const Alumni2019 = lazy(() => import("../../components/Alumni/Alumni2019"));
+const Alumni2020 = lazy(() => import("../../components/Alumni/Alumni2020"));
+const Alumni2021 = lazy(() => import("../../components/Alumni/Alumni2021"));
 
 export default function Alumni() {
   const [activeYear, setActiveYear] = useState("2021");
   const renderMembers = (year) => {
     switch (year) {
-
       case "2021":
         return (
           <Suspense fallback={<Loading />}>
             <Alumni2021 />
           </Suspense>
-        )
+        );
       case "2020":
         return (
           <Suspense fallback={<Loading />}>
@@ -53,13 +51,11 @@ export default function Alumni() {
       default:
         <Suspense fallback={<Loading />}>
           <Alumni2021 />
-        </Suspense>
+        </Suspense>;
     }
   };
   const handleClick = (e) => {
     setActiveYear(e.target.value);
-
-    console.log(e.target.value);
   };
 
   return (
@@ -126,11 +122,8 @@ export default function Alumni() {
         >
           2016
         </Button>
-
       </div>
       {renderMembers(activeYear)}
     </div>
   );
 }
-
-

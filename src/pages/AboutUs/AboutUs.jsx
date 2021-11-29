@@ -1,23 +1,21 @@
 import React, { useState, lazy, Suspense } from "react";
 import * as GrIcons from "react-icons/gr";
 import { Button } from "reactstrap";
-import Loading from "../../components/Loading/loading"
-import boardData from "./boardData"
-import AiData from "./AiData"
-import ecsData from "./ecsData"
-import mgmtData from "./mgmtData"
-import sciData from "./scienceData"
-import researchData from "./researchData"
-import mechData from "./mechData"
-import FAdata from "./FAdata"
+import Loading from "../../components/Loading/loading";
+import boardData from "./boardData";
+import AiData from "./AiData";
+import ecsData from "./ecsData";
+import mgmtData from "./mgmtData";
+import sciData from "./scienceData";
+import researchData from "./researchData";
+import mechData from "./mechData";
+import FAdata from "./FAdata";
 const Card = lazy(() => import("../../components/card/Card"));
 
 export default function AboutUs() {
   const [activeSub, setActiveSub] = useState("board");
   const renderMembers = (sub) => {
     switch (sub) {
-
-
       case "board":
         // board members data
         return (
@@ -47,13 +45,11 @@ export default function AboutUs() {
                             <GrIcons.GrLinkedin />
                           </a>
                         </div>
-
                       </div>
                     </Card>
-
                   );
                 })}
-              </Suspense >
+              </Suspense>
             </div>
           </div>
         );
@@ -78,7 +74,6 @@ export default function AboutUs() {
                   deep learning architectures to solve various state of the art
                   problems encountered while the development of rover.
                 </p>
-
               </div>
             </div>
             <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
@@ -113,7 +108,6 @@ export default function AboutUs() {
                           src={item.img}
                           className="col-12 col-md-5 rounded-circle"
                           alt={item.name}
-
                         />
                         <h3 className="text-center ">{item.name}</h3>
                         <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
@@ -133,7 +127,6 @@ export default function AboutUs() {
       case "ecs":
         return (
           <>
-
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
                 loading="lazy"
@@ -166,7 +159,6 @@ export default function AboutUs() {
               <div className="col-10 mx-auto text-center">
                 <p className="fs-3">Electronics & Control Systems</p>
                 <p className="fs-6">
-
                   The rover is brought to life by the Electronics & Controls
                   subsytem which is responsible for powering various segments of
                   the rover, that work together to achieve desired performance
@@ -178,7 +170,7 @@ export default function AboutUs() {
                   environment.
                 </p>
               </div>
-            </div >
+            </div>
             <div className="row justify-content-center ">
               <h3 className="text-center text-uppercase">Team Members </h3>
               <Suspense fallback={<Loading />}>
@@ -199,10 +191,8 @@ export default function AboutUs() {
                             <GrIcons.GrLinkedin />
                           </a>
                         </div>
-
                       </div>
                     </Card>
-
                   );
                 })}
               </Suspense>
@@ -264,15 +254,22 @@ export default function AboutUs() {
                   return (
                     <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
                       <div className="d-flex flex-column align-items-center p-4 ">
-                        <img src={item.img} className="col-12 col-md-5 rounded-circle" loading="lazy" alt={item.name} />
+                        <img
+                          src={item.img}
+                          className="col-12 col-md-5 rounded-circle"
+                          loading="lazy"
+                          alt={item.name}
+                        />
                         <h3 className="text-center ">{item.name}</h3>
                         <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
-                          <a className="text-light" href={item.linkedin}> <GrIcons.GrLinkedin /></a>
+                          <a className="text-light" href={item.linkedin}>
+                            {" "}
+                            <GrIcons.GrLinkedin />
+                          </a>
                         </div>
-
                       </div>
                     </Card>
-                  )
+                  );
                 })}
               </Suspense>
             </div>
@@ -453,7 +450,7 @@ export default function AboutUs() {
               />
               <div className="col-10 mx-auto text-center">
                 <h1>Management & Public Relations</h1>
-                <p >
+                <p>
                   The Management and PR subsystem of Mars Rover Manipal is
                   responsible for all the non-technical work of the team. It is
                   involved in the overall progress of the team by handling
@@ -465,7 +462,7 @@ export default function AboutUs() {
                   work and managing of all events.
                 </p>
               </div>
-            </div >
+            </div>
             <div className="row justify-content-center ">
               <h3 className="text-center text-uppercase">Team Members </h3>
               <Suspense fallback={<Loading />}>
@@ -570,8 +567,6 @@ export default function AboutUs() {
   };
   const handleClick = (e) => {
     setActiveSub(e.target.value);
-    // console.log(activeSub);
-    console.log(e.target.value);
   };
   return (
     <div className="container">

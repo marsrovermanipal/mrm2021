@@ -1,7 +1,7 @@
 import React, { useState, Suspense, lazy } from "react";
 import { Button } from "reactstrap";
 
-import Loading from "../../components/Loading/loading"
+import Loading from "../../components/Loading/loading";
 const Erc = lazy(() => import("../../components/Comp/Erc"));
 const Urc = lazy(() => import("../../components/Comp/Urc1"));
 const Irdc = lazy(() => import("../../components/Comp/Irdc"));
@@ -9,20 +9,16 @@ const Irc = lazy(() => import("../../components/Comp/Irc"));
 const Imh = lazy(() => import("../../components/Comp/Imh"));
 
 export default function Comp() {
-
-
   const [activeComp, setActiveComp] = useState("URC");
 
   const renderComp = (comp) => {
-
     switch (comp) {
-
       case "URC":
         return (
           <Suspense fallback={<Loading />}>
             <Urc />
           </Suspense>
-        )
+        );
       case "IRDC":
         return (
           <Suspense fallback={<Loading />}>
@@ -51,15 +47,12 @@ export default function Comp() {
       default:
         <Suspense fallback={<Loading />}>
           <Urc />
-        </Suspense>
+        </Suspense>;
     }
   };
   const handleClick = (e) => {
     setActiveComp(e.target.value);
-
-    console.log(e.target.value);
   };
-
 
   return (
     <div className="container">
@@ -115,14 +108,8 @@ export default function Comp() {
         >
           IMH
         </Button>
-
-
       </div>
       {renderComp(activeComp)}
     </div>
   );
 }
-
-
-
-
