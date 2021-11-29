@@ -15,6 +15,7 @@ import { FaRegBookmark } from "react-icons/fa";
 import { FaRegComment } from "react-icons/fa";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import { IoEllipsisVertical } from "react-icons/io5";
+import { Alert } from "reactstrap";
 const Card = lazy(() => import("../../components/card/Card"));
 function Loading() {
   const myMesh = React.useRef();
@@ -46,19 +47,42 @@ export default function Landing() {
       const data = await axios.get(
         `https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=${process.env.REACT_APP_INSTA_TOKEN}`
       );
+      console.log(data);
       data.data.data.splice(3, data.data.data.length - 3);
+      console.log(data.data.data);
       setInstaData(data.data.data);
     }
     getInstaData();
   }, []);
+  function checkVideo(url) {
+    if (url.includes("video", 0)) return true;
+    return false;
+  }
   return (
     <>
       <div
         className={`d-none d-lg-flex flex-column mx-auto ${styles.landing_container}`}
       >
-        <div className="text-center text-light fs-2 col-12 p-2" style={{ position: "absolute", top: "0", backgroundColor: "rgba(255,255,255, 0.2)", color: "black" }}>
-          <a href="https://forms.gle/cgcvRuMEJtYZ6irKA" style={{ color: "inherit", fontWeight: 500, textDecoration: "none" }}>REGISTER NOW</a>
-        </div>
+        {/* <div
+          className="text-center text-light fs-2 col-12 p-2"
+          style={{
+            position: "absolute",
+            top: "0",
+            backgroundColor: "rgba(255,255,255, 0.2)",
+            color: "black",
+          }}
+        >
+          <a
+            href="https://forms.gle/cgcvRuMEJtYZ6irKA"
+            style={{
+              color: "inherit",
+              fontWeight: 500,
+              textDecoration: "none",
+            }}
+          >
+            REGISTER NOW
+          </a>
+        </div> */}
         <div className="col-12 m-auto justify-content-between mx-5">
           <TypeWriterEffect
             textStyle={{
@@ -88,9 +112,26 @@ export default function Landing() {
       <div
         className={`d-flex d-lg-none col-lg-6 col-12 flex-column ${styles.landing_container}`}
       >
-        <div className="text-center text-light fs-2 col-12 p-2" style={{ position: "absolute", top: "0", backgroundColor: "rgba(255,255,255, 0.2)", color: "black" }}>
-          <a href="https://forms.gle/cgcvRuMEJtYZ6irKA" style={{ color: "inherit", fontWeight: 500, textDecoration: "none" }}>REGISTER NOW</a>
-        </div>
+        {/* <div
+          className="text-center text-light fs-2 col-12 p-2"
+          style={{
+            position: "absolute",
+            top: "0",
+            backgroundColor: "rgba(255,255,255, 0.2)",
+            color: "black",
+          }}
+        >
+          <a
+            href="https://forms.gle/cgcvRuMEJtYZ6irKA"
+            style={{
+              color: "inherit",
+              fontWeight: 500,
+              textDecoration: "none",
+            }}
+          >
+            REGISTER NOW
+          </a>
+        </div> */}
         <div className="col-12 mx-auto">
           <TypeWriterEffect
             textStyle={{
@@ -102,9 +143,6 @@ export default function Landing() {
               top: "10vh",
               left: 0,
               right: 0,
-              // marginLeft: "auto",
-              // marginRight: "auto",
-              // width: "100vw",
               textAlign: "center",
             }}
             startDelay={1000}
@@ -495,12 +533,21 @@ export default function Landing() {
                   <IoEllipsisVertical className="ms-auto" />
                 </div>
                 <div className="d-flex flex-column align-items-center p-2 ">
-                  <img
-                    loading="lazy"
-                    className="col-lg-8 col-md-6 col-8 "
-                    src={post.media_url}
-                    alt={post.caption}
-                  />
+                  {checkVideo(post.media_url) ? (
+                    <video
+                      controls
+                      autoplay
+                      src={post.media_url}
+                      className="col-12"
+                    />
+                  ) : (
+                    <img
+                      loading="lazy"
+                      className="col-lg-8 col-md-6 col-8 "
+                      src={post.media_url}
+                      alt={post.caption}
+                    />
+                  )}
                 </div>
                 <div className="d-flex text-dark my-2">
                   <FcLike className="mx-2" />

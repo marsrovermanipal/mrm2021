@@ -6,6 +6,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
+  Alert,
   NavLink,
 } from "reactstrap";
 import styles from "./Navi.module.css";
@@ -44,6 +45,20 @@ export const NavigationBar = () => {
           </Nav>
         </Collapse>
       </Navbar>
+      <div className="text-center">
+        <Alert className="m-0 fs-2 text-dark">
+          We are recruiting!{" "}
+          <a
+            style={{ textDecoration: "none", color: "black" }}
+            href="https://forms.gle/cgcvRuMEJtYZ6irKA"
+            className={`${styles.alert}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Register Now!
+          </a>
+        </Alert>
+      </div>
     </div>
   );
 };
