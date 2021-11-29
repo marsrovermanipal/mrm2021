@@ -56,6 +56,9 @@ export default function Landing() {
       <div
         className={`d-none d-lg-flex flex-column mx-auto ${styles.landing_container}`}
       >
+        <div className="text-center text-light fs-2 col-12 p-2" style={{ position: "absolute", top: "0", backgroundColor: "rgba(255,255,255, 0.2)", color: "black" }}>
+          <a href="https://forms.gle/cgcvRuMEJtYZ6irKA" style={{ color: "inherit", fontWeight: 500, textDecoration: "none" }}>REGISTER NOW</a>
+        </div>
         <div className="col-12 m-auto justify-content-between mx-5">
           <TypeWriterEffect
             textStyle={{
@@ -85,6 +88,9 @@ export default function Landing() {
       <div
         className={`d-flex d-lg-none col-lg-6 col-12 flex-column ${styles.landing_container}`}
       >
+        <div className="text-center text-light fs-2 col-12 p-2" style={{ position: "absolute", top: "0", backgroundColor: "rgba(255,255,255, 0.2)", color: "black" }}>
+          <a href="https://forms.gle/cgcvRuMEJtYZ6irKA" style={{ color: "inherit", fontWeight: 500, textDecoration: "none" }}>REGISTER NOW</a>
+        </div>
         <div className="col-12 mx-auto">
           <TypeWriterEffect
             textStyle={{
@@ -93,7 +99,7 @@ export default function Landing() {
               fontWeight: 600,
               fontSize: "2.5em",
               position: "absolute",
-              top: "5vh",
+              top: "10vh",
               left: 0,
               right: 0,
               // marginLeft: "auto",

@@ -60,3 +60,6 @@ code {
   filter: invert(0);
 }
 }
+a:hover{
+  color: cyan !important;
+}
