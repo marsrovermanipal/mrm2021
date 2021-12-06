@@ -45,7 +45,7 @@ export const NavigationBar = () => {
           </Nav>
         </Collapse>
       </Navbar>
-      <div className="text-center">
+      {/* <div className="text-center">
         <Alert className="m-0 fs-2 text-dark">
           We are recruiting!{" "}
           <a
@@ -58,7 +58,7 @@ export const NavigationBar = () => {
             Register Now!
           </a>
         </Alert>
-      </div>
+      </div> */}
     </div>
   );
 };
