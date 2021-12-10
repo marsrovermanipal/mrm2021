@@ -29,7 +29,7 @@
   width: 3em;
 }
 
-.alert {
+/* .alert {
   -webkit-animation: color-change 1s infinite;
   -moz-animation: color-change 1s infinite;
   -o-animation: color-change 1s infinite;
@@ -90,4 +90,4 @@
   100% {
     color: black;
   }
-}
+} */
