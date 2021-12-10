@@ -6,7 +6,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  Alert,
+  // Alert,
   NavLink,
 } from "reactstrap";
 import styles from "./Navi.module.css";
