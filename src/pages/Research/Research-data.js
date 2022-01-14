@@ -20,6 +20,28 @@ const data = [
       '/research/wireless.jpg',
     event: "IEEE Conecct,2021",
     author: "Harshil Bhatt, Pranesh G, Samarth Shankar, Shriyash Haralikar",
+  },
+  {
+    id: 16,
+    title: 'Evaluating Predictive Uncertainty and Robustness Distributional Shift Using Real World Data',
+    // img: "/research/bert1.png",
+    event: "BDL Workshop, NeurIPS 2021",
+    author: "Kumud Lakara, Akshat Bhandari, Pratinav Seth, Ujjwal Verma",
+  },
+  {
+    id: 17,
+    title: 'Increasing Phyiscal Layer Security through Hyperchaos in VLC Systemsg',
+    // img:
+    //   '/research/weeddensity.jpeg',
+    event: "Under Review",
+    author: "Ashish Sharma, Harshil Bhatt",
+  }, {
+    id: 18,
+    title: 'Design and Analysis of a Lambda Based Suspension for Space Exploratory Misions',
+    // img:
+    //   '/research/wireless.jpg',
+    event: "Under Review",
+    author: "Akhilesh Jhawar, Saurabh Chaughule, Mohammed A. Sulaiman, Navneeth Krishna Verenekar V",
   }, {
     id: 4,
     title: 'Autonomous Control of Closed Chain Five Bar Active Suspension via Deep Reinforcement Learning',

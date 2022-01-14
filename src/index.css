@@ -54,6 +54,9 @@ code {
 .sr-only {
   display: none !important;
 }
+a:hover{
+  color: #51e8ef !important;
+}
 @media screen and (max-width: 480px) {
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
