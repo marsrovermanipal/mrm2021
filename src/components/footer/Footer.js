@@ -27,13 +27,13 @@ export default function Footer() {
             <div className="footer-contact text-center p-2">
               <p>
                 {" "}
-                <HiPhone /> Jyotishka Duttagupta : +91 99302 25063
+                <HiPhone /> Yashash Rao P : +91 99482 21663
               </p>
             </div>
             <div className="footer-contact text-center p-2">
               <p>
                 {" "}
-                <HiPhone /> Piyush Raj : +91 93072 88911
+                <HiPhone /> Akhilesh Jhawar : +91 98740 75160
               </p>
             </div>
           </div>
