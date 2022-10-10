@@ -24,16 +24,22 @@ export default function Footer() {
                 <HiMail /> marsrovermanipal@gmail.com
               </p>
             </div>
-            <div className="footer-contact text-center p-2">
+             <div className="footer-contact text-center p-0">
               <p>
                 {" "}
                 <HiPhone /> Yashash Rao P : +91 99482 21663
               </p>
             </div>
-            <div className="footer-contact text-center p-2">
+            <div className="footer-contact text-center p-0">
               <p>
                 {" "}
                 <HiPhone /> Akhilesh Jhawar : +91 98740 75160
+              </p>
+            </div>
+            <div className="footer-contact text-center p-0">
+              <p>
+                {" "}
+                <HiPhone /> Ankit Aggarwal : +91 88001 72784
               </p>
             </div>
           </div>
