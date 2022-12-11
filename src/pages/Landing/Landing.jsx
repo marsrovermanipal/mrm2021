@@ -8,7 +8,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import AOS from "aos";
 import axios from "axios";
 import Model from "../../components/roverModel/Curiosity_static";
-import Particles from "react-particles-js";
+// import Particles from "react-particles";
 import TypeWriterEffect from "react-typewriter-effect";
 import { FcLike } from "react-icons/fc";
 import { FaRegBookmark } from "react-icons/fa";
@@ -121,7 +121,7 @@ export default function Landing() {
 
       <div className="d-none d-lg-flex mx-auto col-12 p-3">
         <div className={`col-6 ${styles.landing_anim}`}>
-          <Particles
+          {/* <Particles
             className="d-none d-lg-flex"
             height="85vh"
             params={{
@@ -175,7 +175,7 @@ export default function Landing() {
                 },
               },
             }}
-          />
+          /> */}
         </div>
         <div className="text-center d-flex align-items-center">
           <p className="fs-4 col-12  p-2">
@@ -204,7 +204,7 @@ export default function Landing() {
           style={{ height: "85vh" }}
         >
           <div className={`col-6 ${styles.landing_anim}`}>
-            <Particles
+            {/* <Particles
               className="d-none d-lg-flex"
               height="85vh"
               params={{
@@ -258,7 +258,7 @@ export default function Landing() {
                   },
                 },
               }}
-            />
+            /> */}
           </div>
           <Canvas
             style={{ marginTop: "15vh" }}
@@ -280,7 +280,7 @@ export default function Landing() {
 
       <div className="d-none d-md-flex flex-column d-lg-none mx-auto col-12 p-3">
         <div className={`col-6 ${styles.landing_anim}`}>
-          <Particles
+          {/* <Particles
             className="d-none d-lg-flex"
             height="85vh"
             params={{
@@ -334,7 +334,7 @@ export default function Landing() {
                 },
               },
             }}
-          />
+          /> */}
         </div>
         <div className="text-center d-flex align-items-center">
           <p className="fs-4 col-12  p-2">
@@ -363,7 +363,7 @@ export default function Landing() {
           style={{ height: "85vh" }}
         >
           <div className={`col-6 ${styles.landing_anim}`}>
-            <Particles
+            {/* <Particles
               className="d-none d-lg-flex"
               height="85vh"
               params={{
@@ -417,7 +417,7 @@ export default function Landing() {
                   },
                 },
               }}
-            />
+            /> */}
           </div>
           <Canvas
             style={{ marginTop: "15vh" }}
