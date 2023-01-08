@@ -29,12 +29,6 @@ const data = [
     img: "team-22/Kanishk.jpeg",
     linkedin: "https://www.linkedin.com/in/kanishk-kaushal-18a24520b",
   },
-  // {
-  //   id: 6,
-  //   name: "M Sri Hrudaya Sankalp",
-  //   img: "team-22/Sankalp.webp",
-  //   linkedin: "https://www.linkedin.com/in/sankalp-mallappa-b1342a203",
-  // },
   {
     id: 7,
     name: "Meet Jain ",

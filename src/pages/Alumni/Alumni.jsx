@@ -7,11 +7,18 @@ const Alumni2018 = lazy(() => import("../../components/Alumni/Alumni2018"));
 const Alumni2019 = lazy(() => import("../../components/Alumni/Alumni2019"));
 const Alumni2020 = lazy(() => import("../../components/Alumni/Alumni2020"));
 const Alumni2021 = lazy(() => import("../../components/Alumni/Alumni2021"));
+const Alumni2022 = lazy(() => import("../../components/Alumni/Alumni2022"));
 
 export default function Alumni() {
-  const [activeYear, setActiveYear] = useState("2021");
+  const [activeYear, setActiveYear] = useState("2022");
   const renderMembers = (year) => {
     switch (year) {
+      case "2022":
+        return (
+          <Suspense fallback={<Loading />}>
+            <Alumni2022 />
+          </Suspense>
+        );
       case "2021":
         return (
           <Suspense fallback={<Loading />}>
@@ -62,6 +69,16 @@ export default function Alumni() {
     <div className="container">
       <h1 className="text-center mt-4">OUR ALUMNI</h1>
       <div className="d-flex col-12 text-center justify-content-center p-3 flex-wrap">
+      <Button
+          outline
+          size="lg"
+          color="primary"
+          className="mx-3"
+          value="2022"
+          onClick={handleClick}
+        >
+          2022
+        </Button>
         <Button
           outline
           size="lg"
