@@ -8,7 +8,6 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import AOS from "aos";
 import axios from "axios";
 import Model from "../../components/roverModel/Curiosity_static";
-// import Particles from "react-particles";
 import TypeWriterEffect from "react-typewriter-effect";
 import { FcLike } from "react-icons/fc";
 import { FaRegBookmark } from "react-icons/fa";
