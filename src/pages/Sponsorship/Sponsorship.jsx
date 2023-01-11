@@ -8,7 +8,7 @@ function Sponsorship() {
         <>
             <h1 className="text-center mt-4">SPONSORSHIP</h1>
             <div className="col-11 mx-auto m-3  d-flex justify-content-center">
-                <img src="/Sponsorship/SponsorshipPic.webp" loading="lazy" className="col-12" alt="team" />
+                <img src="/brochure\team.JPG" loading="lazy" className="col-12" alt="team" />
             </div>
             <div classname="p-2 col-10">
                 <p className="fs-5 m-4 p-4 text-center text-dark bg-light ">
