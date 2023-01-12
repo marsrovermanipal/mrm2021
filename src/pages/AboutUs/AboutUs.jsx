@@ -5,7 +5,6 @@ import Loading from "../../components/Loading/loading";
 import boardData from "./boardData";
 import AiData from "./AiData";
 import ecsData from "./ecsData";
-import mgmtData from "./mgmtData";
 import sciData from "./scienceData";
 import researchData from "./researchData";
 import mechData from "./mechData";
@@ -30,7 +29,7 @@ export default function AboutUs() {
                         <img
                           loading="lazy"
                           src={item.img}
-                          className="col-12 col-md-5 rounded-circle"
+                          className="col-12 col-md-5 m-2 rounded-circle"
                           alt={item.name}
                         />
                         <p className="fs-3 text-center text-light">
@@ -106,10 +105,12 @@ export default function AboutUs() {
                         <img
                           loading="lazy"
                           src={item.img}
-                          className="col-12 col-md-5 rounded-circle"
+                          className="col-12 col-md-5 m-2 rounded-circle"
                           alt={item.name}
                         />
-                        <h3 className="text-center ">{item.name}</h3>
+                         <p className="fs-3 text-center text-light">
+                          {item.name}
+                        </p>
                         <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
                           <a className="text-light" href={item.linkedin}>
                             {" "}
@@ -181,10 +182,12 @@ export default function AboutUs() {
                         <img
                           loading="lazy"
                           src={item.img}
-                          className="col-12 col-md-5 rounded-circle"
+                          className="col-12 col-md-5 m-2 rounded-circle"
                           alt={item.name}
                         />
-                        <h3 className="text-center ">{item.name}</h3>
+                        <p className="fs-3 text-center text-light">
+                          {item.name}
+                        </p>
                         <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
                           <a className="text-light" href={item.linkedin}>
                             {" "}
@@ -256,11 +259,13 @@ export default function AboutUs() {
                       <div className="d-flex flex-column align-items-center p-4 ">
                         <img
                           src={item.img}
-                          className="col-12 col-md-5 rounded-circle"
+                          className="col-12 col-md-5 m-2 rounded-circle"
                           loading="lazy"
                           alt={item.name}
                         />
-                        <h3 className="text-center ">{item.name}</h3>
+                        <p className="fs-3 text-center text-light">
+                          {item.name}
+                        </p>
                         <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
                           <a className="text-light" href={item.linkedin}>
                             {" "}
@@ -329,10 +334,12 @@ export default function AboutUs() {
                         <img
                           loading="lazy"
                           src={item.img}
-                          className="col-12 col-md-5 rounded-circle"
+                          className="col-12 col-md-5 m-2 rounded-circle"
                           alt={item.name}
                         />
-                        <h3 className="text-center ">{item.name}</h3>
+                         <p className="fs-3 text-center text-light">
+                          {item.name}
+                        </p>
                         <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
                           <a className="text-light" href={item.linkedin}>
                             {" "}
@@ -398,10 +405,12 @@ export default function AboutUs() {
                         <img
                           loading="lazy"
                           src={item.img}
-                          className="col-12 col-md-5 rounded-circle"
+                          className="col-12 col-md-5 m-2 rounded-circle"
                           alt={item.name}
                         />
-                        <h3 className="text-center ">{item.name}</h3>
+                       <p className="fs-3 text-center text-light">
+                          {item.name}
+                        </p>
                         <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
                           <a className="text-light" href={item.linkedin}>
                             {" "}
@@ -416,81 +425,81 @@ export default function AboutUs() {
             </div>
           </>
         );
-      case "management":
-        return (
-          <>
-            <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
-              <img
-                loading="lazy"
-                className="img-fluid col-6 col-lg-4"
-                src="SubsystemLogo/management.gif"
-                alt="Management"
-              />
-              <div className="col-6 col-lg-4 my-auto">
-                <h1>Management & Public Relations</h1>
-                <p>
-                  The Management and PR subsystem of Mars Rover Manipal is
-                  responsible for all the non-technical work of the team. It is
-                  involved in the overall progress of the team by handling
-                  sponsorship, finance, public relations, publicity, media
-                  platforms and human resource management. The team designs
-                  posters and brochures, manages the website and provides videos
-                  for advertisement and sponsors. It is also responsible for the
-                  well-ordered and smooth functioning of the team’s day to day
-                  work and managing of all events.
-                </p>
-              </div>
-            </div>
-            <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
-              <img
-                loading="lazy"
-                className="img-fluid col-10 mx-auto text-center"
-                src="SubsystemLogo/management.gif"
-                alt="Management"
-              />
-              <div className="col-10 mx-auto text-center">
-                <h1>Management & Public Relations</h1>
-                <p>
-                  The Management and PR subsystem of Mars Rover Manipal is
-                  responsible for all the non-technical work of the team. It is
-                  involved in the overall progress of the team by handling
-                  sponsorship, finance, public relations, publicity, media
-                  platforms and human resource management. The team designs
-                  posters and brochures, manages the website and provides videos
-                  for advertisement and sponsors. It is also responsible for the
-                  well-ordered and smooth functioning of the team’s day to day
-                  work and managing of all events.
-                </p>
-              </div>
-            </div>
-            <div className="row justify-content-center ">
-              <h3 className="text-center text-uppercase">Team Members </h3>
-              <Suspense fallback={<Loading />}>
-                {mgmtData.map((item) => {
-                  return (
-                    <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
-                      <div className="d-flex flex-column align-items-center p-4 ">
-                        <img
-                          loading="lazy"
-                          src={item.img}
-                          className="col-12 col-md-5 rounded-circle"
-                          alt={item.name}
-                        />
-                        <p className="fs-3 text-center ">{item.name}</p>
-                        <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
-                          <a className="text-light" href={item.linkedin}>
-                            {" "}
-                            <GrIcons.GrLinkedin />
-                          </a>
-                        </div>
-                      </div>
-                    </Card>
-                  );
-                })}
-              </Suspense>
-            </div>
-          </>
-        );
+      // case "management":
+      //   return (
+      //     <>
+      //       <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
+      //         <img
+      //           loading="lazy"
+      //           className="img-fluid col-6 col-lg-4"
+      //           src="SubsystemLogo/management.gif"
+      //           alt="Management"
+      //         />
+      //         <div className="col-6 col-lg-4 my-auto">
+      //           <h1>Management & Public Relations</h1>
+      //           <p>
+      //             The Management and PR subsystem of Mars Rover Manipal is
+      //             responsible for all the non-technical work of the team. It is
+      //             involved in the overall progress of the team by handling
+      //             sponsorship, finance, public relations, publicity, media
+      //             platforms and human resource management. The team designs
+      //             posters and brochures, manages the website and provides videos
+      //             for advertisement and sponsors. It is also responsible for the
+      //             well-ordered and smooth functioning of the team’s day to day
+      //             work and managing of all events.
+      //           </p>
+      //         </div>
+      //       </div>
+      //       <div className="col-12 d-flex flex-column d-sm-none justify-content-around mx-auto">
+      //         <img
+      //           loading="lazy"
+      //           className="img-fluid col-10 mx-auto text-center"
+      //           src="SubsystemLogo/management.gif"
+      //           alt="Management"
+      //         />
+      //         <div className="col-10 mx-auto text-center">
+      //           <h1>Management & Public Relations</h1>
+      //           <p>
+      //             The Management and PR subsystem of Mars Rover Manipal is
+      //             responsible for all the non-technical work of the team. It is
+      //             involved in the overall progress of the team by handling
+      //             sponsorship, finance, public relations, publicity, media
+      //             platforms and human resource management. The team designs
+      //             posters and brochures, manages the website and provides videos
+      //             for advertisement and sponsors. It is also responsible for the
+      //             well-ordered and smooth functioning of the team’s day to day
+      //             work and managing of all events.
+      //           </p>
+      //         </div>
+      //       </div>
+      //       <div className="row justify-content-center ">
+      //         <h3 className="text-center text-uppercase">Team Members </h3>
+      //         <Suspense fallback={<Loading />}>
+      //           {mgmtData.map((item) => {
+      //             return (
+      //               <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
+      //                 <div className="d-flex flex-column align-items-center p-4 ">
+      //                   <img
+      //                     loading="lazy"
+      //                     src={item.img}
+      //                     className="col-12 col-md-5 rounded-circle"
+      //                     alt={item.name}
+      //                   />
+      //                   <p className="fs-3 text-center ">{item.name}</p>
+      //                   <div className="col-12 d-flex justify-content-center text-secondary fixed-bottom mb-3">
+      //                     <a className="text-light" href={item.linkedin}>
+      //                       {" "}
+      //                       <GrIcons.GrLinkedin />
+      //                     </a>
+      //                   </div>
+      //                 </div>
+      //               </Card>
+      //             );
+      //           })}
+      //         </Suspense>
+      //       </div>
+      //     </>
+      //   );
       case "fa":
         // board members data
         return (
@@ -600,7 +609,7 @@ export default function AboutUs() {
           color="primary"
           className="mx-2"
         >
-          ECS
+          Electronics
         </Button>
         <Button
           outline
@@ -631,16 +640,7 @@ export default function AboutUs() {
           className="mx-2"
         >
           Science
-        </Button>
-        <Button
-          outline
-          size="lg"
-          color="primary"
-          onClick={handleClick}
-          value="management"
-          className="mx-2"
-        >
-          Management
+       
         </Button>
         <Button
           outline

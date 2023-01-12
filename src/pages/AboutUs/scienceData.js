@@ -1,29 +1,34 @@
 const data = [
   {
     id: 1,
-    name: 'Himanshu Sandhu',
-    img: 'team-22/Himanshu.jpg',
-    linkedin: "https://www.linkedin.com/in/himanshu-sandhu-035b52217/",
+    name: 'Varsha R',
+    img: 'team-22/varsha.webp',
+    linkedin: "https://www.linkedin.com/in/varsha-r-784891213/",
   },
   {
     id: 2,
-    name: 'Jahnavi Sri Dhanya',
-    img: 'team-22/Jahnavi.webp',
-    linkedin: "https://www.linkedin.com/in/jahnavi-sri-dhanya-83993a200/",
+    name: 'Mallika Shinkre',
+    img: 'team-23/mallika.webp',
+    linkedin: "www.linkedin.com/in/mallika-shinkre-509881251",
   },
   {
     id: 3,
-    name: 'Pavan Kumar Thota',
-    img: 'team-22/Pavan.jpg',
-    linkedin: "https://www.linkedin.com/in/pavan-kumar-thota-9676a61b5",
+    name: 'Pritha Jaipal',
+    img: 'team-23/pritha.webp',
+    linkedin: "https://www.linkedin.com/in/pritha-jaipal-058b85187/",
   },
   {
     id: 4,
-    name: 'Varsha R',
-    img: 'team-22/Varsha.webp',
-    linkedin: "https://www.linkedin.com/in/varsha-r-784891213/",
+    name: 'Rashi Goel',
+    img: 'team-23/rashi.webp',
+    linkedin: "https://www.linkedin.com/in/rashi-goel-5a385a251?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNS2OpZpBSwONbswI4FceIQ%3D%3D",
   },
-
+  {
+    id: 5,
+    name: 'Saransh Andharmule',
+    img: 'team-23/saransh.webp',
+    linkedin: "https://www.linkedin.com/in/saransh-andharmule-a00952226",
+  },
 ]
 
 export default data
