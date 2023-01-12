@@ -682,7 +682,7 @@ export default function AboutUs() {
           color="primary"
           className="mx-2"
         >
-          ECS
+          Electronics
         </Button>
         <Button
           outline
@@ -713,16 +713,7 @@ export default function AboutUs() {
           className="mx-2"
         >
           Science
-        </Button>
-        <Button
-          outline
-          size="md"
-          color="primary"
-          onClick={handleClick}
-          value="management"
-          className="mx-2"
-        >
-          Management
+        
         </Button>
         <Button
           outline

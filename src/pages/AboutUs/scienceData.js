@@ -9,7 +9,7 @@ const data = [
     id: 2,
     name: 'Mallika Shinkre',
     img: 'team-23/mallika.webp',
-    linkedin: "www.linkedin.com/in/mallika-shinkre-509881251",
+    linkedin: "https://www.linkedin.com/in/mallika-shinkre-1ab030261",
   },
   {
     id: 3,
