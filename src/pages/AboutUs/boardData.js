@@ -48,7 +48,6 @@ const data = [
     pos: "Life Science Head",
     linkedin: "https://www.linkedin.com/in/pavan-kumar-thota-9676a61b5",
   },
- 
   {
     id: 8,
     name: "Ashish Sharma",

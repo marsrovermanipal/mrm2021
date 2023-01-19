@@ -11,7 +11,7 @@ const data = [
     id: 2,
     name: "Dr. Ujjwal Verma",
     img: "Faculty Advisors/ujjwal.webp",
-    pos: "Associate Professor",
+    pos: "Head of Department, MIT Bangalore",
     dept: "Department of Electronics & Communication Engineering",
     year: "2021-2023",
   },

@@ -1,8 +1,50 @@
 const data = [
   {
+    id: 10,
+    comp: "URC 2022",
+    info: "The 16th edition of University Rover Challenge was held at the Mars Desert Research Station in Hanksville, Utah from June 1st to June 4th 2022. The team returned to an onsite competition after a hiatus of 3 years due to the pandemic. Mars Rover Manipal was able to maintain its streak of being the best rover team from India for its 5th consecutive year. MRM was also the recipient of the prestigious John Barainca award for the best science team in the competition, securing an 85/100 in this challenging mission.",
+    img: "urc2022/urc2022-5.webp",
+    roverName: "ROVER 2022",
+    pos: "21st Worldwide",
+    MaximumSpeed: "1.8m/s",
+    Tires: "Low Pressure Polyurethane Balloon Tires",
+    TractiveEffort: "600N",
+    Wheels: "Full Floating Axle",
+    Suspension:
+      "6 Wheel, Novel 5 Bar Multilink Suspension System Constrained via Torsion Springs",
+    Chassis: "All Aluminium Chassis.",
+
+    MaxTraversableHeight: "0.8m",
+    ChassisWeight: "3 kg",
+    AutonomousSystem: "Traversal and navigation capability, Image Processing",
+
+    RoboticArm: "6 DOF Articulated Robotic Arm using Linear Actuators",
+    HorizontalReach: "850 mm",
+    VerticalReach: "1200 mm",
+    SoilCollector: "Lead Screw Actuated Auger with Collection Tray Mechanism",
+    CentreOfGravity: "300",
+    Microcontroller: "ARM Cortex based STM32",
+    SingleBoardComputer: "Jetson TX2 and Raspberry Pi 3B+",
+    MotorDrivers: "13A continuous motor driver",
+    WheelMotors: "24V DC geared Motors",
+    Batteries: "16500mAh LiPo",
+    CommunicationFrequencies: "	2.4GHz, 5GHz",
+    Sensors:
+      "MRS1000 SICK Lidar, Garmin(18x USB GPS navigator), Magnetometer(BNO080), VOC, Ozone, Hydraprobe(Temp, moisture, salinity, EC), Intel Realsense Depth Camera",
+
+    pics: [
+      { src: "urc2022/urc2022-1.webp" },
+      { src: "urc2022/urc2022-2.webp" },
+      { src: "urc2022/urc2022-3.webp" },
+      { src: "urc2022/urc2022-4.webp" },
+	 { src: "urc2022/urc2022-6.webp" },
+    ],
+    video: "https://www.youtube.com/embed/tgAOEiIUJ5k",
+  },
+  {
     id: 0,
     comp: "URC 2021",
-    info: "The 14th edition of University Rover Challenge was cancelled due to the Corona virus Pandemic. URC had released the System Acceptance Review (SAR) result in July and MRM scored 91.17.",
+    info: "The 15th edition of University Rover Challenge was cancelled due to the Corona virus Pandemic. URC had released the System Acceptance Review (SAR) result in July and MRM scored 91.17.",
     img: "photos-urc2021/rover_1.jpg",
     roverName: "ROVER 2021",
     pos: "91.17 (SAR Score)",

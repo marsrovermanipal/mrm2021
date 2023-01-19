@@ -1,12 +1,21 @@
 const data = [
   {
     id: 1,
+    comp: "IRDC 2022",
+    info: "Mars Rover Manipal bagged the 2nd position out of 24 teams from four countries in the third edition of the International Rover Design Challenge (IRDC), hosted by the Space Robotics Society (SPROS).",
+    img: "comp/irdc2022render.webp",
+    pos: "2nd position",
+    website: "https://www.spaceroboticssociety.org/events/international-rover-challenge/",
+  },
+{
+    id: 2,
     comp: "IRDC 2021",
-    info: "Mars Rover Manipal bagged the 3rd position out of 32 teams from four countries in the second edition of the International Rover Design Challenge (IRDC), which was hosted by Mars Society South Asia (MSSA).",
+    info: "Mars Rover Manipal bagged the 3rd position out of 32 teams from four countries in the second edition of the International Rover Design Challenge (IRDC), hosted by Mars Society South Asia (MSSA).",
     img: "comp/IRDC_20211.webp",
     pos: "3rd position",
     website: "https://southasia.marssociety.org/irdc/",
   },
+
   {
     id: 3,
     comp: "IRDC 2020",
