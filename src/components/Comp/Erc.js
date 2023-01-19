@@ -59,10 +59,10 @@ const Erc = () => {
                     })}
                 </div>
 
-                <div className=" justify-content-center d-flex d-sm-none ">
+                <div className="row justify-content-center d-flex d-sm-none ">
                     {data.map((item) => {
                         return (
-                            <Card classname=" col-lg-12 col-md-6 col-11 mx-auto p-2">
+                            <Card classname=" col-lg-12 col-md-6 col-11 mx-auto m-4 p-2">
                                 <div
                                     className="d-flex flex-column align-items-center"
                                 >
