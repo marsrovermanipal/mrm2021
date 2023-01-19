@@ -6,9 +6,12 @@ import { TiSocialLinkedin } from "react-icons/ti";
 import { HiMail } from "react-icons/hi";
 import { HiPhone } from "react-icons/hi";
 import { SiGooglemaps } from "react-icons/si";
+import {HiArrowRight } from "react-icons/hi";
+
 
 export default function Footer() {
   return (
+    <>
     <div className="p-4 text-dark bg-light text-center text-lg-start mt-4 ">
       {/* <div className="container  p-1"> */}
       <div className="row">
@@ -101,5 +104,9 @@ export default function Footer() {
         </div>
       </div>
     </div>
+    <p className="text-light fs-6 text-center pt-3 "><HiArrowRight className="fs-4 text-info pb-1"/> {" "}Website made by Kirti & Aayush</p>
+   
+ 
+    </>
   );
 }
