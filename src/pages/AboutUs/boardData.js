@@ -16,14 +16,14 @@ const data = [
   {
     id: 3,
     name: "Saatwik Vasishtha",
-    img: "team-22/saatwik.JPG",
+    img: "team-24/saatwik.JPG",
     pos: "Technical Head",
     linkedin: "https://www.linkedin.com/in/ankitaggarw/",
   },
   {
     id: 4,
     name: "Mallika Shinkre",
-    img: "team-22/swaraj.webp",
+    img: "team-24/swaraj.webp",
     pos: "Head of Operations",
     linkedin: "https://www.linkedin.com/in/ankitaggarw/",
   },
@@ -58,7 +58,7 @@ const data = [
   {
     id: 9,
     name: "Aditya Kasliwal",
-    img: "team-22/aditya.jpg",
+    img: "team-24/aditya.jpg",
     pos: "Research Head",
     linkedin: "https://www.linkedin.com/in/ashish-sharma-89a6431ba/",
   }
