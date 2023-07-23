@@ -61,7 +61,7 @@ const data = [
     img: "team-22/AshishSharma.webp",
     pos: "Research Head",
     linkedin: "https://www.linkedin.com/in/ashish-sharma-89a6431ba/",
-  },
+  }
 ];
 
 export default data;
