@@ -30,19 +30,19 @@ export default function Footer() {
              <div className="footer-contact text-center p-0">
               <p>
                 {" "}
-                <HiPhone /> Yashash Rao P : +91 99482 21663
+                <HiPhone /> Harsh Phawade : +91 95189 66617
               </p>
             </div>
             <div className="footer-contact text-center p-0">
               <p>
                 {" "}
-                <HiPhone /> Akhilesh Jhawar : +91 98740 75160
+                <HiPhone /> Swaraj Dangare : +91 95884 46409
               </p>
             </div>
             <div className="footer-contact text-center p-0">
               <p>
                 {" "}
-                <HiPhone /> Ankit Aggarwal : +91 88001 72784
+                <HiPhone /> Saatwik Vasishtha : +91 97402 25444
               </p>
             </div>
           </div>
