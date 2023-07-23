@@ -8,7 +8,7 @@ const Alumni2023 = () => {
     return (
         <div className="col-12 d-flex mx-auto">
             <div className="row justify-content-center ">
-                <h3 className="text-center text-uppercase ">2022</h3>
+                <h3 className="text-center text-uppercase ">2023</h3>
                 {data.map((item) => {
                     return (
                         <Card classname="bg-dark text-light col-lg-3 col-md-6 col-8 mx-auto mx-md-3 m-3 p-2">
