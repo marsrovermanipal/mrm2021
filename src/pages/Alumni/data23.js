@@ -44,7 +44,6 @@ const data = [
       {
         id: 7,
         name: 'Pavan Kumar Thota',
-        pos: "Science",
         img: 'team-23/pavan.jpg',
         pos: "Life Science Head",
         linkedin: "https://www.linkedin.com/in/pavan-kumar-thota-9676a61b5",
