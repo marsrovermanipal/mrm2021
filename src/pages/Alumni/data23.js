@@ -16,14 +16,14 @@ const data = [
       {
         id: 3,
         name: "Ankit Aggarwal",
-        img: "team-23/AnkitAggarwal.webp",
+        img: "team-22/AnkitAggarwal.webp",
         pos: "Technical Head",
         linkedin: "https://www.linkedin.com/in/ankit-aggarwal-04b5211b4",
       },
       {
         id: 4,
         name: "Aditya Arun Iyer",
-        img: "team-23/adityaai.jpeg",
+        img: "team-23/adityaai.webp",
         pos: "Artificial Intelligence & Automation Head",
         linkedin: "http://www.linkedin.com/in/adityaaruniyer",
       },
@@ -44,7 +44,7 @@ const data = [
       {
         id: 7,
         name: 'Pavan Kumar Thota',
-        img: 'team-23/pavan.jpg',
+        img: 'team-23/pavan.webp',
         pos: "Life Science Head",
         linkedin: "https://www.linkedin.com/in/pavan-kumar-thota-9676a61b5",
       },
@@ -72,7 +72,7 @@ const data = [
       {
         id: 11,
         name: "Saurabh Chaughule",
-        img: "team-23/saurabh.png",
+        img: "team-23/saurabh.webp",
         pos: "Mechanical Senior",
         linkedin: "http://www.linkedin.com/in/saurabh-chaughule-740627200",
       },
@@ -170,7 +170,7 @@ const data = [
       {
         id: 25,
         name: "Kanishk Kaushal",
-        img: "team-23/kanishk.jpeg",
+        img: "team-23/kanishk.webp",
         pos: "Electronics & Control Systems Senior",
         linkedin: "https://www.linkedin.com/in/kanishk-kaushal-18a24520b",
       },
