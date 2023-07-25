@@ -81,7 +81,7 @@ export default function Alumni() {
           size="lg"
           color="primary"
           className="mx-3"
-          value="2022"
+          value="2023"
           onClick={handleClick}
         >
           2023
