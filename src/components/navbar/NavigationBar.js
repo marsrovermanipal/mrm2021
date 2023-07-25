@@ -28,7 +28,7 @@ export const NavigationBar = () => {
               <NavLink href="/">Home</NavLink>
             </NavItem>
             <NavItem className={`${styles.navlink} `}>
-              <NavLink href="/about-us">About Us</NavLink>
+              <NavLink href="/about-us">The Team</NavLink>
             </NavItem>
             <NavItem className={`${styles.navlink} `}>
               <NavLink href="/competitions">Competitions</NavLink>
