@@ -56,7 +56,7 @@ const data = [
   {
     id: 10,
     name: 'Ansh Sankrityayan',
-    img: 'team-24/junior/research/aansh.webp',
+    img: 'team-24/junior/research/ansh.webp',
     linkedin: "https://www.linkedin.com/in/anshsankrityayan/",
   }
 ]
