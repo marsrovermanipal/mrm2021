@@ -34,6 +34,12 @@ const data = [
     name: "G.Siddharth Reddy",
     img: "team-24/junior/ai/siddharth.webp",
     linkedin: "https://in.linkedin.com/in/siddharth-reddy-gangireddy-421a5624b",
+  },
+  {
+    id: 7,
+    name: "Vyshnav Davanagere Nagaraj",
+    img: "team-24/junior/ai/vyshnav.webp",
+    linkedin: "https://www.linkedin.com/in/vyshnav-davanagere-789364250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   }
 ];
 
