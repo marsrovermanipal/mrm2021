@@ -39,7 +39,7 @@ const data = [
     id: 7,
     name: "Suryank Joshi",
     img: "team-24/junior/mechanical/suryank.webp",
-    linkedin: "www.linkedin.com/in/suryank-joshi",
+    linkedin: "https://www.linkedin.com/in/suryank-joshi/",
   },
   {
     id: 8,
