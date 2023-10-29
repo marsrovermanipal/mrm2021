@@ -44,7 +44,7 @@ const data = [
   {
     id: 8,
     name: 'Ishaan Gakhar',
-    img: 'team-24/junior/research/ishan.webp',
+    img: 'team-24/junior/research/ishaan.webp',
     linkedin: "https://www.linkedin.com/in/ishaan-gakhar-9248b8253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
