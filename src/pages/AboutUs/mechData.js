@@ -49,29 +49,28 @@ const data = [
   },
   {
     id: 9,
-    name: "Sanchit Dhingra ",
+    name: "Sanchit Dhingra",
     img: "team-24/junior/mechanical/sanchit.webp",
     linkedin: "linkedin.com/in/sanchitdhingra",
   },
   {
     id: 10,
-    name: "Vrishin Ashlyn Lakra ",
+    name: "Vrishin Ashlyn Lakra",
     img: "team-24/junior/mechanical/vrishin.webp",
     linkedin: "https://www.linkedin.com/in/vrishin-ashlyn-lakra-46858a257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     id: 11,
-    name: "Gagan Kiran Menderkar ",
+    name: "Gagan Kiran Menderkar",
     img: "team-24/junior/mechanical/gagan.webp",
     linkedin: "https://www.linkedin.com/in/gagan-menderkar-b3a243255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+   {
+    id: 12,
+    name: "Vivek Kolekar",
+    img: "team-24/junior/mechanical/vivek.webp",
+    linkedin: "https://www.linkedin.com/in/vivek-kolekar-19689721b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   }
-  // },
-  // {
-  //   id: 12,
-  //   name: "-",
-  //   img: "team-24/junior/mechanical/shivansh.webp",
-  //   linkedin: "-",
-  // }
 ];
 
 export default data;
