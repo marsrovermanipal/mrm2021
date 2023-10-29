@@ -21,7 +21,7 @@ const data = [
     id: 4,
     name: "Piyush Daigavhane",
     img: "team-24/junior/ecs/piyush.webp",
-    linkedin: "www.linkedin.com/in/piyush-daigavhane-9188b3228",
+    linkedin: "https://www.linkedin.com/in/piyush-daigavhane-9188b3228",
   }
 ];
 
