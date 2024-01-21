@@ -104,7 +104,7 @@ export default function Footer() {
         </div>
       </div>
     </div>
-    <p className="text-light fs-6 text-center pt-3 "><HiArrowRight className="fs-4 text-info pb-1"/> {" "}Website made by Kirti & Aayush</p>
+    <p className="text-light fs-6 text-center pt-3 "><HiArrowRight className="fs-4 text-info pb-1"/> {" "}Website made by Kirti, Aayush & Saatwik</p>
    
  
     </>

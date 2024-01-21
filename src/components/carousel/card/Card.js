@@ -17,7 +17,7 @@ export default function Card({ children, classname }) {
   });
   return (
     <animated.div
-      ref={ref }
+      ref={ref}
       className={`card shadow shadow-lg ${classname}`}
       onMouseEnter={() => setHovered(true)}
       onMouseMove={({ clientX, clientY }) => {

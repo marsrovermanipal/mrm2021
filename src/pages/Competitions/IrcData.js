@@ -2,10 +2,10 @@ const data = [
     {
         id: 1,
         comp: "IRC 2023",
-        info: "Mars Rover Manipal placed 3rd out of 20 teams that qualified worldwide in the International Rover Challenge 2023",
+        info: "Mars Rover Manipal secured 3rd place among 20 global qualifiers at the International Rover Challenge 2023, held at Presidency University in Bangalore from January 28th to 31st. Organized by SproS, this accomplishment underscores the team's technical prowess and positions them prominently in the global space exploration community.",
         pos: "3rd position",
         website: "https://www.spaceroboticssociety.org/events/international-rover-challenge/",
-        img: "irc/image1.jpg",
+        img: "irc/irc2023.jpg",
     },
     {
         id: 2,
@@ -23,5 +23,5 @@ const data = [
         pos: "1st position",
         website: "https://southasia.marssociety.org/irdc/",
     },
-]
-export default data
+];
+export default data;
