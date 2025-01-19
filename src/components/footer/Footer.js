@@ -30,19 +30,19 @@ export default function Footer() {
              <div className="footer-contact text-center p-0">
               <p>
                 {" "}
-                <HiPhone /> Harsh Phawade : +91 95189 66617
+                <HiPhone /> Gagan Kiran Menderkar : +91 93566 14919
               </p>
             </div>
             <div className="footer-contact text-center p-0">
               <p>
                 {" "}
-                <HiPhone /> Swaraj Dangare : +91 95884 46409
+                <HiPhone /> Vivek Kolekar : +91 83088 23475
               </p>
             </div>
             <div className="footer-contact text-center p-0">
               <p>
                 {" "}
-                <HiPhone /> Saatwik Vasishtha : +91 97402 25444
+                <HiPhone /> Aryavarta Singh : +91 72030 56988
               </p>
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function Footer() {
         </div>
       </div>
     </div>
-    <p className="text-light fs-6 text-center pt-3 "><HiArrowRight className="fs-4 text-info pb-1"/> {" "}Website made by Kirti, Aayush & Saatwik</p>
+    {/* <p className="text-light fs-6 text-center pt-3 "><HiArrowRight className="fs-4 text-info pb-1"/> {" "}</p> */}
    
  
     </>
