@@ -3,7 +3,7 @@ const data = [
         id: 1,
         comp: "IRC 2024",
         info: "Mars Rover Manipal secured 1st place among 20 global qualifiers at the International Rover Challenge 2024, held at PSG College of Technology in Coimbatore from January 24th to 29th. Organized by SproS, this accomplishment underscores the team's technical prowess and positions them prominently in the global space exploration community.",
-        pos: "3rd position",
+        pos: "1st position",
         website: "https://www.spaceroboticssociety.org/events/international-rover-challenge/",
         img: "irc/irc2023.jpg",
     },
