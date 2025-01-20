@@ -3,7 +3,7 @@ const data = [
     id: 1,
     comp: "IRDC 2023",
     info: "Mars Rover Manipal bagged the 4th position out of 20 teams from four countries in the fourth edition of the International Rover Design Challenge (IRDC), hosted by the Space Robotics Society (SPROS).",
-    img: "comp/irdc2023render.webp",
+    img: "comp/irdc2024.png",
     pos: "4th position",
     website: "https://www.spaceroboticssociety.org/events/international-rover-challenge/",
   },

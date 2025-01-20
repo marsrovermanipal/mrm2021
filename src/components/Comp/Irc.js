@@ -20,13 +20,13 @@ const Irc = () => {
                 </div>
             </div>
             <div>
-                <p className="fs-4 font-light">INTERNATIONAL ROVER CHALLENGE FINALS 2024</p>
+                <p className="fs-4 font-light"><b>INTERNATIONAL ROVER CHALLENGE FINALS 2025</b></p>
             </div>
             <div>
                 <p className="fs-10">
-                    The Finals of IRC 2024 will take place within the meticulously crafted Sproscape, an expansive simulated landscape spanning 20,000
+                    The Finals of IRC 2025 will take place within the meticulously crafted Sproscape, an expansive simulated landscape spanning 20,000
                     square meters. Notably, Sproscape stands as the largest arena of its kind globally. The event is scheduled to transpire from the
-                    24th to the 29th of January at the PSG Institute of Technology. Take a look at our rover for the competition missions!
+                    28th of January to the 2nd of February at the Birla Institute of Technology and Science, Pilani, K K Birla Goa Campus. Take a look at our rover for the competition missions!
                 </p>
             </div>
             <div className="max-w-10 py-8 ">
@@ -34,41 +34,41 @@ const Irc = () => {
                     items={[
                         {
                             src: "/comp/ircTasks/abex.jpg",
-                            altText: "AbEx",
+                            altText: "Astrobiology Expedition",
                             caption:
                                 "The mission involves the rover serving as a Mobile Science Laboratory to collect and evaluate samples from designated Martian sites",
-                            header: "AbEx",
+                            header: "Astrobiology Expedition",
                             key: 1,
                         },
                         {
-                            src: "/comp/ircTasks/autex.jpg",
-                            altText: "AutEx",
+                            src: "/comp/ircTasks/autex.jpeg",
+                            altText: "Autonomous Expedition",
                             caption:
                                 "Throughout this mission, the rover will need to navigate autonomously through moderately rugged terrain, moving between designated markers.",
-                            header: "AutEx",
+                            header: "Autonomous Expedition",
                             key: 2,
                         },
                         {
                             src: "/comp/ircTasks/rdo.jpg",
-                            altText: "RDO",
+                            altText: "Reconnaissance and Delivery Operation",
                             caption:
                                 "Rovers in the mission must search, pick up, and deliver objects to specified coordinates or store them for later retrieval.",
-                            header: "RDO",
+                            header: "Reconnaissance and Delivery Operation",
                             key: 3,
                         },
                         {
                             src: "/comp/ircTasks/idmo.jpg",
-                            altText: "IDMO",
+                            altText: "Instrument Deployment and Maintenance Operation",
                             caption:
                                 "The rover is to cover a brief distance to engage with a simulated instrument panel, executing a series of specific maintenance and deployment tasks using robotic manipulators.",
-                            header: "IDMO",
+                            header: "Instrument Deployment and Maintenance Operation",
                             key: 4,
                         },
                     ]}
                 />
             </div>
             <div className="py-2">
-                <p className="fs-4 font-light">OUR PREVIOUS RESULTS</p>
+                <p className="fs-4 font-light"><b>OUR PREVIOUS RESULTS</b></p>
             </div>
             <div className="row justify-content-center d-none d-sm-flex">
                 {data.map((item) => {
