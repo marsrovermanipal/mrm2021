@@ -5,7 +5,7 @@ const data = [
     img: "Faculty Advisors/gururaj.webp",
     pos: "Assistant Professor",
     dept: "Department of Mechanical & Manufacturing Engineering",
-    year: "2021-2023",
+    year: "2021-Present",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const data = [
     img: "Faculty Advisors/ujjwal.webp",
     pos: "Head of Department, MIT Bangalore",
     dept: "Department of Electronics & Communication Engineering",
-    year: "2021-2023",
+    year: "2021-Present",
   },
   {
     id: 3,

@@ -287,7 +287,7 @@ export default function AboutUs() {
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
                 loading="lazy"
-                className="img-fluid col-6 col-lg-4"
+                className="img-fluid col-6 col-lg-3"
                 src="SubsystemLogo/research.gif"
                 alt="Research"
               />
@@ -360,7 +360,7 @@ export default function AboutUs() {
             <div className="col-12 d-none d-sm-flex justify-content-around mx-auto">
               <img
                 loading="lazy"
-                className="img-fluid col-6 col-lg-4"
+                className="img-fluid col-6 col-lg-3"
                 src="SubsystemLogo/science.gif"
                 alt="Science"
               />

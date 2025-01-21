@@ -1,6 +1,52 @@
 const data = [
   {
-    id: 10,
+    id: 7,
+    comp: "URC 2024",
+    info: "The 18th edition of University Rover Challenge was held at the Mars Desert Research Station in Hanksville, Utah from 29th May to June 1st 2024. Mars Rover Manipal was able to maintain its streak of being the best rover team from India for its 7th consecutive year.",
+    img: "urc2024/urc2024.jpg",
+    roverName: "Karna",
+    pos: "18th Worldwide",
+    MaximumSpeed: "1.8m/s",
+    Tires: "Low Pressure Polyurethane Balloon Tires",
+    TractiveEffort: "600N",
+    Wheels: "Full Floating Axle",
+    Suspension:
+      "6 Wheel, Novel 5 Bar Multilink Suspension System Constrained via Torsion Springs",
+    Chassis: "All Aluminium Chassis.",
+
+    MaxTraversableHeight: "0.8m",
+    ChassisWeight: "3 kg",
+
+    AutonomousSystem: "Object Detection, Obstacle Avoidance, Path Planning, State-based Control Structure",
+
+    RoboticArm: "6 DOF Articulated Robotic Arm using Worm Drives",
+    HorizontalReach: "850 mm",
+    VerticalReach: "1200 mm",
+    SoilCollector: "Lead Screw Actuated Multi-Auger System with Collection Tray Mechanism",
+    CentreOfGravity: "300",
+    Microcontroller: "ESP 32",
+    SingleBoardComputer: "Jetson Xavier NX and Raspberry Pi 4B",
+    MotorDrivers: "13A and 40A continuous motor driver",
+    WheelMotors: "24V DC geared Motors",
+    Batteries: "16500mAh LiPo",
+    CommunicationFrequencies: "	2.4GHz, 5GHz",
+    Sensors:
+      "MRS1000 SICK Lidar, U-blox ZED-F9R and NEO-M8P Modules, IMU BNO055, VOC, Ozone, Hydraprobe(Temp, moisture, salinity, EC), USB Cameras",
+
+    pics: [
+      { src: "urc2024/team.jpg" },
+      { src: "urc2024/sm.jpg" },
+      { src: "urc2024/bike.jpg" },
+      { src: "urc2024/esm1.jpg" },
+      { src: "urc2024/esm2.jpg" },
+      { src: "urc2024/esm3.jpg" },
+      { src: "urc2024/rdo1.jpg" },
+      { src: "urc2024/rdo2.jpg" },
+    ],
+    video: "https://www.youtube.com/embed/CnRiPZGofaw",
+  },
+  {
+    id: 6,
     comp: "URC 2022",
     info: "The 16th edition of University Rover Challenge was held at the Mars Desert Research Station in Hanksville, Utah from June 1st to June 4th 2022. The team returned to an onsite competition after a hiatus of 3 years due to the pandemic. Mars Rover Manipal was able to maintain its streak of being the best rover team from India for its 5th consecutive year. MRM was also the recipient of the prestigious John Barainca award for the best science team in the competition, securing an 85/100 in this challenging mission.",
     img: "urc2022/urc2022-5.webp",
@@ -37,7 +83,7 @@ const data = [
       { src: "urc2022/urc2022-2.webp" },
       { src: "urc2022/urc2022-3.webp" },
       { src: "urc2022/urc2022-4.webp" },
-	 { src: "urc2022/urc2022-6.webp" },
+      { src: "urc2022/urc2022-6.webp" },
     ],
     video: "https://www.youtube.com/embed/tgAOEiIUJ5k",
   },
@@ -75,7 +121,7 @@ const data = [
       "MRS1000 SICK Lidar, Garmin(18x USB GPS navigator), Magnetometer(BNO080), VOC, Ozone, Hydraprobe(Temp, moisture, salinity, EC),Intel Realsense Depth Camera",
 
     pics: [
-      { src: "photos-urc2021/grp_1.JPG" },
+      { src: "photos-urc2021/grp_1.jpg" },
       { src: "photos-urc2021/board_1.jpg" },
       { src: "photos-urc2021/rover1_1.jpg" },
       { src: "photos-urc2021/mem_1.jpg" },
@@ -128,7 +174,7 @@ const data = [
   {
     id: 2,
     comp: "URC 2019",
-    info: "The 13th edition of University Rover Challenge was held in Utah, USA from May 30 to June 1, 2019. For the fourth consecutive year, MRM has been amongst the top 36 international teams and was one of the only 5 teams from India to make it to the onsite competetion of URC 19.MRM has secured the 8th rank globally which has further placed us as the best rover team in Asia.We also continued our run of being the best Indian Rover Team for the third consecutive year.        In addition to this, MRM was the recipient of the prestigious Barainca award for the best science team in the competition, securing a 95/100 in this challenging mission.",
+    info: "The 13th edition of University Rover Challenge was held in Utah, USA from May 30 to June 1, 2019. For the fourth consecutive year, MRM has been amongst the top 36 international teams and was one of the only 5 teams from India to make it to the onsite competetion of URC 19. MRM has secured the 8th rank globally which has further placed us as the best rover team in Asia. We also continued our run of being the best Indian Rover Team for the third consecutive year. In addition to this, MRM was the recipient of the prestigious Barainca award for the best science team in the competition, securing a 95/100 in this challenging mission.",
     img: "comp/urc2019.webp",
     roverName: "ROVER 2019",
     pos: "8th Worldwide",
@@ -174,7 +220,7 @@ const data = [
   {
     id: 3,
     comp: "URC 2018",
-    info: "MRM secured a world rank of 7 in URC 2018. Held from 31 May 2018 to 2 June 2018, URC 2018 witnessed huge participation with 35 teams out of the 96 registered making it to the on-site competition.There was tough competition but MRM held its own and we secured our best rank yet. Our rover Airawat once again placed us as India's best and Asia's second best rover team at URC.",
+    info: "MRM secured a world rank of 7 in URC 2018. Held from 31 May 2018 to 2 June 2018, URC 2018 witnessed huge participation with 35 teams out of the 96 registered making it to the on-site competition. There was tough competition but MRM held its own and we secured our best rank yet. Our rover Airawat once again placed us as India's best and Asia's second best rover team at URC.",
     img: "comp/urc2018.webp",
     roverName: "ROVER AIRAWAT",
     pos: "7th Worldwide",
@@ -262,7 +308,7 @@ const data = [
   {
     id: 5,
     comp: "URC 2016",
-    info: "University Rover Challenge 2016 was organized on 2nd, 3rd and 4th June 2016. This was the first time we were participating in the event. 63 teams registered for the competition and 28 were selected for the competition at Mars Desert Research Station, Utah.We stood 13th all over the world.Our rover was ranked second best in India and Asia.",
+    info: "University Rover Challenge 2016 was organized on 2nd, 3rd and 4th June 2016. This was the first time we were participating in the event. 63 teams registered for the competition and 28 were selected for the competition at Mars Desert Research Station, Utah. We stood 13th all over the world. Our rover was ranked second best in India and Asia.",
     img: "comp/rover16.webp",
     roverName: "ROVER KALAM",
     pos: "13th Worldwide",

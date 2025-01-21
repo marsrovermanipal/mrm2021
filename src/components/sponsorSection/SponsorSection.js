@@ -10,59 +10,39 @@ export default function SponsorSection() {
 
   const data = [
     {
-      name: "Mouser Electronics",
-      bgpath: "/sponsors/mouser.jpg",
-      link: "https://www.mouser.in/",
-    },
-    {
-      name: "Sick",
-      bgpath: "/sponsors/sick.jpg",
-      link: "https://www.sick.com/in/en/",
-    },
-    {
-      name: "KelpeTech",
-      bgpath: "/sponsors/kelpeTech.jpg",
-      link: "https://www.kelpecnc.com/",
-    },
-    {
-      name: "Aristo",
-      bgpath: "/sponsors/aristo.jpg",
-      link: "https://www.aristo-india.com/#",
-    },
-    {
-      name: "Aeroqual",
-      bgpath: "/sponsors/aeroqual.jpg",
-      link: "https://www.aeroqual.com",
-    },
-    {
-      name: "LPS Bossard",
-      bgpath: "/sponsors/lpsbossard.jpg",
-      link: "https://www.bossard.com/in-en/",
+      name: "Sujanand Engineers & Contractors",
+      bgpath: "/sponsors/Sujanand.png",
+      link: "",
     },
     {
       name: "Wheeleez",
-      bgpath: "/sponsors/wheeleez.jpg",
-      link: "",
+      bgpath: "/sponsors/Wheeleez.png",
+      link: "https://wheeleez.com/",
     },
     {
       name: "Nvidia",
-      bgpath: "/sponsors/nvidia.jpg",
+      bgpath: "/sponsors/NVIDIA.jpg",
       link: "https://nvidia.com",
     },
     {
-      name: "SolidWorks",
-      bgpath: "/sponsors/solidworks.jpg",
+      name: "Solidworks",
+      bgpath: "/sponsors/Solidworks.png",
       link: "https://solidworks.com",
     },
     {
-      name: "Decopad Interiors",
-      bgpath: "/sponsors/decopad-logo.jpeg",
-      link: "",
+      name: "Altium Designer",
+      bgpath: "/sponsors/altium_designer.png",
+      link: "https://www.altium.com/altium-designer",
     },
     {
-      name: "Stevens",
-      bgpath: "/sponsors/stevens.jpg",
-      link: "https://stevenswater.com",
+      name: "ANSYS",
+      bgpath: "/sponsors/ansys.png",
+      link: "https://www.ansys.com/en-in",
+    },
+    {
+      name: "PCB Power",
+      bgpath: "/sponsors/PCB_Power.png",
+      link: "https://www.pcbpower.com/",
     },
   ];
   return (

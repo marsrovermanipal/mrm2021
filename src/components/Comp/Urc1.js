@@ -35,14 +35,14 @@ function Urc1() {
             <p className="fs-5">
               The University Rover Challenge is a premier robotics competition
               organized annually by the Mars Society USA during summer at Mars
-              Desert Research Station (MDRS) in Utah, USA.The challenge is to
+              Desert Research Station (MDRS) in Utah, USA. The challenge is to
               build a next-generation Mars Rover capable of working alongside
-              humans in future Martian colonies.Each edition of the competition
+              humans in future Martian colonies. Each edition of the competition
               has a problem statement.The problem statement is designed to
               capture the complex system design requirements in such a
-              scenario.We target the competition as a platform for us to hone
+              scenario. We target the competition as a platform for us to hone
               our overall engineering skills in design and deployment of an
-              Intelligent Rover System.The system can further be an effective
+              Intelligent Rover System. The system can further be an effective
               tool for emulating a futuristic life on Mars.
             </p>
           </div>

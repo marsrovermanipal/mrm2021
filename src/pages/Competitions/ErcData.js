@@ -1,4 +1,12 @@
 const data = [
+    // {
+    //     id: 3,
+    //     comp: "ERC 2023",
+    //     info: "Mars Rover Manipal finished 7th out of 28 teams from around the world in the remote edition of the European Rover Challenge (ERC) 2022. In addition, we were awarded The Best Performing Team in the Science, Maintenance and Presentation Tasks. ",
+    //     img: 'comp/ercteam22.webp',
+    //     pos: "2nd position",
+    //     website: "https://roverchallenge.eu/en/main-page/",
+    // },
     {
         id: 1,
         comp: "ERC 2022",

@@ -33,7 +33,7 @@ const Irc = () => {
                 <UncontrolledCarousel
                     items={[
                         {
-                            src: "/comp/ircTasks/abex.jpg",
+                            src: "/comp/ircTasks/abex.jpeg",
                             altText: "Astrobiology Expedition",
                             caption:
                                 "The mission involves the rover serving as a Mobile Science Laboratory to collect and evaluate samples from designated Martian sites",
