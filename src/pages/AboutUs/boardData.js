@@ -4,21 +4,21 @@ const data = [
     name: "Gagan Kiran Menderkar",
     img: "team-25/gagan.jpeg",
     pos: "Team Leader",
-    linkedin: "https://www.linkedin.com/in/gagan-menderkar-b3a243255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin: "https://www.linkedin.com/in/gagan-menderkar-b3a243255",
   },
   {
     id:2,
     name: "Vivek Kolekar",
     img: "team-25/vivek.jpg",
     pos: "Team Manager",
-    linkedin: "https://www.linkedin.com/in/vivek-kolekar-19689721b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin: "https://www.linkedin.com/in/vivek-kolekar-19689721b",
   },
   {
     id: 3,
     name: "Aryavarta Singh",
     img: "team-25/av.jpg",
     pos: "Technical Head",
-    linkedin: "https://www.linkedin.com/in/aryavarta-singh-832689195?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin: "https://www.linkedin.com/in/aryavarta-singh-832689195",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const data = [
     name: "Ankur Monga",
     img: "team-25/ankur.jpg",
     pos: "Artificial Intelligence and Automation Head",
-    linkedin: "https://www.linkedin.com/in/ankur-monga-848020205",
+    linkedin: "www.linkedin.com/in/ankurmonga",
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ const data = [
     name: "Ishaan Gakhar",
     img: "team-25/ishaan.jpg",
     pos: "Research Head",
-    linkedin: "https://www.linkedin.com/in/ishaan-gakhar-9248b8253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin: "https://www.linkedin.com/in/ishaan-gakhar-9248b8253",
   }
 ];
 
