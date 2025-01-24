@@ -37,7 +37,7 @@ const data = [
   {
     id: 6,
     name: "Piyush Daigavhane",
-    img: "team-24/junior/ecs/piyush.webp",
+    img: "team-25/piyush.jpg",
     pos: "Electronics and Control Systems Head",
     linkedin: "https://www.linkedin.com/in/piyush-daigavhane-9188b3228",
   },
@@ -51,7 +51,7 @@ const data = [
   {
     id: 8,
     name: "Arooja Tyagi",
-    img: "team-24/junior/ls/arooja.webp",
+    img: "team-25/arooja.jpg",
     pos: "Life Science Head",
     linkedin: "https://www.linkedin.com/in/arooja-tyagi-10639b248/",
   },

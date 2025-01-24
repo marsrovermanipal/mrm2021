@@ -245,13 +245,6 @@ const data = [
     linkedin: "https://www.linkedin.com/in/arooja-tyagi-10639b248/",
   },
   {
-    id: 36,
-    name: 'Spriha Pant',
-    img: 'team-24/junior/ls/spriha.webp',
-    pos: "Life Science",
-    linkedin: "https://www.linkedin.com/in/spriha-pant-aa299b1a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  },
-  {
     id: 37,
     name: 'Sanvi Shetty',
     img: 'team-24/junior/ls/sanvi.webp',
